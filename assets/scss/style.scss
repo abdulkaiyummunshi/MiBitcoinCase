@@ -1,0 +1,44 @@
+@import "mixin";
+@import "./partials/mobile-menu";
+@import "variables";
+@import "./partials/header";
+@import "./partials/animation";
+@import "./partials/offcanvas";
+@import "./partials/preloader";
+@import "./partials/back_top";
+@import "./pages/home";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+html {
+  scroll-behavior: smooth; }
+a {
+    text-decoration: none;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+.text-right{
+    text-align: right !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
