@@ -31015,9 +31015,11 @@ header {
   outline: none;
   position: relative;
   text-align: left !important;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
   -webkit-tap-highlight-color: transparent;
@@ -31200,18 +31202,23 @@ header {
 /* Animation for Tada */
 @keyframes tada {
   0% {
+    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
   10%, 20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
   30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
   40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
   100% {
+    -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 }
@@ -31357,7 +31364,13 @@ header {
   top: 0;
   width: 400px;
   height: 100%;
+  -webkit-transform: translateX(calc(100% + 80px));
+  -moz-transform: translateX(calc(100% + 80px));
+  -ms-transform: translateX(calc(100% + 80px));
+  -o-transform: translateX(calc(100% + 80px));
   transform: translateX(calc(100% + 80px));
+  -webkit-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
+  -moz-transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
   transition: transform 0.45s ease-in-out, opacity 0.45s ease-in-out;
   z-index: 99999;
   overflow-y: scroll;
@@ -31370,6 +31383,10 @@ header {
 
 .offcanvas__info.info-open {
   opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
   transform: translateX(0);
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -31602,6 +31619,91 @@ header {
 .hero_area .hero_bg {
   background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
   height: 100vh;
+}
+
+.rb_heading_area .rb_subtitle {
+  margin-bottom: 20px;
+}
+.rb_heading_area .rb_subtitle h5 {
+  display: inline-flex;
+  gap: 8px;
+  padding: 11px 30px;
+  border-radius: 100px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F2F2F2 100%);
+  color: #252525;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.rb_heading_area .rb_title h2 {
+  color: #252525;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+}
+.rb_heading_area .rb_desc p {
+  color: rgba(37, 37, 37, 0.6);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.rb_list ul li {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: rgba(37, 37, 37, 0.9);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.rb_arrow_btn {
+  display: flex;
+  gap: 48px;
+}
+.rb_arrow_btn .icon i {
+  font-size: 20px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.rb_about1 .mission_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 99px 77px;
+  border-radius: 10px;
+  background: #031A26;
+}
+.rb_about1 h4 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100px; /* 416.667% */
+}
+.rb_about1 p {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
 }
 
 * {

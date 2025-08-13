@@ -1,0 +1,111 @@
+// Heading Area
+.rb_heading_area {
+    .rb_subtitle {
+        margin-bottom: 20px;
+        h5 {
+            display: inline-flex;
+            gap: 8px;
+            padding: 11px 30px;
+            border-radius: 100px;
+            border: 1px solid rgba(3, 26, 38, 0.12);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #F2F2F2 100%);
+            color: #252525;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+    .rb_title {
+        h2 {
+            color: #252525;
+            font-family: Inter;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 60px; 
+        }
+    }
+    .rb_desc {
+        p {
+            color: rgba(37, 37, 37, 0.60);
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+        }
+    }
+}
+
+// List css 
+.rb_list {
+    ul {
+        li {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: rgba(37, 37, 37, 0.90);
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; 
+        }
+    }
+}
+
+// Arrow icon
+.rb_arrow_btn {
+    display: flex;
+    gap: 48px;
+    .icon {
+        i {
+            font-size: 20px;
+            color: #FFF;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// About1 css start
+.rb_about1 {
+    .mission_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        padding: 99px 77px;
+        border-radius: 10px;
+        background: #031A26;
+    }
+    h4 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100px; /* 416.667% */
+    }
+    p {
+        color: rgba(255, 255, 255, 0.60);
+        text-align: center;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 166.667% */
+    }
+}
+// About1 css end
+
