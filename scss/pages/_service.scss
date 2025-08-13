@@ -1,10 +1,30 @@
 .rb_service1 {
     .row.style1 {
-        --bs-gutter-y: 4rem;
-        --bs-gutter-x: 4rem;
+        @include breakpoint (md){
+            --bs-gutter-y: 3rem;
+            --bs-gutter-x: 3rem;
+        }
+        @include breakpoint (xl){
+            --bs-gutter-y: 4rem;
+            --bs-gutter-x: 4rem;
+        }
     }
     .service_card {
         display: flex;
         gap: 22px;
+    }
+}
+.rb_counter1 {
+    .counter_box {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        flex-wrap: wrap;
+        border-radius: 14px;
+        background: #FFEED8;
+        padding: 52px 100px;
+        .counter_item {
+            width: 175px;
+        }
     }
 }

@@ -31654,6 +31654,15 @@ header {
   line-height: 30px;
 }
 
+.rb-t50 {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
 .rb-t24 {
   color: #031A26;
   font-family: "Inter", sans-serif;
@@ -31725,13 +31734,34 @@ header {
   line-height: 30px; /* 166.667% */
 }
 
-.rb_service1 .row.style1 {
-  --bs-gutter-y: 4rem;
-  --bs-gutter-x: 4rem;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .rb_service1 .row.style1 {
+    --bs-gutter-y: 3rem;
+    --bs-gutter-x: 3rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .rb_service1 .row.style1 {
+    --bs-gutter-y: 4rem;
+    --bs-gutter-x: 4rem;
+  }
 }
 .rb_service1 .service_card {
   display: flex;
   gap: 22px;
+}
+
+.rb_counter1 .counter_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  border-radius: 14px;
+  background: #FFEED8;
+  padding: 52px 100px;
+}
+.rb_counter1 .counter_box .counter_item {
+  width: 175px;
 }
 
 * {
