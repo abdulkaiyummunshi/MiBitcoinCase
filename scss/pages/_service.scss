@@ -1,0 +1,10 @@
+.rb_service1 {
+    .row.style1 {
+        --bs-gutter-y: 4rem;
+        --bs-gutter-x: 4rem;
+    }
+    .service_card {
+        display: flex;
+        gap: 22px;
+    }
+}

@@ -31623,8 +31623,6 @@ header {
 
 .rb_heading_area .rb_subtitle {
   margin-bottom: 20px;
-}
-.rb_heading_area .rb_subtitle h5 {
   display: inline-flex;
   gap: 8px;
   padding: 11px 30px;
@@ -31639,7 +31637,7 @@ header {
   line-height: normal;
   text-transform: uppercase;
 }
-.rb_heading_area .rb_title h2 {
+.rb_heading_area .rb_title {
   color: #252525;
   font-family: Inter;
   font-size: 50px;
@@ -31647,8 +31645,26 @@ header {
   font-weight: 700;
   line-height: 60px;
 }
-.rb_heading_area .rb_desc p {
+.rb_heading_area .rb_desc {
   color: rgba(37, 37, 37, 0.6);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.rb-t24 {
+  color: #031A26;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.rb-p18 {
+  color: rgba(3, 26, 38, 0.6);
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -31679,6 +31695,9 @@ header {
   cursor: pointer;
 }
 
+.rb_about1 .container {
+  max-width: 1754px;
+}
 .rb_about1 .mission_card {
   display: flex;
   flex-direction: column;
@@ -31704,6 +31723,15 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 30px; /* 166.667% */
+}
+
+.rb_service1 .row.style1 {
+  --bs-gutter-y: 4rem;
+  --bs-gutter-x: 4rem;
+}
+.rb_service1 .service_card {
+  display: flex;
+  gap: 22px;
 }
 
 * {
