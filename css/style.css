@@ -27409,7 +27409,7 @@ header {
 
 /*--Our Features End---*/
 .rb_heading_area .rb_subtitle {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   display: inline-flex;
   gap: 8px;
   padding: 11px 30px;
@@ -27423,6 +27423,10 @@ header {
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase; }
+  .rb_heading_area .rb_subtitle.style1 {
+    color: #031A26;
+    text-transform: uppercase;
+    background: none; }
 .rb_heading_area .rb_title {
   color: #252525;
   font-family: Inter;
@@ -27430,6 +27434,8 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 60px; }
+  .rb_heading_area .rb_title.style1 {
+    color: #031A26; }
 .rb_heading_area .rb_desc {
   color: rgba(37, 37, 37, 0.6);
   font-family: Inter;
@@ -27437,6 +27443,8 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 30px; }
+  .rb_heading_area .rb_desc.styel1 {
+    color: rgba(3, 26, 38, 0.6); }
 
 .rb-t50 {
   color: #031A26;
@@ -27566,6 +27574,11 @@ header {
     background: rgba(255, 255, 255, 0.1); }
   .rb_step_slider .step_item {
     max-width: 291px; }
+
+.rb_contact1 .section_padding {
+  border-radius: 24px;
+  background: #FFEED8;
+  padding: 120px 75px; }
 
 * {
   margin: 0;

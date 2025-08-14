@@ -1,7 +1,7 @@
 // Heading Area
 .rb_heading_area {
     .rb_subtitle {
-        margin-bottom: 20px;
+        margin-bottom: 22px;
         display: inline-flex;
         gap: 8px;
         padding: 11px 30px;
@@ -15,6 +15,11 @@
         font-weight: 600;
         line-height: normal;
         text-transform: uppercase;
+        &.style1 {
+            color: #031A26;
+            text-transform: uppercase;
+            background: none;
+        }
     }
     .rb_title {
         color: #252525;
@@ -23,6 +28,9 @@
         font-style: normal;
         font-weight: 700;
         line-height: 60px; 
+        &.style1 {
+            color: #031A26;
+        }
     }
     .rb_desc {
         color: rgba(37, 37, 37, 0.60);
@@ -31,6 +39,9 @@
         font-style: normal;
         font-weight: 500;
         line-height: 30px;
+        &.styel1 {
+            color: rgba(3, 26, 38, 0.60);
+        }
     }
 }
 
