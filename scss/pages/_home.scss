@@ -1,6 +1,202 @@
 .hero_area{
-    .hero_bg{
+    .mb_hero_bg{
+        height: 959px;
         background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
-        height: 100vh;
+        @include border-radius(20px);
+        position: relative;
+        
+        .mb_hero_contain{
+            height: 100%;
+            width: 100%;
+            background-color: red;
+            @include flex(row, flex-start, center);
+            
+            
+        }
+        .mb_bg_blur{
+            @include flex(row, flex-start, center);
+            background-image: url(../images/home_page/hero_section/bg_blur.png);
+            @include border-radius(20px);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .mb_search_bar{
+             form{
+                    max-width: 670px;
+                    width: 100%;
+                    border-radius: 50px;
+                    background-color: $white;
+                    height: 72px;
+                    line-height: 72px;
+                    input{
+                        border-radius: 50px;
+                        width: 90%;
+                        border: none;
+                        outline: none;
+                        padding-left: 26px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: $text_color;
+                        &::placeholder{
+                            color: rgba(3, 26, 38, 0.7);
+                        }
+                    }
+                    button{
+                        width: 52px;
+                        @include border-radius(100px);
+                        height: 52px;
+                        line-height: 50px;
+                        text-align: center;
+                        color: $white;
+                        background-color: $text_color;
+                    }
+                }
+        }
+        .header_area{
+            position: relative;
+        }
+        .mb_house{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            z-index: 4;
+            @include border-radius(0px 0px 20px 0px);
+           img{
+             width:fit-content;
+            height: fit-content;
+            object-fit: contain;
+            @include border-radius(0px 0px 20px 0px)
+           }
+        }
+        .mb_group_house{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            @include border-radius(0px 0px 0px 20px);
+            z-index: 1;
+           img{
+             width:fit-content;
+            height: fit-content;
+            object-fit: contain;
+            @include border-radius(0px 0px 0px 20px)
+           }
+        }
+        .mb_shape{
+            position: absolute;
+            top: -120px;
+            left: -62px;
+           img{
+             width:fit-content;
+            height: fit-content;
+            object-fit: contain;
+            @include border-radius(0px 0px 0px 20px)
+           }
+        }
+        .group_house{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            @include border-radius(0px 0px 0px 20px);
+           img{
+             width:fit-content;
+            height: fit-content;
+            object-fit: contain;
+            @include border-radius(0px 0px 0px 20px)
+           }
+        }
+        .mb_bitcoin{
+            position: absolute;
+            top: -165px;
+    right: 33%;
+    
+        }
     }
+}
+
+/*--Testimonial Start---*/
+.mb_testimonial_section{
+    padding: 130px 0px 107px 0px;
+    position: relative;
+    .mb_shape{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        @include transformX(-50%);
+        pointer-events: none;
+    }
+    .mb_testimonial_content{
+        @include flex(column, center, center);
+        .mb_profile_image{
+            width: 300px;
+            height: 140px;
+            @include border-radius(100px);
+            img{
+                @include border-radius(100px);
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        blockquote{
+            font-style: italic;
+            font-weight: 500;
+            font-size: 34px;
+            text-align: center;
+            color: rgba(3, 26, 38, 0.7);
+            margin-top: 40px;
+        }
+        .mb_author_info{
+            @include flex(row, center, center);
+            gap: 10px;
+            margin-top: 40px;
+            h4{
+                font-size: 24px;
+                font-weight: 700px;
+                color: $text_color;
+            }
+            h5{
+                font-size: 16px;
+                font-weight: 600px;
+                color: $text_color;
+                opacity: 0.7;
+                text-transform: uppercase;
+                padding-left: 10px;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    @include transformY(-50%);
+                    left: 0px;
+                    width: 6px;
+                    height: 6px;
+                    @include border-radius(50%);
+                    background-color: rgba(3, 26, 38, 0.5);;
+                }
+
+            }
+        }
+    }
+
+}
+/*--Testimonial End---*/
+
+.mb_branding_wrapper_ltr, .mb_branding_wrapper_rtl {
+    padding: 20px 0;
+    
+    .slick-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+}
+
+.mb_branding_wrapper_ltr .slick-slide:hover, .mb_branding_wrapper_rtl .slick-slide:hover {
+   
+    transform: scale(1.05);
+    opacity: 0.8;
 }

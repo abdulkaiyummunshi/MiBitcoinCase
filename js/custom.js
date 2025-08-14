@@ -161,12 +161,12 @@
         // Text Slider
         function textSlider() {
             $(document).ready(function () {
-                $('.scroll-content').slick({
+                $('.mb_branding_wrapper').slick({
                     dots: false,
                     arrows: false,
                     infinite: true,
                     speed: 3000,
-                    slidesToShow: 4,
+                    slidesToShow: 7,
                     slidesToScroll: 1,
                     autoplay: true,
                     autoplaySpeed: 0,

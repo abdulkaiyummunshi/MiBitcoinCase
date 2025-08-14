@@ -1,243 +1,21 @@
-.header_area{
-    .sub_heading{
-        h4{
-            font-weight: 500;
-            font-size: 18px;
-            letter-spacing: 0.01em;
-            text-transform: capitalize;
-            text-align: center;
-            color: $white;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 5px;
-            padding: 7px 13px 7px 16px;
-            display: inline-block;
-            background-color: $gray9;
-            @include nesthub{
-                img{
-                    width: 25px !important;
-                    height: 25px !important;
-                    object-fit: contain;
-                }
-
-            }
-            @include md{
-                img{
-                    width: 25px !important;
-                    height: 25px !important;
-                    object-fit: contain;
-                }
-
-            }
-            @include sm{
-                font-size: 8px;
-                padding: 5px 8px;
-                img{
-                    width: 12px;
-                    height: 12px;
-                }
-
-            }
-            
-        }
-        &.style_1{
-            h4{
-                color: $gray9;
-                border: 1px solid rgba(20, 20, 23, 0.1);
-                border-radius: 5px;
-                background-color: $white;
-                img{
-                    margin-right: 8px;
-                }
-                            }
-        }
-        &.style_2{
-            h4{
-                color: $white;
-                border-radius: 5px;
-                background-color: transparent;
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                img{
-                    margin-right: 8px;
-                }
-                            }
-        }
-        &.style_3{
-            h4{
-                background-color: transparent;
-                color: $gray8;
-                font-weight: 600;
-                font-size: 14px;
-                display: inline-block;
-                text-transform: uppercase;
-                padding: 0px;
-            }
-        }
-    }
+.heading_area{
     .heading{
         h1{
-            font-weight: 600;
-            font-size: 60px;
-            color: $white;
-            margin-top: 15px;
-            @include nesthubmax{
-                font-size: 40px;
-                font-weight: 700;
-                margin-top: 7px;
-            }
-            @include nesthub{
-                font-size: 40px;
-                font-weight: 700;
-                margin-top: 7px;
-            }
-            @include md{
-                font-size: 26px;
-                font-weight: 700;
-                margin-top: 7px;
-            }
-            @include sm{
-                font-size: 26px;
-                font-weight: 700;
-                margin-top: 7px;
-            }
-        }
-        h2{
-            font-weight: 600;
-            font-size: 38px !important;
-            color: $gray9;
-            @include nesthubmax{
-                font-size: 34px !important;
-            }
-            @include nesthub{
-                font-size: 30px !important;
-            }
-            @include md{
-                font-size: 26px !important;
-            }
-            @include sm{
-                font-size: 22px !important;
-                font-weight: 700;
-            }
-        }
-        &.style_1{
-            h2{
-                font-size: 40px;
-                @include nesthubmax{
-                font-size: 34px;
-            }
-            @include nesthub{
-                font-size: 30px;
-            }
-            @include md{
-                font-size: 26px;
-            }
-            @include sm{
-                font-size: 22px;
-                
-            }
-            }
-            h3{
-                font-size: 32px;
-                @include sm{
-                    font-size: 18px;
-                }
-                color: $gray9;
-            }
-        }
-        &.style_2{
-            h2{
-                font-size: 40px;
-                color: $white;
-                @include nesthubmax{
-                font-size: 34px;
-            }
-            @include nesthub{
-                font-size: 30px;
-            }
-            @include md{
-                font-size: 26px;
-            }
-            @include sm{
-                font-size: 22px;
-            }
-            }
-        }
-        &.style_3{
-            h2{
-                font-size: 48px;
-                color: $gray9;
-                @include nesthubmax{
-                font-size: 34px;
-            }
-            @include nesthub{
-                font-size: 30px;
-            }
-            @include md{
-                font-size: 26px;
-            }
-            @include sm{
-                font-size: 18px;
-            }
-            }
-        }
-        h2{
-            @include nesthubmax{
-                font-size: 34px;
-            }
-            @include nesthub{
-                font-size: 30px;
-            }
-            @include md{
-                font-size: 26px;
-            }
-            @include sm{
-                font-size: 22px;
-            }
-        }
-        h3{
             font-weight: 700;
-            font-size: 24px;
-            @include sm{
-                font-size: 22px;
-            }
-            color: $white;
+            font-size: 60px;
+            color: $text_color;
+        }
+    }
+    .describtion{
+        p{
+            font-weight: 500;
+            font-size: 18px;
+            color: $text_style2;
         }
     }
 }
-.describtion{
-    p{
-        font-weight: 400;
-        font-size: 18px;
-        color: rgba(255, 255, 255, 0.8);
-    }
-    &.style_1{
-        p{
-            color: $gray8;
-        }
-    }
-    &.style_2{
-        p{
-            color: $gray9;
-            font-size: 16px;
-        }
-    }
-    &.style_3{
-        p{
-            color: $white;
-            font-size: 16px;
-        }
-    }
-    @include nesthubmax{
-        margin-top: 10px !important;
-       p{
-         font-size: 15px;
-       }
-    }
-    @include sm{
-       p{
-         font-size: 10px !important;
-       }
-    }
-}
+
+
 
 @media (min-width:1200px){
     .min_br{
@@ -294,7 +72,7 @@
         @include sm{
             font-size: 10px;
         }
-        color: $gray8;
+        color: $text_style2;
     }
     p{
         font-weight: 400;
@@ -302,7 +80,7 @@
         @include sm{
             font-size: 10px;
         }
-        color: $gray8;
+        color: $text_style2;
         margin-top: 5px;
     }
 
