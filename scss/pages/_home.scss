@@ -186,14 +186,448 @@
 
 /*--Our Features Start---*/
 .mb_our_features{
+    max-height: 870px;
+    background-color: $text_color;
+   
+    .mb_feature_image{
+        width: 100%;
+        height: 868px !important;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     .mb_heading_content{
         background-color: $text_color;
         height: 100%;
         @include flex(column, space-between, flex-start);
-        padding: 80px 60px;
+        padding: 80px 30px 80px 55px;
     }
     .mb_feature_heading{
         background-color: $text_color;
+        height: 100%;
+    }
+    
+    .mb_feature_card{
+        padding: 110px 120px 110px 120px;
+        background-color: #ffeed8;
+        position: relative;
+        .mb_shape1{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+        }
+        .mb_shape2{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            pointer-events: none;
+        }
+        .mb_single_card{
+            @include flex(row, flex-start, flex-start);
+            gap: 44px;
+            .mb_card_contains{
+                border-bottom: 1px solid  rgba(3, 26, 38, 0.12);
+                padding-bottom: 55px;
+            }
+            .mb_icon{
+                width: 74px;
+                height: 74px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            h4{
+                font-weight: 600;
+                font-size: 24px;
+                color: #031a26;
+            }
+            p{
+                margin-top: 7px;
+                font-weight: 500;
+                font-size: 18px;
+                color: rgba(3, 26, 38, 0.6);
+            }
+        }
     }
 }
 /*--Our Features End---*/
+
+/*--How It Work Start---*/
+.mb_how_work{
+    position: relative;
+    .mb_how_work_item{
+        position: relative;
+        padding: 150px 100px;
+        background-color: #ffeed8;
+        @include border-radius(24px);
+
+    }
+        .left-arrow{
+            @include md{
+                display: none !important;
+            }
+            @include sm{
+                display: none !important;
+            }
+        border-radius: 50%;
+        border: 1px solid $border;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        display: block;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        color: #020626;
+        position: absolute;
+        top: -102px;
+        right: 181px;
+        background-color: $white;
+        z-index: 10;
+        @include transition(0.4s);
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
+}
+   .right-arrow{
+            @include md{
+                display: none !important;
+            }
+            @include sm{
+                display: none !important;
+            }
+            border: 1px solid $border;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        display: block;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        color: #020626;
+        position: absolute;
+        right: 5px;      
+        background-color: $white;
+        top: -103px;
+        z-index: 10;
+        @include transition(0.4s);
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
+    }
+    .mb_dots_arrow_card{
+        background-color: $text_color;
+        width: 232px;
+        height: 54px;
+        @include border-radius(100px);
+        position: absolute;
+        top: 55px;
+        right: 11px;
+    }
+    .mb_how_work_dots{
+        
+        @include flex(row, center, flex-end);
+        gap: 5px;
+        position: absolute;
+        top: -85px;
+        right: 79px;
+    
+        li{
+            position: relative;
+        }
+        button{
+            width: 10px;
+            height: 10px;
+            color: transparent;
+            border: none;
+            @include border-radius(50%);
+            background-color:  $white;
+            @include transition(0.5s);
+            
+        }
+        .slick-active{
+            button{
+                background-color: $primary;
+                
+            }
+        }
+    
+    }
+    .slick-slide{
+        margin: 10px 0px;
+    }
+    .mb_number{
+        span{
+            font-weight: 600;
+            font-size: 20px;
+            color: #031a26;
+            width: 74px;
+            height: 74px;
+            line-height: 74px;
+            text-align: center;
+            border: 1px solid  rgba(3, 26, 38, 0.1);
+            @include border-radius(50%);
+            display: block;
+
+        }
+    }
+    .md_title{
+        h3{
+            font-weight: 600;
+            font-size: 34px;
+            color: #031a26;
+        }
+    }
+    .mb_work_details{
+        padding-left: 30px;
+    }
+    .mb_icon{
+        span{
+            width: 120px;
+            background-color: $primary;
+            @include border-radius(50%);
+            height: 120px;
+            @include flex(row, center, center);
+            text-align: center;
+            line-height: 120px;
+            img{
+                width: fit-content;
+                height: fit-content;
+                object-fit: contain;
+
+            };
+        }
+    }
+}
+/*--How It Work End---*/
+
+/*--Browse Properties Start---*/
+.mb_browse_properties{
+    .row{
+        &.style_1{
+            gap: 30px;
+            .col-lg-3{
+                width: calc(25% - 25px);
+            }
+        }
+        &.style_2{
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(3, 26, 38, 0.1);
+        }
+    }
+    .mb_switch{
+        @include flex(row, flex-end, center);
+        gap: 20px;
+        button{
+            border: none;
+            background-color: transparent;
+            input{
+                color: $primary;
+                margin-right: 8px;
+            }
+        }
+    }
+    .mb_browse_wrapper{
+        background-color: #ffeed8;
+        padding: 120px 77px 140px 77px;
+        @include border-radius(24px);
+    }
+    .mb_properties_btn{
+        button{
+            border: 1px solid rgba(3, 26, 38, 0.1);
+            border-radius: 30px;
+            padding: 8px 16px;
+            background-color: transparent;
+            color: $text_color;
+            font-size: 16px;
+            font-weight: 600;
+            @include transition(0.8s);
+            &:hover{
+                background-color: $text_color;
+                color: $white;
+            }
+            &.active{
+                background-color: $text_color;
+                color: $white;
+            }
+        }
+    }
+    .explore_btn{
+        a{
+            font-weight: 600;
+            font-size: 16px;
+            @include transition(0.4s);
+            color: #031a26;
+            span{
+                margin-left: 8px;
+            }
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    .mb_properties_card{
+        border: 1px solid rgba(3, 26, 38, 0.1);
+        border-radius: 14px;
+        padding: 26px 34px 32px 34px;
+        background-color: $white;
+        position: relative;
+        .title{
+            a{
+                font-weight: 600;
+                font-size: 20px;
+                color: #031a26;
+                @include transition(0.4s);
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        .mb_properties_details{
+            @include flex(row, flex-start, center);
+            gap: 14px;
+        }
+        .mb_count_properties{
+            border: 1px solid rgba(3, 26, 38, 0.1);
+            border-radius: 100px;
+            padding: 4px 12px;
+            width: fit-content;
+            min-width: 136px;
+            span{
+                font-weight: 500;
+                font-size: 14px;
+                color: #031a26;
+                display: inline-block;
+                &:first-child{
+                    padding-left: 8px;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        @include transformY(-50%);
+                        left: 0px;
+                        width: 4px;
+                        height: 4px;
+                        background-color: #0bb230;
+                        @include border-radius(50%);
+                    }
+                }
+            }
+        }
+        .mb_properties_price{
+            @include flex(row, flex-start, center);
+            span{
+                font-weight: 500;
+                font-size: 15px;
+                color: #031a26;
+                &:first-child{
+                    margin-right: 5px;
+                }
+                
+            }
+        }
+        .arrow_btn{
+            position: absolute;
+            top: 50%;
+            @include transformY(-50%);
+            right: 34px;
+           a{
+             width: 36px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            display: block;
+            background-color: $text_color;
+            color: $white;
+            @include border-radius(50%);
+            i{
+                @include transition(0.4s);
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+            }
+            &:hover{
+                
+                i{
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+}
+            }
+           }
+        }
+        &:hover{
+            border: 1px solid $primary;
+            .arrow_btn{
+                a{
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+/*--Browse Properties End---*/
+
+/*--Popular Housing Start---*/
+.mb_popular_housing{
+    .mb_house_card{
+        width: 100%;
+        max-width: 300px;
+        @include border-radius(20px);
+        position: relative;
+        img{
+            width: 100%;
+            @include border-radius(20px);
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .mb_overly_content{
+        position: absolute;
+        @include border-radius(20px);
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(3, 26, 38, 0) 21%, #031a26 100%);
+    }
+    .mb_house_reviews{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 4px 8px;
+        @include border-radius(30px);
+        @include flex(row, center, center);
+        gap: 5px;
+        background-color: $white;
+        span{
+            color: $primary;
+        }
+        p{
+            font-weight: 500;
+            font-size: 13px;
+            color: #747d87;
+        }
+    }
+}
+/*--Popular Housing End---*/
+
+

@@ -209,6 +209,21 @@
         }
         textSlider()
 
+        function Book(){
+                $('.mb_how_work_slider').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    vertical: true, 
+                    verticalSwiping: true,
+                    arrows: true,
+                    dots: true,
+                    dotsClass: "mb_how_work_dots",
+                    prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-up"></i></span>`,
+                    nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-down"></i></span>`,
+                });
+        }
+        Book()
+
         $('.clients_review_slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,

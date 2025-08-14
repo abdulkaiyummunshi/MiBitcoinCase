@@ -23,6 +23,16 @@
                 @include border-radius(50%);
             }
         }
+        &.style_01{
+            h4{
+                border: 1px solid rgba(3, 26, 38, 0.12);
+                background: $white;
+                color: $text_color;
+                &::before{
+                    background-color: $text_color;
+                }
+            }
+        }
     }
     .heading{
         h1{
@@ -35,13 +45,18 @@
             font-size: 50px;
             color: $white;
         }
-    }
-    .describtion{
-        p{
-            font-weight: 500;
-            font-size: 18px;
-            color: $text_style2;
+        &.style_01{
+            h2{
+                color: $text_color;
+            }
         }
+    }
+}
+.describtion{
+    p{
+        font-weight: 500;
+        font-size: 18px;
+        color: rgba(3, 26, 38, 0.6);
     }
 }
 
