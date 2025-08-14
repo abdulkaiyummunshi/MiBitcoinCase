@@ -1,9 +1,39 @@
 .heading_area{
+    .sub_heading{
+        h4{
+            width: fit-content;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: $white;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 100px;
+            padding: 10px 30px 10px 40px;
+            background: linear-gradient(180deg, #031a26 0%, #153140 100%);
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                @include transformY(-50%);
+                left: 30px;
+                width: 4px;
+                height: 4px;
+                background-color: $white;
+                @include border-radius(50%);
+            }
+        }
+    }
     .heading{
         h1{
             font-weight: 700;
             font-size: 60px;
             color: $text_color;
+        }
+        h2{
+            font-weight: 700;
+            font-size: 50px;
+            color: $white;
         }
     }
     .describtion{
