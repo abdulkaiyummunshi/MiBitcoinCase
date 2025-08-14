@@ -31671,6 +31671,9 @@ header {
   font-weight: 600;
   line-height: normal;
 }
+.rb-t24.style1 {
+  color: #FFF;
+}
 
 .rb-p18 {
   color: rgba(3, 26, 38, 0.6);
@@ -31679,6 +31682,27 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
+}
+.rb-p18.style1 {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.rb-p16 {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.rb-p16.style1 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .rb_list ul li {
@@ -31734,17 +31758,9 @@ header {
   line-height: 30px; /* 166.667% */
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .rb_service1 .row.style1 {
-    --bs-gutter-y: 3rem;
-    --bs-gutter-x: 3rem;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .rb_service1 .row.style1 {
-    --bs-gutter-y: 4rem;
-    --bs-gutter-x: 4rem;
-  }
+.rb_service1 .row.style1 {
+  --bs-gutter-y: 4rem;
+  --bs-gutter-x: 4rem;
 }
 .rb_service1 .service_card {
   display: flex;
@@ -31762,6 +31778,25 @@ header {
 }
 .rb_counter1 .counter_box .counter_item {
   width: 175px;
+}
+
+.rb_step_slider {
+  position: relative;
+  background: #031A26;
+  padding: 120px 0 130px;
+}
+.rb_step_slider .shape {
+  position: absolute;
+  top: 46.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1638px;
+  height: 1px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+.rb_step_slider .step_item {
+  max-width: 291px;
 }
 
 * {

@@ -1,13 +1,16 @@
+// Service1 css start
 .rb_service1 {
     .row.style1 {
-        @include breakpoint (md){
-            --bs-gutter-y: 3rem;
-            --bs-gutter-x: 3rem;
-        }
-        @include breakpoint (xl){
-            --bs-gutter-y: 4rem;
-            --bs-gutter-x: 4rem;
-        }
+                            --bs-gutter-y: 4rem;
+                            --bs-gutter-x: 4rem;
+        // @include breakpoint (md){
+        //     --bs-gutter-y: 3rem;
+        //     --bs-gutter-x: 3rem;
+        // }
+        // @include breakpoint (xl){
+        //     --bs-gutter-y: 4rem;
+        //     --bs-gutter-x: 4rem;
+        // }
     }
     .service_card {
         display: flex;
@@ -28,3 +31,26 @@
         }
     }
 }
+// Service1 css end
+
+
+// Step Slider Start
+.rb_step_slider {
+    position: relative;
+    background: #031A26;
+    padding: 120px 0 130px;
+    .shape {
+        position: absolute;
+        top: 46.7%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1638px;
+        height: 1px;
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.10);
+    }
+    .step_item {
+        max-width: 291px;
+    }
+}
+// Step Slider End
