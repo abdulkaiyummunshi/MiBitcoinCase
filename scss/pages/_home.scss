@@ -116,8 +116,8 @@
     }
 }
 
-/*--Testimonial Start---*/
-.mb_testimonial_section{
+/*--blockquote Start---*/
+.mb_blockquote_section{
     padding: 130px 0px 107px 0px;
     position: relative;
     .mb_shape{
@@ -127,7 +127,7 @@
         @include transformX(-50%);
         pointer-events: none;
     }
-    .mb_testimonial_content{
+    .mb_blockquote_content{
         @include flex(column, center, center);
         .mb_profile_image{
             width: 300px;
@@ -182,21 +182,18 @@
     }
 
 }
-/*--Testimonial End---*/
+/*--blockquote End---*/
 
-.mb_branding_wrapper_ltr, .mb_branding_wrapper_rtl {
-    padding: 20px 0;
-    
-    .slick-slide {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 10px;
+/*--Our Features Start---*/
+.mb_our_features{
+    .mb_heading_content{
+        background-color: $text_color;
+        height: 100%;
+        @include flex(column, space-between, flex-start);
+        padding: 80px 60px;
+    }
+    .mb_feature_heading{
+        background-color: $text_color;
     }
 }
-
-.mb_branding_wrapper_ltr .slick-slide:hover, .mb_branding_wrapper_rtl .slick-slide:hover {
-   
-    transform: scale(1.05);
-    opacity: 0.8;
-}
+/*--Our Features End---*/
