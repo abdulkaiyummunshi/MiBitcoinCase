@@ -32315,7 +32315,7 @@ header {
   }
 }
 .rb_faq_section .accordion .accordion-item.active .accordion-header {
-  background: #FFF;
+  background: #fff;
 }
 .rb_faq_section .accordion .accordion-item.active .accordion-header h3 {
   color: #031A26;
@@ -32323,6 +32323,7 @@ header {
 .rb_faq_section .accordion .accordion-item.active .accordion-header .icon {
   transform: rotate(180deg);
   background-color: #FF9916;
+  color: #fff;
 }
 .rb_faq_section .accordion .accordion-item.active .accordion-content {
   height: auto;

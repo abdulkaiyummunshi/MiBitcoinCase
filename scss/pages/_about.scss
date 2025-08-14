@@ -278,15 +278,15 @@
             }
             &.active {
                 .accordion-header {
-                    background: #FFF;
+                    background: $white;
                     h3{
                         color: #031A26;
-                    }
-                    
+                    }                    
 
                     .icon {
                         transform: rotate(180deg); 
                         background-color: #FF9916;
+                        color: $white;
                     }
                 }
                 .accordion-content {
