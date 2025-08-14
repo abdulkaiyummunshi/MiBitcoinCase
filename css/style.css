@@ -32141,6 +32141,16 @@ header {
   line-height: normal;
 }
 
+.rb-p15 {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.7;
+}
+
 .common_input .form-group label {
   display: block;
   color: #031A26;
@@ -32289,15 +32299,6 @@ header {
   transition: color 0.3s;
   cursor: pointer;
 }
-.common_input .rememberMe {
-  color: #142137;
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  margin-top: 10px;
-}
 
 .rb_list ul li {
   margin-bottom: 30px;
@@ -32417,6 +32418,34 @@ header {
   border-radius: 14px;
   border: 1px solid rgba(3, 26, 38, 0.1);
   background: #FFF;
+}
+
+.rb_blog1 .container {
+  max-width: 1760px;
+}
+.rb_blog1 .rb_blog_card {
+  border-radius: 14px;
+  border: 1px solid rgba(3, 26, 38, 0.1);
+  background: #FFF;
+  padding: 10px;
+}
+.rb_blog1 .rb_blog_card .rb_thumb img {
+  width: 100%;
+  border-radius: 14px;
+}
+.rb_blog1 .rb_blog_card .rb_content {
+  padding: 0 12px;
+}
+.rb_blog1 .rb_blog_card .rb_content .rb_meta {
+  border-bottom: 1px solid rgba(3, 26, 38, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.rb_blog1 .rb_blog_card .rb_content .rb_meta i {
+  padding-right: 5px;
+  color: #031A26;
+  opacity: 0.7;
 }
 
 * {
