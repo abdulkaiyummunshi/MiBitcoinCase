@@ -3,6 +3,22 @@
         border-radius: 24px;
         background: #FFEED8;
         padding: 120px 75px;
+        .rb_contact_area {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+            }
+        }
+        .rb_contact_form {
+            padding: 54px 44px;
+            border-radius: 14px;
+            border: 1px solid rgba(3, 26, 38, 0.10);
+            background: #FFF;
+        }
 
     }
 }
