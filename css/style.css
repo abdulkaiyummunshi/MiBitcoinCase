@@ -26278,6 +26278,93 @@
 
   .pr-365 {
     padding-right: 304.1666666667px; } }
+/*---Fonts Variables--*/
+/*---Theme color Variables--*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "Inter", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  padding: 0px;
+  margin: 0px; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+.text-right {
+  text-align: right !important; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+.mb_count_properties {
+  border: 1px solid rgba(3, 26, 38, 0.1);
+  border-radius: 100px;
+  padding: 4px 12px;
+  width: fit-content;
+  min-width: 136px; }
+  .mb_count_properties span {
+    font-weight: 500;
+    font-size: 14px;
+    color: #031a26;
+    display: inline-block; }
+    .mb_count_properties span:first-child {
+      padding-left: 8px;
+      position: relative; }
+      .mb_count_properties span:first-child::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        left: 0px;
+        width: 4px;
+        height: 4px;
+        background-color: #0bb230;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%; }
+  .mb_count_properties.style_1 {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.14);
+    min-width: 124px;
+    padding: 2px;
+    gap: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .mb_count_properties.style_1 span {
+      color: #fff;
+      font-size: 12px; }
+      .mb_count_properties.style_1 span:nth-child(1) {
+        padding-left: 10px; }
+      .mb_count_properties.style_1 span::before {
+        background-color: #ff9916; }
+
 /*------------------------------------
       3.4 Mobile menu
 ----------------------------------*/
@@ -26383,8 +26470,6 @@
   background: none;
   margin-top: 20px; }
 
-/*---Fonts Variables--*/
-/*---Theme color Variables--*/
 /*------------------------------------
 		3.1 Header Style 1
 ----------------------------------*/
@@ -27901,6 +27986,19 @@ header {
     -o-border-radius: 20px;
     height: 100%;
     object-fit: cover; }
+  .mb_popular_housing .mb_house_card:hover .mb_overly_content {
+    background-color: rgba(3, 26, 38, 0.8); }
+  .mb_popular_housing .mb_house_card:hover .mb_arrow_right {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+    visibility: visible;
+    opacity: 1; }
 .mb_popular_housing .mb_overly_content {
   position: absolute;
   border-radius: 20px;
@@ -27911,6 +28009,7 @@ header {
   top: 0px;
   left: 0px;
   width: 100%;
+  transition: all 0.4s ease;
   height: 100%;
   background: linear-gradient(180deg, rgba(3, 26, 38, 0) 21%, #031a26 100%);
   padding: 40px 30px 34px 30px;
@@ -27918,12 +28017,54 @@ header {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 10px; }
+  gap: 10px;
+  overflow: hidden; }
+.mb_popular_housing .mb_arrow_right {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transition: all 0.4 ease; }
+  .mb_popular_housing .mb_arrow_right span {
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #fff;
+    color: #040618;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.4s ease; }
+    .mb_popular_housing .mb_arrow_right span i {
+      transition: all 0.4s ease;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg); }
+    .mb_popular_housing .mb_arrow_right span:hover {
+      background-color: #ff9916;
+      color: #fff; }
+      .mb_popular_housing .mb_arrow_right span:hover i {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg); }
 .mb_popular_housing .mb_house_reviews {
   position: absolute;
   top: 20px;
   right: 20px;
-  padding: 4px 8px;
+  padding: 2px 8px;
   border-radius: 30px;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -27936,63 +28077,175 @@ header {
   gap: 5px;
   background-color: #fff; }
   .mb_popular_housing .mb_house_reviews span {
-    color: #ff9916; }
+    color: #ff9916;
+    font-size: 12px; }
   .mb_popular_housing .mb_house_reviews p {
     font-weight: 500;
-    font-size: 13px;
+    font-size: 11px;
     color: #747d87; }
-.mb_popular_housing .title h4 {
+.mb_popular_housing .title h4 a {
   font-weight: 600;
   font-size: 20px;
   color: #fff;
-  margin-top: 3px; }
+  transition: all 0.4s ease; }
+  .mb_popular_housing .title h4 a:hover {
+    color: #ff9916; }
 .mb_popular_housing .describtion p {
   font-weight: 500;
   font-size: 15px;
   color: rgba(255, 255, 255, 0.8); }
 
 /*--Popular Housing End---*/
-.mb_count_properties {
-  border: 1px solid rgba(3, 26, 38, 0.1);
-  border-radius: 100px;
-  padding: 4px 12px;
-  width: fit-content;
-  min-width: 136px; }
-  .mb_count_properties span {
+/*--Selling Start---*/
+.mb_selling .mb_selling_contains {
+  background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
+  border-radius: 14px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px 0px 15px; }
+  .mb_selling .mb_selling_contains .mb_left_contains {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px; }
+  .mb_selling .mb_selling_contains .mb_sell_img {
+    width: 238px;
+    height: 100px;
+    position: relative; }
+    .mb_selling .mb_selling_contains .mb_sell_img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      bottom: -3px; }
+  .mb_selling .mb_selling_contains h4 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #031a26; }
+  .mb_selling .mb_selling_contains p {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     color: #031a26;
-    display: inline-block; }
-    .mb_count_properties span:first-child {
-      padding-left: 8px;
-      position: relative; }
-      .mb_count_properties span:first-child::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        left: 0px;
-        width: 4px;
-        height: 4px;
-        background-color: #0bb230;
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%; }
-  .mb_count_properties.style_1 {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.14); }
-    .mb_count_properties.style_1 span {
-      color: #fff; }
-      .mb_count_properties.style_1 span::before {
-        background-color: #ff9916; }
+    opacity: 0.7;
+    margin-top: 10px; }
 
+/*--Selling End---*/
+/*--Our Agents Start---*/
+.mb_our_agents .mb_our_agents_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .mb_our_agents .mb_our_agents_card h4 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #031a26; }
+  .mb_our_agents .mb_our_agents_card p {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #031a26;
+    opacity: 0.7;
+    margin-top: 14px; }
+  .mb_our_agents .mb_our_agents_card .mb_agent_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+  .mb_our_agents .mb_our_agents_card .mb_agent_number {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px; }
+    .mb_our_agents .mb_our_agents_card .mb_agent_number span {
+      border-radius: 30px;
+      border: 1px solid rgba(3, 26, 38, 0.16);
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      color: #031a26;
+      transition: all 0.4s ease; }
+    .mb_our_agents .mb_our_agents_card .mb_agent_number a {
+      transition: all 0.4s ease;
+      font-weight: 500;
+      font-size: 16px;
+      color: #031a26;
+      opacity: 0.7; }
+      .mb_our_agents .mb_our_agents_card .mb_agent_number a:hover {
+        color: #ff9916; }
+.mb_our_agents .mb_hover_img {
+  width: 310px;
+  transition: all 0.4s ease;
+  height: 350px;
+  position: absolute;
+  top: -128px;
+  left: 100px;
+  visibility: hidden;
+  opacity: 0; }
+  .mb_our_agents .mb_hover_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px; }
+.mb_our_agents .mb_arrow_btn a {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  transition: all 0.4s ease;
+  background-color: #031a26;
+  color: #fff;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 36px; }
+  .mb_our_agents .mb_arrow_btn a i {
+    transition: all 0.4s ease;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg); }
+.mb_our_agents .row.style_1 {
+  padding: 33px 0px;
+  border-top: 1px solid rgba(3, 26, 38, 0.1);
+  border-bottom: 1px solid rgba(3, 26, 38, 0.1); }
+  .mb_our_agents .row.style_1:hover .mb_hover_img {
+    visibility: visible;
+    opacity: 1; }
+  .mb_our_agents .row.style_1:hover .mb_agent_number span {
+    background-color: #ff9916;
+    color: #fff;
+    border: transparent; }
+  .mb_our_agents .row.style_1:hover .mb_arrow_btn a {
+    background-color: #ff9916;
+    color: #fff; }
+    .mb_our_agents .row.style_1:hover .mb_arrow_btn a i {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg); }
+
+/*--Our Agents End---*/
 .rb_heading_area .rb_subtitle {
   margin-bottom: 22px;
   display: inline-flex;
@@ -28432,37 +28685,5 @@ header {
   .rb_blog1 .rb_blog_card:hover {
     background: #FFEED8;
     transition: all 0.4s ease; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif; }
-
-html {
-  scroll-behavior: smooth; }
-
-a {
-  text-decoration: none; }
-
-ul {
-  padding: 0px;
-  margin: 0px; }
-
-ul,
-ol {
-  list-style-type: none; }
-
-.text-right {
-  text-align: right !important; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

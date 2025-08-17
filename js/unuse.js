@@ -4,7 +4,7 @@
     $(document).ready(function () {
         windowOn.on('load', function () {
         });
-        
+
         //>> Mobile Menu Js Start <<//
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
@@ -28,6 +28,8 @@
             $(".df-search-area").removeClass("opened");;
             $(".body-overlay").removeClass("opened");
         });
+
+
         //>> Sticky Menu <<//
         windowOn.on('scroll', function () {
             var scroll = windowOn.scrollTop();
@@ -37,6 +39,8 @@
                 $("#header-sticky").addClass("sticky_top");
             }
         });
+
+
         //>> offcanvas bar <<//
         $(".tp-offcanvas-toogle").on('click', function () {
             $(".tp-offcanvas").addClass("tp-offcanvas-open");
@@ -49,108 +53,108 @@
 
         // The Plan 
         function thePlan() {
-                $('.process-step:not(.active) .step-content').hide();
-                $('.process-step.active .step-content').show();
-                $('.process-step.active .step-header .arrow-icon').removeClass('fa-angle-down').addClass('fa-angle-up');
-                $('.process-step .step-header').on('click', function (e) {
-                    const $parentStep = $(this).closest('.process-step');
-                    const $content = $parentStep.find('.step-content');
-                    const $arrow = $parentStep.find('.arrow-icon');
-                    if ($parentStep.hasClass('active')) {
-                        $parentStep.removeClass('active');
-                        $content.slideUp(300); 
-                        $arrow.removeClass('fa-angle-up').addClass('fa-angle-down');
-                    } else {
-                        $('.process-step.active').not($parentStep).each(function () {
-                            const $otherStep = $(this);
-                            const $otherContent = $otherStep.find('.step-content');
-                            const $otherArrow = $otherStep.find('.arrow-icon');
-                            $otherStep.removeClass('active');
-                            $otherContent.slideUp(300);
-                            $otherArrow.removeClass('fa-angle-up').addClass('fa-angle-down');
-                        });
-                        $parentStep.addClass('active');
-                        $content.slideDown(300); 
-                        $arrow.removeClass('fa-angle-down').addClass('fa-angle-up');
-                    }
-                });
-            
+            $('.process-step:not(.active) .step-content').hide();
+            $('.process-step.active .step-content').show();
+            $('.process-step.active .step-header .arrow-icon').removeClass('fa-angle-down').addClass('fa-angle-up');
+            $('.process-step .step-header').on('click', function (e) {
+                const $parentStep = $(this).closest('.process-step');
+                const $content = $parentStep.find('.step-content');
+                const $arrow = $parentStep.find('.arrow-icon');
+                if ($parentStep.hasClass('active')) {
+                    $parentStep.removeClass('active');
+                    $content.slideUp(300);
+                    $arrow.removeClass('fa-angle-up').addClass('fa-angle-down');
+                } else {
+                    $('.process-step.active').not($parentStep).each(function () {
+                        const $otherStep = $(this);
+                        const $otherContent = $otherStep.find('.step-content');
+                        const $otherArrow = $otherStep.find('.arrow-icon');
+                        $otherStep.removeClass('active');
+                        $otherContent.slideUp(300);
+                        $otherArrow.removeClass('fa-angle-up').addClass('fa-angle-down');
+                    });
+                    $parentStep.addClass('active');
+                    $content.slideDown(300);
+                    $arrow.removeClass('fa-angle-down').addClass('fa-angle-up');
+                }
+            });
+
         }
         thePlan();
-       
+
         // Verified Talent
         function verifiedTalent() {
-                $('.accordion-item .talent_header').on('click', function () {
-                    const clickedItem = $(this).closest('.accordion-item');
-                    const content = clickedItem.find('.talent_contains');
+            $('.accordion-item .talent_header').on('click', function () {
+                const clickedItem = $(this).closest('.accordion-item');
+                const content = clickedItem.find('.talent_contains');
 
-                    if (clickedItem.hasClass('active')) {
-                        content.css('height', content.prop('scrollHeight') + 'px');
+                if (clickedItem.hasClass('active')) {
+                    content.css('height', content.prop('scrollHeight') + 'px');
+                    setTimeout(() => {
+                        content.css('height', '0px');
+                    }, 10);
+                    clickedItem.removeClass('active');
+                } else {
+                    $('.accordion-item.active').not(clickedItem).each(function () {
+                        const activeContent = $(this).find('.talent_contains');
+                        activeContent.css('height', activeContent.prop('scrollHeight') + 'px');
                         setTimeout(() => {
-                            content.css('height', '0px');
+                            activeContent.css('height', '0px');
                         }, 10);
-                        clickedItem.removeClass('active');
-                    } else {
-                        $('.accordion-item.active').not(clickedItem).each(function () {
-                            const activeContent = $(this).find('.talent_contains');
-                            activeContent.css('height', activeContent.prop('scrollHeight') + 'px');
-                            setTimeout(() => {
-                                activeContent.css('height', '0px');
-                            }, 10);
-                            $(this).removeClass('active');
-                        });
+                        $(this).removeClass('active');
+                    });
 
-                        clickedItem.addClass('active');
-                        const scrollHeight = content.prop('scrollHeight');
-                        content.css('height', '0px'); 
-                        setTimeout(() => {
-                            content.css('height', scrollHeight + 'px');
-                        }, 10);
+                    clickedItem.addClass('active');
+                    const scrollHeight = content.prop('scrollHeight');
+                    content.css('height', '0px');
+                    setTimeout(() => {
+                        content.css('height', scrollHeight + 'px');
+                    }, 10);
 
-                        content.one('transitionend', function () {
-                            $(this).css('height', '');
-                        });
-                    }
-                });
-            
+                    content.one('transitionend', function () {
+                        $(this).css('height', '');
+                    });
+                }
+            });
+
         }
         verifiedTalent();
 
         // FAQ
         function Faq() {
-                $('.accordion-item .accordion-header').on('click', function () {
-                    const clickedItem = $(this).closest('.accordion-item');
-                    const content = clickedItem.find('.accordion-content'); 
+            $('.accordion-item .accordion-header').on('click', function () {
+                const clickedItem = $(this).closest('.accordion-item');
+                const content = clickedItem.find('.accordion-content');
 
-                    $('.accordion-item.active').not(clickedItem).each(function () {
-                        const activeContent = $(this).find('.accordion-content'); 
-                        activeContent.css('height', activeContent.prop('scrollHeight') + 'px');
-                        setTimeout(() => {
-                            activeContent.css('height', '0px');
-                            $(this).removeClass('active');
-                        }, 10);
-                    });
-
-                    if (clickedItem.hasClass('active')) {
-                        content.css('height', content.prop('scrollHeight') + 'px');
-                        setTimeout(() => {
-                            content.css('height', '0px');
-                            clickedItem.removeClass('active');
-                        }, 10);
-                    } else {
-                        clickedItem.addClass('active');
-                        const scrollHeight = content.prop('scrollHeight');
-                        content.css('height', '0px');
-                        setTimeout(() => {
-                            content.css('height', scrollHeight + 'px');
-                        }, 10);
-
-                          content.one('transitionend', function () {
-                            $(this).css('height', '');
-                        });
-                    }
+                $('.accordion-item.active').not(clickedItem).each(function () {
+                    const activeContent = $(this).find('.accordion-content');
+                    activeContent.css('height', activeContent.prop('scrollHeight') + 'px');
+                    setTimeout(() => {
+                        activeContent.css('height', '0px');
+                        $(this).removeClass('active');
+                    }, 10);
                 });
-            
+
+                if (clickedItem.hasClass('active')) {
+                    content.css('height', content.prop('scrollHeight') + 'px');
+                    setTimeout(() => {
+                        content.css('height', '0px');
+                        clickedItem.removeClass('active');
+                    }, 10);
+                } else {
+                    clickedItem.addClass('active');
+                    const scrollHeight = content.prop('scrollHeight');
+                    content.css('height', '0px');
+                    setTimeout(() => {
+                        content.css('height', scrollHeight + 'px');
+                    }, 10);
+
+                    content.one('transitionend', function () {
+                        $(this).css('height', '');
+                    });
+                }
+            });
+
         }
         Faq();
 
@@ -205,18 +209,18 @@
         }
         textSlider()
 
-        function Book(){
-                $('.mb_how_work_slider').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    vertical: true, 
-                    verticalSwiping: true,
-                    arrows: true,
-                    dots: true,
-                    dotsClass: "mb_how_work_dots",
-                    prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-up"></i></span>`,
-                    nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-down"></i></span>`,
-                });
+        function Book() {
+            $('.mb_how_work_slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                vertical: true,
+                verticalSwiping: true,
+                arrows: true,
+                dots: true,
+                dotsClass: "mb_how_work_dots",
+                prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-up"></i></span>`,
+                nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-down"></i></span>`,
+            });
         }
         Book()
 
@@ -258,7 +262,7 @@
             nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
             responsive: [
                 {
-                    breakpoint: 768, 
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
@@ -300,7 +304,7 @@
             }
 
             const talentImage = document.querySelectorAll(".talent_image img")
-            if(talentImage.length > 0){
+            if (talentImage.length > 0) {
                 gsap.from(talentImage, {
                     scrollTrigger: {
                         trigger: ".talent_image",
@@ -387,7 +391,7 @@
             }
         }
         textAnimation()
-      
+
         gsap.registerPlugin(ScrollSmoother, ScrollTrigger, SplitText);
 
         ScrollSmoother.create({
@@ -397,7 +401,7 @@
             effects: true,
             smoothTouch: 0.1,
         });
-        function instructorImage(){
+        function instructorImage() {
             const blogNewsContains = document.querySelectorAll(".instructor_img .image img");
             if (blogNewsContains.length > 0) {
                 gsap.from(blogNewsContains, {
@@ -413,7 +417,7 @@
             }
         }
         instructorImage()
-        function studentCard(){
+        function studentCard() {
             const blogNewsContains = document.querySelectorAll(".student_card");
             if (blogNewsContains.length > 0) {
                 gsap.from(blogNewsContains, {
@@ -428,9 +432,9 @@
             }
         }
         studentCard()
-        function imgAni(){
+        function imgAni() {
             const whoWeImage = document.querySelectorAll(".who_we_images .child_image img, .who_we_images .who_main_image img")
-            if(whoWeImage.length > 0){
+            if (whoWeImage.length > 0) {
                 gsap.from(whoWeImage, {
                     scrollTrigger: {
                         trigger: ".who_we_images",
@@ -447,13 +451,13 @@
                 });
 
             }
-            
+
         }
         imgAni()
-       
-        function businessImg(){
+
+        function businessImg() {
             const businessImage = document.querySelectorAll(".business_image .business_main_img img")
-            if(businessImage.length > 0){
+            if (businessImage.length > 0) {
                 gsap.from(businessImage, {
                     scrollTrigger: {
                         trigger: ".business_image",
@@ -472,10 +476,10 @@
             }
         }
         businessImg()
-    
-        function listAnimation(){
+
+        function listAnimation() {
             const listAni = document.querySelectorAll(".about_list ul li")
-            if(listAni.length > 0){
+            if (listAni.length > 0) {
                 gsap.from(".about_list ul li", {
                     scrollTrigger: {
                         trigger: ".about_list",
@@ -485,14 +489,14 @@
                     y: 50,
                     opacity: 0,
                     duration: 1,
-                    stagger: 0.2, 
+                    stagger: 0.2,
                     ease: "power2.out",
-                    
+
                 });
 
             }
         }
-        
+
         listAnimation()
         // Scroll-triggered Counter Animation
         $(".about_count").each(function () {
@@ -564,7 +568,7 @@
                 }
             }
         });
-    
+
         $('select').niceSelect();
     });
 
