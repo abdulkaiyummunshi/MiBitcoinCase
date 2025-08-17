@@ -33104,7 +33104,19 @@ header {
   transition: all 0.4s ease;
 }
 
+.footer {
+  position: relative;
+}
+.footer .container-fluid {
+  position: relative;
+}
+.footer .footer_thumb img {
+  width: 100%;
+  position: absolute;
+  padding-right: 23px;
+}
 .footer .section-padding {
+  position: relative;
   padding: 107px 75px 34px;
   border-radius: 24px;
   background: rgba(3, 26, 38, 0.9);

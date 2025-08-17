@@ -1,6 +1,18 @@
 
 .footer {
+  position: relative;
+  .container-fluid {
+    position: relative;
+  }
+  .footer_thumb {
+    img {
+      width: 100%;
+      position: absolute;
+      padding-right: 23px;
+    }
+  }
   .section-padding {
+    position: relative;
     padding: 107px 75px 34px;
     border-radius: 24px;
     background: rgba(3, 26, 38, 0.90);
