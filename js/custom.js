@@ -249,8 +249,8 @@
             prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
             nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
         });
-        $('.partner_testimonial_slider').slick({
-            slidesToShow: 2,
+        $('.mb_popular_house').slick({
+            slidesToShow: 5,
             slidesToScroll: 1,
             arrows: true,
             autoplay: true,

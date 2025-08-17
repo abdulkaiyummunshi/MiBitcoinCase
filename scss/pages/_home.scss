@@ -265,7 +265,6 @@
         padding: 150px 100px;
         background-color: #ffeed8;
         @include border-radius(24px);
-
     }
         .left-arrow{
             @include md{
@@ -281,6 +280,7 @@
         line-height: 44px;
         text-align: center;
         display: block;
+        cursor: pointer;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
@@ -316,6 +316,7 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         color: #020626;
+        cursor: pointer;
         position: absolute;
         right: 5px;      
         background-color: $white;
@@ -588,9 +589,76 @@
 
 /*--Popular Housing Start---*/
 .mb_popular_housing{
+    .slick-slide{
+        margin: 0px 15px;
+    }
+     .left-arrow{
+            @include md{
+                display: none !important;
+            }
+            @include sm{
+                display: none !important;
+            }
+        border-radius: 50%;
+        border: 1px solid $border;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        color: #020626;
+        position: absolute;
+        top: 50%;
+        @include transformY(-50%);
+        left: 0px;
+        background-color: $white;
+        z-index: 10;
+        @include transition(0.4s);
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
+}
+   .right-arrow{
+            @include md{
+                display: none !important;
+            }
+            @include sm{
+                display: none !important;
+            }
+            border: 1px solid $border;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        display: block;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        color: #020626;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;      
+        background-color: $white;
+        top: 50%;
+        @include transformY(-50%);
+
+        z-index: 10;
+        @include transition(0.4s);
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
+    }
     .mb_house_card{
         width: 100%;
-        max-width: 300px;
         @include border-radius(20px);
         position: relative;
         img{
@@ -608,6 +676,15 @@
         width: 100%;
         height: 100%;
         background: linear-gradient(180deg, rgba(3, 26, 38, 0) 21%, #031a26 100%);
+        padding: 40px 30px 34px 30px;
+        @include flex(column, flex-end, flex-start);
+        gap: 10px;
+
+    }
+    .mb_arrow_right{
+        span{
+            
+        }
     }
     .mb_house_reviews{
         position: absolute;
@@ -627,7 +704,61 @@
             color: #747d87;
         }
     }
+    .title{
+        h4{
+            font-weight: 600;
+            font-size: 20px;
+            color: $white;
+            margin-top: 3px;
+        }
+    }
+    .describtion{
+        p{
+            font-weight: 500;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
 }
 /*--Popular Housing End---*/
 
 
+ .mb_count_properties{
+            border: 1px solid rgba(3, 26, 38, 0.1);
+            border-radius: 100px;
+            padding: 4px 12px;
+            width: fit-content;
+            min-width: 136px;
+            span{
+                font-weight: 500;
+                font-size: 14px;
+                color: #031a26;
+                display: inline-block;
+                &:first-child{
+                    padding-left: 8px;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        @include transformY(-50%);
+                        left: 0px;
+                        width: 4px;
+                        height: 4px;
+                        background-color: #0bb230;
+                        @include border-radius(50%);
+                    }
+                }
+            }
+            &.style_1{
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                background: rgba(255, 255, 255, 0.14);
+                span{
+                    color: $white;
+                    &::before{
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
