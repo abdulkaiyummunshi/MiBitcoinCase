@@ -1,10 +1,36 @@
 .rb_testimonial1 {
+    .container {
+        max-width: 1754px;
+    }
     .rb_testi_card {
-        // .rb_thumb {
-
-        // }
-        .rb_content {
-
+        position: relative;
+        .rb_thumb {
+            border-radius: 14px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                border-radius: 14px;
+                background: linear-gradient(180deg, rgba(3, 26, 38, 0.00) 0%, #031A26 100%);
+            }
+            img {
+                width: 100%;
+                border-radius: 14px;
+            }
         }
-}
+        .rb_content {
+            position: absolute;
+            bottom: 0;
+            padding: 34px;
+            .rb_desc {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+                padding-bottom: 30px;
+                margin-bottom: 22px;
+            }
+            .rb_label {
+                text-transform: uppercase;
+            }
+        }
+    }
 }

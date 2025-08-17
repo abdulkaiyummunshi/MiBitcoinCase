@@ -82,7 +82,15 @@
     line-height: 30px;
     &.style1 {
         color: rgba(255, 255, 255, 0.60);
-    } 
+    }
+    &.style2 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px; 
+    }  
 }
 .rb-p16 {
     color: #031A26;
@@ -100,6 +108,14 @@
         font-weight: 600;
         line-height: normal;
     }
+    &.style2 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 187.5% */
+    }
 }
 .rb-p15 {
     color: #031A26;
@@ -109,6 +125,15 @@
     font-weight: 500;
     line-height: normal;
     opacity: 0.7;
+    &.style1 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; 
+        opacity: 0.7;
+    }
 }
 
 
