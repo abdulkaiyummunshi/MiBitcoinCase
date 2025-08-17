@@ -27307,7 +27307,7 @@ header {
     background-color: #fff;
     color: #031a26; }
 
-.hero_area .mb_hero_bg {
+.mb_hero_area .mb_hero_bg {
   height: 959px;
   background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
   border-radius: 20px;
@@ -27316,7 +27316,7 @@ header {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   position: relative; }
-  .hero_area .mb_hero_bg .mb_hero_contain {
+  .mb_hero_area .mb_hero_bg .mb_hero_contain {
     height: 100%;
     width: 100%;
     background-color: red;
@@ -27324,7 +27324,7 @@ header {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center; }
-  .hero_area .mb_hero_bg .mb_bg_blur {
+  .mb_hero_area .mb_hero_bg .mb_bg_blur {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -27340,14 +27340,14 @@ header {
     background-size: cover;
     width: 100%;
     height: 100%; }
-  .hero_area .mb_hero_bg .mb_search_bar form {
+  .mb_hero_area .mb_hero_bg .mb_search_bar form {
     max-width: 670px;
     width: 100%;
     border-radius: 50px;
     background-color: #fff;
     height: 72px;
     line-height: 72px; }
-    .hero_area .mb_hero_bg .mb_search_bar form input {
+    .mb_hero_area .mb_hero_bg .mb_search_bar form input {
       border-radius: 50px;
       width: 90%;
       border: none;
@@ -27356,9 +27356,9 @@ header {
       font-weight: 500;
       font-size: 16px;
       color: #031a26; }
-      .hero_area .mb_hero_bg .mb_search_bar form input::placeholder {
+      .mb_hero_area .mb_hero_bg .mb_search_bar form input::placeholder {
         color: rgba(3, 26, 38, 0.7); }
-    .hero_area .mb_hero_bg .mb_search_bar form button {
+    .mb_hero_area .mb_hero_bg .mb_search_bar form button {
       width: 52px;
       border-radius: 100px;
       -moz-border-radius: 100px;
@@ -27370,9 +27370,9 @@ header {
       text-align: center;
       color: #fff;
       background-color: #031a26; }
-  .hero_area .mb_hero_bg .header_area {
+  .mb_hero_area .mb_hero_bg .header_area {
     position: relative; }
-  .hero_area .mb_hero_bg .mb_house {
+  .mb_hero_area .mb_hero_bg .mb_house {
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -27382,7 +27382,7 @@ header {
     -webkit-border-radius: 0px 0px 20px 0px;
     -ms-border-radius: 0px 0px 20px 0px;
     -o-border-radius: 0px 0px 20px 0px; }
-    .hero_area .mb_hero_bg .mb_house img {
+    .mb_hero_area .mb_hero_bg .mb_house img {
       width: fit-content;
       height: fit-content;
       object-fit: contain;
@@ -27391,7 +27391,7 @@ header {
       -webkit-border-radius: 0px 0px 20px 0px;
       -ms-border-radius: 0px 0px 20px 0px;
       -o-border-radius: 0px 0px 20px 0px; }
-  .hero_area .mb_hero_bg .mb_group_house {
+  .mb_hero_area .mb_hero_bg .mb_group_house {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -27401,7 +27401,7 @@ header {
     -ms-border-radius: 0px 0px 0px 20px;
     -o-border-radius: 0px 0px 0px 20px;
     z-index: 1; }
-    .hero_area .mb_hero_bg .mb_group_house img {
+    .mb_hero_area .mb_hero_bg .mb_group_house img {
       width: fit-content;
       height: fit-content;
       object-fit: contain;
@@ -27410,11 +27410,11 @@ header {
       -webkit-border-radius: 0px 0px 0px 20px;
       -ms-border-radius: 0px 0px 0px 20px;
       -o-border-radius: 0px 0px 0px 20px; }
-  .hero_area .mb_hero_bg .mb_shape {
+  .mb_hero_area .mb_hero_bg .mb_shape {
     position: absolute;
     top: -120px;
     left: -62px; }
-    .hero_area .mb_hero_bg .mb_shape img {
+    .mb_hero_area .mb_hero_bg .mb_shape img {
       width: fit-content;
       height: fit-content;
       object-fit: contain;
@@ -27423,7 +27423,7 @@ header {
       -webkit-border-radius: 0px 0px 0px 20px;
       -ms-border-radius: 0px 0px 0px 20px;
       -o-border-radius: 0px 0px 0px 20px; }
-  .hero_area .mb_hero_bg .group_house {
+  .mb_hero_area .mb_hero_bg .group_house {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -27432,7 +27432,7 @@ header {
     -webkit-border-radius: 0px 0px 0px 20px;
     -ms-border-radius: 0px 0px 0px 20px;
     -o-border-radius: 0px 0px 0px 20px; }
-    .hero_area .mb_hero_bg .group_house img {
+    .mb_hero_area .mb_hero_bg .group_house img {
       width: fit-content;
       height: fit-content;
       object-fit: contain;
@@ -27441,7 +27441,7 @@ header {
       -webkit-border-radius: 0px 0px 0px 20px;
       -ms-border-radius: 0px 0px 0px 20px;
       -o-border-radius: 0px 0px 0px 20px; }
-  .hero_area .mb_hero_bg .mb_bitcoin {
+  .mb_hero_area .mb_hero_bg .mb_bitcoin {
     position: absolute;
     top: -165px;
     right: 33%; }
@@ -28246,6 +28246,48 @@ header {
       -o-transform: rotate(0deg); }
 
 /*--Our Agents End---*/
+/*--MiBitcoin vs Brokerage Start---*/
+.mb_mibitcoin_casa .bg_primary {
+  background-color: #ffeed8;
+  padding: 7px 0px; }
+.mb_mibitcoin_casa .row.style_2 {
+  border-bottom: 1px solid rgba(3, 26, 38, 0.1); }
+  .mb_mibitcoin_casa .row.style_2:last-child {
+    border-bottom: 1px solid transparent; }
+.mb_mibitcoin_casa .mb_casa_brokerage {
+  border: 1px solid rgba(3, 26, 38, 0.1);
+  border-radius: 24px;
+  background-color: #ffeed8;
+  padding: 23px 40px 40px 40px; }
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #031a26; }
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #031a26; }
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #031a26;
+    opacity: 0.7; }
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_check {
+    color: #12cc3b;
+    font-size: 26px; }
+    .mb_mibitcoin_casa .mb_casa_brokerage .mb_check.style_1 {
+      color: #d12e46; }
+.mb_mibitcoin_casa .mb_casa_brokerage_contains {
+  padding: 0px 40px;
+  background-color: #fff;
+  border: 1px solid rgba(3, 26, 38, 0.1);
+  border-radius: 14px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px; }
+
+/*--MiBitcoin vs Brokerage End---*/
 .rb_heading_area .rb_subtitle {
   margin-bottom: 22px;
   display: inline-flex;
