@@ -33225,6 +33225,9 @@ header {
   color: #FFF;
   text-decoration: underline;
 }
+.footer .rb_social_links {
+  padding-left: 80px;
+}
 .footer .rb_social_links a {
   width: 40px;
   height: 40px;
