@@ -207,7 +207,7 @@
                 });
             });
         }
-        textSlider()
+        // textSlider()
 
         function Book() {
             $('.mb_how_work_slider').slick({
