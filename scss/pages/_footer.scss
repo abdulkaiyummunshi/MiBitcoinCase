@@ -35,7 +35,7 @@
         border: 1px solid rgba(255, 255, 255, 0.14);
         width: 100%;
         height: 54px;
-        padding: 21px 24px;
+        padding: 21px 52px 21px 24px;
         outline: none;
         box-sizing: border-box;
         background: transparent;
@@ -125,11 +125,11 @@
     font-weight: 600;
     line-height: 44px; 
     padding: 0;
+    &:hover {
+      color: #FFF;
+      text-decoration: underline;
+    }
   }  
-  .footer-menu .nav-link.active {
-    color: #FFF;
-    text-decoration: underline;
-  }
   .rb_social_links {
     padding-left: 80px;
   }
