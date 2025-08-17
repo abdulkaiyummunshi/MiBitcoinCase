@@ -33160,7 +33160,6 @@ header {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 30px; /* 187.5% */
 }
 .footer .rb_label {
   color: #FFF;
@@ -33178,6 +33177,24 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: 30px; /* 150% */
+}
+.footer .rb_star ul {
+  display: inline-flex;
+  gap: 3px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 3px 13px;
+}
+.footer .rb_star ul li i {
+  color: #F59E0B;
+}
+.footer .rb_star .rb_text {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
 }
 .footer .nav.footer-menu {
   display: flex;
@@ -33200,7 +33217,7 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 24px;
-  background: rgba(3, 26, 38, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   display: flex;
   align-items: center;
   justify-content: center;
