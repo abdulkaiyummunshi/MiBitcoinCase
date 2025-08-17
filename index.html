@@ -901,7 +901,7 @@
       <div class="container-fluid">
         <div class="section-padding">
           <div class="row mb-45">
-            <div class="col-8">
+            <div class="col-3">
                 <div class="rb_heading_area">
                   <div class="rb_subtitle style1">
                     <img src="images/icon/dot-sm.svg" alt="svg">Active Listings
@@ -909,11 +909,50 @@
                   <h2 class="rb_title style1">
                     Active Listings
                   </h2>
+                  <!-- <div class="rb_radio_btn">
+                    <button><input type="radio">Buy</button>
+                    <button><input type="radio">Rent</button>
+                  </div> -->
                 </div>
             </div>
+            <div class="col-5 d-flex align-items-end">
+              <div class="rb_radio_btn">
+                <button><input type="radio">Buy</button>
+                <button><input type="radio">Rent</button>
+              </div>
+            </div>
             <div class="col-4 d-flex align-items-end justify-content-end">
-              <div class="btn_wrapper style_1">
-                <a href="#">View All Blogs<span><i class="fa-solid fa-arrow-right"></i></span></a>
+              <div class="d-flex align-items-center gap-2">
+                <div class="rb_dropdown">
+                  <button class="btn_one dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Toronto     All of Toronto
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else</a></li>
+                  </ul>
+                </div>
+                <div class="rb_dropdown">
+                  <button class="btn_one dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
+                    All Communities
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else</a></li>
+                  </ul>
+                </div>
+                <div class="rb_dropdown">
+                  <button class="btn_one dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
+                    All Property Types
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -1052,6 +1091,11 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="col-12 d-flex align-items-end justify-content-center mt-50">
+              <div class="btn_wrapper style_1">
+                <a href="#">View All Active Listings<span><i class="fa-solid fa-arrow-right"></i></span></a>
               </div>
             </div>
           </div>
