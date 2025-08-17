@@ -1,4 +1,10 @@
 .rb_contact1 {
+    position: relative;
+    .contact_shape {
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+    }
     .section_padding {
         border-radius: 24px;
         background: #FFEED8;
@@ -11,6 +17,17 @@
                 display: flex;
                 align-items: center;
                 gap: 14px;
+                a {
+                    color: rgba(3, 26, 38, 0.60);
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 30px; /* 187.5% */
+                    &:hover {
+                        color: #FF9916;
+                    }
+                }
             }
         }
         .rb_contact_form {

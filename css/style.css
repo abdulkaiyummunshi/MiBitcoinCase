@@ -31838,6 +31838,14 @@ header {
   background-color: #fff;
   color: #031a26;
 }
+.btn_wrapper.style_2 a {
+  background-color: #fff;
+  color: #031a26;
+}
+.btn_wrapper.style_2 a span {
+  background-color: #031a26;
+  color: #fff;
+}
 
 .hero_area .mb_hero_bg {
   height: 959px;
@@ -32698,6 +32706,9 @@ header {
   opacity: 0.7;
 }
 
+.common_input {
+  position: relative;
+}
 .common_input .form-group label {
   display: block;
   color: #031A26;
@@ -32786,11 +32797,14 @@ header {
   -webkit-appearance: none;
   -moz-appearance: none;
   /* Add custom arrow */
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23626262' d='M6 8L0 0h12z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 15px center;
   background-size: 12px 8px;
   cursor: pointer;
+}
+.common_input .form-group .nice-select:after {
+  width: 7px;
+  height: 7px;
 }
 .common_input .form-group select:focus {
   outline: none;
@@ -33048,6 +33062,14 @@ header {
   max-width: 291px;
 }
 
+.rb_contact1 {
+  position: relative;
+}
+.rb_contact1 .contact_shape {
+  position: absolute;
+  bottom: 0;
+  left: 42%;
+}
 .rb_contact1 .section_padding {
   border-radius: 24px;
   background: #FFEED8;
@@ -33062,6 +33084,17 @@ header {
   display: flex;
   align-items: center;
   gap: 14px;
+}
+.rb_contact1 .section_padding .rb_contact_area .item a {
+  color: rgba(3, 26, 38, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 187.5% */
+}
+.rb_contact1 .section_padding .rb_contact_area .item a:hover {
+  color: #FF9916;
 }
 .rb_contact1 .section_padding .rb_contact_form {
   padding: 54px 44px;
@@ -33107,55 +33140,32 @@ header {
   color: #031A26;
   opacity: 0.7;
 }
+.rb_blog1 .rb_blog_card .rb_content .rb-t20:hover {
+  color: #FF9916;
+}
 .rb_blog1 .rb_blog_card:hover {
   background: #FFEED8;
   transition: all 0.4s ease;
 }
-.rb_blog1 .rb_blog_card:hover .btn_wrapper a {
-  padding: 12px 4px 12px 30px;
-  background-color: #fff;
-  border-radius: 40px;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
-  font-weight: 600;
-  font-size: 16px;
-  color: #031a26;
-}
-.rb_blog1 .rb_blog_card:hover .btn_wrapper a span {
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
-  text-align: center;
-  background-color: #031a26;
-  color: #fff;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  margin-left: 12px;
-  display: inline-block;
-}
-.rb_blog1 .rb_blog_card:hover .btn_wrapper a span i {
-  transition: all 0.4s ease;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-}
 .rb_blog1 .rb_blog_card:hover .btn_wrapper.style_1 a {
-  background-color: #031a26;
   background: #FF9916;
   color: #fff;
+  transition: all 0.4s ease;
 }
 .rb_blog1 .rb_blog_card:hover .btn_wrapper.style_1 a span {
   background-color: #fff;
   color: #031a26;
 }
 
+.rb_blog2 {
+  position: relative;
+}
+.rb_blog2 .rb_blog2_shape {
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  left: 37px;
+}
 .rb_blog2 .section-padding {
   position: relative;
   padding: 120px 75px 110px;
@@ -33265,6 +33275,9 @@ header {
 .rb_blog2 .rb_blog_card .rb_content .rb_card_link .rb_link i {
   padding-left: 5px;
 }
+.rb_blog2 .rb_blog_card .rb_content .rb_card_link .rb_link:hover {
+  color: #FF9916;
+}
 .rb_blog2 .rb_blog_card .rb_content .rb_card_link .rb_star ul {
   display: inline-flex;
   gap: 3px;
@@ -33274,6 +33287,9 @@ header {
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_card_link .rb_star ul li i {
   color: #F59E0B;
+}
+.rb_blog2 .rb_blog_card .rb_content .rb-t24:hover {
+  color: #FF9916;
 }
 
 .footer {
@@ -33361,6 +33377,9 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: 30px; /* 150% */
+}
+.footer .rb_text:hover {
+  color: #FF9916;
 }
 .footer .rb_star ul {
   display: inline-flex;
