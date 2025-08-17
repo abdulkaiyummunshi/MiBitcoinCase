@@ -28,8 +28,6 @@
             $(".df-search-area").removeClass("opened");;
             $(".body-overlay").removeClass("opened");
         });
-
-
         //>> Sticky Menu <<//
         windowOn.on('scroll', function () {
             var scroll = windowOn.scrollTop();
@@ -39,8 +37,6 @@
                 $("#header-sticky").addClass("sticky_top");
             }
         });
-
-
         //>> offcanvas bar <<//
         $(".tp-offcanvas-toogle").on('click', function () {
             $(".tp-offcanvas").addClass("tp-offcanvas-open");
@@ -50,75 +46,6 @@
             $(".tp-offcanvas").removeClass("tp-offcanvas-open");
             $(".tp-offcanvas-overlay").removeClass("tp-offcanvas-overlay-open");
         });
-
-        // The Plan 
-        function thePlan() {
-                $('.process-step:not(.active) .step-content').hide();
-                $('.process-step.active .step-content').show();
-                $('.process-step.active .step-header .arrow-icon').removeClass('fa-angle-down').addClass('fa-angle-up');
-                $('.process-step .step-header').on('click', function (e) {
-                    const $parentStep = $(this).closest('.process-step');
-                    const $content = $parentStep.find('.step-content');
-                    const $arrow = $parentStep.find('.arrow-icon');
-                    if ($parentStep.hasClass('active')) {
-                        $parentStep.removeClass('active');
-                        $content.slideUp(300); 
-                        $arrow.removeClass('fa-angle-up').addClass('fa-angle-down');
-                    } else {
-                        $('.process-step.active').not($parentStep).each(function () {
-                            const $otherStep = $(this);
-                            const $otherContent = $otherStep.find('.step-content');
-                            const $otherArrow = $otherStep.find('.arrow-icon');
-                            $otherStep.removeClass('active');
-                            $otherContent.slideUp(300);
-                            $otherArrow.removeClass('fa-angle-up').addClass('fa-angle-down');
-                        });
-                        $parentStep.addClass('active');
-                        $content.slideDown(300); 
-                        $arrow.removeClass('fa-angle-down').addClass('fa-angle-up');
-                    }
-                });
-            
-        }
-        thePlan();
-       
-        // Verified Talent
-        function verifiedTalent() {
-                $('.accordion-item .talent_header').on('click', function () {
-                    const clickedItem = $(this).closest('.accordion-item');
-                    const content = clickedItem.find('.talent_contains');
-
-                    if (clickedItem.hasClass('active')) {
-                        content.css('height', content.prop('scrollHeight') + 'px');
-                        setTimeout(() => {
-                            content.css('height', '0px');
-                        }, 10);
-                        clickedItem.removeClass('active');
-                    } else {
-                        $('.accordion-item.active').not(clickedItem).each(function () {
-                            const activeContent = $(this).find('.talent_contains');
-                            activeContent.css('height', activeContent.prop('scrollHeight') + 'px');
-                            setTimeout(() => {
-                                activeContent.css('height', '0px');
-                            }, 10);
-                            $(this).removeClass('active');
-                        });
-
-                        clickedItem.addClass('active');
-                        const scrollHeight = content.prop('scrollHeight');
-                        content.css('height', '0px'); 
-                        setTimeout(() => {
-                            content.css('height', scrollHeight + 'px');
-                        }, 10);
-
-                        content.one('transitionend', function () {
-                            $(this).css('height', '');
-                        });
-                    }
-                });
-            
-        }
-        verifiedTalent();
 
         // FAQ
         function Faq() {
@@ -158,8 +85,8 @@
         }
         Faq();
 
-        // Text Slider
-        function textSlider() {
+        // Brand Slider
+        function Brand() {
             $(document).ready(function () {
                 $('.mb_branding_wrapper').slick({
                     dots: false,
@@ -207,9 +134,10 @@
                 });
             });
         }
-        textSlider()
+        Brand()
 
-        function Book(){
+        // How It Work
+        function howWork(){
                 $('.mb_how_work_slider').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -222,35 +150,11 @@
                     nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-down"></i></span>`,
                 });
         }
-        Book()
+        howWork()
 
-        $('.clients_review_slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            speed: 3000,
-            arrows: true,
-            dots: true,
-            dotsClass: "review_dots",
-            infinite: true,
-            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-        });
-        $('.vision_content').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            arrows: true,
-            speed: 3000,
-            dots: false,
-            infinite: true,
-            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-        });
-        $('.partner_testimonial_slider').slick({
-            slidesToShow: 2,
+        // Popular Types Of Housing
+        $('.mb_popular_house').slick({
+            slidesToShow: 5,
             slidesToScroll: 1,
             arrows: true,
             autoplay: true,
@@ -270,110 +174,20 @@
                 },
             ]
         });
-        function animateBlogNewsContains() {
-            const blogNewsContains = document.querySelectorAll(".business_card");
-            if (blogNewsContains.length > 0) {
-                gsap.from(blogNewsContains, {
-                    scrollTrigger: {
-                        trigger: ".business_card_wrapper",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    opacity: 0,
-                    y: 50,
-                    duration: 1,
-                    stagger: 0.3,
-                });
-            }
-        }
-        animateBlogNewsContains()
-        function talentProfiles() {
-            const blogNewsContains = document.querySelectorAll(".blog1-card");
-            if (blogNewsContains.length > 0) {
-                gsap.from(blogNewsContains, {
-                    scrollTrigger: {
-                        trigger: ".blog1-card",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    opacity: 0,
-                    y: 50,
-                    duration: 1,
-                    stagger: 0.3,
-                });
-            }
 
-            const talentImage = document.querySelectorAll(".talent_image img")
-            if(talentImage.length > 0){
-                gsap.from(talentImage, {
-                    scrollTrigger: {
-                        trigger: ".talent_image",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    height: "0%",
-                    duration: 2.5,
-                    ease: "power2.out",
-                    stagger: {
-                        amount: 0.5,
-                        from: "start"
-                    }
-                });
+        // Gsap RegisterPlugin
+        gsap.registerPlugin(ScrollSmoother, ScrollTrigger, SplitText);
 
-            }
-        }
-        talentProfiles()
-        function certificate() {
-            const blogNewsContains = document.querySelectorAll(".certificate_one");
-            if (blogNewsContains.length > 0) {
-                gsap.from(blogNewsContains, {
-                    scrollTrigger: {
-                        trigger: ".certificate_image",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    opacity: 1,
-                    x: 120,
-                    duration: 1.5,
-                    stagger: 0.3,
-                });
-            }
-            const certificatetwo = document.querySelectorAll(".certificate_two");
-            if (certificatetwo.length > 0) {
-                gsap.from(certificatetwo, {
-                    scrollTrigger: {
-                        trigger: ".certificate_image",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    opacity: 1,
-                    x: -100,
-                    duration: 1.5,
-                    stagger: 0.3,
-                });
-            }
-        }
-        certificate()
-        function partnerImg() {
-            const certificatetwo = document.querySelectorAll(".who_this_image img");
-            if (certificatetwo.length > 0) {
-                gsap.from(certificatetwo, {
-                    scrollTrigger: {
-                        trigger: ".who_this_image",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    width: "0%",
-                    duration: 2,
-                    ease: "power2.out",
-                    stagger: {
-                        amount: 0.5,
-                        from: "start"
-                    }
-                });
-            }
-        }
-        partnerImg()
+        // Smooth Scroller
+        ScrollSmoother.create({
+            wrapper: "#smooth-wrapper",
+            content: "#smooth-content",
+            smooth: 1.3,
+            effects: true,
+            smoothTouch: 0.1,
+        });
+
+        // Header h1 Animate
         function textAnimation() {
             const blogNewsContains = document.querySelectorAll(".heading h1");
             if (blogNewsContains.length > 0) {
@@ -392,113 +206,7 @@
         }
         textAnimation()
       
-        gsap.registerPlugin(ScrollSmoother, ScrollTrigger, SplitText);
-
-        ScrollSmoother.create({
-            wrapper: "#smooth-wrapper",
-            content: "#smooth-content",
-            smooth: 1.3,
-            effects: true,
-            smoothTouch: 0.1,
-        });
-        function instructorImage(){
-            const blogNewsContains = document.querySelectorAll(".instructor_img .image img");
-            if (blogNewsContains.length > 0) {
-                gsap.from(blogNewsContains, {
-                    scrollTrigger: {
-                        trigger: ".instructor_img",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    scale: 0.7,
-                    duration: 1.5,
-                    stagger: 0.3,
-                });
-            }
-        }
-        instructorImage()
-        function studentCard(){
-            const blogNewsContains = document.querySelectorAll(".student_card");
-            if (blogNewsContains.length > 0) {
-                gsap.from(blogNewsContains, {
-                    scrollTrigger: {
-                        trigger: ".student_journey",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    y: 100,
-                    duration: 1,
-                });
-            }
-        }
-        studentCard()
-        function imgAni(){
-            const whoWeImage = document.querySelectorAll(".who_we_images .child_image img, .who_we_images .who_main_image img")
-            if(whoWeImage.length > 0){
-                gsap.from(whoWeImage, {
-                    scrollTrigger: {
-                        trigger: ".who_we_images",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    width: "0%",
-                    duration: 2,
-                    ease: "power2.out",
-                    stagger: {
-                        amount: 0.5,
-                        from: "start"
-                    }
-                });
-
-            }
-            
-        }
-        imgAni()
-       
-        function businessImg(){
-            const businessImage = document.querySelectorAll(".business_image .business_main_img img")
-            if(businessImage.length > 0){
-                gsap.from(businessImage, {
-                    scrollTrigger: {
-                        trigger: ".business_image",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    width: "0%",
-                    duration: 2.5,
-                    ease: "power2.out",
-                    stagger: {
-                        amount: 0.5,
-                        from: "start"
-                    }
-                });
-
-            }
-        }
-        businessImg()
-    
-        function listAnimation(){
-            const listAni = document.querySelectorAll(".about_list ul li")
-            if(listAni.length > 0){
-                gsap.from(".about_list ul li", {
-                    scrollTrigger: {
-                        trigger: ".about_list",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    y: 50,
-                    opacity: 0,
-                    duration: 1,
-                    stagger: 0.2, 
-                    ease: "power2.out",
-                    
-                });
-
-            }
-        }
-        
-        listAnimation()
-        // Scroll-triggered Counter Animation
+        // Counting
         $(".about_count").each(function () {
             let counter = $(this);
             let targetValue = counter.data("count").toString().replace(/\D/g, "");
@@ -521,6 +229,7 @@
                 }
             });
         });
+
         // Back to Top Button
         $(window).on("scroll", function () {
             if ($(window).scrollTop() > 200) {
@@ -532,6 +241,7 @@
         $(".back_top").on("click", function () {
             $("html, body").animate({ scrollTop: 0 }, "slow");
         });
+
         //  Magnific Popup Configuration
         $('.playBtn').magnificPopup({
             type: 'iframe',
@@ -567,11 +277,12 @@
                 }
             }
         });
-    
+
+        // Nice Select
         $('select').niceSelect();
-        
     });
 
+    // Preloader
     $(window).on("load", function () {
         const preloader = document.querySelector(".preloader_area");
         preloader.style.transition = "all 0.5s ease";

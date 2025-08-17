@@ -265,7 +265,6 @@
         padding: 150px 100px;
         background-color: #ffeed8;
         @include border-radius(24px);
-
     }
         .left-arrow{
             @include md{
@@ -281,6 +280,7 @@
         line-height: 44px;
         text-align: center;
         display: block;
+        cursor: pointer;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
@@ -316,6 +316,7 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         color: #020626;
+        cursor: pointer;
         position: absolute;
         right: 5px;      
         background-color: $white;
@@ -588,9 +589,76 @@
 
 /*--Popular Housing Start---*/
 .mb_popular_housing{
+    .slick-slide{
+        margin: 0px 15px;
+    }
+     .left-arrow{
+            @include md{
+                display: none !important;
+            }
+            @include sm{
+                display: none !important;
+            }
+        border-radius: 50%;
+        border: 1px solid $border;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        color: #020626;
+        position: absolute;
+        top: 50%;
+        @include transformY(-50%);
+        left: 0px;
+        background-color: $white;
+        z-index: 10;
+        @include transition(0.4s);
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
+}
+   .right-arrow{
+            @include md{
+                display: none !important;
+            }
+            @include sm{
+                display: none !important;
+            }
+            border: 1px solid $border;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        display: block;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        color: #020626;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;      
+        background-color: $white;
+        top: 50%;
+        @include transformY(-50%);
+
+        z-index: 10;
+        @include transition(0.4s);
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
+    }
     .mb_house_card{
         width: 100%;
-        max-width: 300px;
         @include border-radius(20px);
         position: relative;
         img{
@@ -599,6 +667,20 @@
             height: 100%;
             object-fit: cover;
         }
+        &:hover{
+            .mb_overly_content{
+                background-color:  rgba(3, 26, 38, 0.8);
+            }
+            .mb_arrow_right{
+                top: 50%;
+                left: 50%;
+                @include transform(-50%, -50%);
+                @include transition(0.4s);
+                visibility: visible;
+                opacity: 1;
+            }
+
+        }
     }
     .mb_overly_content{
         position: absolute;
@@ -606,28 +688,269 @@
         top: 0px;
         left: 0px;
         width: 100%;
+        @include transition(0.4s);
         height: 100%;
         background: linear-gradient(180deg, rgba(3, 26, 38, 0) 21%, #031a26 100%);
+        padding: 40px 30px 34px 30px;
+        @include flex(column, flex-end, flex-start);
+        gap: 10px;
+        overflow: hidden;
+        
+    }
+    .mb_arrow_right{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        @include transformX(-50%);
+        @include transition(0.4);
+        // visibility: hidden;
+        // opacity: 0;
+        
+
+        span{
+            width: 46px;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            @include border-radius(50%);
+            background-color: $white;
+            color: #040618;
+            display: inline-block;
+            cursor: pointer;
+            @include transition(0.4s);
+
+            i{
+                @include transition(0.4s);
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+            }
+            &:hover{
+                background-color: $primary;
+                color: $white;
+                i{
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+            }
+            }
+        }
     }
     .mb_house_reviews{
         position: absolute;
         top: 20px;
         right: 20px;
-        padding: 4px 8px;
+        padding: 2px 8px;
         @include border-radius(30px);
         @include flex(row, center, center);
         gap: 5px;
         background-color: $white;
         span{
             color: $primary;
+            font-size: 12px;
         }
         p{
             font-weight: 500;
-            font-size: 13px;
+            font-size: 11px;
             color: #747d87;
+        }
+    }
+    .title{
+        h4{
+            a{
+                font-weight: 600;
+                font-size: 20px;
+                color: $white;
+                @include transition(0.4s);
+                &:hover{
+                    color: $primary;
+                }
+
+            }
+        }
+    }
+    .describtion{
+        p{
+            font-weight: 500;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
         }
     }
 }
 /*--Popular Housing End---*/
 
+/*--Selling Start---*/
+.mb_selling{
+    .mb_selling_contains{
+        background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
+        @include border-radius(14px);
+        @include flex(row, space-between, center);
+        padding: 0px 30px 0px 15px;
+        .mb_left_contains{
+            @include flex(row, flex-start, center);
+            gap: 35px;
+        }
+        .mb_sell_img{
+            width: 238px;
+            height: 100px;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                position: absolute;
+                bottom: -3px;
+            }
+        }
+        h4{
+            font-weight: 700;
+            font-size: 24px;
+            color: #031a26;
+        }
+        p{
+            font-weight: 500;
+            font-size: 15px;
+            color: #031a26;
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+    }
+}
+/*--Selling End---*/
 
+/*--Our Agents Start---*/
+.mb_our_agents{
+   
+    .mb_our_agents_card{
+        @include flex(row, space-between, center);
+        h4{
+            font-weight: 600;
+            font-size: 24px;
+            color: #031a26;
+        }
+        p{
+            font-weight: 500;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #031a26;
+            opacity: 0.7;
+            margin-top: 14px
+        }
+        .mb_agent_contact{
+            @include flex(column, center, flex-start);
+        }
+        .mb_agent_number{
+            @include flex(row, flex-start, center);
+            gap: 14px;
+            span{
+                border-radius: 30px;
+                border: 1px solid rgba(3, 26, 38, 0.16);
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                display: inline-block;
+                font-size: 16px;
+                color:#031a26;
+                @include transition(0.4s);
+            }
+            a{
+                @include transition(0.4s);
+                font-weight: 500;
+                font-size: 16px;
+                color: #031a26;
+                opacity: 0.7;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .mb_hover_img{
+        width: 310px;
+        @include transition(0.4s);
+        height: 350px;
+        position: absolute;
+        top: -128px;
+        left: 100px;
+        visibility: hidden;
+        opacity: 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include border-radius(13px);
+        }
+    }
+    .mb_arrow_btn{
+        a{
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            display: block;
+            @include transition(0.4s);
+            background-color: $text_color;
+            color: $white;
+            @include border-radius(50%);
+            font-size: 36px;
+            i{
+                @include transition(0.4s);
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+            }
+            // &:hover{
+                
+            //     i{
+            //         transform: rotate(0deg);
+            //         -webkit-transform: rotate(0deg);
+            //         -moz-transform: rotate(0deg);
+            //         -ms-transform: rotate(0deg);
+            //         -o-transform: rotate(0deg);
+            //     }
+            // }
+        }
+        
+    }
+    .row{
+        &.style_1{
+            padding: 33px 0px;
+            border-top: 1px solid rgba(3, 26, 38, 0.1);
+            border-bottom: 1px solid rgba(3, 26, 38, 0.1);
+            &:hover{
+                .mb_hover_img{
+                    visibility: visible;
+                    opacity: 1;
+                }
+                .mb_agent_number{
+                    span{
+                        background-color: $primary;
+                        color: $white;
+                        border: transparent;
+                    }
+                }
+                .mb_arrow_btn{
+                    a{
+                        background-color: $primary;
+                        color: $white;
+                        i{
+                            transform: rotate(0deg);
+                            -webkit-transform: rotate(0deg);
+                            -moz-transform: rotate(0deg);
+                            -ms-transform: rotate(0deg);
+                            -o-transform: rotate(0deg);
+}
+                    }
+                }
+            }
+        }
+    } 
+}
+/*--Our Agents End---*/
