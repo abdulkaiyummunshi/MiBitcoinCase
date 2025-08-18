@@ -87,8 +87,7 @@
 
         // Brand Slider
         function Brand() {
-            $(document).ready(function () {
-                $('.mb_branding_wrapper').slick({
+                $('.mb_branding_wrapper_ltr').slick({
                     dots: false,
                     arrows: false,
                     infinite: true,
@@ -132,7 +131,52 @@
                         }
                     ]
                 });
-            });
+                $('.mb_branding_wrapper_rtl').slick({
+                    dots: false,
+                    arrows: false,
+                    infinite: true,
+                    speed: 3000,
+                    slidesToShow: 7,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 0,
+                    cssEase: 'linear',
+                    rtl: true,
+                    responsive: [
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 2,
+                                speed: 4000
+                            }
+                        },
+                        {
+                            breakpoint: 998,
+                            settings: {
+                                slidesToShow: 2,
+                                speed: 4000,
+
+                            }
+                        },
+                        {
+                            breakpoint: 1200,
+                            settings: {
+                                slidesToShow: 3,
+                                speed: 4000,
+
+                            }
+                        },
+                        {
+                            breakpoint: 1300,
+                            settings: {
+                                slidesToShow: 3,
+                                speed: 4000,
+
+                            }
+                        }
+                    ]
+                });
+            
         }
         Brand()
 

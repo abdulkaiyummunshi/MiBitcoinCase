@@ -116,6 +116,18 @@
     }
 }
 
+/*--Branding Start---*/
+.mb_branding_area{
+    .mb_branding_wrapper{
+        @include flex(row, space-between, center);
+        
+    }
+    .mb_branding_wrapper_rtl{
+        direction: rtl;
+    }
+}
+/*--Branding End---*/
+
 /*--blockquote Start---*/
 .mb_blockquote_section{
     padding: 130px 0px 107px 0px;
