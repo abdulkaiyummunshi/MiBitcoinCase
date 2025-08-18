@@ -33295,6 +33295,14 @@ header {
 .rb-p18.style1 {
   color: rgba(255, 255, 255, 0.6);
 }
+.rb-p18.style2 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
 
 .rb-p16 {
   color: #031A26;
@@ -33312,6 +33320,14 @@ header {
   font-weight: 600;
   line-height: normal;
 }
+.rb-p16.style2 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 187.5% */
+}
 
 .rb-p15 {
   color: #031A26;
@@ -33320,6 +33336,15 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  opacity: 0.7;
+}
+.rb-p15.style1 {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
   opacity: 0.7;
 }
 
@@ -33913,6 +33938,41 @@ header {
 }
 .rb_blog2 .rb_blog_card .rb_content .rb-t24:hover {
   color: #FF9916;
+}
+
+.rb_testimonial1 .container {
+  max-width: 1754px;
+}
+.rb_testimonial1 .rb_testi_card {
+  position: relative;
+}
+.rb_testimonial1 .rb_testi_card .rb_thumb {
+  border-radius: 14px;
+  position: relative;
+}
+.rb_testimonial1 .rb_testi_card .rb_thumb::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(3, 26, 38, 0) 0%, #031A26 100%);
+}
+.rb_testimonial1 .rb_testi_card .rb_thumb img {
+  width: 100%;
+  border-radius: 14px;
+}
+.rb_testimonial1 .rb_testi_card .rb_content {
+  position: absolute;
+  bottom: 0;
+  padding: 34px;
+}
+.rb_testimonial1 .rb_testi_card .rb_content .rb_desc {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 30px;
+  margin-bottom: 22px;
+}
+.rb_testimonial1 .rb_testi_card .rb_content .rb_label {
+  text-transform: uppercase;
 }
 
 .footer {
