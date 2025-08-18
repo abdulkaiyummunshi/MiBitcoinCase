@@ -1,6 +1,42 @@
 /*---Inner Page Hero Section Start---*/
 .mb_inner_page_hero{
-
+    height: 470px;
+    background-color: #FFEED8;
+    @include border-radius(24px);
+    @include flex(row, flex-start, center);
+    ul{
+        @include flex(row, flex-start, center);
+        gap: 10px;
+        border: 1px solid rgba(34, 34, 34, 0.12);
+        border-radius: 100px;
+        padding: 5px 20px;
+        background: #f4d9b6;
+        width: fit-content;
+        li{
+            a{
+                font-weight: 600;
+                font-size: 15px;
+                text-transform: uppercase;
+                color: #031a26;
+                @include transition(0.4s);
+                span{
+                    margin-right: 10px;
+                }
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .heading{
+        h1{
+            font-weight: 600;
+            font-size: 84px;
+            color: #031a26;
+            margin-top: 20px;
+        }
+    }
+    
 }
 
 // Heading Area

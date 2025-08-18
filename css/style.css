@@ -26658,6 +26658,10 @@ p {
         transition: all 0.3s ease 0s;
         opacity: 0;
         border-top: 0px; }
+  .header-wrap.style_1 .main-menu ul {
+    background: rgba(3, 26, 38, 0.1); }
+    .header-wrap.style_1 .main-menu ul li a {
+      color: #031a26 !important; }
 
 header {
   min-height: 90px !important;
@@ -26683,6 +26687,25 @@ header {
     .header-1 {
       padding: 0px 5px;
       height: 87px; } }
+  .header-1 .mb_blur_circle {
+    width: 671px;
+    height: 671px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #f6b663;
+    filter: blur(400px);
+    -webkit-filter: blur(400px);
+    position: absolute;
+    top: -490px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%); }
   .header-1 .header-wrap {
     height: 90px; }
     @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -28411,6 +28434,45 @@ header {
 
 /*--MiBitcoin vs Brokerage End---*/
 /*---Inner Page Hero Section Start---*/
+.mb_inner_page_hero {
+  height: 470px;
+  background-color: #FFEED8;
+  border-radius: 24px;
+  -moz-border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center; }
+  .mb_inner_page_hero ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(34, 34, 34, 0.12);
+    border-radius: 100px;
+    padding: 5px 20px;
+    background: #f4d9b6;
+    width: fit-content; }
+    .mb_inner_page_hero ul li a {
+      font-weight: 600;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: #031a26;
+      transition: all 0.4s ease; }
+      .mb_inner_page_hero ul li a span {
+        margin-right: 10px; }
+      .mb_inner_page_hero ul li a:hover {
+        color: #ff9916; }
+  .mb_inner_page_hero .heading h1 {
+    font-weight: 600;
+    font-size: 84px;
+    color: #031a26;
+    margin-top: 20px; }
+
 .rb_heading_area .rb_subtitle {
   margin-bottom: 22px;
   display: inline-flex;
@@ -29151,7 +29213,6 @@ header {
 .rb_testimonial1 .container {
   max-width: 1754px; }
 .rb_testimonial1 .rb_testi_card {
-<<<<<<< HEAD
   position: relative; }
   .rb_testimonial1 .rb_testi_card .rb_thumb {
     border-radius: 14px;
@@ -29175,78 +29236,42 @@ header {
       margin-bottom: 22px; }
     .rb_testimonial1 .rb_testi_card .rb_content .rb_label {
       text-transform: uppercase; }
-=======
-  position: relative;
-}
-.rb_testimonial1 .rb_testi_card .rb_thumb {
-  border-radius: 14px;
-  position: relative;
-}
-.rb_testimonial1 .rb_testi_card .rb_thumb::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 14px;
-  background: linear-gradient(180deg, rgba(3, 26, 38, 0) 0%, #031A26 100%);
-}
-.rb_testimonial1 .rb_testi_card .rb_thumb img {
-  width: 100%;
-  border-radius: 14px;
-}
-.rb_testimonial1 .rb_testi_card .rb_content {
-  position: absolute;
-  bottom: 0;
-  padding: 34px;
-}
-.rb_testimonial1 .rb_testi_card .rb_content .rb_desc {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 30px;
-  margin-bottom: 22px;
-}
-.rb_testimonial1 .rb_testi_card .rb_content .rb_label {
-  text-transform: uppercase;
-}
 .rb_testimonial1 .rb_testi_card2 {
   position: relative;
   border: 1px solid rgba(3, 26, 38, 0.1);
-  background: #FFF;
-}
-.rb_testimonial1 .rb_testi_card2 .rb_content {
-  padding: 40px 34px 34px;
-}
-.rb_testimonial1 .rb_testi_card2 .rb_content .rb_profile .rb_quote {
-  margin-left: -20px;
-}
-.rb_testimonial1 .rb_testi_card2 .rb_content .rb_desc {
-  border-bottom: 1px solid rgba(3, 26, 38, 0.1);
-  padding-bottom: 48px;
-  margin-bottom: 22px;
-  color: rgba(3, 26, 38, 0.6);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px; /* 187.5% */
-}
-.rb_testimonial1 .rb_testi_card2 .rb_content .rb_title {
-  color: #031A26;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-}
-.rb_testimonial1 .rb_testi_card2 .rb_content .rb_label {
-  color: #031A26;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px; /* 185.714% */
-  text-transform: uppercase;
-  opacity: 0.7;
-}
->>>>>>> 7f2ee7e41cd720955cb55620dd8718f424558657
+  background: #FFF; }
+  .rb_testimonial1 .rb_testi_card2 .rb_content {
+    padding: 40px 34px 34px; }
+    .rb_testimonial1 .rb_testi_card2 .rb_content .rb_profile .rb_quote {
+      margin-left: -20px; }
+    .rb_testimonial1 .rb_testi_card2 .rb_content .rb_desc {
+      border-bottom: 1px solid rgba(3, 26, 38, 0.1);
+      padding-bottom: 48px;
+      margin-bottom: 22px;
+      color: rgba(3, 26, 38, 0.6);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px;
+      /* 187.5% */ }
+    .rb_testimonial1 .rb_testi_card2 .rb_content .rb_title {
+      color: #031A26;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px; }
+    .rb_testimonial1 .rb_testi_card2 .rb_content .rb_label {
+      color: #031A26;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px;
+      /* 185.714% */
+      text-transform: uppercase;
+      opacity: 0.7; }
 
 .footer {
   position: relative; }

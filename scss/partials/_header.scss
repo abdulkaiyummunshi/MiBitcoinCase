@@ -194,6 +194,18 @@
 		  }
 		}
 	  }
+	  &.style_1{
+		.main-menu{
+			ul{
+				background: rgba(3, 26, 38, 0.1);
+				li{
+					a{
+						color: $text_color !important;
+					}
+				}
+			}
+		}
+	  }
 }
 header{
 	min-height: 90px !important;
@@ -223,6 +235,18 @@ header{
 		padding: 0px 5px;
 		height: 87px;
 	}
+	.mb_blur_circle{
+		width: 671px;
+		height: 671px;
+		@include border-radius(50%);
+		background-color: #f6b663;
+		filter: blur(400px);
+		-webkit-filter: blur(400px);
+		position: absolute;
+		top: -490px;
+		left: 50%;
+		@include transformX(-50%);
+}
 	.header-wrap{
 		height: 90px;
 		@include nesthub{
