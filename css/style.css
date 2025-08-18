@@ -28455,6 +28455,14 @@ header {
   .rb-t24.style1 {
     color: #FFF; }
 
+.rb-t22 {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; }
+
 .rb-t20 {
   color: #031A26;
   font-family: Inter;
@@ -28479,6 +28487,13 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: 26px; }
+  .rb-p18.style3 {
+    color: #031A26;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; }
 
 .rb-p16 {
   color: #031A26;
@@ -28500,8 +28515,14 @@ header {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px;
-    /* 187.5% */ }
+    line-height: 30px; }
+  .rb-p16.style3 {
+    color: rgba(3, 26, 38, 0.6);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; }
 
 .rb-p15 {
   color: #031A26;
@@ -28519,6 +28540,15 @@ header {
     font-weight: 500;
     line-height: 26px;
     opacity: 0.7; }
+
+.rb-p14 {
+  color: rgba(3, 26, 38, 0.6);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase; }
 
 .common_input {
   position: relative; }
@@ -28757,6 +28787,48 @@ header {
     color: #FFF;
     cursor: pointer; }
 
+.rb_video_icon {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.nav-pills {
+  border-radius: 50px;
+  border: 1px solid rgba(3, 26, 38, 0.1);
+  background: #FFEED8;
+  display: flex;
+  display: inline-block; }
+  .nav-pills .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .nav-pills .nav-link {
+    color: #031A26;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 0;
+    text-align: center;
+    padding: 8px 32px;
+    height: 54px;
+    transition: all 0.3s ease;
+    border-radius: 0; }
+    .nav-pills .nav-link.active {
+      color: #031A26;
+      border-radius: 100px;
+      background: #FFF;
+      height: 50px;
+      padding: 8px 30px;
+      margin-left: 2px; }
+    .nav-pills .nav-link:first-child.active {
+      border-radius: 30px; }
+    .nav-pills .nav-link:last-child.active {
+      border-radius: 30px; }
+
 .rb_about1 .container {
   max-width: 1754px; }
 .rb_about1 .mission_card {
@@ -28784,6 +28856,53 @@ header {
   font-weight: 500;
   line-height: 30px;
   /* 166.667% */ }
+
+.rb_about2 {
+  position: relative; }
+  .rb_about2 .rb_heading_area {
+    max-width: 630px; }
+  .rb_about2 .rb_content {
+    max-width: 530px; }
+    .rb_about2 .rb_content .item {
+      display: flex;
+      align-items: center;
+      gap: 24px; }
+      .rb_about2 .rb_content .item .icon {
+        width: 80px;
+        height: 80px; }
+        .rb_about2 .rb_content .item .icon img {
+          border-radius: 100px;
+          border: 1px solid #E6E8E9;
+          background: #FFF;
+          padding: 23px 18px; }
+      .rb_about2 .rb_content .item.style1 .icon img {
+        padding: 18px 22px; }
+  .rb_about2 .rb_btn_area {
+    display: flex;
+    align-items: center;
+    gap: 30px; }
+    .rb_about2 .rb_btn_area .rb_profile {
+      display: flex;
+      align-items: center;
+      gap: 10px; }
+      .rb_about2 .rb_btn_area .rb_profile .item span:not(:first-child) {
+        margin-left: -18px; }
+      .rb_about2 .rb_btn_area .rb_profile .item .plus_icon {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        background: #121C27;
+        padding: 13px;
+        border-radius: 24px; }
+      .rb_about2 .rb_btn_area .rb_profile .item.style1 {
+        display: flex;
+        align-items: center; }
+  .rb_about2 .rb_thumb {
+    position: relative;
+    border-radius: 20px; }
+    .rb_about2 .rb_thumb img {
+      border-radius: 20px; }
 
 .rb_service1 .row.style1 {
   --bs-gutter-y: 4rem;
