@@ -33549,6 +33549,47 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.nav-pills {
+  border-radius: 50px;
+  border: 1px solid rgba(3, 26, 38, 0.1);
+  background: #FFEED8;
+  display: flex;
+  display: inline-block;
+}
+.nav-pills .nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-pills .nav-link {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: 0;
+  text-align: center;
+  padding: 8px 32px;
+  height: 54px;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+.nav-pills .nav-link.active {
+  color: #031A26;
+  border-radius: 100px;
+  background: #FFF;
+  height: 50px;
+  padding: 8px 30px;
+  margin-left: 2px;
+}
+.nav-pills .nav-link:first-child.active {
+  border-radius: 30px;
+}
+.nav-pills .nav-link:last-child.active {
+  border-radius: 30px;
+}
+
 .rb_about1 .container {
   max-width: 1754px;
 }
