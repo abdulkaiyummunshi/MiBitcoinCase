@@ -31956,141 +31956,9 @@ header {
   -webkit-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-<<<<<<< HEAD
-  position: relative; }
-  .mb_hero_area .mb_hero_bg .mb_hero_contain {
-    height: 100%;
-    width: 100%;
-    background-color: red;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center; }
-  .mb_hero_area .mb_hero_bg .mb_bg_blur {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    background-image: url(../images/home_page/hero_section/bg_blur.png);
-    border-radius: 20px;
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%; }
-  .mb_hero_area .mb_hero_bg .mb_search_bar form {
-    max-width: 670px;
-    width: 100%;
-    border-radius: 50px;
-    background-color: #fff;
-    height: 72px;
-    line-height: 72px; }
-    .mb_hero_area .mb_hero_bg .mb_search_bar form input {
-      border-radius: 50px;
-      width: 90%;
-      border: none;
-      outline: none;
-      padding-left: 26px;
-      font-weight: 500;
-      font-size: 16px;
-      color: #031a26; }
-      .mb_hero_area .mb_hero_bg .mb_search_bar form input::placeholder {
-        color: rgba(3, 26, 38, 0.7); }
-    .mb_hero_area .mb_hero_bg .mb_search_bar form button {
-      width: 52px;
-      border-radius: 100px;
-      -moz-border-radius: 100px;
-      -webkit-border-radius: 100px;
-      -ms-border-radius: 100px;
-      -o-border-radius: 100px;
-      height: 52px;
-      line-height: 50px;
-      text-align: center;
-      color: #fff;
-      background-color: #031a26; }
-  .mb_hero_area .mb_hero_bg .header_area {
-    position: relative; }
-  .mb_hero_area .mb_hero_bg .mb_house {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    z-index: 4;
-    border-radius: 0px 0px 20px 0px;
-    -moz-border-radius: 0px 0px 20px 0px;
-    -webkit-border-radius: 0px 0px 20px 0px;
-    -ms-border-radius: 0px 0px 20px 0px;
-    -o-border-radius: 0px 0px 20px 0px; }
-    .mb_hero_area .mb_hero_bg .mb_house img {
-      width: fit-content;
-      height: fit-content;
-      object-fit: contain;
-      border-radius: 0px 0px 20px 0px;
-      -moz-border-radius: 0px 0px 20px 0px;
-      -webkit-border-radius: 0px 0px 20px 0px;
-      -ms-border-radius: 0px 0px 20px 0px;
-      -o-border-radius: 0px 0px 20px 0px; }
-  .mb_hero_area .mb_hero_bg .mb_group_house {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    border-radius: 0px 0px 0px 20px;
-    -moz-border-radius: 0px 0px 0px 20px;
-    -webkit-border-radius: 0px 0px 0px 20px;
-    -ms-border-radius: 0px 0px 0px 20px;
-    -o-border-radius: 0px 0px 0px 20px;
-    z-index: 1; }
-    .mb_hero_area .mb_hero_bg .mb_group_house img {
-      width: fit-content;
-      height: fit-content;
-      object-fit: contain;
-      border-radius: 0px 0px 0px 20px;
-      -moz-border-radius: 0px 0px 0px 20px;
-      -webkit-border-radius: 0px 0px 0px 20px;
-      -ms-border-radius: 0px 0px 0px 20px;
-      -o-border-radius: 0px 0px 0px 20px; }
-  .mb_hero_area .mb_hero_bg .mb_shape {
-    position: absolute;
-    top: -120px;
-    left: -62px; }
-    .mb_hero_area .mb_hero_bg .mb_shape img {
-      width: fit-content;
-      height: fit-content;
-      object-fit: contain;
-      border-radius: 0px 0px 0px 20px;
-      -moz-border-radius: 0px 0px 0px 20px;
-      -webkit-border-radius: 0px 0px 0px 20px;
-      -ms-border-radius: 0px 0px 0px 20px;
-      -o-border-radius: 0px 0px 0px 20px; }
-  .mb_hero_area .mb_hero_bg .group_house {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    border-radius: 0px 0px 0px 20px;
-    -moz-border-radius: 0px 0px 0px 20px;
-    -webkit-border-radius: 0px 0px 0px 20px;
-    -ms-border-radius: 0px 0px 0px 20px;
-    -o-border-radius: 0px 0px 0px 20px; }
-    .mb_hero_area .mb_hero_bg .group_house img {
-      width: fit-content;
-      height: fit-content;
-      object-fit: contain;
-      border-radius: 0px 0px 0px 20px;
-      -moz-border-radius: 0px 0px 0px 20px;
-      -webkit-border-radius: 0px 0px 0px 20px;
-      -ms-border-radius: 0px 0px 0px 20px;
-      -o-border-radius: 0px 0px 0px 20px; }
-  .mb_hero_area .mb_hero_bg .mb_bitcoin {
-    position: absolute;
-    top: -165px;
-    right: 33%; }
-=======
   position: relative;
 }
-.hero_area .mb_hero_bg .mb_hero_contain {
+.mb_hero_area .mb_hero_bg .mb_hero_contain {
   height: 100%;
   width: 100%;
   background-color: red;
@@ -32099,7 +31967,7 @@ header {
   justify-content: flex-start;
   align-items: center;
 }
-.hero_area .mb_hero_bg .mb_bg_blur {
+.mb_hero_area .mb_hero_bg .mb_bg_blur {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -32116,7 +31984,7 @@ header {
   width: 100%;
   height: 100%;
 }
-.hero_area .mb_hero_bg .mb_search_bar form {
+.mb_hero_area .mb_hero_bg .mb_search_bar form {
   max-width: 670px;
   width: 100%;
   border-radius: 50px;
@@ -32124,7 +31992,7 @@ header {
   height: 72px;
   line-height: 72px;
 }
-.hero_area .mb_hero_bg .mb_search_bar form input {
+.mb_hero_area .mb_hero_bg .mb_search_bar form input {
   border-radius: 50px;
   width: 90%;
   border: none;
@@ -32134,10 +32002,10 @@ header {
   font-size: 16px;
   color: #031a26;
 }
-.hero_area .mb_hero_bg .mb_search_bar form input::placeholder {
+.mb_hero_area .mb_hero_bg .mb_search_bar form input::placeholder {
   color: rgba(3, 26, 38, 0.7);
 }
-.hero_area .mb_hero_bg .mb_search_bar form button {
+.mb_hero_area .mb_hero_bg .mb_search_bar form button {
   width: 52px;
   border-radius: 100px;
   -moz-border-radius: 100px;
@@ -32150,10 +32018,10 @@ header {
   color: #fff;
   background-color: #031a26;
 }
-.hero_area .mb_hero_bg .header_area {
+.mb_hero_area .mb_hero_bg .header_area {
   position: relative;
 }
-.hero_area .mb_hero_bg .mb_house {
+.mb_hero_area .mb_hero_bg .mb_house {
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -32164,7 +32032,7 @@ header {
   -ms-border-radius: 0px 0px 20px 0px;
   -o-border-radius: 0px 0px 20px 0px;
 }
-.hero_area .mb_hero_bg .mb_house img {
+.mb_hero_area .mb_hero_bg .mb_house img {
   width: fit-content;
   height: fit-content;
   object-fit: contain;
@@ -32174,7 +32042,7 @@ header {
   -ms-border-radius: 0px 0px 20px 0px;
   -o-border-radius: 0px 0px 20px 0px;
 }
-.hero_area .mb_hero_bg .mb_group_house {
+.mb_hero_area .mb_hero_bg .mb_group_house {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -32185,7 +32053,7 @@ header {
   -o-border-radius: 0px 0px 0px 20px;
   z-index: 1;
 }
-.hero_area .mb_hero_bg .mb_group_house img {
+.mb_hero_area .mb_hero_bg .mb_group_house img {
   width: fit-content;
   height: fit-content;
   object-fit: contain;
@@ -32195,12 +32063,12 @@ header {
   -ms-border-radius: 0px 0px 0px 20px;
   -o-border-radius: 0px 0px 0px 20px;
 }
-.hero_area .mb_hero_bg .mb_shape {
+.mb_hero_area .mb_hero_bg .mb_shape {
   position: absolute;
   top: -120px;
   left: -62px;
 }
-.hero_area .mb_hero_bg .mb_shape img {
+.mb_hero_area .mb_hero_bg .mb_shape img {
   width: fit-content;
   height: fit-content;
   object-fit: contain;
@@ -32210,7 +32078,7 @@ header {
   -ms-border-radius: 0px 0px 0px 20px;
   -o-border-radius: 0px 0px 0px 20px;
 }
-.hero_area .mb_hero_bg .group_house {
+.mb_hero_area .mb_hero_bg .group_house {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -32220,7 +32088,7 @@ header {
   -ms-border-radius: 0px 0px 0px 20px;
   -o-border-radius: 0px 0px 0px 20px;
 }
-.hero_area .mb_hero_bg .group_house img {
+.mb_hero_area .mb_hero_bg .group_house img {
   width: fit-content;
   height: fit-content;
   object-fit: contain;
@@ -32230,12 +32098,11 @@ header {
   -ms-border-radius: 0px 0px 0px 20px;
   -o-border-radius: 0px 0px 0px 20px;
 }
-.hero_area .mb_hero_bg .mb_bitcoin {
+.mb_hero_area .mb_hero_bg .mb_bitcoin {
   position: absolute;
   top: -165px;
   right: 33%;
 }
->>>>>>> ee0316a7bae23f4e3484c0ba28cc008dfc594c83
 
 /*--blockquote Start---*/
 .mb_blockquote_section {
@@ -33171,34 +33038,43 @@ header {
 /*--MiBitcoin vs Brokerage Start---*/
 .mb_mibitcoin_casa .bg_primary {
   background-color: #ffeed8;
-  padding: 7px 0px; }
+  padding: 7px 0px;
+}
 .mb_mibitcoin_casa .row.style_2 {
-  border-bottom: 1px solid rgba(3, 26, 38, 0.1); }
-  .mb_mibitcoin_casa .row.style_2:last-child {
-    border-bottom: 1px solid transparent; }
+  border-bottom: 1px solid rgba(3, 26, 38, 0.1);
+}
+.mb_mibitcoin_casa .row.style_2:last-child {
+  border-bottom: 1px solid transparent;
+}
 .mb_mibitcoin_casa .mb_casa_brokerage {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 24px;
   background-color: #ffeed8;
-  padding: 23px 40px 40px 40px; }
-  .mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
-    font-weight: 700;
-    font-size: 24px;
-    color: #031a26; }
-  .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
-    font-weight: 700;
-    font-size: 18px;
-    color: #031a26; }
-  .mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
-    font-weight: 500;
-    font-size: 16px;
-    color: #031a26;
-    opacity: 0.7; }
-  .mb_mibitcoin_casa .mb_casa_brokerage .mb_check {
-    color: #12cc3b;
-    font-size: 26px; }
-    .mb_mibitcoin_casa .mb_casa_brokerage .mb_check.style_1 {
-      color: #d12e46; }
+  padding: 23px 40px 40px 40px;
+}
+.mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #031a26;
+}
+.mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #031a26;
+}
+.mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #031a26;
+  opacity: 0.7;
+}
+.mb_mibitcoin_casa .mb_casa_brokerage .mb_check {
+  color: #12cc3b;
+  font-size: 26px;
+}
+.mb_mibitcoin_casa .mb_casa_brokerage .mb_check.style_1 {
+  color: #d12e46;
+}
 .mb_mibitcoin_casa .mb_casa_brokerage_contains {
   padding: 0px 40px;
   background-color: #fff;
@@ -33207,7 +33083,8 @@ header {
   -moz-border-radius: 14px;
   -webkit-border-radius: 14px;
   -ms-border-radius: 14px;
-  -o-border-radius: 14px; }
+  -o-border-radius: 14px;
+}
 
 /*--MiBitcoin vs Brokerage End---*/
 .rb_heading_area .rb_subtitle {
@@ -33275,6 +33152,15 @@ header {
   color: #FFF;
 }
 
+.rb-t22 {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
 .rb-t20 {
   color: #031A26;
   font-family: Inter;
@@ -33303,6 +33189,14 @@ header {
   font-weight: 700;
   line-height: 26px;
 }
+.rb-p18.style3 {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 
 .rb-p16 {
   color: #031A26;
@@ -33326,7 +33220,15 @@ header {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 30px; /* 187.5% */
+  line-height: 30px;
+}
+.rb-p16.style3 {
+  color: rgba(3, 26, 38, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
 }
 
 .rb-p15 {
@@ -33346,6 +33248,16 @@ header {
   font-weight: 500;
   line-height: 26px;
   opacity: 0.7;
+}
+
+.rb-p14 {
+  color: rgba(3, 26, 38, 0.6);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 .common_input {
@@ -33629,6 +33541,14 @@ header {
   cursor: pointer;
 }
 
+.rb_video_icon {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .rb_about1 .container {
   max-width: 1754px;
 }
@@ -33657,6 +33577,67 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 30px; /* 166.667% */
+}
+
+.rb_about2 {
+  position: relative;
+}
+.rb_about2 .rb_heading_area {
+  max-width: 630px;
+}
+.rb_about2 .rb_content {
+  max-width: 530px;
+}
+.rb_about2 .rb_content .item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.rb_about2 .rb_content .item .icon {
+  width: 80px;
+  height: 80px;
+}
+.rb_about2 .rb_content .item .icon img {
+  border-radius: 100px;
+  border: 1px solid #E6E8E9;
+  background: #FFF;
+  padding: 23px 18px;
+}
+.rb_about2 .rb_content .item.style1 .icon img {
+  padding: 18px 22px;
+}
+.rb_about2 .rb_btn_area {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.rb_about2 .rb_btn_area .rb_profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rb_about2 .rb_btn_area .rb_profile .item span:not(:first-child) {
+  margin-left: -18px;
+}
+.rb_about2 .rb_btn_area .rb_profile .item .plus_icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  background: #121C27;
+  padding: 13px;
+  border-radius: 24px;
+}
+.rb_about2 .rb_btn_area .rb_profile .item.style1 {
+  display: flex;
+  align-items: center;
+}
+.rb_about2 .rb_thumb {
+  position: relative;
+  border-radius: 20px;
+}
+.rb_about2 .rb_thumb img {
+  border-radius: 20px;
 }
 
 .rb_service1 .row.style1 {

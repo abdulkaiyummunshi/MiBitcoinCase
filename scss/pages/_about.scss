@@ -65,6 +65,14 @@
     color: #FFF;
   }
 }
+.rb-t22 {
+    color: #031A26;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
 .rb-t20 {
     color: #031A26;
     font-family: Inter;
@@ -91,6 +99,14 @@
         font-weight: 700;
         line-height: 26px; 
     }  
+    &.style3 {
+        color: #031A26;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }  
 }
 .rb-p16 {
     color: #031A26;
@@ -114,7 +130,15 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        line-height: 30px; /* 187.5% */
+        line-height: 30px; 
+    }
+    &.style3 {
+        color: rgba(3, 26, 38, 0.60);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; 
     }
 }
 .rb-p15 {
@@ -134,6 +158,15 @@
         line-height: 26px; 
         opacity: 0.7;
     }
+}
+.rb-p14 {
+    color: rgba(3, 26, 38, 0.60);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
 }
 
 
@@ -431,7 +464,19 @@
     }
 }
 
-
+// Video icon
+.rb_video_icon {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // img {
+    //     @include breakpoint (max-lg){
+    //         width: 70%;
+    //     }
+    // }
+} 
 
 
 
@@ -472,3 +517,73 @@
 }
 // About1 css end
 
+
+// About2 css start
+.rb_about2 {
+    position: relative;
+    .rb_heading_area {
+        max-width: 630px;
+    }
+    .rb_content {
+        max-width: 530px;
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            .icon {
+                width: 80px;
+                height: 80px;
+                img {
+                    border-radius: 100px;
+                    border: 1px solid #E6E8E9;
+                    background: #FFF;
+                    padding: 23px 18px;
+                }
+            }
+            &.style1 {
+                .icon {
+                    img {
+                        padding: 18px 22px;
+                    }
+                }
+            }
+        }
+    }
+    .rb_btn_area {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .rb_profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .item {
+                span:not(:first-child) {
+                    margin-left: -18px;
+                }
+
+                .plus_icon {
+                    display: flex;
+                    width: 44px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    background: #121C27;
+                    padding: 13px;
+                    border-radius: 24px;
+                }
+                &.style1 {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .rb_thumb {
+        position: relative;
+        border-radius: 20px;
+        img {
+            border-radius: 20px;
+        }
+    }
+}
+// About2 css end
