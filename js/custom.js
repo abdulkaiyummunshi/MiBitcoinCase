@@ -151,7 +151,11 @@
                 });
         }
         howWork()
-
+        
+        $('.open_more_content').on('click', () => {
+            $('.mb_casa_brokerage').toggleClass('active');
+            $('.mb_casa_brokerage_contains').toggleClass('active');
+        });
         // Popular Types Of Housing
         $('.mb_popular_house').slick({
             slidesToShow: 5,

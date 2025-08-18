@@ -385,9 +385,15 @@ header{
 			}
 			.main-menu {
 				ul {
+					background-color: transparent;
+					border: 1px solid $border;
 				  li {
 					a {
 					  padding: 9px 13px;
+					  color: $text_color;
+					  &:hover{
+						color: $primary;
+					  }
 					}
 				  }
 				  ul {
@@ -400,7 +406,25 @@ header{
 				}
 			}
 		}
+	
 	}
+	.login_signup_area{
+				.sign_up_user{
+					a{
+						background-color: transparent;
+						border: 1px solid $border;
+						&:hover{
+							color: $primary;
+							background-color: $white;
+						}
+					}
+					&.active{
+						background-color: $white;
+
+					}
+					
+				}
+			}
 	&.header-style-2{
 		.header-wrap{
 			@media (max-width: 1200px){

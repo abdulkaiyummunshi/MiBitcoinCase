@@ -26,6 +26,14 @@
                 -o-transform: rotate(-45deg);
 }
         }
+        &:hover{
+            background-color: $primary;
+            color: white;
+            span{
+                background-color: white;
+                color: #031a26;
+            }
+        }
     }
     &.style_1{
         a{
