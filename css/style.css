@@ -34132,6 +34132,46 @@ header {
 .rb_testimonial1 .rb_testi_card .rb_content .rb_label {
   text-transform: uppercase;
 }
+.rb_testimonial1 .rb_testi_card2 {
+  position: relative;
+  border: 1px solid rgba(3, 26, 38, 0.1);
+  background: #FFF;
+}
+.rb_testimonial1 .rb_testi_card2 .rb_content {
+  padding: 40px 34px 34px;
+}
+.rb_testimonial1 .rb_testi_card2 .rb_content .rb_profile .rb_quote {
+  margin-left: -20px;
+}
+.rb_testimonial1 .rb_testi_card2 .rb_content .rb_desc {
+  border-bottom: 1px solid rgba(3, 26, 38, 0.1);
+  padding-bottom: 48px;
+  margin-bottom: 22px;
+  color: rgba(3, 26, 38, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 187.5% */
+}
+.rb_testimonial1 .rb_testi_card2 .rb_content .rb_title {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+.rb_testimonial1 .rb_testi_card2 .rb_content .rb_label {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 185.714% */
+  text-transform: uppercase;
+  opacity: 0.7;
+}
 
 .footer {
   position: relative;
