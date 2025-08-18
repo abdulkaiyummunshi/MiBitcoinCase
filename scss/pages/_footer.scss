@@ -90,6 +90,9 @@
     font-style: normal;
     font-weight: 600;
     line-height: 30px; /* 150% */
+    &:hover {
+      color: #FF9916;
+    } 
   }
   .rb_star {
     ul {

@@ -37,4 +37,14 @@
             }
         }
     }
+    &.style_2{
+        a{
+            background-color: $white;
+            color: $text_color;
+            span{
+                background-color: $text_color;
+                color: $white;
+            }
+        }
+    }
     }

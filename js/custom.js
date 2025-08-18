@@ -138,7 +138,7 @@
 
         // How It Work
         function howWork(){
-                $('.mb_how_work_slider').slick({
+            $('.mb_how_work_slider').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     vertical: true, 
