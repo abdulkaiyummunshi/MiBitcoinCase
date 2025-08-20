@@ -180,6 +180,22 @@
         }
         Brand()
 
+        $(document).ready(function () {
+            $('.mb_card_option').on('click', function () {
+                $('.mb_card_option').removeClass('mb_selected');
+
+                $(this).addClass('mb_selected');
+
+                $(this).find('input[type="radio"]').prop('checked', true);
+            });
+
+            $('input[name="mb_property_type"]').on('change', function () {
+                $('.mb_card_option').removeClass('mb_selected');
+
+                $(this).closest('.mb_card_option').addClass('mb_selected');
+            });
+        });
+
         // How It Work
         function howWork(){
             $('.mb_how_work_slider').slick({
@@ -277,6 +293,102 @@
                 }
             });
         });
+
+        // Tour Schedule
+        function generateCalendar() {
+            let currentDate = new Date();
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+            // Function to populate month and year dropdowns
+            function populateDropdowns() {
+                const monthSelect = $('#mb_month_select');
+                const yearSelect = $('#mb_year_select');
+
+                // Populate months
+                monthSelect.empty();
+                $.each(monthNames, function (index, value) {
+                    const option = $('<option>').val(index).text(value);
+                    monthSelect.append(option);
+                });
+
+                // Populate years (e.g., current year +/- 5)
+                yearSelect.empty();
+                const currentYear = new Date().getFullYear();
+                for (let i = currentYear - 5; i <= currentYear + 5; i++) {
+                    const option = $('<option>').val(i).text(i);
+                    yearSelect.append(option);
+                }
+            }
+
+            // Function to generate the calendar days
+            function generateCalendar(date) {
+                const calendarContainer = $('#mb_calendar_days');
+                calendarContainer.empty();
+
+                const year = date.getFullYear();
+                const month = date.getMonth();
+
+                const firstDayOfMonth = new Date(year, month, 1);
+                const firstDayOfWeek = firstDayOfMonth.getDay(); // 0 for Sunday, 1 for Monday, etc.
+                const daysInMonth = new Date(year, month + 1, 0).getDate();
+                const today = new Date();
+
+                // Set dropdown values to match the current date
+                $('#mb_month_select').val(month);
+                $('#mb_year_select').val(year);
+
+                // Add empty placeholders for the days of the week before the 1st
+                for (let i = 0; i < firstDayOfWeek; i++) {
+                    const emptyDay = $('<div>').addClass('mb_day mb_inactive');
+                    calendarContainer.append(emptyDay);
+                }
+
+                // Add active days for the current month
+                for (let i = 1; i <= daysInMonth; i++) {
+                    const day = $('<div>').addClass('mb_day').text(i);
+                    // Check if this day is today and mark it as selected by default
+                    if (year === today.getFullYear() && month === today.getMonth() && i === today.getDate()) {
+                        day.addClass('mb_selected');
+                    }
+
+                    // Add a click event listener to select the day
+                    day.on('click', function () {
+                        $('.mb_day').removeClass('mb_selected');
+                        $(this).addClass('mb_selected');
+                    });
+                    calendarContainer.append(day);
+                }
+            }
+
+            // Event listeners for month navigation (left/right arrows)
+            $('#mb_prev_month').on('click', function () {
+                const newMonth = currentDate.getMonth() - 1;
+                const newYear = currentDate.getFullYear();
+                currentDate = new Date(newYear, newMonth, 1);
+                generateCalendar(currentDate);
+            });
+
+            $('#mb_next_month').on('click', function () {
+                const newMonth = currentDate.getMonth() + 1;
+                const newYear = currentDate.getFullYear();
+                currentDate = new Date(newYear, newMonth, 1);
+                generateCalendar(currentDate);
+            });
+
+            // Event listener for dropdown changes
+            $('#mb_month_select, #mb_year_select').on('change', function () {
+                const newMonth = $('#mb_month_select').val();
+                const newYear = $('#mb_year_select').val();
+                currentDate = new Date(newYear, newMonth, 1);
+                generateCalendar(currentDate);
+            });
+
+            // Generate the initial calendar and populate dropdowns
+            populateDropdowns();
+            generateCalendar(currentDate);
+        }
+        generateCalendar();
+       
 
         // Back to Top Button
         $(window).on("scroll", function () {
