@@ -34498,6 +34498,146 @@ header {
   line-height: 26px; /* 162.5% */
 }
 
+.rb_project_tab {
+  position: relative;
+}
+.rb_project_tab .section-padding {
+  position: relative;
+  padding: 120px 75px 110px;
+}
+.rb_project_tab .rb_tab_buttons {
+  display: flex;
+  gap: 10px;
+}
+.rb_project_tab .rb_tab_buttons .item {
+  display: inline-flex;
+  height: 40px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.rb_project_tab .rb_tab_buttons .item:hover {
+  background: var(--P, #FF9916);
+  color: #fff;
+}
+.rb_project_tab .rb_overview_content .rb_add_favorite_btn {
+  color: #031A26;
+  text-align: right;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.7;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card {
+  padding: 57px 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title i {
+  color: rgba(3, 26, 38, 0.4);
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_text {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.7;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
+  display: inline-block;
+  width: fit-content;
+  border-radius: 999px;
+  background: var(--P, #FF9916);
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 19px 99px;
+  border: none;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h5 {
+  color: #031A26;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 15px;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h6 {
+  color: #031A26;
+  text-align: right;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.7;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_hr {
+  background: rgba(3, 26, 38, 0.12);
+  width: 100%;
+  height: 1px;
+  flex-shrink: 0;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_service_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_service_item .text h5 {
+  color: #031A26;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+  padding-bottom: 5px;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_service_item .text h4 {
+  color: #031A26;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_desc h4 {
+  color: #031A26;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_desc p {
+  color: rgba(3, 26, 38, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_desc .rb_read_more {
+  color: #FF9916;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .rb_service1 {
   position: relative;
 }
