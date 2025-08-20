@@ -1,4 +1,10 @@
 .rb_testimonial1 {
+    position: relative;
+    .rb_testimonial_shape {
+        position: absolute;
+        top: -14%;
+        right: 2.7%;
+    }
     .container {
         max-width: 1754px;
     }

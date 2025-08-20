@@ -33033,6 +33033,14 @@ header {
 
 /*--Selling End---*/
 /*--Our Agents Start---*/
+.mb_our_agents {
+  position: relative;
+}
+.mb_our_agents .mb_our_agent_shape {
+  position: absolute;
+  top: -17%;
+  left: 2%;
+}
 .mb_our_agents .mb_our_agents_card {
   display: flex;
   flex-direction: row;
@@ -33756,6 +33764,41 @@ header {
   cursor: pointer;
 }
 
+.rb_arrow_slider_btn .item_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 42%;
+  left: 3%;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 46px;
+  background: #FFF;
+}
+.rb_arrow_slider_btn .item_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 42%;
+  right: 3%;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 46px;
+  background: #FFF;
+}
+.rb_arrow_slider_btn button:hover {
+  background-color: #FF9916;
+}
+.rb_arrow_slider_btn button:hover i {
+  color: #FFF;
+}
+
 .rb_video_icon {
   position: absolute;
   text-align: center;
@@ -34199,6 +34242,14 @@ header {
   color: #FF9916;
 }
 
+.rb_testimonial1 {
+  position: relative;
+}
+.rb_testimonial1 .rb_testimonial_shape {
+  position: absolute;
+  top: -14%;
+  right: 2.7%;
+}
 .rb_testimonial1 .container {
   max-width: 1754px;
 }
