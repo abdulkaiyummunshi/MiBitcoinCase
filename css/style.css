@@ -33834,13 +33834,13 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.page-nav-wrap ul {
+.rb_page_nav_wrap ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.page-nav-wrap ul li .page-numbers {
+.rb_page_nav_wrap ul li .page-numbers {
   display: flex;
   width: 44px;
   height: 44px;
@@ -33857,16 +33857,16 @@ header {
   line-height: normal;
   opacity: 0.7;
 }
-.page-nav-wrap ul li .page-numbers i {
+.rb_page_nav_wrap ul li .page-numbers i {
   color: #031A26;
   font-size: 15px;
   font-style: normal;
 }
-.page-nav-wrap ul li .page-numbers:hover {
+.rb_page_nav_wrap ul li .page-numbers:hover {
   background: #ff9916;
   color: #fff;
 }
-.page-nav-wrap ul li .page-numbers:hover i {
+.rb_page_nav_wrap ul li .page-numbers:hover i {
   color: #fff;
 }
 
