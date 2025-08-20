@@ -34429,6 +34429,75 @@ header {
 }
 
 /* Compiled CSS from SCSS */
+.rb_project1 {
+  position: relative;
+}
+.rb_project1 .section-padding {
+  position: relative;
+  padding: 120px 75px 110px;
+}
+.rb_project1 .rb_project1_card .rb_thumb img {
+  border-radius: 15px;
+  width: 100%;
+  max-height: 520px;
+}
+.rb_project1 .rb_project1_card .rb_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 20%;
+  left: 6.3%;
+}
+.rb_project1 .rb_project1_card .rb_btn .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: #FFF;
+  padding: 8px 8px;
+  height: 40px;
+  color: #031A26;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.rb_project1 .rb_project1_card .rb_btn .item img {
+  padding-right: 8px;
+  width: fit-content;
+}
+.rb_project1 .rb_project1_card .rb_content {
+  position: absolute;
+  bottom: 4%;
+  left: 3%;
+  border-radius: 10px;
+  background: #FFF;
+  padding: 20px 16px;
+}
+.rb_project1 .rb_project1_card .rb_content .rb_title {
+  color: #031A26;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.rb_project1 .rb_project1_card .rb_content .rb_desc {
+  color: var(--900, #031A26);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 150% */
+}
+.rb_project1 .rb_project1_card .rb_content .rb_desc2 {
+  color: rgba(3, 26, 38, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+}
+
 .rb_service1 {
   position: relative;
 }
