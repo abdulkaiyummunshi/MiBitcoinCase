@@ -841,7 +841,12 @@
 
 /*--Our Agents Start---*/
 .mb_our_agents{
-   
+    position: relative;
+    .mb_our_agent_shape {
+        position: absolute;
+        top: -17%;
+        left: 2%;
+    }
     .mb_our_agents_card{
         @include flex(row, space-between, center);
         h4{

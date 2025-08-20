@@ -524,6 +524,38 @@
         }
     }
 }
+.rb_arrow_slider_btn {
+    .item_1 {
+        @include flex(row, center, center);
+        position: absolute;
+        top: 42%;
+        left: 3%;      
+        width: 46px;
+        height: 46px;
+        flex-shrink: 0;
+        border-radius: 46px;
+        background: #FFF;
+    }
+    .item_2 {
+        @include flex(row, center, center);
+        position: absolute;
+        top: 42%;
+        right: 3%;      
+        width: 46px;
+        height: 46px;
+        flex-shrink: 0;
+        border-radius: 46px;
+        background: #FFF;
+    }
+    button {
+        &:hover {
+            background-color: #FF9916;
+            i {
+                color: #FFF;
+            }
+        }
+    }
+}
 
 // Video icon
 .rb_video_icon {

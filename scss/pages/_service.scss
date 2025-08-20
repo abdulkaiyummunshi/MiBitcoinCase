@@ -1,8 +1,19 @@
 // Service1 css start
 .rb_service1 {
+    position: relative;
+    .rb_service_shape1 {
+        position: absolute;
+        top: -9%;
+        left: 4%;
+    }
+    .rb_service_shape2 {
+        position: absolute;
+        bottom: -35%;
+        right: 3%;
+    }
     .row.style1 {
-                            --bs-gutter-y: 4rem;
-                            --bs-gutter-x: 4rem;
+        --bs-gutter-y: 4rem;
+        --bs-gutter-x: 4rem;
         // @include breakpoint (md){
         //     --bs-gutter-y: 3rem;
         //     --bs-gutter-x: 3rem;
@@ -11,6 +22,10 @@
         //     --bs-gutter-y: 4rem;
         //     --bs-gutter-x: 4rem;
         // }
+        border-top: 1px solid rgba(3, 26, 38, 0.12);
+        margin-top: 0;
+        padding-bottom: 30px;
+        padding-top: 10px;
     }
     .service_card {
         display: flex;
