@@ -63,6 +63,32 @@
 
 .rb_blog2 {
     position: relative;
+    .rb_blog_header {
+        h4 {
+            color: #031A26;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        h5 {
+            color: rgba(3, 26, 38, 0.70);
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            span {
+                color: #031A26;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
     .rb_blog2_shape {
         position: absolute;
         z-index: 9;
@@ -80,6 +106,9 @@
         padding: 120px 75px 110px;
         border-radius: 24px;
         background: #FFEED8;
+        &.style1 {
+            background-color: $white;
+        }
     }
     .rb_radio_btn{
         @include flex(row, flex-start, center);
@@ -104,6 +133,71 @@
             &:hover {
                 background: #FFF;
             }
+        }
+    }
+    .rb_dropdown_1 {
+        .btn_one {
+            padding: 5px 16px;
+            border-radius: 100px;
+            border: 1px solid rgba(3, 26, 38, 0.12);
+            height: 50px;
+            background-color: $white;
+            color: rgba(3, 26, 38, 0.70);
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+    .rb_dropdown_2 {
+        display: flex;
+        align-items: center;
+        padding: 5px 16px;
+        border-radius: 100px;
+        border: 1px solid rgba(3, 26, 38, 0.12);
+        height: 50px;
+        background-color: $white;
+        color: rgba(3, 26, 38, 0.70);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        cursor: pointer;
+        .rb_badge {
+            @include flex(row, center, center);      
+            margin-left: 16px; 
+            border-radius: 24px;     
+            width: 26px;
+            height: 26px;
+            flex-shrink: 0;
+            background-color: #FF9916;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+    .rb_dropdown_3 {
+        @include flex(row, center, center);
+        border-radius: 100px;
+        border: 1px solid rgba(3, 26, 38, 0.12);
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+        background-color: $white;
+        color: rgba(3, 26, 38, 0.70);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; 
+        cursor: pointer;
+        i {
+            font-size: 20px;
         }
     }
     .rb_blog_card {
@@ -159,6 +253,22 @@
                 position: absolute;
                 top: -46px;
                 right: 18px;
+                &.style1 {
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    span {
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
             }
             .rb_location {
                 i {
