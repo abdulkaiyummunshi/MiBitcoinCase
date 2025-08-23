@@ -34532,7 +34532,7 @@ header {
   opacity: 0.7;
 }
 .rb_project_tab .rb_overview_content .rb_overview_card {
-  padding: 57px 50px;
+  padding: 45px 50px;
   border-radius: 10px;
   border: 1px solid rgba(3, 26, 38, 0.12);
 }
@@ -34631,6 +34631,114 @@ header {
   line-height: 30px;
 }
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc .rb_read_more {
+  color: #FF9916;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.rb_project_tab .rb_history_content .rb_history_card {
+  padding: 45px 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_title h4 {
+  color: #031A26;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_desc {
+  color: rgba(3, 26, 38, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
+  position: relative;
+  padding: 38px 44px;
+  border-radius: 10px;
+  background: #FFEED8;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .inner_card_vLine {
+  position: absolute;
+  top: 9.5%;
+  left: 5.5%;
+  width: 1px;
+  height: 242px;
+  flex-shrink: 0;
+  background: rgba(3, 26, 38, 0.12);
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content {
+  width: 100%;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date {
+  color: rgba(3, 26, 38, 0.7);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date span {
+  color: #031A26;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date .rb_current_view {
+  padding: 7px 14px;
+  margin-left: 14px;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+  color: #031A26;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date .rb_file_tag {
+  margin-left: 14px;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_login_to_view {
+  color: #031A26;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.7;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table {
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+  padding: 40px 30px;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h4 {
+  color: #252525;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h5 {
+  color: rgba(3, 26, 38, 0.7);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 185.714% */
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .rb_element {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_fullhistory {
   color: #FF9916;
   font-size: 16px;
   font-style: normal;
