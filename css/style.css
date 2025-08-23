@@ -34745,6 +34745,59 @@ header {
   font-weight: 600;
   line-height: normal;
 }
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card {
+  padding: 45px 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+}
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_miBitcoin_title h4 {
+  color: #031A26;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_miBitcoin_desc {
+  color: rgba(3, 26, 38, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card {
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+}
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card {
+  max-width: 310px;
+}
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card .rb_value_header {
+  border-radius: 9px 9px 0 0;
+  background: #FFEED8;
+  padding: 18px 60px;
+  color: #031A26;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card .rb_content {
+  border-right: 1px solid rgba(3, 26, 38, 0.12);
+}
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card .rb_content .rb_value_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(3, 26, 38, 0.12);
+  padding: 22px 20px;
+  color: rgba(3, 26, 38, 0.7);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 .rb_service1 {
   position: relative;
