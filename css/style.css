@@ -34765,8 +34765,17 @@ header {
   line-height: normal;
 }
 .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card {
+  position: relative;
+  display: flex;
+  align-items: end;
   border-radius: 10px;
   border: 1px solid rgba(3, 26, 38, 0.12);
+}
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart_img {
+  position: absolute;
+  top: 50%;
+  left: 69%;
+  transform: translate(-50%, -50%);
 }
 .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card {
   max-width: 310px;
@@ -34797,6 +34806,46 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart {
+  padding-left: 40px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: repeat(7, 1fr) 40px;
+  width: 640px;
+  max-width: 640px;
+  height: 500px;
+  max-height: 500px;
+  border-left: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  position: relative;
+  /* Y-axis labels */
+  /* X-axis labels */
+  /* Horizontal grid lines */
+}
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart .y-label {
+  color: rgba(3, 26, 38, 0.7);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px; /* 428.571% */
+  text-align: right;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart .x-labels {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(3, 26, 38, 0.7);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px; /* 428.571% */
+  padding-top: 8px;
 }
 
 .rb_service1 {
