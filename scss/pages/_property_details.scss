@@ -442,6 +442,161 @@
 
         }
     }
+    .rb_feature_content {
+        .rb_feature_card {
+            padding: 45px 50px;
+            border-radius: 10px;
+            border: 1px solid rgba(3, 26, 38, 0.12);
+            .rb_feature_title {
+                h4 {
+                    color: #031A26;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            .rb_feature_desc {
+                color: rgba(3, 26, 38, 0.60);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .rb_feature_tab {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                border-bottom: 1px solid rgba(3, 26, 38, 0.12);
+                .item {
+                    border-radius: 6px 6px 0 0;
+                    background: #FFEED8;
+                    padding: 14px 18px;
+                }
+            }
+
+            .rb_feature_faq {
+                .accordion {
+                    width: 100%;
+                    .accordion-item {
+                        border-radius: 14px;
+                        border: 1px solid rgba(3, 26, 38, 0.10);
+                        margin-bottom: 30px;
+                        overflow: hidden; 
+                        @include sm{
+                            margin-bottom: 8px;
+                        }
+                        &.active {
+                            .accordion-header {
+                                background: $white;
+                                h3{
+                                    color: #031A26;
+                                }                    
+
+                                .icon {
+                                    transform: rotate(180deg); 
+                                    background-color: #FF9916;
+                                    color: $white;
+                                }
+                            }
+                            .accordion-content {
+                                height: auto; 
+                            }
+                        }
+                    }
+
+                    .accordion-header {
+                        @include flex(row, space-between, center);
+                        padding: 15px 24px;
+                        @include sm{
+                            padding: 4px 15px;
+                        }
+                        cursor: pointer;
+                        transition: background 0.3s ease;
+                        h3 {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            color: #031A26;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            @include sm {
+                                font-size: 12px;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: #f0f0f0;
+                        }
+
+                        .icon {
+                            width: 32px;
+                            height: 32px;
+                            line-height: 32px;
+                            text-align: center;
+                            @include border-radius(50%);
+                            background-color: #FFEED8;
+                            transition: transform 0.3s ease;
+                            box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+                            @include sm{
+                                width: 14px;
+                                height: 14px;
+                                line-height: 13px;
+                                font-size: 8px;
+                            }
+                        }
+                    }
+
+                    .accordion-content {
+                        height: 0;
+                        overflow: hidden;
+                        transition: height 0.5s ease-out, padding 0.5s ease-out;
+                        p {
+                            padding: 21px 24px 40px 24px;
+                            margin: 0; 
+                            color: rgba(3, 26, 38, 0.60);
+                            font-family: Inter;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 30px; 
+                            @include sm{
+                                font-size: 8px;
+                                padding: 10px;
+                            }
+                        }
+                        .rb_content_table {
+                            // display: flex;
+                            // align-items: center;
+                            // gap: 145px;
+                            padding: 30px 70px 40px 70px;
+                            .rb_item {
+                                h6 {
+                                    color: rgba(3, 26, 38, 0.70);
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 26px;
+                                    padding-bottom: 8px;
+                                }
+                                h5 {
+                                    color: #031A26;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
     .rb_btc_card {
         border-radius: 10px;
         border: 1px solid rgba(3, 26, 38, 0.12);

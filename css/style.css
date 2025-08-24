@@ -35030,6 +35030,157 @@ header {
   line-height: 60px; /* 428.571% */
   padding-top: 8px;
 }
+.rb_project_tab .rb_feature_content .rb_feature_card {
+  padding: 45px 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_title h4 {
+  color: #031A26;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_desc {
+  color: rgba(3, 26, 38, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_tab {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid rgba(3, 26, 38, 0.12);
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_tab .item {
+  border-radius: 6px 6px 0 0;
+  background: #FFEED8;
+  padding: 14px 18px;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion {
+  width: 100%;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item {
+  border-radius: 14px;
+  border: 1px solid rgba(3, 26, 38, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item {
+    margin-bottom: 8px;
+  }
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header {
+  background: #fff;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header h3 {
+  color: #031A26;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header .icon {
+  transform: rotate(180deg);
+  background-color: #FF9916;
+  color: #fff;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-content {
+  height: auto;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 24px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header {
+    padding: 4px 15px;
+  }
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #031A26;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header h3 {
+    font-size: 12px;
+  }
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header:hover {
+  background-color: #f0f0f0;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header .icon {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #FFEED8;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header .icon {
+    width: 14px;
+    height: 14px;
+    line-height: 13px;
+    font-size: 8px;
+  }
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-out, padding 0.5s ease-out;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content p {
+  padding: 21px 24px 40px 24px;
+  margin: 0;
+  color: rgba(3, 26, 38, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content p {
+    font-size: 8px;
+    padding: 10px;
+  }
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table {
+  padding: 30px 70px 40px 70px;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table .rb_item h6 {
+  color: rgba(3, 26, 38, 0.7);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  padding-bottom: 8px;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table .rb_item h5 {
+  color: #031A26;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 .rb_project_tab .rb_btc_card {
   border-radius: 10px;
   border: 1px solid rgba(3, 26, 38, 0.12);
