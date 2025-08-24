@@ -50,6 +50,7 @@
             font-size: 40px;
             line-height: 160%;
             color: #031a26;
+
             span{
                 margin-right: 10px;
             }
@@ -57,6 +58,9 @@
         &.style_01{
             h2{
                 color: $text_color;
+            }
+            h3{
+                font-weight: 700;
             }
         }
     }

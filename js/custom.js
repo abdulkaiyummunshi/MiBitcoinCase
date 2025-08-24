@@ -211,6 +211,7 @@
                 });
         }
         howWork()
+       
         
         $('.open_more_content').on('click', () => {
             $('.mb_casa_brokerage').toggleClass('active');
@@ -238,7 +239,59 @@
                 },
             ]
         });
+        $('.mb_image_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 3000,
+            dots: false,
+            infinite: true,
+            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+            responsive: [
+                {
+                    breakpoint: 768, 
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+            ]
+        });
 
+        $(document).ready(function () {
+            $('.read-more-btn').on('click', function (e) {
+                e.preventDefault();
+                var container = $(this).closest('.read-more-container');
+                container.toggleClass('expanded');
+
+                if (container.hasClass('expanded')) {
+                    $(this).text('Show less');
+                } else {
+                    $(this).text('More....');
+                }
+            });
+        });
+        $(document).ready(function () {
+            // Handle navigation clicks
+            $('.header nav ul li').on('click', function () {
+                $('.header nav ul li').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // Handle "Action" button dropdown
+            $('.btn-action').on('click', function () {
+                // You would typically toggle a dropdown menu here.
+                alert('Action menu toggled!');
+            });
+
+            // Handle "Add Listing" button click
+            $('.btn-add-listing').on('click', function () {
+                alert('Redirecting to the "Add Listing" page.');
+            });
+        });
         // Gsap RegisterPlugin
         gsap.registerPlugin(ScrollSmoother, ScrollTrigger, SplitText);
 
@@ -388,7 +441,26 @@
             generateCalendar(currentDate);
         }
         generateCalendar();
-       
+
+        // Map Search Filter
+        $(document).ready(function () {
+            function searchFilter() {
+                $(".mb_single_filter button").on("click", function () {
+                    $(this).toggleClass("active");
+                });
+            }
+            searchFilter();
+
+            $('.view-button').on('click', function () {
+                $('.view-button').removeClass('selected');
+                $(this).addClass('selected');
+            });
+
+            $('.status-button').on('click', function () {
+                $('.status-button').removeClass('selected');
+                $(this).addClass('selected');
+            });
+        });
 
         // Back to Top Button
         $(window).on("scroll", function () {
