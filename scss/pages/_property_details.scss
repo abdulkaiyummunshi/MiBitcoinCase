@@ -1,0 +1,751 @@
+.rb_project1 {
+    position: relative;
+    .section-padding {
+        position: relative;
+        padding: 120px 75px 110px;
+    }
+    .rb_project1_card {
+        .rb_thumb {
+            img {
+                border-radius: 15px;
+                width: 100%;
+                max-height: 520px;
+            }
+        }
+        .rb_btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: absolute;
+            bottom: 20%;
+            left: 6.3%;
+            .item {
+                @include flex(row, center,center);
+                border-radius: 6px;
+                background: #FFF;
+                padding: 8px 8px;
+                height: 40px;
+                color: #031A26;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                img {
+                    padding-right: 8px;
+                    width: fit-content;
+                }
+            }
+        }
+        .rb_content {
+            position: absolute;
+            bottom: 4%;
+            left: 3%;
+            border-radius: 10px;
+            background: #FFF;
+            padding: 20px 16px;
+            .rb_title {
+                color: #031A26;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+            .rb_desc {
+                color: var(--900, #031A26);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px; /* 150% */
+            }
+            .rb_desc2 {
+                color: rgba(3, 26, 38, 0.60);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; /* 162.5% */
+            }
+        }
+    }
+}
+
+.rb_project_tab {
+    position: relative;
+    .section-padding {
+        position: relative;
+        padding: 0 75px;
+    }
+    .rb_tab_buttons {
+        display: flex;
+        gap: 10px;
+        .item {
+            display: inline-flex;
+            height: 40px;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 5px;
+            &:hover {
+                background: var(--P, #FF9916);
+                color: $white;
+            }
+        }
+    }
+    .rb_add_favorite_btn {
+        @include flex(row, end, center);
+        gap: 10px;
+        color: #031A26;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        opacity: 0.7;
+    }
+    .rb_overview_content {
+        .rb_overview_card {
+            padding: 45px 50px;
+            border-radius: 10px;
+            border: 1px solid rgba(3, 26, 38, 0.12);
+            .rb_location {
+                .rb_title {
+                    color: #031A26;
+                    font-family: Inter;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    i {
+                        color: rgba(3, 26, 38, 0.40);
+                    }
+                }
+                .rb_text {
+                    color: #031A26;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    opacity: 0.7;
+                }
+            }
+            .rb_btn {
+                display: inline-block;
+                width: fit-content;
+                border-radius: 999px;
+                background: var(--P, #FF9916);
+                color: #FFF;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                padding: 19px 99px;
+                border: none;
+                
+            }
+            .rb_detached {
+                h5 {
+                    color: #031A26;
+                    text-align: right;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding-bottom: 15px;
+                }
+                h6 {
+                    color: #031A26;
+                    text-align: right;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    opacity: 0.7;
+                }
+            }
+            .rb_hr {
+                background: rgba(3, 26, 38, 0.12);
+                width: 100%;
+                height: 1px;
+                flex-shrink: 0;
+            }
+            .rb_service_item {
+                @include flex(row, start, center);
+                gap: 15px;
+                .text {
+                    h5 {
+                        color: #031A26;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        opacity: 0.7;
+                        padding-bottom: 5px;
+                    }
+                    h4 {
+                        color: #031A26;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+            .rb_desc {
+                h4 {
+                    color: #031A26;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                p {
+                    color: rgba(3, 26, 38, 0.60);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 30px; 
+                }
+                .rb_read_more {
+                    color: #FF9916;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .rb_history_content {
+        .rb_history_card {
+            padding: 45px 50px;
+            border-radius: 10px;
+            border: 1px solid rgba(3, 26, 38, 0.12);
+            .rb_history_title {
+                h4 {
+                    color: #031A26;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            .rb_history_desc {
+                color: rgba(3, 26, 38, 0.60);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .rb_history_inner_card {
+                position: relative;
+                padding: 38px 44px;
+                border-radius: 10px;
+                background: #FFEED8;
+                .inner_card_vLine {
+                    position: absolute;
+                    top: 9.5%;
+                    left: 5.5%;
+                    width: 1px;
+                    height: 242px;
+                    flex-shrink: 0;
+                    background: rgba(3, 26, 38, 0.12);
+                }
+                .rb_content {
+                    width: 100%;
+                    .rb_date {
+                        color: rgba(3, 26, 38, 0.70);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        span {
+                            color: #031A26;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                        .rb_current_view {
+                            padding: 7px 14px;
+                            margin-left: 14px;
+                            border-radius: 4px;
+                            background: #FFF;
+                            box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+                            color: #031A26;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 26px; 
+                        }
+                        .rb_file_tag {
+                            margin-left: 14px;
+                        }
+                    }
+                    .rb_login_to_view {
+                        color: #031A26;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        opacity: 0.7;
+                    }
+                    .rb_history_table {
+                        border-radius: 10px;
+                        background: #FFF;
+                        box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+                        padding: 40px 30px;
+                        .content {
+                            h4 {
+                                color: #252525;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                margin-bottom: 8px;
+                            }
+                            h5 {
+                                color: rgba(3, 26, 38, 0.70);
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 26px; /* 185.714% */
+                            }
+                        }
+                        .rb_element {
+                            display: flex;
+                            gap: 50px;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            .rb_fullhistory {
+                color: #FF9916;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+
+    .rb_miBitcoin_content {
+        .rb_miBitcoin_card {
+            padding: 45px 50px;
+            border-radius: 10px;
+            border: 1px solid rgba(3, 26, 38, 0.12);
+            .rb_miBitcoin_title {
+                h4 {
+                    color: #031A26;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            .rb_miBitcoin_desc {
+                color: rgba(3, 26, 38, 0.60);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .rb_inner_card {
+                position: relative;
+                display: flex;
+                align-items: end;
+                border-radius: 10px;
+                border: 1px solid rgba(3, 26, 38, 0.12);
+                .rb_chart_img {
+                    position: absolute;
+                    top: 50%;
+                    left: 69%;
+                    transform: translate(-50%, -50%);
+                }
+                .rb_miBitcoin_list_card {
+                    max-width: 310px;
+                    .rb_value_header {
+                        border-radius: 9px 9px 0 0;
+                        background: #FFEED8;
+                        padding: 18px 60px;
+                        color: #031A26;
+                        text-align: center;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    .rb_content {
+                        border-right: 1px solid rgba(3, 26, 38, 0.12);
+                        .rb_value_list {
+                            @include flex(row, space-between, center);
+                            border-bottom: 1px solid rgba(3, 26, 38, 0.12);
+                            padding: 22px 20px;
+                            color: rgba(3, 26, 38, 0.70);
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+                }
+                .rb_chart {
+                    padding-left: 40px;
+                    padding-bottom: 20px;
+                    display: grid;
+                    grid-template-columns: 60px 1fr;
+                    grid-template-rows: repeat(7, 1fr) 40px;
+                    width: 640px;
+                    max-width: 640px;
+                    height: 500px;
+                    max-height: 500px;
+                    border-left: 1px solid #e5e7eb;
+                    border-bottom: 1px solid #e5e7eb;
+                    position: relative;
+                    /* Y-axis labels */
+                    .y-label {
+                        color: rgba(3, 26, 38, 0.70);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 60px; /* 428.571% */
+                        text-align: right;
+                        padding-right: 10px;
+                        display: flex;
+                        align-items: center;
+                    }
+                
+                    /* X-axis labels */
+                    .x-labels {
+                        grid-column: 2 / 3;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        color: rgba(3, 26, 38, 0.70);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 60px; /* 428.571% */
+                        padding-top: 8px;
+                    }
+                
+                    /* Horizontal grid lines */
+                    // .grid-line {
+                    //     grid-column: 2 / 3;
+                    //     border-top: 1px solid #e5e7eb;
+                    //     opacity: 0.7;
+                    // }
+                }
+            }
+
+        }
+    }
+    .rb_feature_content {
+        .rb_feature_card {
+            padding: 45px 50px;
+            border-radius: 10px;
+            border: 1px solid rgba(3, 26, 38, 0.12);
+            .rb_feature_title {
+                h4 {
+                    color: #031A26;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            .rb_feature_desc {
+                color: rgba(3, 26, 38, 0.60);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .rb_feature_tab {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                border-bottom: 1px solid rgba(3, 26, 38, 0.12);
+                .item {
+                    border-radius: 6px 6px 0 0;
+                    background: #FFEED8;
+                    padding: 14px 18px;
+                }
+            }
+
+            .rb_feature_faq {
+                .accordion {
+                    width: 100%;
+                    .accordion-item {
+                        border-radius: 14px;
+                        border: 1px solid rgba(3, 26, 38, 0.10);
+                        margin-bottom: 30px;
+                        overflow: hidden; 
+                        @include sm{
+                            margin-bottom: 8px;
+                        }
+                        &.active {
+                            .accordion-header {
+                                background: $white;
+                                h3{
+                                    color: #031A26;
+                                }                    
+
+                                .icon {
+                                    transform: rotate(180deg); 
+                                    background-color: #FF9916;
+                                    color: $white;
+                                }
+                            }
+                            .accordion-content {
+                                height: auto; 
+                            }
+                        }
+                    }
+
+                    .accordion-header {
+                        @include flex(row, space-between, center);
+                        padding: 15px 24px;
+                        @include sm{
+                            padding: 4px 15px;
+                        }
+                        cursor: pointer;
+                        transition: background 0.3s ease;
+                        h3 {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            color: #031A26;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            @include sm {
+                                font-size: 12px;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: #f0f0f0;
+                        }
+
+                        .icon {
+                            width: 32px;
+                            height: 32px;
+                            line-height: 32px;
+                            text-align: center;
+                            @include border-radius(50%);
+                            background-color: #FFEED8;
+                            transition: transform 0.3s ease;
+                            box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+                            @include sm{
+                                width: 14px;
+                                height: 14px;
+                                line-height: 13px;
+                                font-size: 8px;
+                            }
+                        }
+                    }
+
+                    .accordion-content {
+                        height: 0;
+                        overflow: hidden;
+                        transition: height 0.5s ease-out, padding 0.5s ease-out;
+                        p {
+                            padding: 21px 24px 40px 24px;
+                            margin: 0; 
+                            color: rgba(3, 26, 38, 0.60);
+                            font-family: Inter;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 30px; 
+                            @include sm{
+                                font-size: 8px;
+                                padding: 10px;
+                            }
+                        }
+                        .rb_content_table {
+                            // display: flex;
+                            // align-items: center;
+                            // gap: 145px;
+                            padding: 30px 70px 40px 70px;
+                            .rb_item {
+                                h6 {
+                                    color: rgba(3, 26, 38, 0.70);
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 26px;
+                                    padding-bottom: 8px;
+                                }
+                                h5 {
+                                    color: #031A26;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+    .rb_btc_card {
+        border-radius: 10px;
+        border: 1px solid rgba(3, 26, 38, 0.12);
+        padding: 22px 40px 36px 40px;
+        .rb_btc_text {
+            color: #031A26;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 74px;
+            padding-right: 10px;
+        }
+        .rb_btc_value {
+            color: #031A26;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 74px;
+        }
+        .rb_sale {
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+            padding: 5px 10px;
+            margin-left: 25px;
+        }
+        .rb_est {
+            color: #031A26;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            span {
+                color: #031A26;
+                font-size: 8px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            img {
+                padding-left: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+    .rb_schedule_card {
+        border-radius: 10px;
+        border: 1px solid rgba(3, 26, 38, 0.12);
+        padding: 20px 40px 36px 40px;
+        .rb_schedule_title {
+            color: #031A26;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px; /* 213.333% */
+        }
+        .rb_schedule_text {
+            color: #031A26;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+        }
+        .rb_date_slider {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            .item {
+                border-radius: 10px;
+                border: 1px solid rgba(3, 26, 38, 0.12);
+                padding: 20px 30px 10px;
+                text-align: center;
+                span {
+                    color: var(--800, #68767D);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px; /* 150% */
+                }
+                h4 {
+                    color: var(--900, #031A26);
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 48px;
+                }
+                &.active {
+                    background: var(--900, #031A26);
+                    border: none;
+                    span {
+                        color: $white;
+                    }
+                    h4 {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .rb_schedule_btn {
+            border-radius: 999px;
+            background: var(--P, #FF9916);
+            padding: 19px 20px;
+            text-align: center;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .rb_more_about_property {
+            color: #031A26;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px; /* 213.333% */
+        }
+        .rb_email_agent_btn {
+            border-radius: 6px;
+            border: 1px solid rgba(3, 26, 38, 0.12);
+            padding: 18px 20px;
+            color: var(--900, #031A26);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-align: center;
+        }
+        .rb_message_sent {
+            color: var(--900, #031A26);
+            font-size: 16px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        .rb_desc {
+            color: var(--900, #031A26);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            span {
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-skip-ink: auto;
+                text-decoration-thickness: auto;
+                text-underline-offset: auto;
+                text-underline-position: from-font;
+            }
+        }
+    }
+}
