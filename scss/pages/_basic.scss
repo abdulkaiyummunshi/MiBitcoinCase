@@ -336,6 +336,196 @@
         }
     }
 }
+
+.common_input_2 {
+    position: relative;
+    .form-group {
+        label {
+            display: block;
+            color: #031A26;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px; 
+            margin-bottom: 13px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            height: 46px;
+            border-radius: 6px;
+            border: 1px solid rgba(3, 26, 38, 0.12);
+
+            color: #031A26;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; 
+            opacity: 0.7;
+            &::placeholder{
+                color: #031A26;
+                opacity: 0.7;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        textarea {
+            height: 122px;
+            resize: vertical;
+        }
+        input[type="date"] {
+            cursor: pointer;
+            &::-webkit-calendar-picker-indicator {
+                opacity: 0;
+                display: none;
+                -webkit-appearance: none;
+            }
+            &::-webkit-inner-spin-button,
+            &::-webkit-clear-button {
+                display: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+        .nice-select,
+        select {
+            width: 100%;
+            padding: 14px 0px;
+            height: 54px;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 1px solid rgba(3, 26, 38, 0.14);
+
+            color: #031A26;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            /* Remove default arrow styles for consistency */
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            /* Add custom arrow */
+            // background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23626262' d='M6 8L0 0h12z'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 12px 8px;
+            cursor: pointer;
+        }
+        .nice-select:after {
+            width: 7px;
+            height: 7px;
+        }
+        select:focus {
+            outline: none;
+        }
+
+
+        .gender-options {
+            display: flex;
+            gap: 20px;
+            padding: 14px 30px;
+            height: 54px;
+            border-radius: 5px;
+            background: var(--100, #EBF3ED);
+            align-items: center;
+            // @include breakpoint (max-xsmall){
+            //     padding: 14px 15px;
+            // }
+            label {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                margin: 0;
+                color: var(--800, #626262);
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; 
+            }
+    
+            input[type="radio"] {
+                display: flex;
+                width: 20px;
+                height: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                flex-shrink: 0;
+                border-radius: 50%; 
+                border: 1px solid var(--900, #1F1F1F);
+                background: transparent;
+                cursor: pointer;
+            }
+        }
+
+
+        .password-input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            &.style_1{
+                input{
+                    &::placeholder{
+                        font-size: 50px;
+                        letter-spacing: 5px;
+                        color: black;
+                    }
+
+                }
+            }
+        }
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            color: #626262;
+            font-size: 18px;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+    }
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .checkbox-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #031A26;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; 
+        opacity: 0.7;
+    }
+
+    .checkbox-left input[type="checkbox"] {
+        border-radius: 2px;
+        border: 1px solid rgba(3, 26, 38, 0.12);
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+}
 // Common Input css End
 
 

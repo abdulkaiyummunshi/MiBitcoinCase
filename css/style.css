@@ -32391,6 +32391,185 @@ header {
   cursor: pointer;
 }
 
+.common_input_2 {
+  position: relative;
+}
+.common_input_2 .form-group label {
+  display: block;
+  color: #031A26;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 13px;
+}
+.common_input_2 .form-group input[type=text],
+.common_input_2 .form-group input[type=number],
+.common_input_2 .form-group input[type=tel],
+.common_input_2 .form-group input[type=date],
+.common_input_2 .form-group input[type=time],
+.common_input_2 .form-group input[type=email],
+.common_input_2 .form-group input[type=password],
+.common_input_2 .form-group textarea {
+  width: 100%;
+  padding: 12px 20px;
+  height: 46px;
+  border-radius: 6px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+  color: #031A26;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.7;
+}
+.common_input_2 .form-group input[type=text]::placeholder,
+.common_input_2 .form-group input[type=number]::placeholder,
+.common_input_2 .form-group input[type=tel]::placeholder,
+.common_input_2 .form-group input[type=date]::placeholder,
+.common_input_2 .form-group input[type=time]::placeholder,
+.common_input_2 .form-group input[type=email]::placeholder,
+.common_input_2 .form-group input[type=password]::placeholder,
+.common_input_2 .form-group textarea::placeholder {
+  color: #031A26;
+  opacity: 0.7;
+}
+.common_input_2 .form-group input[type=text]:focus,
+.common_input_2 .form-group input[type=number]:focus,
+.common_input_2 .form-group input[type=tel]:focus,
+.common_input_2 .form-group input[type=date]:focus,
+.common_input_2 .form-group input[type=time]:focus,
+.common_input_2 .form-group input[type=email]:focus,
+.common_input_2 .form-group input[type=password]:focus,
+.common_input_2 .form-group textarea:focus {
+  outline: none;
+}
+.common_input_2 .form-group textarea {
+  height: 122px;
+  resize: vertical;
+}
+.common_input_2 .form-group input[type=date] {
+  cursor: pointer;
+}
+.common_input_2 .form-group input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+  -webkit-appearance: none;
+}
+.common_input_2 .form-group input[type=date]::-webkit-inner-spin-button, .common_input_2 .form-group input[type=date]::-webkit-clear-button {
+  display: none;
+}
+.common_input_2 .form-group input[type=date]:focus {
+  outline: none;
+}
+.common_input_2 .form-group .nice-select,
+.common_input_2 .form-group select {
+  width: 100%;
+  padding: 14px 0px;
+  height: 54px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid rgba(3, 26, 38, 0.14);
+  color: #031A26;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  /* Remove default arrow styles for consistency */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Add custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px 8px;
+  cursor: pointer;
+}
+.common_input_2 .form-group .nice-select:after {
+  width: 7px;
+  height: 7px;
+}
+.common_input_2 .form-group select:focus {
+  outline: none;
+}
+.common_input_2 .form-group .gender-options {
+  display: flex;
+  gap: 20px;
+  padding: 14px 30px;
+  height: 54px;
+  border-radius: 5px;
+  background: var(--100, #EBF3ED);
+  align-items: center;
+}
+.common_input_2 .form-group .gender-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: var(--800, #626262);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.common_input_2 .form-group .gender-options input[type=radio] {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid var(--900, #1F1F1F);
+  background: transparent;
+  cursor: pointer;
+}
+.common_input_2 .form-group .password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.common_input_2 .form-group .password-input-container.style_1 input::placeholder {
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: black;
+}
+.common_input_2 .form-group .toggle-password {
+  position: absolute;
+  right: 15px;
+  color: #626262;
+  font-size: 18px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.common_input_2 .checkbox-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.common_input_2 .checkbox-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #031A26;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.7;
+}
+.common_input_2 .checkbox-left input[type=checkbox] {
+  border-radius: 2px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
 .rb_list ul li {
   margin-bottom: 30px;
   display: flex;
@@ -34503,7 +34682,7 @@ header {
 }
 .rb_project_tab .section-padding {
   position: relative;
-  padding: 120px 75px 110px;
+  padding: 0 75px;
 }
 .rb_project_tab .rb_tab_buttons {
   display: flex;
