@@ -1,0 +1,55 @@
+.mb_account_content{
+    h5{
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(3, 26, 38, 0.6);
+    }
+    h2{
+        font-weight: 700;
+        font-size: 40px;
+        color: #031a26;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        color: #031a26;
+    }
+    .manage_btn{
+        a{
+            padding: 14px 30px;
+            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+            background-color: $text_color;
+            @include border-radius(6px);
+            @include transition(0.4s);
+            &:hover{
+                background-color: $primary;
+            }
+
+        }
+    }
+}
+.mb_contact_support{
+    padding: 0px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(3, 26, 38, 0.12);
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        color: #031a26;
+        a{
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: #ff9916;
+            margin-right: 5px;
+            @include transition(0.4s);
+            &:hover{
+                color: #c87500;
+
+            }
+
+
+        }
+    }
+}

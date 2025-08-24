@@ -1,0 +1,342 @@
+.mb_listing_card{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    .mb_image_area{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        width: 100%;
+        height: 282px;
+        @include transition(0.4s);
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        img{
+            @include transition(0.4s);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include border-radius(20px)
+        }
+        &:hover{
+            img{
+                transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                -o-transform: scale(1.05);
+
+            }
+}
+        .play_btn{
+            span{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include transform(-50%,-50%);
+                @include border-radius(50%);
+                width: 40px ;
+                height: 40px;
+                cursor: pointer;
+                display: block;
+                text-align: center;
+                line-height: 40px;
+                color: $white;
+                font-size:14px;
+                background-color: $primary;
+                box-shadow: 0 2px 10px 0 rgba(30, 30, 47, 0.1), 0 4px 3px 0 rgba(30, 30, 47, 0.12);
+                &:hover{
+                    color: $white;
+                    background-color: $primary;
+                    @include transition(0.4s)
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color:#ffffff73;
+                    @include border-radius(50%);
+                    animation: pulse 1.5s infinite ease-out;
+                }
+            }
+        }
+        .heart{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: $white;
+        }
+        .update{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            span{
+                font-weight: 400;
+                font-size: 14px;
+                color: #68767d;
+                padding: 5px 15px;
+                background-color: $white;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+            }
+        }
+
+        
+    }
+    h3{
+        a{
+            font-weight: 600;
+            font-size: 24px;
+            color: #031a26;
+            @include transition(0.4s);
+            &:hover{
+                color: $primary;
+            }
+
+        }
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .mb_address{
+        @include flex(row, space-between, center);
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #68767d;
+            span{
+                color: $text_color;
+                margin-right: 10px;
+            }
+        }
+    }
+    .mb_list_price{
+        margin-top: 20px;
+        @include flex(row, space-between, center);
+        h4{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 142%;
+            color: #031a26;
+        }
+    }
+    .mb_overly{
+        width: 100%;
+        height: 100%;
+        background: rgba(3, 26, 38, 0.7);
+        @include border-radius(20px);
+        position: absolute;
+        top: 0px;
+        @include transition(0.7s);
+        left: 0px;
+        z-index: 100;
+        @include flex(row, center, center);
+        opacity: 0;
+        visibility: hidden;
+        button{
+            border-radius: 40px;
+            padding: 4px 4px 4px 20px;
+            font-weight: 600;
+            background-color: $white;
+            font-size: 16px;
+            color: #031a26;
+            span{
+                background-color: $text_color;
+                @include border-radius(50%);
+                width: 36px;
+                height: 36px;
+                line-height: 33px;
+                text-align: center;
+                display: inline-block;
+                margin-left: 10px;
+}
+        }
+    }
+    &:hover{
+        .mb_overly{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+
+.mb_account-cards-section {
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    flex-grow: 1;
+}
+
+.mb_card-grid {
+    @include flex(row, flex-start, center);
+    gap: 30px;
+    flex-wrap: wrap;
+    .mb_card{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 270px;
+        height: 170px;
+        @include transition(0.4s);
+        @include flex(column, center, center);
+        gap: 15px;
+        cursor: pointer;
+        span{
+            color: $primary;
+            img{
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
+        }
+        p{
+
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            color: #031a26;
+        }
+         &:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-color: transparent;
+    }
+    }
+}
+
+.mb_adding_btn{
+    @include flex(row, flex-end, center);
+    gap: 20px;
+}
+.mb_action_links {
+    margin-top: 66px;
+
+    li {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+        &::before{
+            content: "";
+            width: 6px;
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            @include transformY(-50%);
+            height: 6px;
+            background-color: $primary;
+            @include border-radius(50%);
+        }
+        
+        a {
+            font-weight: 500;
+            font-size: 18px;
+            text-decoration-skip-ink: none;
+            color: rgba(3, 26, 38, 0.7);
+            text-decoration: none;
+            @include transition(0.4s);
+
+            &:hover {
+                text-decoration: underline;
+                color: $primary;
+            }
+        
+        }
+    }
+}
+
+
+
+
+
+
+
+ 
+.mb_notification_area{
+
+    .mb_notifications_container {
+        width: 100%;
+    }
+
+    .mb_notification_item {
+        @include flex(row, space-between, center);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 35px 40px;
+        @include transition(0.5s);
+        margin-bottom: 14px;
+    }
+
+    .notification-item:hover {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .notification-text h3 {
+        font-weight: 600;
+        font-size: 24px;
+        color: #031a26;
+    }
+
+    .notification-text p {
+        font-weight: 500;
+        margin-top: 5px;
+        font-size: 18px;
+        line-height: 167%;
+        color: rgba(3, 26, 38, 0.6);
+    }
+
+    .mb_toggle_switch_container {
+        position: relative;
+        display: inline-block;
+        width: 75px; 
+        height: 41px; 
+    }
+    
+    .mb_toggle_switch_container input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    .mb_toggle_slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #c8b092;
+        transition: .4s;
+        border-radius: 20px;
+    }
+    
+    .mb_toggle_slider:before {
+        position: absolute;
+        content: "";
+        height: 27px; 
+        width: 27px;
+        left: 8px;
+        top: 8px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+    
+    input:checked + .mb_toggle_slider {
+        background-color: #F97316; 
+    }
+    
+    input:checked + .mb_toggle_slider:before {
+        transform: translateX(32px);
+        -webkit-transform: translateX(32px);
+        -moz-transform: translateX(32px);
+        -ms-transform: translateX(32px);
+        -o-transform: translateX(32px);
+}
+}
+

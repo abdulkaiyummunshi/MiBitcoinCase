@@ -782,7 +782,8 @@ progress {
 .container-md,
 .container-sm,
 .container-xl,
-.container-xxl {
+.container-xxl,
+.container-xxxl {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     width        : 100%;
@@ -845,6 +846,9 @@ progress {
     }
     .container-xxl {
         max-width: 1600px
+    }
+    .container-xxxl {
+        max-width: 1760px
     }
 }
 
