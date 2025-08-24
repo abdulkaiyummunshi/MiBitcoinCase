@@ -35080,10 +35080,11 @@ header {
 .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header h3 {
   color: #031A26;
 }
-.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header .icon {
-  transform: rotate(180deg);
-  background-color: #FF9916;
-  color: #fff;
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header .iconPlus {
+  display: none;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header .iconMinus {
+  display: block;
 }
 .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-content {
   height: auto;
@@ -35101,6 +35102,9 @@ header {
   .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header {
     padding: 4px 15px;
   }
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header .iconMinus {
+  display: none;
 }
 .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header h3 {
   display: flex;
@@ -35180,6 +35184,86 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .rb_title {
+  color: #031A26;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row {
+  align-items: center;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 {
+  border-radius: 5px 5px 0 0;
+  padding: 17px 0px;
+  border-bottom: 1px solid #E5E8EB;
+}
+@media (max-width: 767px) {
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 {
+    padding: 17px 0px;
+  }
+}
+@media (max-width: 575px) {
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 {
+    row-gap: 20px;
+    padding: 30px 0px 30px;
+  }
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 .title h4 {
+  color: var(--900, #031A26);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2 {
+  padding: 15px 0px 15px;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2:not(:last-child) {
+  border-bottom: 1px solid #E5E8EB;
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2:last-child {
+  border-radius: 0 0 5px 5px;
+}
+@media (max-width: 575px) {
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2 {
+    row-gap: 20px;
+  }
+}
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .address,
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .amount,
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bed,
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bath,
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .sqft,
+.rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .lot_sqft {
+  color: var(--800, #68767D);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+@media (max-width: 767px) {
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .address,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .amount,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bed,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bath,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .sqft,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .lot_sqft {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .address,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .amount,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bed,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bath,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .sqft,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .lot_sqft {
+    font-size: 14px;
+    line-height: 23px;
+  }
 }
 .rb_project_tab .rb_btc_card {
   border-radius: 10px;

@@ -474,7 +474,6 @@
                     padding: 14px 18px;
                 }
             }
-
             .rb_feature_faq {
                 .accordion {
                     width: 100%;
@@ -491,12 +490,13 @@
                                 background: $white;
                                 h3{
                                     color: #031A26;
-                                }                    
+                                }                  
 
-                                .icon {
-                                    transform: rotate(180deg); 
-                                    background-color: #FF9916;
-                                    color: $white;
+                                .iconPlus {
+                                    display: none;
+                                }
+                                .iconMinus {
+                                    display: block;
                                 }
                             }
                             .accordion-content {
@@ -513,6 +513,9 @@
                         }
                         cursor: pointer;
                         transition: background 0.3s ease;
+                        .iconMinus {
+                            display: none;
+                        }
                         h3 {
                             display: flex;
                             align-items: center;
@@ -568,9 +571,6 @@
                             }
                         }
                         .rb_content_table {
-                            // display: flex;
-                            // align-items: center;
-                            // gap: 145px;
                             padding: 30px 70px 40px 70px;
                             .rb_item {
                                 h6 {
@@ -593,8 +593,72 @@
                     }
                 }
             }
-
-
+            .rb_nearby_listing {
+                .rb_title {
+                    color: #031A26;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                .order_table {
+                    .row {
+                        align-items: center;
+                        &.style_1 {
+                            border-radius: 5px 5px 0 0;
+                            padding: 17px 0px;
+                            border-bottom: 1px solid #E5E8EB;
+                            @include breakpoint (max-md){
+                                padding: 17px 0px;
+                            }
+                            @include breakpoint (max-sm){
+                                row-gap: 20px;
+                                padding: 30px 0px 30px;
+                            }
+                            .title{
+                                h4 {
+                                    color: var(--900, #031A26);
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                        &.style_2 {
+                            padding: 15px 0px 15px;
+                            &:not(:last-child) {
+                                border-bottom: 1px solid #E5E8EB;
+                            }
+                            &:last-child {
+                                border-radius: 0 0 5px 5px;
+                            }
+                            @include breakpoint (max-sm){
+                                row-gap: 20px;
+                            }
+                        }
+                    }
+                    .address,
+                    .amount,
+                    .bed,
+                    .bath,
+                    .sqft,
+                    .lot_sqft {
+                        color: var(--800, #68767D);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; /* 150% */
+                        @include breakpoint (max-md){
+                            font-size: 14px;
+                        }
+                        @include breakpoint (max-sm){
+                            font-size: 14px;
+                            line-height: 23px;
+                        }
+                    }
+                }
+            }
         }
     }
     .rb_btc_card {
