@@ -441,4 +441,155 @@
 
         }
     }
+    .rb_btc_card {
+        border-radius: 10px;
+        border: 1px solid rgba(3, 26, 38, 0.12);
+        padding: 22px 40px 36px 40px;
+        .rb_btc_text {
+            color: #031A26;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 74px;
+            padding-right: 10px;
+        }
+        .rb_btc_value {
+            color: #031A26;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 74px;
+        }
+        .rb_sale {
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+            padding: 5px 10px;
+            margin-left: 25px;
+        }
+        .rb_est {
+            color: #031A26;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            span {
+                color: #031A26;
+                font-size: 8px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            img {
+                padding-left: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+    .rb_schedule_card {
+        border-radius: 10px;
+        border: 1px solid rgba(3, 26, 38, 0.12);
+        padding: 20px 40px 36px 40px;
+        .rb_schedule_title {
+            color: #031A26;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px; /* 213.333% */
+        }
+        .rb_schedule_text {
+            color: #031A26;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+        }
+        .rb_date_slider {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            .item {
+                border-radius: 10px;
+                border: 1px solid rgba(3, 26, 38, 0.12);
+                padding: 20px 30px 10px;
+                text-align: center;
+                span {
+                    color: var(--800, #68767D);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px; /* 150% */
+                }
+                h4 {
+                    color: var(--900, #031A26);
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 48px;
+                }
+                &.active {
+                    background: var(--900, #031A26);
+                    border: none;
+                    span {
+                        color: $white;
+                    }
+                    h4 {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .rb_schedule_btn {
+            border-radius: 999px;
+            background: var(--P, #FF9916);
+            padding: 19px 20px;
+            text-align: center;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .rb_more_about_property {
+            color: #031A26;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px; /* 213.333% */
+        }
+        .rb_email_agent_btn {
+            border-radius: 6px;
+            border: 1px solid rgba(3, 26, 38, 0.12);
+            padding: 18px 20px;
+            color: var(--900, #031A26);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-align: center;
+        }
+        .rb_message_sent {
+            color: var(--900, #031A26);
+            font-size: 16px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        .rb_desc {
+            color: var(--900, #031A26);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            span {
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-skip-ink: auto;
+                text-decoration-thickness: auto;
+                text-underline-offset: auto;
+                text-underline-position: from-font;
+            }
+        }
+    }
 }
