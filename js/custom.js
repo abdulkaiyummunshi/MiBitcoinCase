@@ -239,6 +239,27 @@
                 },
             ]
         });
+        $('.mb_saved_listing_slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 3000,
+            dots: true,
+            
+            dotsClass: "mb_seved_listing",
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 768, 
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+            ]
+        });
         $('.mb_image_slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -275,19 +296,15 @@
             });
         });
         $(document).ready(function () {
-            // Handle navigation clicks
             $('.header nav ul li').on('click', function () {
                 $('.header nav ul li').removeClass('active');
                 $(this).addClass('active');
             });
 
-            // Handle "Action" button dropdown
             $('.btn-action').on('click', function () {
-                // You would typically toggle a dropdown menu here.
                 alert('Action menu toggled!');
             });
 
-            // Handle "Add Listing" button click
             $('.btn-add-listing').on('click', function () {
                 alert('Redirecting to the "Add Listing" page.');
             });

@@ -23,6 +23,11 @@
                 @include border-radius(50%);
             }
         }
+        h5{
+            font-weight: 500;
+            font-size: 16px;
+            color: rgba(3, 26, 38, 0.6);
+        }
         &.style_01{
             h4{
                 border: 1px solid rgba(3, 26, 38, 0.12);
