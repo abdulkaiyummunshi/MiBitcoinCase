@@ -116,7 +116,7 @@
     <!-- Header Start -->
     <header>
       <div class="header-1" id="header-sticky">
-        <div class="mb_blur_circle"></div>
+       
         <div class="container-xxl">
           <div class="header-wrap style_1">
             <div class="logo">
@@ -132,22 +132,49 @@
                 <nav id="mobile-menu">
                   <ul>
                     <li>
-                      <a href="index.html"> Home </a>
+                      <a class="active" href="index.html"> Home </a>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#"> Pages </a>
+                      <ul class="submenu">
+                        <li><a href="property_listing.html">Property Listing</a></li>
+                        <li><a href="property_details.html">Property Details</a></li>
+                        <li><a href="post_property.html">Post Property</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                        <li><a href="agent_details.html">Agent Details</a></li>
+                        <li><a href="pricing_membership.html">Pricing Membership</a></li>
+                        <li><a href="account.html">Account/Listing/Here</a></li>
+                        <li><a href="manage_listing.html">Manage Listing</a></li>
+                        <li><a href="manage_listing.html">Subscriptions Management</a></li>
+                        <li><a href="myaccount.html">My Account</a></li>
+                        <li><a href="notification.html">Notifications</a></li>
+                        <li><a href="change_password.html">Change Password</a></li>
+                        <li><a href="saved_listing.html">Saved Listings</a></li>
+                        <li><a href="saved_searche.html">Saved Searches</a></li>
+                        <li><a href="recently_viewed.html">Recently Viewed</a></li>
+                        <li><a href="my_profile.html">My Profile</a></li>
+                        <li><a href="sign_up.html">Sign Up</a></li>
+                        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                        <li><a href="terms_condition.html">Terms & Conditions</a></li>
+                        <li><a href="login.html">Log In</a></li>
+                        <li><a href="payment.html">Payment</a></li>
+                      </ul>
                     </li>
                     <li>
-                      <a href="about.html">Listings </a>
-                    </li>
-                    <li>
-                      <a href="#">Map Search</a>
+                      <a href="map_search.html">Map Search</a>
                     </li>
                     <li>
                       <a href="about.html"> About</a>
                     </li>
                     <li>
-                      <a href="employment.html"> Wiki</a>
+                      <a href="wiki.html"> Wiki</a>
                     </li>
-                    <li>
-                      <a href="contact.html"> Blogs </a>
+                    <li class="menu-item-has-children">
+                      <a href="#"> Blogs </a>
+                      <ul class="submenu style_1">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog_details.html">Blog Details</a></li>
+                      </ul>
                     </li>
                     <li>
                       <a href="contact.html"> Contact </a>
@@ -189,6 +216,7 @@
     
      <!-- Inner Page Hero Section Start -->
      <section class="mb_inner_page_hero">
+       <div class="mb_blur_circle"></div>
       <div class="container-xxl">
         <div class="mb_inner_hero_contains">
           <div class="row">
@@ -296,21 +324,24 @@
     <section class="rb_project_tab">
       <div class="container-fluid">
         <div class="section-padding">
-          <div class="row g-4">
+          <div class="row">
             <div class="col-8">
               <div class="rb_tab_buttons mb-60">
-                <div class="item">Overview</div>
-                <div class="item">History</div>
-                <div class="item">Features & Details</div>
-                <div class="item">School</div>
-                <div class="item">Trends</div>
-                <div class="item">Calculator</div>
-                <div class="item">Similar Properties</div>
+                <div class="item mb_tab" data-tab-target="#mb_overview">Overview</div>
+                <div class="item mb_tab" data-tab-target="#mb_history">History</div>
+                <div class="item mb_tab" data-tab-target="#mb_feature">Features & Details</div>
+                <div class="item mb_tab" data-tab-target="#">School</div>
+                <div class="item mb_tab" data-tab-target="#">Trends</div>
+                <div class="item mb_tab" data-tab-target="#">Calculator</div>
+                <div class="item mb_tab" data-tab-target="#">Similar Properties</div>
               </div>
-              <div class="rb_add_favorite_btn"><span><img src="images/icon/love-icon.svg" alt="icon"></span> Add To Favorite</div>
+              <div class="rb_add_favorite_btn mb-30"><span><img src="images/icon/love-icon.svg" alt="icon"></span> Add To Favorite</div>
             </div>
-            <div class="col-8">
-              <div class="rb_overview_content">
+          </div>
+          <div class="row g-4">
+            
+            <div class="col-lg-8">
+              <div class="rb_overview_content mb_tab_content active" id="mb_overview">
                 <div class="rb_overview_card mb-40">
                   <div class="row g-4">
                     <div class="col-md-12">
@@ -388,7 +419,7 @@
                   </div>
                 </div>
               </div>
-              <div class="rb_history_content mt-40">
+              <div class="rb_history_content mb_tab_content mt-40" id="mb_history"> 
                 <div class="rb_history_card">
                   <div class="rb_history_title mb-20">
                     <h4>History</h4>
@@ -493,7 +524,7 @@
                   <h5 class="rb_fullhistory mt-30">Full History <span><i class="fa-solid fa-angle-down"></i></span></h5>
                 </div>
               </div>
-              <div class="rb_miBitcoin_content mt-40">
+              <div class="rb_miBitcoin_content mb_tab_content mt-40" id="mb_mibitcoin">
                 <div class="rb_miBitcoin_card">
                   <div class="rb_miBitcoin_title mb-20">
                     <h4>MiBitcoin History</h4>
@@ -562,7 +593,7 @@
                   </div>
                 </div>
               </div>
-              <div class="rb_feature_content mt-40">
+              <div class="rb_feature_content mb_tab_content mt-40" id="mb_feature">
                 <div class="rb_feature_card">
                   <div class="rb_feature_title mb-20">
                     <h4>Features & Details</h4>
@@ -1206,8 +1237,548 @@
                   </div>
                 </div>
               </div>
+
+
+              <!-- Monthly Payment Start -->
+               <div class="mb_monthly_payment_area  mt-60">
+                <div class="mb_monthly_payment_container">
+                    <div class="mb_payment_tag">Monthly Payment</div>
+                    <div class="mb_payment_card">
+                        <h2 class="mb_title">RealCost for this home</h2>
+                        <div class="mb_pricing_area">
+                          <h4>BTC 0.0022 <span class="price">$4,256/</span><span class="month">Month</span></h4>
+                            <div class="mb_edit_payment">
+                                <h4><img src="./images/post_property/icon.svg" alt="">Edit Payment</h4>
+                            </div>
+                        </div>
+
+                        <div class="mb_section_item">
+                            <span class="mb_label">Home price</span>
+                            <span class="mb_value">BTC 19,000<span class="mb_usd">$50,584</span></span>
+                        </div>
+                        <div class="mb_loan_price">
+                            <span>Loan</span>
+                            <span>30- year fixed average rate of 6.5541%</span>
+                        </div>
+
+                        <div class="mb_progress_bar">
+                            <div class="mb_progress_fill"></div>
+                        </div>
+
+                        <div class="mb_cost_breakdown">
+                            <div class="mb_breakdown_item">
+                                <div class="mb_breakdown_dot mb_dot_orange"></div>
+                                <span class="mb_breakdown_label">Principal & interest</span>
+                                <span class="mb_breakdown_value">BTC 6,101 <span class="mb_usd">$16,000</span></span>
+                            </div>
+                            <div class="mb_breakdown_item">
+                                <div class="mb_breakdown_dot mb_dot_blue"></div>
+                                <span class="mb_breakdown_label">Property tax</span>
+                                <span class="mb_breakdown_value">BTC 124 <span class="mb_usd">$1,253</span></span>
+                            </div>
+                            <div class="mb_breakdown_item">
+                                <div class="mb_breakdown_dot mb_dot_dark_blue"></div>
+                                <span class="mb_breakdown_label">Home insurance <a href="#" class="mb_link">Compare rates</a></span>
+                                <span class="mb_breakdown_value">BTC 30 <span class="mb_usd">$300</span></span>
+                            </div>
+                            <div class="mb_breakdown_item">
+                                <div class="mb_breakdown_dot mb_dot_gray_light"></div>
+                                <span class="mb_breakdown_label">HOA fees</span>
+                                <span class="mb_breakdown_value">BTC 0 <span class="mb_usd">$0</span></span>
+                            </div>
+                            <div class="mb_breakdown_item">
+                                <div class="mb_breakdown_dot mb_dot_gray"></div>
+                                <span class="mb_breakdown_label">Mortgage insurance</span>
+                                <span class="mb_breakdown_value">BTC 0 <span class="mb_usd">$0</span></span>
+                            </div>
+                        </div>
+
+                        <div class="mb_total_due">
+                            <h5>Total due close</h5>
+                            <h5>BTC 245 <span>$2,254</span></h5>
+                        </div>
+                        <div class="mb_total_due_item">
+                            <span class="mb_label">Down payment (20%)</span>
+                            <span class="mb_value">BTC 239 <span>$2,587</span></span>
+                        </div>
+                        <div class="mb_total_due_item style_1">
+                            <span class="mb_label">Estimated closing cost (4%)</span>
+                            <span class="mb_value">BTC 4,760 <span>$47,254</span></span>
+                        </div>
+
+                        <div class="mb_apply_benefits">
+                            <h5>Apply veterans benefits</h5>
+                            <label class="mb_toggle_switch">
+                                <input type="checkbox">
+                                <span class="mb_toggle_slider"></span>
+                                <span class="mb_toggle_text">off</span>
+                            </label>
+                        </div>
+
+                        <div class="mb_cta_buttons">
+                            <button class="mb_pre_approved_btn">Get pre-approved</button>
+                            <a href="#" class="mb_view_rates_link">View today's rates</a>
+                        </div>
+                        <div class="mb_disclosure_link">
+                          <a href="#">RealCost Disclosure</a>
+
+                        </div>
+                    </div>
+                </div>
+               </div>
+              <!-- Monthly Payment End -->
+
+              <!-- Costs For this home Start -->
+               <div class="costs_home_area mt-60">
+                <div class="mb-container">
+                  <div class="mb-card">
+                    <div class="cost_heading_area">
+                      <div class="mb_costs_price">
+                        <h3>Costs for this home</h3>
+                      <div class="mb_cost_heading">
+                        <h4>BTC 7,650/ <span>Month</span></h4>
+                      </div>
+                      </div>
+                      <div class="mb_cost_display">
+                        <div class="mb-header">
+                          <a href="#" class="mb-update-link">Update and close</a>
+                        </div>
+                        <div class="mb_progress_area">
+                          <div class="mb-progress-bar">
+                            <div class="mb-progress-fill"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="mb_item_header">
+                            <div class="mb_item_label">
+                               <span class="mb-dot mb-dot-primary"></span>
+                              <label>Principal & interest</label>
+                              
+                            </div>
+                            <div class="price">
+                              <h5>$6,254</h5>
+                            </div>
+
+                          </div>
+                    </div>
+                    <div class="row mt-30">
+                      <div class="col-lg-6 px-3">
+                        <div class="mb_input_box">
+                          <label for="#">Home Price</label>
+                          <div class="mb-input-group">
+                              <input type="text" id="principal-interest" placeholder="$ 1,199,000" class="mb-input-field">
+                              <span class="mb-clear-icon">&times;</span>
+                            </div>
+                             <p class="mb-subtext">Estimated closing cost (4%) : $47,960 <img src="./images/post_property/icon1.svg" alt=""></p>
+                        </div>
+                        <div class="mb-item mt-30">
+                          <input type="range" class="mb-slider" min="569000" max="2140000" value="1199000">
+                          <div class="mb-slider-range mt-20">
+                            <span class="mb-slider-label"> $569k</span>
+                            <span class="mb-slider-label"> $2.14M</span>
+                          </div>
+                        </div>
+                        <div class="mb-item mt-30">
+                          <label>Down Payment <img src="./images/post_property/icon1.svg" alt=""></label>
+                          <div class="mb-down-payment-row mt-10">
+                              <div class="mb-input-group">
+                                <span class="mb-input-prefix">$</span>
+                                <input type="text" id="down-payment-dollars" value="1,199,000" class="mb-input-field">
+                                <span class="mb-clear-icon">&times;</span>
+                              </div>
+                              <div class="mb-percentage-input">
+                                <input type="text" id="down-payment-percent" value="20" class="mb-percent-field">
+                                <span class="mb-percent-symbol">%</span>
+                                <div class="mb-increment-buttons">
+                                  <button class="mb-increment-up"><i class="fa-solid fa-angle-up"></i></button>
+                                  <button class="mb-increment-down"><i class="fa-solid fa-angle-down"></i></button>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>
+                        <div class="mb-item mt-30">
+                             <input type="range" class="mb-slider" min="0" max="100" value="20">
+                          <div class="mb-slider-range mt-12">
+                            <span>0%</span>
+                            <span>100%</span>
+                          </div>
+                        </div>
+                        <div class="mb_items mt-30">
+                           <label for="loan-type" class="mb-label mb-10">Loan Type <img src="./images/post_property/icon1.svg" alt=""></label>
+                          <div class="mb-select-wrapper">
+                            
+                            <select name="#" id="#">
+                              <option selected>30-year fixed</option>
+                              <option value="">20-year fixed</option>
+                            </select>
+                             <div class="mb-percentage-input">
+                                <input type="text" id="down-payment-percent" placeholder="5.214" class="mb-percent-field">
+                                <div class="mb-increment-buttons">
+                                  <button class="mb-increment-up"><i class="fa-solid fa-angle-up"></i></button>
+                                  <button class="mb-increment-down"><i class="fa-solid fa-angle-down"></i></button>
+                                </div>
+                                <span class="mb-percent-symbol">%</span>
+                              </div>
+                          </div>
+                          <div class="mb_view_btn mt-20 d-flex justify-content-end">
+                            <a href="#">View todays rates</a>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 px-3">
+                         <div class="mb-item">
+                          <div class="mb-item-header">
+                            <span class="mb-dot mb-dot-primary"></span>
+                            <label for="property-tax" class="mb-label">Property tax</label>
+                            <span class="mb-info-icon"></span>
+                          </div>
+                          <div class="mb-input-group mb-10">
+                            <span class="mb-input-prefix">$</span>
+                            <input type="text" id="property-tax" placeholder="1,125" class="mb-input-field">
+                            <span class="mb-clear-icon">&times;</span>
+                          </div>
+                          <p class="mb-subtext">Total tax/year (1.25% of home price):<span id="total-tax-year">$14,988</span></p>
+                        </div>
+                         <div class="mb-item mt-25">
+                          <div class="mb-item-header">
+                            <span class="mb-dot mb-dot-text"></span>
+                            <label for="property-tax" class="mb-label">Home insurance</label>
+                            <span class="mb-info-icon"></span>
+                          </div>
+                          <div class="mb-input-group mt-10 mb-10">
+                            <span class="mb-input-prefix">$</span>
+                            <input type="text" id="property-tax" placeholder="300" class="mb-input-field">
+                            <span class="mb-clear-icon">&times;</span>
+                          </div>
+                          <a href="#">Compare rates</a>
+                        </div>
+                         <div class="mb-item mt-25">
+                          <div class="mb-item-header">
+                            <span class="mb-dot mb-dot-primary1"></span>
+                            <label for="property-tax" class="mb-label">HOX fees</label>
+                            <span class="mb-info-icon"></span>
+                          </div>
+                          <div class="mb-input-group mt-10 mb-10">
+                            <span class="mb-input-prefix">$</span>
+                            <input type="text" id="property-tax" placeholder="0" class="mb-input-field">
+                            <span class="mb-clear-icon">&times;</span>
+                          </div>
+                        </div>
+                         <div class="mb-item mt-25">
+                          <div class="mb-item-header">
+                            <span class="mb-dot mb-dot-text1"></span>
+                            <label for="property-tax" class="mb-label">Mortgageinsurance</label>
+                            <span class="mb-info-icon"></span>
+                          </div>
+                          <div class="mb-input-group mt-10 mb-10">
+                            <span class="mb-input-prefix">$</span>
+                            <input type="text" id="property-tax" placeholder="0" class="mb-input-field">
+                            <span class="mb-clear-icon">&times;</span>
+                          </div>
+                          <p>$0 if dawn payment is 20%+</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-30">
+                      <div class="col-lg-6 d-flex justify-content-between">
+                        <div class="mb_apply_veterans">
+                          <p>Apply veterans benefits <img src="./images/post_property/icon1.svg" alt=""></p>
+                        </div>
+                        <div class="mb_switch_off">
+                          <label class="mb_toggle_switch">
+                                <input type="checkbox">
+                                <span class="mb_toggle_slider"></span>
+                                <span class="mb_toggle_text">off</span>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 d-md-flex justify-content-end">
+                        <div class="mb_btn_wrapper">
+                          <a href="#">  Get pre-approved</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              <!-- Costs For this home End -->
+
+              <!-- Map Location Start -->
+              <div class="mb_map_block mt-40">
+                 <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902032570926!2d90.39125501498131!3d23.75089558459017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b93b8f76b6c1%3A0x45a8f1a7e5a85e48!2sDhaka!5e0!3m2!1sen!2sbd!4v1645094357123!5m2!1sen!2sbd" 
+                            
+                        height="295" 
+                        width="100%"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                </iframe>
+                <div class="mb_overly_map_content">
+                  <div class="mb_map_heading">
+                    <h3>Map Location</h3>
+                    <p>Calculate the time and distance from  21 Lucania Place to your preferred destination.</p>
+                  </div>
+                  <div class="mb_map_content">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="mb_location_select">
+                          <div class="mb_dash"></div>
+                          <h4>21 Lucania Place</h4>
+                          <p><span><i class="fa-solid fa-location-dot"></i></span>Enter a location to find commute time and distant</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 d-flex justify-content-end align-items-end">
+                        <div class="mb_checkbox">
+                          <input id="peak" type="checkbox">
+                          <label for="peak">During peak hours</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Map Location End -->
+
+              <!-- Virtual Tour Start -->
+              <div class="mb_virtual_tour mt-40">
+                <div class="mb_virtual_tour_block">
+                  <div class="mb_header">
+                    <h2>Virtual Tour</h2>
+                    <p>Calculate the time and distance from.</p>
+                  </div>
+                  <div class="mb_video_card">
+                    <div class="mb_video_player">
+                      <img src="./images/post_property/virtual_tour/virtual.png" alt="Tranquil Oasis Resort" class="mb_video_thumbnail">
+                      <div class="mb_video_controls">
+                        <a href="https://www.youtube.com/watch?v=your_video_id" target="_blank" class="mb_play_button"></a>
+                        <div class="mb_video_actions">
+                          <div class="mb_channel_info">
+                            <img src="./images/post_property/virtual_tour/profile.png" alt="Channel Icon" class="mb_channel_icon">
+                            <span class="mb_channel_name">Tranquil Oasis Resort</span>
+                          </div>
+                          <div class="mb_action_buttons">
+                            <button class="mb_action_btn mb_watch_later_btn"><span><i class="fa-solid fa-clock"></i></span>Watch Later</button>
+                            <button class="mb_action_btn mb_share_btn"><span><i class="fa-solid fa-share"></i></span>Share</button>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="https://www.youtube.com/watch?v=your_video_id" target="_blank" class="mb_watch_on_youtube">Watch On <img src="./images/post_property/virtual_tour/youtube.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Virtual Tour End -->
+               
+              <!-- Environment risk Start -->
+              <div class="mb_environment_risk mt-40">
+                <div class="mb_risk_block">
+                  <div class="mb_risk_header">
+                    <h2>Environment risk</h2>
+                  </div>
+                  <div class="mb_risk_list">
+                    <div class="mb_risk_item"- data-risk-factor="Flood Factor">
+                      <div class="mb_risk_content">
+                        <span class="mb_risk_icon"><img src="./images/post_property/environment/env1.svg" alt=""></span>
+                        <div class="mb_risk_text">
+                          <div class="mb_risk_title">Flood Factor <span class="mb_risk_level mb_level_minimal">Minimal</span></div>
+                          <div class="mb_risk_description">This property’s flood risk is not changing.</div>
+                        </div>
+                      </div>
+                      <span class="mb_arrow_icon"><i class="fa-solid fa-angle-right"></i></span>
+                    </div>
+                    
+                    <div class="mb_risk_item" data-risk-factor="Fire Factor">
+                      <div class="mb_risk_content">
+                        <span class="mb_risk_icon"><img src="./images/post_property/environment/env2.svg" alt=""></span>
+                        <div class="mb_risk_text">
+                          <div class="mb_risk_title">Fire Factor <span class="mb_risk_level mb_level_moderate">Moderate</span></div>
+                          <div class="mb_risk_description">This property’s wildfire risk is increasing.</div>
+                        </div>
+                      </div>
+                      <span class="mb_arrow_icon"><i class="fa-solid fa-angle-right"></i></span>
+                    </div>
+                    
+                    <div class="mb_risk_item" data-risk-factor="Heat Factor">
+                      <div class="mb_risk_content">
+                        <span class="mb_risk_icon"><img src="./images/post_property/environment/env3.svg" alt=""></span>
+                        <div class="mb_risk_text">
+                          <div class="mb_risk_title">Heat Factor <span class="mb_risk_level mb_level_minimal">Major</span></div>
+                          <div class="mb_risk_description">7 days above 107°F this year</div>
+                        </div>
+                      </div>
+                      <span class="mb_arrow_icon"><i class="fa-solid fa-angle-right"></i></span>
+                    </div>
+
+                    <div class="mb_risk_item" data-risk-factor="Wind Factor">
+                      <div class="mb_risk_content">
+                       <span class="mb_risk_icon"><img src="./images/post_property/environment/env4.svg" alt=""></span>
+                        <div class="mb_risk_text">
+                          <div class="mb_risk_title">Wind Factor <span class="mb_risk_level mb_level_minimal">Major</span></div>
+                          <div class="mb_risk_description">Major risk of severe winds over next 30 years</div>
+                        </div>
+                      </div>
+                      <span class="mb_arrow_icon"><i class="fa-solid fa-angle-right"></i></span>
+                    </div>
+                    
+                    <div class="mb_risk_item" data-risk-factor="Air Factor">
+                      <div class="mb_risk_content">
+                        <span class="mb_risk_icon"><img src="./images/post_property/environment/env5.svg" alt=""></span>
+                        <div class="mb_risk_text">
+                          <div class="mb_risk_title">Air Factor <span class="mb_risk_level mb_level_moderate">Moderate</span></div>
+                          <div class="mb_risk_description">Risk of poor air quality is not changing</div>
+                        </div>
+                      </div>
+                      <span class="mb_arrow_icon"><i class="fa-solid fa-angle-right"></i></span>
+                    </div>
+                  </div>
+
+                  <div class="mb_risk_footer">
+                    Provided by First Street Foundation
+                    <span class="mb_info_icon"><img src="./images/post_property/icon1.svg" alt=""></span>
+                  </div>
+                </div>
+              </div>
+              <!-- Environment risk End -->
+
+              <!-- Market Insights Start -->
+              <div class="mb_market_insights mt-40">
+                <div class="mb_insights_block">
+                  <div class="mb_header">
+                    <h2>Market Insights for Detached in Steeles, MiBitcoin</h2>
+                  </div>
+                  <div class="mb_insights_grid">
+                    <div class="row">
+                      <div class="col-lg-3">
+                        <div class="mb_insight_card">
+                      <div class="mb_insight_title">Active Listings</div>
+                      <div class="mb_insight_value">19</div>
+                      <div class="mb_insight_date">Aug 2025</div>
+                    </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="mb_insight_card style_1">
+                          <div class="mb_insight_title">New Listings</div>
+                          <div class="mb_insight_value text-center">12</div>
+                          <div class="mb_insight_date">Aug 2025</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="mb_insight_card style_1">
+                          <div class="mb_insight_title">Sold Properties</div>
+                          <div class="mb_insight_value">6</div>
+                          <div class="mb_insight_date">Aug 2025</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="mb_insight_card style_1 style_2">
+                          <div class="mb_insight_title">Exp/Sus/Ter</div>
+                          <div class="mb_insight_value">
+                            <span class="mb_currency">BTC 300</span>
+                            <span class="mb_price">$3,000</span>
+                          </div>
+                          <div class="mb_insight_date">Aug 2025</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-30">
+                      
+                      <div class="col-lg-3">
+                        <div class="mb_insight_card">
+                          <div class="mb_insight_title">Median Price</div>
+                          <div class="mb_insight_value">
+                            <span class="mb_currency">BTC 120</span>
+                            <span class="mb_price">$1,110</span>
+                          </div>
+                          <div class="mb_insight_date">Aug 2025</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="mb_insight_card style_1">
+                          <div class="mb_insight_title">Avg DOM</div>
+                          <div class="mb_insight_value">17</div>
+                          <div class="mb_insight_date">Aug 2025</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="mb_insight_card style_1">
+                          <div class="mb_insight_title">Last 1 Year's Growth</div>
+                          <div class="mb_insight_value mb_positive_growth">18.9%
+                            <span class="mb_arrow_up"><i class="fa-solid fa-arrow-up"></i></span>
+                          </div>
+                          <div class="mb_insight_date">Aug 2025</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="mb_insight_card style_1 style_2">
+                          <div class="mb_insight_title">Last 5 Year's Growth</div>
+                          <div class="mb_insight_value mb_positive_growth">15.8%
+                            <span class="mb_arrow_up"><i class="fa-solid fa-arrow-up"></i></span>
+                          </div>
+                          <div class="mb_insight_date">Aug 2025</div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                </div>
+              </div>
+              <!-- Market Insights End -->
+
+              <!-- Broker Info Start -->
+              <div class="mb_broker_info_area mt-40">
+                <div class="mb_broker_info_block">
+                <div class="mb_broker_content">
+                  <div class="row align-items-end">
+                    <div class="col-lg-4">
+                      <div class="mb_agent_info">
+                        <div class="mb_agent_photo">
+                          <img src="./images/post_property/broker/broker.png" alt="Agent Profile Photo">
+                        </div>
+                        <div class="mb_agent_details">
+                          <div class="mb_listed_by">Listed by <a href="#" class="mb_agent_name">CARRASCO,MARTHAR</a></div>
+                          <div class="mb_brokerage_name">Broked by keller williams north valley</div>
+                          <div class="mb_phone_number">(258) 255-258</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="mb_broker_data">
+                        <div class="mb_data_row">
+                          <div class="mb_data_label">Broker location:</div>
+                          <div class="mb_data_value">Porter Ranch,CA</div>
+                        </div>
+                        <div class="mb_data_row">
+                          <div class="mb_data_label">Date source:</div>
+                          <div class="mb_data_value">CRMLS</div>
+                        </div>
+                        <div class="mb_data_row">
+                          <div class="mb_data_label">Source's property ID:</div>
+                          <div class="mb_data_value">SR0254655</div>
+                        </div>
+                        <div class="mb_data_row ">
+                          <div class="mb_data_label">Data source Copyright:</div>
+                          <div class="mb_data_value">
+                            @ 2025, California Regional Multiple Listing service,<br>Inc. All Rights Reserved.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <!-- Broker Info End -->
+
+
+
+
             </div>
-            <div class="col-4">
+            <div class="col-lg-4">
               <div class="rb_btc_card mb-40">
                 <div>
                   <span class="rb_btc_text">BTC 100</span> 
@@ -1277,6 +1848,166 @@
       </div>
     </section>
     <!--Tab Section End-->
+
+    <!-- More From Carrasco Start  -->
+     <div class="mb_more_carrasco mt-108">
+      <div class="container-xxxl">
+        <div class="row">
+          <div class="heading_area">
+            <div class="heading style_01 text-center">
+              <h2>More from CARRASCO,MARTHAR</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-47">
+           <div class="col-3">
+              <div class="rb_blog_card">
+                <div class="rb_thumb mb-25">
+                  <a href="#">
+                    <img src="images/post_property/more_from/more1.png" alt="png">
+                  </a>
+                  <div class="rb_sale rb-p16 style1">House</div>
+                  <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
+                </div>
+                <div class="rb_content">
+                  <div class="rb_price rb-p16 style1"><span>BTC 1,000</span> $11,500</div>
+                  <a href="#">
+                    <h4 class="rb-t24 pb-15">Plaza Hotel & Suites</h4>
+                  </a>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">101 Heritage Ln, Oldtown</span></div>
+                  <div class="rb_meta pb-40 mb-10">
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">2 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">2 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">1800sqft</span></div>
+                  </div>
+                  <div class="rb_card_link">
+                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                      <div class="rb_star">
+                        <ul>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li>5.0</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <div class="col-3">
+              <div class="rb_blog_card">
+                <div class="rb_thumb mb-25">
+                  <a href="#">
+                    <img src="images/post_property/more_from/more2.png" alt="png">
+                  </a>
+                  <div class="rb_sale rb-p16 style1">House</div>
+                  <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
+                </div>
+                <div class="rb_content">
+                  <div class="rb_price rb-p16 style1"><span>BTC 10,000</span> $35,000</div>
+                  <a href="#">
+                    <h4 class="rb-t24 pb-15">Stone House</h4>
+                  </a>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">101 Heritage Ln, Oldtown</span></div>
+                  <div class="rb_meta pb-40 mb-10">
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2400sqft</span></div>
+                  </div>
+                  <div class="rb_card_link">
+                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                      <div class="rb_star">
+                        <ul>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li>5.0</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <div class="col-3">
+              <div class="rb_blog_card">
+                <div class="rb_thumb mb-25">
+                  <a href="#">
+                    <img src="images/post_property/more_from/more3.png" alt="png">
+                  </a>
+                  <div class="rb_sale rb-p16 style1">House</div>
+                  <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
+                </div>
+                <div class="rb_content">
+                  <div class="rb_price rb-p16 style1"><span>BTC 1,000</span> $11,000</div>
+                  <a href="#">
+                    <h4 class="rb-t24 pb-15">Condominium</h4>
+                  </a>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">101 Heritage Ln, Oldtown</span></div>
+                  <div class="rb_meta pb-40 mb-10">
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">3 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">1900sqft</span></div>
+                  </div>
+                  <div class="rb_card_link">
+                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                      <div class="rb_star">
+                        <ul>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li>5.0</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <div class="col-3">
+              <div class="rb_blog_card">
+                <div class="rb_thumb mb-25">
+                  <a href="#">
+                    <img src="images/post_property/more_from/more4.png" alt="png">
+                  </a>
+                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
+                </div>
+                <div class="rb_content">
+                  <div class="rb_price rb-p16 style1"><span>BTC 5,00</span> $5,500</div>
+                  <a href="#">
+                    <h4 class="rb-t24 pb-15">Eternal hearth residence</h4>
+                  </a>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">101 Heritage Ln, Oldtown</span></div>
+                  <div class="rb_meta pb-40 mb-10">
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">2 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">2 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">1800sqft</span></div>
+                  </div>
+                  <div class="rb_card_link">
+                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                      <div class="rb_star">
+                        <ul>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li><i class="fa-solid fa-star"></i></li>
+                          <li>5.0</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+     </div>
+    <!-- More From Carrasco End  -->
 
     <!-- Footer Section Start -->
     <footer class="footer mt-140">
@@ -1391,3 +2122,14 @@
     <script src="./js/custom.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

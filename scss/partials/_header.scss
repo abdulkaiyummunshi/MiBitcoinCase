@@ -8,7 +8,7 @@
     justify-content: space-between;
 	height: 90px;
 	.main-menu {
-		ul {
+	     ul {
 			background: rgba(10, 10, 10, 0.2);
 		  margin: 0;
 		  padding: 5px;
@@ -16,19 +16,41 @@
 		  @include transition(0.4s);
 		  position: relative;
 		  li {
+			
 			display: inline-block;
 			padding: 0;
 			position: relative;
+
 			  &.menu-item-has-children{
+				ul{
+					padding: 0px;
+					width: 500px;
+					&.style_1{
+						width: fit-content !important;
+					}
+					max-height: 500px;
+					// overflow: hidden;
+					@include flex(column, flex-start, flex-start);
+					flex-wrap: wrap;
+					@include border-radius(0px);
+					a{
+						@include border-radius(0px);
+					}
+				}
+				a{
+					padding-right: 30px;
+					
+
+				}
 				&::after{
 				content: "\f107";
 				font-family: "FontAwesome";
 				position: absolute;
 				top: 50%;
-				color: #020626b3;
+				color: $white;
 				display: inline-block;
 				@include transformY(-50%);
-				right: 0;
+				right: 10px;
 				@include transition(0.4s);
 				
 			}
@@ -56,6 +78,7 @@
 			&:hover{
 				> a{
 					color: $text_color;
+					background-color: $white;
 				}
 			}
 	  
@@ -101,15 +124,25 @@
 			  @include border-radius(30px);
 			  text-decoration: none;
 			  text-transform: capitalize;
-			  @include transition(0.3s);
+			  @include transition(0.4s);
 			  position: relative;
 			  font-family: $inter-font;
 			  font-size: 18px;
 			  font-weight: 600;
 			  color: $white;
 			  &:hover{
-				  background-color: $white;
-			  }
+						background-color: $white;
+						color: $text_color;
+					}
+					&.active{
+						background-color: $white;
+						color: $text_color;
+						&:hover{
+							background-color: $white;
+							color: $text_color;
+						}
+					}
+			  
 			  &:before {
 				position: absolute;
 				content: "\f107";
@@ -177,8 +210,8 @@
 				font-family:  $inter-font;
 				@include transition(0.4s);
 				&:hover {
-				  background-color: $primary;
-				  color: #fff;
+				  background-color: $primary !important;
+				  color: #fff !important;
 				}
 			  }
 			  &:last-child a {
@@ -408,17 +441,82 @@ header{
 					display: block;
 				}
 			}
+		
 			.main-menu {
-				ul {
+			 	ul {
 					background-color: transparent;
 					border: 1px solid $border;
 				  li {
+					 &.menu-item-has-children{
+
+						&::after{
+							color: $text_color !important;
+							
+						}
+						@include transition(0.4s);
+							&:hover{
+								&::after{
+									color: $primary !important;
+
+								}
+							}
+				ul{
+					padding: 0px;
+					width: 500px;
+					background-color: $white;
+					&.style_1{
+						width: fit-content !important;
+					}
+					max-height: 500px;
+					@include flex(column, flex-start, flex-start);
+					flex-wrap: wrap;
+					@include border-radius(0px);
+					a{
+						@include border-radius(0px);
+					}
+				}
+				a{
+					padding-right: 30px;
+					
+
+				}
+				&::after{
+				content: "\f107";
+				font-family: "FontAwesome";
+				position: absolute;
+				top: 50%;
+				color: $white;
+				display: inline-block;
+				@include transformY(-50%);
+				right: 10px;
+				@include transition(0.4s);
+				
+			}
+			&:hover{
+                &::after{
+					margin-top: -10px;
+                color: $primary;
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+              }
+    }
+
+			  }
 					a {
 					  padding: 9px 13px;
 					  color: $text_color;
 					  &:hover{
 						color: $primary;
 					  }
+					&.active{
+						color: $primary;
+						&:hover{
+							color: $primary;
+						}
+					}
 					}
 				  }
 				  ul {
@@ -430,6 +528,36 @@ header{
 				  }
 				}
 			}
+				&.style_1{
+		.main-menu{
+			ul{
+				li{
+				a{
+						color: $text_color !important;
+						
+					 &.active{
+						color: $primary !important;
+						&:hover{
+							color: $primary;
+						}
+						
+					}
+					}
+					ul{
+							background-color: $white !important;
+							li{
+								
+									.acitve{
+										color: $white !important;
+										background-color: #000 !important;
+									}
+								
+							}
+						}
+				}
+			}
+		}
+	  }
 		}
 	
 	}

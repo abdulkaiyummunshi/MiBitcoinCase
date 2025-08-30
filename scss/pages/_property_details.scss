@@ -813,3 +813,1364 @@
         }
     }
 }
+
+/*--- Monthly Payment Start---*/
+.mb_monthly_payment_area{
+    .mb_monthly_payment_container {
+        position: relative;
+        border: 1px solid #e6e9ea;
+        border-radius: 20px;
+        width: 100%;
+        padding: 50px;
+    }
+    .mb_payment_tag {
+        position: absolute;
+        top: -27px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 9px 20px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000;
+        @include border-radius(10px);
+        background-color: #FFEED8;
+    }
+    .mb_payment_card{
+        .mb_title {
+            font-weight: 700;
+            font-size: 34px;
+            color: #031a26;
+        }
+        .mb_edit_payment{
+            h4{
+                font-weight: 600;
+                font-size: 34px;
+                color: #031a26;
+                img{
+                    margin-right: 8px;
+                }
+            }
+        }
+        .mb_pricing_area{
+            margin-top: 26px;
+            @include flex(row, space-between, center);
+            h4{
+                font-weight: 600;
+                font-size: 34px;
+                color: #031a26;
+                .price{
+                    margin-left: 5px;
+                    font-size: 24px;
+                }
+                .month{
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #68767d;
+                }
+            }
+        }
+        .mb_section_item{
+            @include flex(row, space-between, center);
+            margin-top: 21px;
+            .mb_label{
+                font-weight: 500;
+                font-size: 22px;
+                color: #031a26;
+            }
+            .mb_value{
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 22px;
+                color: #031a26;
+                .mb_usd{
+                    font-size: 14px;
+                }
+            }
+        }
+        .mb_loan_price{
+            margin-top: 13px;
+            @include flex(row, space-between, center);
+            span{
+                font-weight: 400;
+                font-size: 16px;
+                color: #68767d;
+            }
+        }
+        .mb_progress_bar {
+            width: 100%;
+            height: 15px;
+            background-color: $text_color;
+            @include border-radius(999px);
+            overflow: hidden;
+            margin-top: 23px;
+            .mb_progress_fill {
+                height: 100%;
+                width: 90%;
+                background: linear-gradient(to right, $primary 90%, #68767d 10%);
+            }
+        }
+        .mb_cost_breakdown {
+            margin-top: 23px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .mb_breakdown_item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .mb_breakdown_dot {
+                width: 15px;
+                @include border-radius(50%);
+                height: 15px;
+                margin-right: 10px;
+                display: inline-block;
+            }
+            .mb_dot_orange { background-color: $primary; }
+            .mb_dotred { background-color: $text_color; }
+            .mb_dot_darkred { background-color: $text_color; }
+            .mb_dot_gray_light { background-color: #ffebd0; }
+            .mb_dot_gray { background-color: #818c92; }
+            .mb_breakdown_label {
+                flex-grow: 1;
+                font-weight: 400;
+                font-size: 16px;
+                color: #031a26;
+                a{
+                    color: #031A26;
+                    text-decoration: underline;
+                    text-decoration-skip-ink: none;
+                    @include transition(0.4s);
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+            .mb_breakdown_value {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #031a26;
+                .mb_usd{
+                    font-size: 12px;
+                }
+            }
+        }
+        .mb_total_due{
+            margin-top: 33px;
+            @include flex(row, space-between, center);
+            h5{
+                font-weight: 700;
+                font-size: 24px;
+                color: #031a26;
+                span{
+                    font-size: 14px;
+                    font-weight: 500px;
+                }
+            }
+        }
+        .mb_total_due_item{
+            margin-top: 10px;
+            &.style_1{
+                margin-top: 19px;
+            }
+            @include flex(row, space-between, center);
+            .mb_label, .mb_value{
+                font-weight: 400;
+                font-size: 16px;
+                color: #031a26;
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+        .mb_apply_benefits{
+            margin-top: 23px;
+            position: relative;
+            @include flex(row, space-between, center);
+            h5{
+                font-weight: 700;
+                font-size: 24px;
+                color: #031a26;
+            }
+            
+          
+        }
+        .mb_cta_buttons {
+            @include flex(row, flex-start, center);
+            margin-top: 31px;
+            gap: 20px;
+            button {
+                background-color: $primary;
+                color: #fff;
+                padding: 12px 30px;
+                border: none;
+                @include border-radius(30px);
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                &:hover {
+                    background-color: darken($primary, 10%);
+                }
+            }
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+                color: #031a26;
+                @include transition(0.4s);
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        .mb_disclosure_link{
+            margin-top: 30px;
+            a{
+                font-weight: 400;
+                font-size: 16px;
+                text-decoration: underline;
+                @include transition(0.4s);
+                text-decoration-skip-ink: none;
+                color: #031a26;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }    
+}
+/*--- Monthly Payment End---*/
+  .mb_toggle_switch {
+                position: relative;
+                display: inline-block;
+                width: 66px;
+                height: 30px;
+                .mb_toggle_text{
+                position: absolute;
+                top: 50%;
+                @include transformY(-50%);
+                left: 32px;
+                color: $white;
+                font-size: 16px;
+                font-weight: 400;                           
+            }
+                input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+                .mb_toggle_slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: $text_color;
+                    transition: .4s;
+                    border-radius: 20px;
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        height: 24px;
+                        width: 24px;
+                        left: 3px;
+                        bottom: 3px;
+                        background-color: $white;
+                        transition: .4s;
+                        border-radius: 50%;
+                    }
+                }
+                input:checked + .mb_toggle_slider {
+                    background-color: $primary;
+                }          
+                input:checked + .mb_toggle_slider:before {
+                    transform: translateX(35px);
+                    -webkit-transform: translateX(35px);
+                    -moz-transform: translateX(35px);
+                    -ms-transform: translateX(35px);
+                    -o-transform: translateX(35px);
+                }
+                input:checked ~ .mb_toggle_text {
+                    left: 8px;
+                    color: $white !important;
+                }
+            }
+/*--- Costs For home Start---*/
+.costs_home_area{
+.mb-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.mb-dot-primary { background-color: $primary; }
+.mb-dot-primary1 { background-color: #ffebd0; }
+.mb-dot-text { background-color: $text_color; }
+.mb-dot-text1 { background-color: #818c92; }
+.cost_heading_area{
+    @include flex(row, space-between, center);
+    h3{
+        font-weight: 700;
+        font-size: 34px;
+        color: #031a26;
+        margin-top: 13px;
+    }
+    .mb_cost_heading{
+        h4{
+            font-weight: 600;
+            font-size: 34px;
+            color: #031a26;
+            span{
+                font-weight: 500;
+                font-size: 15px;
+                color: #68767d;
+            }
+        }
+    }
+.mb_cost_display{
+    @include flex(column, flex-start, flex-end);
+}
+    .mb-progress-bar {
+    width: 550px;
+  height: 15px;
+  background-color: $text_color;
+  @include border-radius(15px);
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  .mb-progress-fill {
+    height: 100%;
+    background: linear-gradient(to right, $primary 50%, #68767d 50%);
+    border-radius: 4px;
+    width: 60%;
+    transition: width 0.3s ease-in-out;
+  }
+}
+}
+.mb_view_btn{
+    a{
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: #031a26;
+        @include transition(0.4s);
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+.mb_apply_veterans{
+    p{
+        font-weight: 700;
+        font-size: 20px;
+        color: #031a26;
+        img{
+            margin-left: 12px
+        }
+    }
+}
+.mb_item_header{
+    @include flex(row, space-between, center);
+    max-width: 500px;
+
+}
+.mb_input_box{
+    label{
+        font-weight: 400;
+        font-size: 16px;
+        color: #031a26;
+        margin-bottom: 10px
+    }
+    .mb-subtext{
+        @include flex(row, flex-start, center);
+        gap: 5px;
+        margin-top: 15px;
+    }
+}
+
+
+.mb-container {
+  width: 100%;
+}
+
+.mb-card {
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.mb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mb-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.mb-update-link {
+  font-size: 14px;
+  color: #68767d;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.mb-cost-display {
+  font-size: 32px;
+  font-weight: bold;
+  color: $text_color;
+  margin-bottom: 15px;
+
+  .mb-unit {
+    font-size: 18px;
+    font-weight: normal;
+    color: #68767d;
+  }
+}
+
+
+
+.mb-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.mb-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mb-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  a{
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #031a26;
+    @include transition(0.4s);
+    &:hover{
+        color: $primary;
+    }
+  }
+}
+
+.mb-item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+
+.mb-label {
+  font-size: 18px;
+  font-weight: 400;
+  color: $text_color;
+  display: flex;
+  align-items: center;
+
+}
+
+.mb-info-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #68767d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: #68767d;
+  margin-left: 5px;
+  cursor: pointer;
+  &::after {
+    content: '?';
+  }
+}
+
+.mb-input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cccccc;
+  @include border-radius(10px);
+  height: 50px;
+  padding: 0px 30px;
+
+  .mb-input-prefix {
+    color: #68767d;
+    margin-right: 5px;
+  }
+
+  .mb-input-field {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .mb-clear-icon {
+    color: $text_color;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: lighter;
+    line-height: 1;
+  }
+}
+
+.mb-subtext {
+    font-weight: 400;
+    font-size: 16px;
+    color: #031a26;
+}
+
+.mb-slider-range {
+  display: flex;
+  justify-content: space-between;
+  span{
+    font-weight: 400;
+    font-size: 16px;
+    color: #031a26;
+  }
+}
+
+.mb-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  background: #cdd1d4;
+  outline: none;
+  border-radius: 4px;
+  
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: $text_color;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.mb-down-payment-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 50px !important;
+  justify-content: space-between;
+  border: 1px solid #cccccc;
+  @include border-radius(10px);
+  label{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #031a26;
+  }
+  .mb-input-group{
+    width: 78%;
+    padding: 0px 15px 0px 30px;
+    border: none;
+    border-right: 2px solid $text_color;
+    @include border-radius(10px 0px 0px 10px);
+}
+.mb-percentage-input{
+    border: none;
+    .mb-increment-up{
+        margin-top: 5px;
+    }
+    .mb-increment-down{
+        margin-top: -5px;
+    }
+}
+}
+
+.mb-percentage-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 8px 10px;
+  width: 120px;
+
+  .mb-percent-field {
+    border: none;
+    outline: none;
+    width: 40px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    height: 46px;
+  }
+
+  .mb-percent-symbol {
+    color: #68767d;
+    margin: 0 5px;
+  }
+
+  .mb-increment-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    
+    button {
+      background: none;
+      border: none;
+      font-size:18px;
+      color: $text_color;
+      cursor: pointer;
+      line-height: 1;
+      padding: 2px 0;
+    }
+  }
+}
+
+.mb-select-wrapper {
+  @include flex(row, space-between, center);
+  .nice-select{
+    border: 1px solid #cccccc;
+    padding-left: 30px;
+    width: 281px;
+    height: 50px;
+    @include border-radius(10px);
+    line-height: 50px;
+    .list{
+        width: 100%;
+    }
+    &::after{
+        right: 30px;
+        width: 11px;
+        height: 11px;
+        border-color: $text_color;
+    }
+  }
+  .mb-percentage-input{
+    width: 199px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #cccccc;
+    @include border-radius(10px);
+    input{
+        width: 56px;
+    }
+    .mb-increment-buttons{
+        margin-left: 45px;
+    }
+    .mb-percent-symbol{
+        margin: 0px 30px;
+    }
+  }
+}
+
+
+
+.mb-loan-rate-group {
+  width: 80px;
+  
+  .mb-input-field {
+    text-align: right;
+  }
+}
+
+.mb-link {
+  font-size: 14px;
+  color: $text_color;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+.mb-bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+.mb-veterans-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mb-toggle-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mb-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .mb-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: green;
+    transition: .4s;
+    border-radius: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+  }
+  input:checked + .mb-slider {
+    background-color: $primary;
+  }
+  input:checked + .mb-slider:before {
+    transform: translateX(20px);
+  }
+}
+
+.mb-toggle-text {
+  font-size: 14px;
+  color: #68767d;
+  font-weight: bold;
+}
+
+.mb-cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mb-view-rates-link {
+  font-size: 14px;
+  color: #68767d;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.mb-pre-approved-btn {
+  background-color: $primary;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+}
+
+.mb_btn_wrapper{
+    a{
+        background-color: $primary;
+        @include border-radius(999px);
+        padding: 13px 30px;
+        color: $white;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+}
+/*--- Costs For home End---*/
+
+
+/*--- Map Start---*/
+.mb_map_block{
+    iframe{
+        @include border-radius(10px);
+    }
+    position: relative;
+    .mb_overly_map_content{
+        @include border-radius(10px);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #00000070;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+    }
+    .mb_map_heading{
+        h3{
+            font-weight: 700;
+            font-size: 24px;
+            color: #031a26;
+        }
+        p{
+            font-weight: 500;
+            font-size: 16px;
+            color: rgba(3, 26, 38, 0.6);
+            margin-top: 10px;
+        }
+    }
+    .mb_map_content{
+        margin-top: 35px;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        padding: 25px 30px;
+        @include border-radius(6px);
+    }
+    .mb_location_select{
+        position: relative;
+        .mb_dash{
+            height: 26px;
+            border: 1px dashed rgba(3, 26, 38, 0.24);;
+            position: absolute;
+            top: 13px;
+            left: 4px;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 16px;
+            color: #252525;
+            padding-left: 30px;
+            position: relative;
+            &::before{
+                content: '';
+                width: 10px;
+                height: 10px;
+                border: 1px solid $text_color;
+                @include border-radius(50%);
+                position: absolute;
+                top: 50%;
+                @include transformY(-50%);
+                left: 0px;
+            }
+        }
+        p{
+            font-weight: 500;
+            font-size: 14px;
+            color: rgba(3, 26, 38, 0.7);
+            margin-top: 15px;
+            span{
+                margin-right: 20px;
+            }
+        }
+    }
+    .mb_checkbox{
+
+        input{
+            border: 1px solid rgba(3, 26, 38, 0.2);
+            border-radius: 2px;
+            width: 16px;
+            height: 16px;
+        }
+        label{
+            margin-left: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            color: rgba(3, 26, 38, 0.7);
+        }
+    }
+
+}
+/*--- Map End---*/
+
+/*--- Virtual Tour Start---*/
+.mb_virtual_tour{
+
+.mb_virtual_tour_block {
+  border: 1px solid rgba(3, 26, 38, 0.12);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.mb_header {
+  margin-bottom: 20px;
+  
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #031a26;
+  }
+
+  p {
+font-weight: 500;
+font-size: 16px;
+color: rgba(3, 26, 38, 0.6);
+  }
+}
+
+.mb_video_card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.mb_video_player {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; 
+  
+  .mb_video_thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+.mb_video_controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+  background: rgba(3, 26, 38, 0.4);
+}
+
+.mb_play_button {
+  width: 78px;
+height: 54px;
+  background-color: #ff0000;
+  @include border-radius(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  &::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 26px;
+    border-color: transparent transparent transparent #fff;
+    margin-left: 4px;
+  }
+}
+
+.mb_video_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.mb_channel_info {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.mb_channel_icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+    width: 46px;
+    height: 46px;
+  margin-right: 10px;
+}
+
+.mb_channel_name {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
+.mb_action_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.mb_action_btn {
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  @include flex(column, center, center);
+}
+
+.mb_watch_on_youtube {
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  backdrop-filter: blur(10px);
+background: rgba(3, 26, 38, 0.6);
+  padding: 12px 20px;
+  @include border-radius(0px 6px 6px 0px);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  img{
+    margin-left: 8px;
+  }
+}
+}
+/*--- Virtual Tour End---*/
+
+/*--- Environment risk Start---*/
+.mb_environment_risk{
+   
+.mb_risk_block {
+    border: 1px solid rgba(3, 26, 38, 0.12);
+    border-radius: 10px;
+    padding: 40px;
+}
+.mb_risk_header {
+    margin-bottom: 30px;
+    h2 {
+        font-weight: 700;
+        font-size: 24px;
+        color: #031a26;
+  }
+}
+.mb_risk_list {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mb_risk_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 27px 0px 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.mb_risk_content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.mb_risk_icon {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  @include border-radius(50%);
+  background-color: #ffebd0;
+  text-align: center;
+}
+.mb_risk_title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #031a26;
+  margin-bottom: 2px;
+}
+.mb_risk_level {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.mb_level_minimal { color: #68767D; }
+.mb_level_moderate { color: #031a26; }
+.mb_risk_description {
+    font-weight: 500;
+    font-size: 15px;
+    color: #68767d;
+}
+.mb_arrow_icon {
+ font-size: 18px;
+ color: $text_color;
+}
+.mb_risk_footer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #031a26;
+    opacity: 0.7;
+}
+.mb_info_icon {
+  margin-left: 10px;
+}
+}
+/*--- Environment risk End---*/
+
+/*--- Market Insights Start---*/
+.mb_market_insights{
+
+.mb_insights_block {
+  border: 1px solid rgba(3, 26, 38, 0.12);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.mb_header {
+  margin-bottom: 37px;
+  
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #031a26;
+  }
+}
+
+.mb_insights_grid {
+    padding: 30px;
+    background-color: #ffeed8;
+    @include border-radius(10px);
+   
+  
+}
+
+.mb_insight_card {
+  padding: 15px;
+  background-color: transparent;
+  width: 100%;
+  border-right: 1px solid rgba(3, 26, 38, 0.12); 
+  &.style_1{
+    padding-left: 30px;
+  }
+  &.style_2{
+    border: none;
+  }
+}
+
+.mb_insight_title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #252525;
+  margin-bottom: 5px;
+}
+
+.mb_insight_value {
+    font-weight: 700;
+    font-size: 26px;
+    color: #031a26;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+}
+
+.mb_currency {
+    font-weight: 700;
+    font-size: 26px;
+    color: #031a26;
+}
+
+.mb_price {
+  font-weight: 500;
+font-size: 14px;
+}
+
+.mb_insight_date {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(3, 26, 38, 0.7);
+  margin-top: 5px;
+}
+
+.mb_positive_growth {
+    font-weight: 700;
+    font-size: 26px;
+    color: #ff9916;
+}
+
+.mb_arrow_up {
+    color: #ff9916;
+  font-size: 18px;
+}
+}
+/*--- Market Insights End---*/
+
+/*--- Broker Info Start---*/
+.mb_broker_info_area{
+    $mb_primary-color: #2c3e50;
+$mb_secondary-color: #7f8c8d;
+$mb_border-color: #ecf0f1;
+$mb_card-bg: #ffffff;
+$mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+.mb_broker_info_block {
+    border: 1px solid rgba(3, 26, 38, 0.12);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.mb_broker_content {
+  
+}
+
+.mb_agent_info {
+  
+  padding: 20px;
+}
+
+.mb_agent_photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.mb_agent_details {
+    margin-top: 25px;
+  .mb_listed_by {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-top: 25px;
+    
+    .mb_agent_name {
+        color: #000;
+      text-decoration: underline;
+        text-decoration-skip-ink: none;
+        @include transition(0.4s);
+        &:hover{
+            color: $primary;
+        }
+    }
+  }
+
+  .mb_brokerage_name {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #000;
+  }
+
+  .mb_phone_number {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+  }
+}
+
+.mb_broker_data {
+  display: flex;
+  flex-direction: column;
+}
+
+.mb_data_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e9ea;
+  
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.mb_data_label {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+  padding-right: 15px;
+  flex-basis: 40%;
+}
+
+.mb_data_value {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+  text-align: right;
+  flex-basis: 60%;
+}
+
+.mb_copyright_row {
+  .mb_data_value {
+    font-weight: normal;
+    color: $mb_secondary-color;
+    font-size: 12px;
+  }
+}
+}
+/*--- Broker Info End---*/
+
+ .mb_tab_content {
+            display: none;
+        }
+
+        .mb_tab_content.active {
+            display: block;
+        }
+
+
+
+
+
+/*
+
+
+[data-bs-theme="dark"] .banner_slider .heading h2 {
+    color: #fff;
+}
+[data-bs-theme="dark"] .banner_slider p {
+    color: #fff;
+}
+[data-bs-theme="dark"] .header-wrap .main-menu ul li a {
+	color: white;
+}
+
+[data-bs-theme="dark"] .sticky_top.header-1 .header-wrap .main-menu ul li a.search i{
+	color: black !important;
+}
+[data-bs-theme="dark"] #header-1.sticky_top .main-menu ul li.menu-item-has-children::before {
+	color: black !important;
+}
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('../img/bg.png') no-repeat center center;
+    background-size: cover; 
+  
+
+    */
+
+
