@@ -697,6 +697,9 @@
 
 // Faq Section Start
 .rb_faq_section {
+    .container {
+        max-width: 1760px;
+    }
     .accordion {
         width: 100%;
         .accordion-item {
@@ -710,7 +713,7 @@
             &.active {
                 .accordion-header {
                     background: $white;
-                    border: 1px solid rgba(3, 26, 38, 0.10);
+                    border-bottom: 1px solid rgba(3, 26, 38, 0.10);
                     h3{
                         color: $text_color;
                     }                    

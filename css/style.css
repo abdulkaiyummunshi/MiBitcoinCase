@@ -32840,6 +32840,9 @@ header {
   border-radius: 30px;
 }
 
+.rb_faq_section .container {
+  max-width: 1760px;
+}
 .rb_faq_section .accordion {
   width: 100%;
 }
@@ -32856,7 +32859,7 @@ header {
 }
 .rb_faq_section .accordion .accordion-item.active .accordion-header {
   background: #fff;
-  border: 1px solid rgba(3, 26, 38, 0.1);
+  border-bottom: 1px solid rgba(3, 26, 38, 0.1);
 }
 .rb_faq_section .accordion .accordion-item.active .accordion-header h3 {
   color: #031a26;
@@ -42166,7 +42169,7 @@ ul.children {
   background: #FFF;
 }
 .rb_blog2 .rb_dropdown_1 .btn_one {
-  padding: 5px 16px;
+  padding: 5px 22px;
   border-radius: 100px;
   border: 1px solid rgba(3, 26, 38, 0.12);
   height: 50px;
@@ -42181,7 +42184,7 @@ ul.children {
 .rb_blog2 .rb_dropdown_2 {
   display: flex;
   align-items: center;
-  padding: 5px 16px;
+  padding: 5px 22px;
   border-radius: 100px;
   border: 1px solid rgba(3, 26, 38, 0.12);
   height: 50px;
