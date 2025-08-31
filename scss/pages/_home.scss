@@ -236,6 +236,18 @@
             left: 0px;
             pointer-events: none;
         }
+        .mb_shape3{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            pointer-events: none;
+        }
+        .mb_shape4{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            pointer-events: none;
+        }
         .mb_shape2{
             position: absolute;
             top: 0px;
@@ -433,6 +445,18 @@
 
 /*--Browse Properties Start---*/
 .mb_browse_properties{
+    position: relative;
+    .vector{
+        position: absolute;
+        top: -34px;
+        right: 20%;
+        .child_vector{
+            position: absolute;
+            top: -16px;
+            left: 50%;
+            @include transformX(-50%);
+        }
+    }
     .row{
         &.style_1{
             gap: 30px;

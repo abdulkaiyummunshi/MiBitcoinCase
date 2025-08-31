@@ -1142,9 +1142,9 @@
 
   .mb-progress-fill {
     height: 100%;
-    background: linear-gradient(to right, $primary 50%, #68767d 50%);
+    background: linear-gradient(to right, $primary 70%, #68767d 30%);
     border-radius: 4px;
-    width: 60%;
+    width: 85%;
     transition: width 0.3s ease-in-out;
   }
 }

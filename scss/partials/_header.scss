@@ -127,8 +127,8 @@
 			  @include transition(0.4s);
 			  position: relative;
 			  font-family: $inter-font;
-			  font-size: 18px;
-			  font-weight: 600;
+			  font-size: 16px;
+			  font-weight: 500;
 			  color: $white;
 			  &:hover{
 						background-color: $white;
@@ -232,8 +232,15 @@
 			ul{
 				background: rgba(3, 26, 38, 0.1);
 				li{
+					ul{
+						background-color: $white;
+						
+					}
 					a{
 						color: $text_color !important;
+					}
+					&::after{
+						color: $text_color;
 					}
 				}
 			}
@@ -268,18 +275,7 @@ header{
 		padding: 0px 5px;
 		height: 87px;
 	}
-	.mb_blur_circle{
-		width: 671px;
-		height: 671px;
-		@include border-radius(50%);
-		background-color: #f6b663;
-		filter: blur(400px);
-		-webkit-filter: blur(400px);
-		position: absolute;
-		top: -490px;
-		left: 50%;
-		@include transformX(-50%);
-}
+	
 	.header-wrap{
 		height: 90px;
 		@include nesthub{
@@ -331,8 +327,12 @@ header{
 				font-weight: 600;
 				font-size: 15px;
 				line-height: 38px;
+				
 				width: 70px;
 				height: 38px;
+				&::after{
+					border-color: $text_color;
+				}
 				&.current{
 					color: $text_color !important;
 				}
@@ -529,7 +529,6 @@ header{
 				}
 			}
 				&.style_1{
-		.main-menu{
 			ul{
 				li{
 				a{
@@ -546,17 +545,23 @@ header{
 					ul{
 							background-color: $white !important;
 							li{
+									a{
+										&:hover{
+										background-color: $primary;
+										color: $white !important;
+									}
 								
-									.acitve{
+									&.acitve{
 										color: $white !important;
 										background-color: #000 !important;
+									}
 									}
 								
 							}
 						}
 				}
 			}
-		}
+		
 	  }
 		}
 	
@@ -592,9 +597,15 @@ header{
 	}
 }
 
+.mb_properties_card_container {
+  opacity: 0;
+  display: none;
+}
 
-
-
+.mb_properties_card_container.show {
+  opacity: 1;
+  display: block;
+}
 
 
         

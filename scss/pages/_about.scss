@@ -5,6 +5,18 @@
     @include border-radius(24px);
     @include flex(row, flex-start, center);
     position: relative;
+    .mb_blur_circle{
+		width: 671px;
+		height: 671px;
+		@include border-radius(50%);
+		background-color: #f6b663;
+		filter: blur(200px);
+		-webkit-filter: blur(200px);
+		position: absolute;
+		top: -490px;
+		left: 46%;
+		@include transformX(-50%);
+}
     .container{
         height: 100%;
     }

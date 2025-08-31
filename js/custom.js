@@ -230,6 +230,20 @@
                 });
         }
         howWork()
+        function stepSlider(){
+            $('.rb_step_slide_container').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: false,
+                    autoplay: true,
+                    speed: 3000,
+                    autoplaySpeed: 3000,
+                    prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+                    nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+                });
+        }
+        stepSlider()
        
         
         $('.open_more_content').on('click', () => {
@@ -603,9 +617,6 @@
                 $(this).addClass('selected');
             });
         });
-
-        
-        
      
         // Back to Top Button
         $(window).on("scroll", function () {
@@ -657,6 +668,49 @@
 
         // Nice Select
         $('select').niceSelect();
+        // Filter 
+        function filterCard() {
+            const filterButtons = document.getElementById('city-filter-buttons');
+            const propertyCards = document.querySelectorAll('.mb_properties_card_container');
+
+            const initiallyActiveCity = document.querySelector('#city-filter-buttons button.active').dataset.city;
+            propertyCards.forEach(card => {
+                if (card.dataset.city === initiallyActiveCity) {
+                    card.classList.add('show');
+                }
+            });
+
+            filterButtons.addEventListener('click', (event) => {
+                if (event.target.tagName === 'BUTTON') {
+                    const selectedCity = event.target.dataset.city;
+
+                    const allButtons = filterButtons.querySelectorAll('button');
+                    allButtons.forEach(button => button.classList.remove('active'));
+                    event.target.classList.add('active');
+
+                    propertyCards.forEach(card => {
+                        if (card.classList.contains('show')) {
+                            card.classList.remove('show');
+                        }
+                    });
+
+                    setTimeout(() => {
+                        let showDelay = 0;
+                        propertyCards.forEach(card => {
+                            const cardCity = card.dataset.city;
+
+                            if (cardCity === selectedCity) {
+                                setTimeout(() => {
+                                    card.classList.add('show');
+                                }, showDelay);
+                                showDelay += 100;
+                            }
+                        });
+                    }, 500);
+                }
+            });
+        }
+        filterCard()
     });
 
     // Preloader
@@ -670,4 +724,3 @@
         }, 600);
     });
 })(jQuery);
-
