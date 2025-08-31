@@ -81,26 +81,64 @@
         flex-direction: column;
         justify-content: center; 
         align-items: center;
-        padding: 99px 77px;
+        text-align: center;
+        padding: 99px 77px 198px;
         border-radius: 10px;
         background: #031A26;
+        .icon {
+            display: flex;
+            justify-content: center;
+        }
+        h4 {
+            color: #FFF;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100px; /* 416.667% */
+        }
+        p {
+            color: rgba(255, 255, 255, 0.60);
+            text-align: center;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 166.667% */
+        }
     }
-    h4 {
-        color: #FFF;
-        font-family: Inter;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 100px; /* 416.667% */
+    .rb_arrow_btn {
+        display: flex;
+        gap: 48px;
+        .icon {
+            i {
+                font-size: 20px;
+                color: #FFF;
+                cursor: pointer;
+            }
+        }
     }
-    p {
-        color: rgba(255, 255, 255, 0.60);
-        text-align: center;
-        font-family: Inter;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 30px; /* 166.667% */
+    .left-arrow {
+        position: absolute;
+        bottom: 15%;
+        left: 39%;
+        z-index: 10;
+        i {
+            font-size: 24px;
+            color: #FFF;
+            cursor: pointer;
+        }
+    }
+    .right-arrow {
+        position: absolute;
+        bottom: 15%;
+        right: 39%;
+        z-index: 10;
+        i {
+            font-size: 24px;
+            color: #FFF;
+            cursor: pointer;
+        }
     }
 }
 // About1 css end
