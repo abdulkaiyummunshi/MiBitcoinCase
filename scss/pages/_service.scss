@@ -59,13 +59,14 @@
     position: relative;
     background: #031A26;
     padding: 120px 0 130px;
-     .left-arrow{
-            @include md{
-                display: none !important;
-            }
-            @include sm{
-                display: none !important;
-            }
+
+    .left-arrow{
+        @include md{
+            display: none !important;
+        }
+        @include sm{
+            display: none !important;
+        }
         border-radius: 50%;
         border: 1px solid $border;
         width: 44px;
@@ -81,7 +82,7 @@
         color: #020626;
         position: absolute;
         top: 45%;
-        left: -95px;
+        left: -65px;
         @include transformY(-50%);
         background-color: $white;
         z-index: 10;
@@ -90,15 +91,15 @@
             background-color: $primary;
             color: $white;
         }
-}
+    }
    .right-arrow{
-            @include md{
-                display: none !important;
-            }
-            @include sm{
-                display: none !important;
-            }
-            border: 1px solid $border;
+        @include md{
+            display: none !important;
+        }
+        @include sm{
+            display: none !important;
+        }
+        border: 1px solid $border;
         border-radius: 50%;
         width: 44px;
         height: 44px;
@@ -115,7 +116,7 @@
         background-color: $white;
         top: 45%;
         @include transformY(-50%);
-        right: -90px;   
+        right: -65px;   
         z-index: 10;
         @include transition(0.4s);
         &:hover{

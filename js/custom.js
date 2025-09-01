@@ -230,6 +230,8 @@
                 });
         }
         howWork()
+
+        // Step Slider Section
         function stepSlider(){
             $('.rb_step_slide_container').slick({
                     slidesToShow: 4,
@@ -244,6 +246,22 @@
                 });
         }
         stepSlider()
+
+        // Mission Slider Section
+        function missionSlider(){
+            $('.rb_mission_slide_container').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: false,
+                    autoplay: true,
+                    speed: 3000,
+                    autoplaySpeed: 3000,
+                    prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left-long"></i></span>`,
+                    nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>`,
+                });
+        }
+        missionSlider()
        
         
         $('.open_more_content').on('click', () => {

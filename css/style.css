@@ -27530,30 +27530,30 @@ header {
   margin-bottom: 22px;
   display: inline-flex;
   gap: 8px;
-  padding: 11px 30px;
+  padding: 6px 30px;
   border-radius: 100px;
   border: 1px solid rgba(3, 26, 38, 0.12);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F2F2F2 100%);
   color: #252525;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase; }
   .rb_heading_area .rb_subtitle.style1 {
-    color: #031A26;
+    color: #031a26;
     text-transform: uppercase;
     background: none; }
 .rb_heading_area .rb_title {
   color: #252525;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
   line-height: 60px; }
   .rb_heading_area .rb_title.style1 {
-    color: #031A26; }
+    color: #031a26; }
 .rb_heading_area .rb_desc {
   color: rgba(37, 37, 37, 0.6);
   font-family: Inter;
@@ -27565,7 +27565,7 @@ header {
     color: rgba(3, 26, 38, 0.6); }
 
 .rb-t50 {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 50px;
   font-style: normal;
@@ -27573,7 +27573,7 @@ header {
   line-height: 64px; }
 
 .rb-t24 {
-  color: #031A26;
+  color: #031a26;
   font-family: "Inter", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -27583,7 +27583,7 @@ header {
     color: #FFF; }
 
 .rb-t22 {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 22px;
   font-style: normal;
@@ -27591,7 +27591,7 @@ header {
   line-height: 30px; }
 
 .rb-t20 {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -27615,7 +27615,7 @@ header {
     font-weight: 700;
     line-height: 26px; }
   .rb-p18.style3 {
-    color: #031A26;
+    color: #031a26;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -27623,7 +27623,7 @@ header {
     line-height: normal; }
 
 .rb-p16 {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -27652,7 +27652,7 @@ header {
     line-height: 26px; }
 
 .rb-p15 {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -27681,7 +27681,7 @@ header {
   position: relative; }
   .common_input .form-group label {
     display: block;
-    color: #031A26;
+    color: #031a26;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -27701,7 +27701,7 @@ header {
     height: 54px;
     border: none;
     border-bottom: 1px solid rgba(3, 26, 38, 0.14);
-    color: #031A26;
+    color: #031a26;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -27716,7 +27716,7 @@ header {
     .common_input .form-group input[type="email"]::placeholder,
     .common_input .form-group input[type="password"]::placeholder,
     .common_input .form-group textarea::placeholder {
-      color: #031A26; }
+      color: #031a26; }
     .common_input .form-group input[type="text"]:focus,
     .common_input .form-group input[type="number"]:focus,
     .common_input .form-group input[type="tel"]:focus,
@@ -27747,7 +27747,7 @@ header {
     border-radius: 5px;
     border: none;
     border-bottom: 1px solid rgba(3, 26, 38, 0.14);
-    color: #031A26;
+    color: #031a26;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -27817,7 +27817,7 @@ header {
   position: relative; }
   .common_input_2 .form-group label {
     display: block;
-    color: #031A26;
+    color: #031a26;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -27837,7 +27837,7 @@ header {
     height: 46px;
     border-radius: 6px;
     border: 1px solid rgba(3, 26, 38, 0.12);
-    color: #031A26;
+    color: #031a26;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
@@ -27852,7 +27852,7 @@ header {
     .common_input_2 .form-group input[type="email"]::placeholder,
     .common_input_2 .form-group input[type="password"]::placeholder,
     .common_input_2 .form-group textarea::placeholder {
-      color: #031A26;
+      color: #031a26;
       opacity: 0.7; }
     .common_input_2 .form-group input[type="text"]:focus,
     .common_input_2 .form-group input[type="number"]:focus,
@@ -27884,7 +27884,7 @@ header {
     border-radius: 5px;
     border: none;
     border-bottom: 1px solid rgba(3, 26, 38, 0.14);
-    color: #031A26;
+    color: #031a26;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -27957,7 +27957,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #031A26;
+    color: #031a26;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -27981,14 +27981,6 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 30px; }
-
-.rb_arrow_btn {
-  display: flex;
-  gap: 48px; }
-  .rb_arrow_btn .icon i {
-    font-size: 20px;
-    color: #FFF;
-    cursor: pointer; }
 
 .rb_arrow_slider_btn .item_1 {
   display: flex;
@@ -28042,7 +28034,7 @@ header {
     border-radius: 6px;
     border: 1px solid rgba(3, 26, 38, 0.1);
     background: rgba(255, 255, 255, 0);
-    color: #031A26;
+    color: #031a26;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
@@ -28050,7 +28042,7 @@ header {
     line-height: normal;
     opacity: 0.7; }
     .rb_page_nav_wrap ul li .page-numbers i {
-      color: #031A26;
+      color: #031a26;
       font-size: 15px;
       font-style: normal; }
     .rb_page_nav_wrap ul li .page-numbers:hover {
@@ -28070,7 +28062,7 @@ header {
     flex-direction: row;
     align-items: center; }
   .nav-pills .nav-link {
-    color: #031A26;
+    color: #031a26;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
@@ -28083,7 +28075,7 @@ header {
     transition: all 0.3s ease;
     border-radius: 0; }
     .nav-pills .nav-link.active {
-      color: #031A26;
+      color: #031a26;
       border-radius: 100px;
       background: #FFF;
       height: 50px;
@@ -28094,6 +28086,8 @@ header {
     .nav-pills .nav-link:last-child.active {
       border-radius: 30px; }
 
+.rb_faq_section .container {
+  max-width: 1760px; }
 .rb_faq_section .accordion {
   width: 100%; }
   .rb_faq_section .accordion .accordion-item {
@@ -28106,9 +28100,9 @@ header {
         margin-bottom: 8px; } }
     .rb_faq_section .accordion .accordion-item.active .accordion-header {
       background: #fff;
-      border: 1px solid rgba(3, 26, 38, 0.1); }
+      border-bottom: 1px solid rgba(3, 26, 38, 0.1); }
       .rb_faq_section .accordion .accordion-item.active .accordion-header h3 {
-        color: #031A26; }
+        color: #031a26; }
       .rb_faq_section .accordion .accordion-item.active .accordion-header .icon {
         transform: rotate(180deg);
         background-color: #FF9916;
@@ -28127,7 +28121,7 @@ header {
       .rb_faq_section .accordion .accordion-header {
         padding: 4px 15px; } }
     .rb_faq_section .accordion .accordion-header h3 {
-      color: #031A26;
+      color: #031a26;
       font-family: Inter;
       font-size: 18px;
       font-style: normal;
@@ -29318,26 +29312,55 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 99px 77px;
+  text-align: center;
+  padding: 99px 77px 198px;
   border-radius: 10px;
   background: #031A26; }
-.rb_about1 h4 {
-  color: #FFF;
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 100px;
-  /* 416.667% */ }
-.rb_about1 p {
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-  /* 166.667% */ }
+  .rb_about1 .mission_card .icon {
+    display: flex;
+    justify-content: center; }
+  .rb_about1 .mission_card h4 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100px;
+    /* 416.667% */ }
+  .rb_about1 .mission_card p {
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 166.667% */ }
+.rb_about1 .rb_arrow_btn {
+  display: flex;
+  gap: 48px; }
+  .rb_about1 .rb_arrow_btn .icon i {
+    font-size: 20px;
+    color: #FFF;
+    cursor: pointer; }
+.rb_about1 .left-arrow {
+  position: absolute;
+  bottom: 15%;
+  left: 39%;
+  z-index: 10; }
+  .rb_about1 .left-arrow i {
+    font-size: 24px;
+    color: #FFF;
+    cursor: pointer; }
+.rb_about1 .right-arrow {
+  position: absolute;
+  bottom: 15%;
+  right: 39%;
+  z-index: 10; }
+  .rb_about1 .right-arrow i {
+    font-size: 24px;
+    color: #FFF;
+    cursor: pointer; }
 
 .rb_about2 {
   position: relative; }
@@ -34021,7 +34044,7 @@ ul.children {
     color: #020626;
     position: absolute;
     top: 45%;
-    left: -95px;
+    left: -65px;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -34061,7 +34084,7 @@ ul.children {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    right: -90px;
+    right: -65px;
     z-index: 10;
     transition: all 0.4s ease; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -35844,7 +35867,7 @@ ul.children {
     .rb_blog2 .rb_dropdown .btn_one:hover {
       background: #FFF; }
   .rb_blog2 .rb_dropdown_1 .btn_one {
-    padding: 5px 16px;
+    padding: 5px 22px;
     border-radius: 100px;
     border: 1px solid rgba(3, 26, 38, 0.12);
     height: 50px;
@@ -35858,7 +35881,7 @@ ul.children {
   .rb_blog2 .rb_dropdown_2 {
     display: flex;
     align-items: center;
-    padding: 5px 16px;
+    padding: 5px 22px;
     border-radius: 100px;
     border: 1px solid rgba(3, 26, 38, 0.12);
     height: 50px;
