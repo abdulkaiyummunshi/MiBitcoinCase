@@ -24,12 +24,11 @@
 			  &.menu-item-has-children{
 				ul{
 					padding: 0px;
-					width: 500px;
+					display: grid !important;
+					grid-template-columns: repeat(3, 1fr);
 					&.style_1{
-						width: fit-content !important;
+						grid-template-columns: repeat(1, 2fr)
 					}
-					max-height: 500px;
-					// overflow: hidden;
 					@include flex(column, flex-start, flex-start);
 					flex-wrap: wrap;
 					@include border-radius(0px);
@@ -462,12 +461,8 @@ header{
 							}
 				ul{
 					padding: 0px;
-					width: 500px;
 					background-color: $white;
-					&.style_1{
-						width: fit-content !important;
-					}
-					max-height: 500px;
+					
 					@include flex(column, flex-start, flex-start);
 					flex-wrap: wrap;
 					@include border-radius(0px);
@@ -523,6 +518,7 @@ header{
 					li {
 					  > a {
 						padding: 10px 20px;
+						
 					  }
 					}
 				  }

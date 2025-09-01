@@ -4,7 +4,6 @@ $gray1: #f7f1fc;
 $black: black;
 $text: #4a494a;
 $gray-700: #aba8af;
-// $primary: #cda64e;
 $black: #000000;
 $white: #ffffff;
 $border-color: #cda64e;
@@ -49,7 +48,7 @@ $font-family: "Outfit", sans-serif;
                 color: $text;
                 font-size: 17px;
                 i{
-                  color: $black;
+                  color: $primary;
                 }
   
                 @include sm{
@@ -519,11 +518,3 @@ $font-family: "Outfit", sans-serif;
   }
 }
 
-// @keyframes ripple {
-//   0% {
-//     box-shadow: 0 0 0 0 rgb(255 255 255 / 20%), 0 0 0 20px rgb(255 255 255 / 20%), 0 0 0 40px rgb(255 255 255 / 20%);
-//   }
-//   100% {
-//       box-shadow: 0 0 0 20px rgb(255 255 255 / 20%), 0 0 0 40px rgb(255 255 255 / 20%), 0 0 0 60px rgb(255 255 255 / 0%);
-//   }
-// }

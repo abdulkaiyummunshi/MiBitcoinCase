@@ -57,6 +57,28 @@
             }
         }
     }
+    &.style_3{
+        a{
+            background-color: $primary;
+            color: $white;
+            @include transition(0.4s);
+            span{
+                background-color: $white;
+                color: $text_color;
+            }
+            &:hover{
+                background-color: $primary;
+                color: $white;
+                i{
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+    }
+            }
+        }
+    }
     &.style_2{
         a{
             background-color: $white;
@@ -67,4 +89,5 @@
             }
         }
     }
+   
     }

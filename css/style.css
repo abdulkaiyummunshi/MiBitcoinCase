@@ -26539,8 +26539,8 @@ p {
       position: relative; }
       .header-wrap .main-menu ul li.menu-item-has-children ul {
         padding: 0px;
-        width: 500px;
-        max-height: 500px;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -26552,7 +26552,7 @@ p {
         -ms-border-radius: 0px;
         -o-border-radius: 0px; }
         .header-wrap .main-menu ul li.menu-item-has-children ul.style_1 {
-          width: fit-content !important; }
+          grid-template-columns: repeat(1, 2fr); }
         .header-wrap .main-menu ul li.menu-item-has-children ul a {
           border-radius: 0px;
           -moz-border-radius: 0px;
@@ -26857,9 +26857,7 @@ header {
           color: #ff9916 !important; }
         .sticky_top.header-1 .header-wrap .main-menu ul li.menu-item-has-children ul {
           padding: 0px;
-          width: 500px;
           background-color: #fff;
-          max-height: 500px;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
@@ -26870,8 +26868,6 @@ header {
           -webkit-border-radius: 0px;
           -ms-border-radius: 0px;
           -o-border-radius: 0px; }
-          .sticky_top.header-1 .header-wrap .main-menu ul li.menu-item-has-children ul.style_1 {
-            width: fit-content !important; }
           .sticky_top.header-1 .header-wrap .main-menu ul li.menu-item-has-children ul a {
             border-radius: 0px;
             -moz-border-radius: 0px;
@@ -27502,6 +27498,22 @@ header {
     background-color: #ff9916;
     color: #fff; }
     .btn_wrapper.style_1 a:hover i {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg); }
+.btn_wrapper.style_3 a {
+  background-color: #ff9916;
+  color: #fff;
+  transition: all 0.4s ease; }
+  .btn_wrapper.style_3 a span {
+    background-color: #fff;
+    color: #031a26; }
+  .btn_wrapper.style_3 a:hover {
+    background-color: #ff9916;
+    color: #fff; }
+    .btn_wrapper.style_3 a:hover i {
       transform: rotate(0deg);
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
@@ -29404,7 +29416,7 @@ header {
 .mb_post_property_wrapper {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 10px;
-  background: #fdf3e7;
+  background: #fff;
   padding: 56px 50px 70px 50px; }
   .mb_post_property_wrapper .mb_radio_custom {
     appearance: none;
@@ -29503,7 +29515,7 @@ header {
 
 .mb_property_common {
   padding: 50px;
-  background-color: #fdf3e7;
+  background-color: #fff;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -29675,6 +29687,11 @@ header {
   text-align: center;
   color: rgba(3, 26, 38, 0.6); }
 
+.mb_features_amenities .mb_title h3 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #031a26; }
+
 .mb_tour_schedule .mb_body {
   font-family: 'Inter', sans-serif;
   background-color: #FDF9F3; }
@@ -29733,7 +29750,6 @@ header {
   .mb_tour_schedule .mb_btn_listing:hover {
     background-color: #4B5563; }
 
-/* Compiled CSS from SCSS */
 .mb_map_search .mb_map_search_filter {
   display: flex;
   flex-direction: row;
@@ -32228,7 +32244,7 @@ header {
         .blog-area .blog-posts .single-post-item .post-content-wrapper .post-meta .blog-category a i,
         .blog-area .blog-posts .single-post-item .post-content-wrapper .post-meta .post-date a i,
         .blog-area .blog-posts .single-post-item .post-content-wrapper .post-meta .post-comment a i {
-          color: #000000; }
+          color: #ff9916; }
         @media only screen and (min-width: 0px) and (max-width: 767px) {
           .blog-area .blog-posts .single-post-item .post-content-wrapper .post-meta .author-img a,
           .blog-area .blog-posts .single-post-item .post-content-wrapper .post-meta .blog-category a,
@@ -34073,6 +34089,10 @@ ul.children {
   font-weight: 700;
   font-size: 40px;
   color: #031a26; }
+.mb_agents_area .mb_title h4 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #031a26; }
 .mb_agents_area .mb_agent_search {
   display: flex;
   flex-direction: row;
@@ -34441,71 +34461,69 @@ ul.children {
   .privacy_policy_area .mb_business li::before {
     background-color: #101010; }
 
-.mb_pricing_membership_area {
-  padding-bottom: 500px; }
-  .mb_pricing_membership_area .mb_pricing_card {
-    border: 1px solid rgba(3, 26, 38, 0.12);
-    border-radius: 10px;
-    width: 100%; }
-    .mb_pricing_membership_area .mb_pricing_card .mb_card_heading {
-      border-radius: 10px 10px 0 0;
-      background: #ffeed8;
-      padding: 30px 30px 32px 40px; }
-      .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h4 {
+.mb_pricing_membership_area .mb_pricing_card {
+  border: 1px solid rgba(3, 26, 38, 0.12);
+  border-radius: 10px;
+  width: 100%; }
+  .mb_pricing_membership_area .mb_pricing_card .mb_card_heading {
+    border-radius: 10px 10px 0 0;
+    background: #ffeed8;
+    padding: 30px 30px 32px 40px; }
+    .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h4 {
+      font-weight: 600;
+      font-size: 24px;
+      color: #031a26; }
+    .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h3 {
+      font-weight: 700;
+      font-size: 34px;
+      color: #031a26; }
+      .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h3 span {
+        font-weight: 500;
+        font-size: 15px; }
+  .mb_pricing_membership_area .mb_pricing_card .mb_card_body {
+    padding: 40px 44px; }
+    .mb_pricing_membership_area .mb_pricing_card .mb_card_body h4 {
+      font-weight: 600;
+      font-size: 24px;
+      color: #031a26; }
+    .mb_pricing_membership_area .mb_pricing_card .mb_card_body p {
+      font-weight: 500;
+      font-size: 16px;
+      color: rgba(3, 26, 38, 0.6);
+      height: 68px;
+      border-bottom: 1px solid rgba(3, 26, 38, 0.12);
+      margin-top: 10px; }
+    .mb_pricing_membership_area .mb_pricing_card .mb_card_body .btn_wrappeer {
+      margin-top: 40px; }
+      .mb_pricing_membership_area .mb_pricing_card .mb_card_body .btn_wrappeer a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        background-color: #031a26;
+        border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
         font-weight: 600;
-        font-size: 24px;
-        color: #031a26; }
-      .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h3 {
-        font-weight: 700;
-        font-size: 34px;
-        color: #031a26; }
-        .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h3 span {
-          font-weight: 500;
-          font-size: 15px; }
-    .mb_pricing_membership_area .mb_pricing_card .mb_card_body {
-      padding: 40px 44px; }
-      .mb_pricing_membership_area .mb_pricing_card .mb_card_body h4 {
-        font-weight: 600;
-        font-size: 24px;
-        color: #031a26; }
-      .mb_pricing_membership_area .mb_pricing_card .mb_card_body p {
+        font-size: 16px;
+        color: #fff;
+        transition: all 0.4s ease; }
+        .mb_pricing_membership_area .mb_pricing_card .mb_card_body .btn_wrappeer a:hover {
+          background-color: #ff9916; }
+    .mb_pricing_membership_area .mb_pricing_card .mb_card_body .mb_service_list {
+      margin-top: 30px; }
+      .mb_pricing_membership_area .mb_pricing_card .mb_card_body .mb_service_list ul li {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 11px;
         font-weight: 500;
         font-size: 16px;
-        color: rgba(3, 26, 38, 0.6);
-        height: 68px;
-        border-bottom: 1px solid rgba(3, 26, 38, 0.12);
-        margin-top: 10px; }
-      .mb_pricing_membership_area .mb_pricing_card .mb_card_body .btn_wrappeer {
-        margin-top: 40px; }
-        .mb_pricing_membership_area .mb_pricing_card .mb_card_body .btn_wrappeer a {
-          width: 100%;
-          display: block;
-          text-align: center;
-          padding: 15px;
-          background-color: #031a26;
-          border-radius: 6px;
-          -moz-border-radius: 6px;
-          -webkit-border-radius: 6px;
-          -ms-border-radius: 6px;
-          -o-border-radius: 6px;
-          font-weight: 600;
-          font-size: 16px;
-          color: #fff;
-          transition: all 0.4s ease; }
-          .mb_pricing_membership_area .mb_pricing_card .mb_card_body .btn_wrappeer a:hover {
-            background-color: #ff9916; }
-      .mb_pricing_membership_area .mb_pricing_card .mb_card_body .mb_service_list {
-        margin-top: 30px; }
-        .mb_pricing_membership_area .mb_pricing_card .mb_card_body .mb_service_list ul li {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-          gap: 11px;
-          font-weight: 500;
-          font-size: 16px;
-          color: rgba(3, 26, 38, 0.7);
-          margin-bottom: 20px; }
+        color: rgba(3, 26, 38, 0.7);
+        margin-bottom: 20px; }
 
 .mb_account_content h5 {
   font-weight: 500;
@@ -34636,6 +34654,15 @@ ul.children {
     gap: 5px;
     cursor: pointer;
     font-weight: bold; }
+    .mb_manage_listing .listings-summary .sort-by span {
+      font-weight: 400;
+      font-size: 19px;
+      color: #031a26; }
+    .mb_manage_listing .listings-summary .sort-by .mb_arrow {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
 .mb_manage_listing .mb_table_head {
   margin-top: 17px;
   padding: 30px;
@@ -35013,6 +35040,9 @@ ul.children {
       color: rgba(3, 26, 38, 0.7);
       text-decoration: none;
       transition: all 0.4s ease; }
+      .mb_action_links li a.active {
+        text-decoration: underline;
+        color: #ff9916; }
       .mb_action_links li a:hover {
         text-decoration: underline;
         color: #ff9916; }
@@ -35072,7 +35102,7 @@ ul.children {
   transition: .4s;
   border-radius: 50%; }
 .mb_notification_area input:checked + .mb_toggle_slider {
-  background-color: #F97316; }
+  background-color: #ff9916; }
 .mb_notification_area input:checked + .mb_toggle_slider:before {
   transform: translateX(32px);
   -webkit-transform: translateX(32px);
@@ -35306,7 +35336,7 @@ ul.children {
 /*---Saved Searches End---*/
 /*---My Profile Start---*/
 .mb_my_profile_area .mb_profile_card {
-  padding: 60px;
+  padding: 41px 60px 60px 60px;
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 20px; }
 .mb_my_profile_area .mb_profile_heading {
@@ -35434,7 +35464,8 @@ ul.children {
   line-height: 50px;
   font-weight: 500;
   font-size: 16px;
-  color: #031a26; }
+  color: #031a26;
+  width: 100%; }
   .mb_my_profile_area .nice-select .list {
     width: 100%; }
   .mb_my_profile_area .nice-select .current {
@@ -35595,10 +35626,10 @@ ul.children {
 .mb_sign_up_area .mb_form_select {
   width: 100%;
   padding: 12px 15px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid red;
   border-radius: 8px;
   font-size: 14px;
-  color: #333;
+  color: green;
   appearance: none;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>') no-repeat right 15px center;
   background-size: 18px;
@@ -35607,9 +35638,9 @@ ul.children {
   .mb_sign_up_area .mb_form_input:focus,
   .mb_sign_up_area .mb_form_select:focus {
     outline: none;
-    border-color: #ff9800; }
+    border-color: #ff9916; }
 .mb_sign_up_area .mb_form_input::placeholder {
-  color: #666; }
+  color: yellow; }
 .mb_sign_up_area .mb_helper_text {
   font-weight: 400;
   font-size: 16px;
@@ -35633,7 +35664,33 @@ ul.children {
 .mb_sign_up_area .mb_mls_right {
   max-width: 820px;
   width: 100%;
-  height: 969px; }
+  height: 969px;
+  position: relative; }
+  .mb_sign_up_area .mb_mls_right .mb_cross {
+    position: absolute;
+    top: 30px;
+    right: 30px; }
+    .mb_sign_up_area .mb_mls_right .mb_cross span {
+      width: 34px;
+      height: 34px;
+      display: block;
+      line-height: 34px;
+      cursor: pointer;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background-color: #ffffff;
+      text-align: center;
+      line-height: center;
+      color: #031a26;
+      font-weight: 900;
+      font-size: 16px;
+      transition: all 0.4s ease; }
+      .mb_sign_up_area .mb_mls_right .mb_cross span:hover {
+        background-color: #ff9916;
+        color: #ffffff; }
   .mb_sign_up_area .mb_mls_right img {
     width: 100%;
     height: 100%;

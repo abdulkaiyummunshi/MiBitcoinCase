@@ -33,7 +33,7 @@
 .mb_post_property_wrapper{
     border: 1px solid rgba(3, 26, 38, 0.1);
     border-radius: 10px;
-    background: #fdf3e7;
+    background: $white;
     padding: 56px 50px 70px 50px;
     .mb_radio_custom {
         appearance: none;
@@ -101,6 +101,7 @@
     }
 
 }
+
 .mb_property_location{
     border: 1px solid rgba(3, 26, 38, 0.1);
     @include border-radius(10px);
@@ -110,6 +111,7 @@
     @include flex(row, flex-start, center);
     flex-wrap: wrap;
     gap: 30px;
+    
     .mb_single_input{
         width: 100%;
         @include flex(column, flex-start, flex-start);
@@ -142,7 +144,7 @@
 }
 .mb_property_common{
     padding: 50px;
-    background-color: #fdf3e7;
+    background-color: $white;
     @include border-radius(10px);
     border: 1px solid rgba(3, 26, 38, 0.1);
     .mb_title{
@@ -339,7 +341,15 @@
     }
 
 }
-
+.mb_features_amenities{
+    .mb_title {
+        h3{
+            font-weight: 600;
+            font-size: 24px;
+            color: #031a26;
+        }
+    }
+}
 .mb_tour_schedule{
 
     
@@ -440,91 +450,4 @@
 }
         
         
-        /* Compiled CSS from SCSS */
-        // .mb_body {
-        //     font-family: 'Inter', sans-serif;
-        //     background-color: #FDF9F3;
-        // }
-
-        // .mb_main_container {
-        //     background-color: #ffffff;
-        //     border-radius: 1.5rem;
-        //     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        // }
-
-        // .mb_section_header {
-        //     font-weight: 600;
-        // }
-
-        // .mb_calendar_container {
-        //     border: 1px solid #E5E7EB;
-        //     border-radius: 1rem;
-        //     padding: 1.5rem;
-        // }
-
-        // .mb_calendar_header {
-        //     border: 1px solid #E5E7EB;
-        //     border-radius: 0.75rem;
-        //     padding: 0.5rem 1rem;
-        //     display: inline-block;
-        // }
-
-        // .mb_calendar_header span {
-        //     font-size: 1.1rem;
-        //     font-weight: 500;
-        // }
-
-        // .mb_day_label {
-        //     color: #6B7280;
-        //     font-weight: 500;
-        //     text-align: center;
-        // }
-
-        // .mb_day_grid {
-        //     display: grid;
-        //     grid-template-columns: repeat(7, 1fr);
-        //     gap: 1.25rem 0.5rem;
-        //     text-align: center;
-        // }
-
-        // .mb_day {
-        //     width: 2.25rem;
-        //     height: 2.25rem;
-        //     line-height: 2.25rem;
-        //     border-radius: 9999px;
-        //     cursor: pointer;
-        //     transition: all 0.2s ease-in-out;
-        //     font-weight: 500;
-        //     color: #1F2937;
-        // }
-
-        // .mb_day:hover {
-        //     background-color: #FEF3F0;
-        // }
-
-        // .mb_day.mb_selected {
-        //     background-color: #F97316;
-        //     color: #ffffff;
-        // }
-
-        // .mb_day.mb_inactive {
-        //     color: #A0AEC0;
-        //     cursor: not-allowed;
-        // }
-
-        // .mb_btn_listing {
-        //     background-color: #1F2937;
-        //     color: #ffffff;
-        //     font-weight: 600;
-        //     padding: 1rem 1.5rem;
-        //     border-radius: 0.75rem;
-        //     border: none;
-        //     transition: background-color 0.2s ease-in-out;
-        // }
-
-        // .mb_btn_listing:hover {
-        //     background-color: #4B5563;
-        // }
-
-
-   
+        

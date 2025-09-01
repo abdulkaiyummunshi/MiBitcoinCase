@@ -91,11 +91,19 @@
     margin-bottom: 10px;
 
     .sort-by {
+        span{
+            font-weight: 400;
+            font-size: 19px;
+            color: #031a26;
+        }
         display: flex;
         align-items: center;
         gap: 5px;
         cursor: pointer;
         font-weight: bold;
+        .mb_arrow{
+            @include flex(column, center, center);
+        }
     }
 }
 .mb_table_head{
