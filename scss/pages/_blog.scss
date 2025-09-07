@@ -2,6 +2,14 @@
     .container {
         max-width: 1760px;
     }
+    .fix_button {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        @include sm {
+            display: none;
+        }
+    }
     .rb_blog_card {
         border-radius: 14px;
         border: 1px solid rgba(3, 26, 38, 0.10);
@@ -29,13 +37,34 @@
                 display: flex;
                 align-items: center;
                 gap: 20px;
+                span {
+                    color: #031A26;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    opacity: 0.7;
+                    @include md {
+                        font-size: 12px;
+                    }
+                }
                 i {
                     padding-right: 5px;
                     color: #031A26;
                     opacity: 0.7;
                 }
             }
-            .rb-t20 {
+            h4 {
+                color: #031A26;
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px; /* 150% */
+                @include md {
+                    font-size: 18px;
+                }
                 &:hover {
                     color: #FF9916;
                 } 

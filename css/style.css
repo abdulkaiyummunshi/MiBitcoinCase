@@ -32241,6 +32241,11 @@ header {
     font-size: 12px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_heading_area .rb_subtitle {
+    margin-bottom: 12px;
+  }
+}
 .rb_heading_area .rb_title {
   color: #252525;
   font-family: "Inter", sans-serif;
@@ -42121,6 +42126,16 @@ ul.children {
 .rb_blog1 .container {
   max-width: 1760px;
 }
+.rb_blog1 .fix_button {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_blog1 .fix_button {
+    display: none;
+  }
+}
 .rb_blog1 .rb_blog_card {
   border-radius: 14px;
   border: 1px solid rgba(3, 26, 38, 0.1);
@@ -42150,12 +42165,39 @@ ul.children {
   align-items: center;
   gap: 20px;
 }
+.rb_blog1 .rb_blog_card .rb_content .rb_meta span {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.7;
+}
+@media only screen and (max-width: 991px) {
+  .rb_blog1 .rb_blog_card .rb_content .rb_meta span {
+    font-size: 12px;
+  }
+}
 .rb_blog1 .rb_blog_card .rb_content .rb_meta i {
   padding-right: 5px;
   color: #031A26;
   opacity: 0.7;
 }
-.rb_blog1 .rb_blog_card .rb_content .rb-t20:hover {
+.rb_blog1 .rb_blog_card .rb_content h4 {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+}
+@media only screen and (max-width: 991px) {
+  .rb_blog1 .rb_blog_card .rb_content h4 {
+    font-size: 18px;
+  }
+}
+.rb_blog1 .rb_blog_card .rb_content h4:hover {
   color: #FF9916;
 }
 .rb_blog1 .rb_blog_card:hover {

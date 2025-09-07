@@ -24,6 +24,9 @@
         @include md {
             font-size: 12px;
         }
+        @include sm {
+            margin-bottom: 12px;
+        }
     }
     .rb_title {
         color: $text_color2;
