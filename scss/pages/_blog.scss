@@ -105,12 +105,47 @@
         z-index: 9;
         top: 50%;
         left: 37px;
+        @include xxl {
+            top: -2%;
+            right: 11%;
+            left: auto;
+        }
+        @include xs {
+            display: none;
+        }
     }
     .rb_blog2_shape2 {
         position: absolute;
         z-index: 9;
         top: -5%;
         right: 58px;
+        @include xl {
+            top: -2%;
+            img {
+                width: 90px;
+                height: 44.186px;
+                flex-shrink: 0;
+            }
+        }
+        @include md {
+            top: -1%;
+            img {
+                width: 57px;
+                height: 30.186px;
+                flex-shrink: 0;
+            }
+        }
+        @include sm {
+            top: -0.5%;
+            img {
+                width: 57px;
+                height: 30.186px;
+                flex-shrink: 0;
+            }
+        }
+        @include xs {
+            display: none;
+        }
     }
     .section-padding {
         position: relative;
@@ -306,6 +341,9 @@
                 &:hover {
                     color: #FF9916;
                 }
+                @include xxl {
+                    font-size: 22px;
+                }
                 @include md {
                     font-size: 20px;
                 }
@@ -349,6 +387,10 @@
                     }
                     img {
                         padding-right: 8px;
+                        @include md {
+                            width: 24px;
+                            height: 24px;
+                        }
                     }
                 }
             }
@@ -356,14 +398,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                @include xl {
-                    flex-direction: column;
-                    align-items: start;
-                }
-                @include lg {
-                    flex-direction: row;
-                    align-items: center;
-                }
                 .rb_link {
                     color: #031A26;
                     font-family: Inter;
@@ -393,7 +427,10 @@
                         }
                     li {
                         i {
-                        color: #F59E0B;
+                            color: #F59E0B;
+                            @include md {
+                                font-size: 14px;
+                            }
                         }
                     }
                     }
