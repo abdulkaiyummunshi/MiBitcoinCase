@@ -42377,6 +42377,12 @@ ul.children {
   top: 7%;
   left: 7%;
   z-index: 9;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
 }
 .rb_blog2 .rb_blog_card .rb_thumb .rb_bitcoin {
   width: 44px;
@@ -42407,22 +42413,48 @@ ul.children {
   position: absolute;
   top: -46px;
   right: 18px;
-}
-.rb_blog2 .rb_blog_card .rb_content .rb_price.style1 {
-  color: #FFF;
-  font-family: Inter;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.rb_blog2 .rb_blog_card .rb_content .rb_price.style1 span {
   color: #FFF;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+@media only screen and (max-width: 991px) {
+  .rb_blog2 .rb_blog_card .rb_content .rb_price {
+    font-size: 14px;
+    top: -31px;
+  }
+}
+.rb_blog2 .rb_blog_card .rb_content h4 {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.rb_blog2 .rb_blog_card .rb_content h4:hover {
+  color: #FF9916;
+}
+@media only screen and (max-width: 991px) {
+  .rb_blog2 .rb_blog_card .rb_content h4 {
+    font-size: 20px;
+  }
+}
+.rb_blog2 .rb_blog_card .rb_content .rb_location span {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.7;
+}
+@media only screen and (max-width: 991px) {
+  .rb_blog2 .rb_blog_card .rb_content .rb_location span {
+    font-size: 14px;
+  }
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_location i {
   padding-right: 8px;
@@ -42434,6 +42466,20 @@ ul.children {
   align-items: center;
   gap: 18px;
   border-bottom: 1px solid rgba(3, 26, 38, 0.1);
+}
+.rb_blog2 .rb_blog_card .rb_content .rb_meta .rb_item span {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.7;
+}
+@media only screen and (max-width: 991px) {
+  .rb_blog2 .rb_blog_card .rb_content .rb_meta .rb_item span {
+    font-size: 12px;
+  }
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_meta .rb_item img {
   padding-right: 8px;
@@ -42455,11 +42501,24 @@ ul.children {
     align-items: center;
   }
 }
+.rb_blog2 .rb_blog_card .rb_content .rb_card_link .rb_link {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 .rb_blog2 .rb_blog_card .rb_content .rb_card_link .rb_link i {
   padding-left: 5px;
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_card_link .rb_link:hover {
   color: #FF9916;
+}
+@media only screen and (max-width: 991px) {
+  .rb_blog2 .rb_blog_card .rb_content .rb_card_link .rb_link {
+    font-size: 14px;
+  }
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_card_link .rb_star ul {
   display: inline-flex;

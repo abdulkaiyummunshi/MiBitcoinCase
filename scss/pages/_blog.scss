@@ -251,6 +251,12 @@
                 top: 7%;
                 left: 7%;
                 z-index: 9;
+                color: #FFF;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 26px; 
             }
             .rb_bitcoin {
                 width: 44px;
@@ -279,24 +285,44 @@
                 position: absolute;
                 top: -46px;
                 right: 18px;
-                &.style1 {
-                    color: #FFF;
-                    font-family: Inter;
-                    font-size: 10px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    span {
-                        color: #FFF;
-                        font-family: Inter;
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: normal;
-                    }
+                color: #FFF;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                @include md {
+                    font-size: 14px;
+                    top: -31px;
+                }
+            }
+            h4 {
+                color: #031A26;
+                font-family: Inter;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                &:hover {
+                    color: #FF9916;
+                }
+                @include md {
+                    font-size: 20px;
                 }
             }
             .rb_location {
+                span {
+                    color: #031A26;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    opacity: 0.7;
+                    @include md {
+                        font-size: 14px;
+                    }
+                }
                 i {
                     padding-right: 8px;
                     color: #031A26;
@@ -309,6 +335,18 @@
                 gap: 18px;
                 border-bottom: 1px solid rgba(3, 26, 38, 0.10);;
                 .rb_item {
+                    span {
+                        color: #031A26;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        opacity: 0.7;
+                        @include md {
+                            font-size: 12px;
+                        }
+                    }
                     img {
                         padding-right: 8px;
                     }
@@ -327,11 +365,20 @@
                     align-items: center;
                 }
                 .rb_link {
+                    color: #031A26;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
                     i {
                         padding-left: 5px;
                     }
                     &:hover {
                         color: #FF9916;
+                    }
+                    @include md {
+                        font-size: 14px;
                     }
                 }
                 .rb_star {
