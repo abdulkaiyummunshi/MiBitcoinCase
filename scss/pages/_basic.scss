@@ -21,6 +21,9 @@
             text-transform: uppercase;
             background: none;
         }
+        @include md {
+            font-size: 12px;
+        }
     }
     .rb_title {
         color: $text_color2;
@@ -31,6 +34,10 @@
         line-height: 60px; 
         &.style1 {
             color: $text_color;
+        }
+        @include md {
+            font-size: 30px;
+            line-height: 40px; /* 133.333% */
         }
     }
     .rb_desc {

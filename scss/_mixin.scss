@@ -50,15 +50,15 @@
 }
 
 
-
-// Small devices
+// Extra Small devices
 @mixin xxs {
-  @media only screen and (min-width: 0px) and (max-width:576px){
+  @media only screen and (min-width: 0px) and (max-width:479px){
       @content;
   }
 }
+// Small devices
 @mixin xs {
-  @media only screen and (min-width: 0px) and (max-width:576px){
+  @media only screen and (min-width: 0px) and (max-width:575px){
       @content;
   }
 }
@@ -69,21 +69,27 @@
 }
 // Medium devices
 @mixin md {
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  @media only screen and (max-width: 991px) {
       @content;
   }
 }
 
 // Large devices
 @mixin lg {
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  @media only screen and (max-width: 1199px) {
     @content;
   }
 }
 
 // Extra large devices
 @mixin xl {
-  @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  @media only screen  and (max-width: 1399px) {
+    @content;
+  }
+}
+// Extra double large devices
+@mixin xxl {
+  @media only screen  and (max-width: 1599px) {
     @content;
   }
 }
@@ -100,11 +106,6 @@
     @content;
   }
 }
-
-
-
-
-
 
 
 
