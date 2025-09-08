@@ -32928,9 +32928,9 @@ header {
   cursor: pointer;
   transition: background 0.3s ease;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .rb_faq_section .accordion .accordion-header {
-    padding: 4px 15px;
+    padding: 8px 20px;
   }
 }
 .rb_faq_section .accordion .accordion-header h3 {
@@ -32941,9 +32941,14 @@ header {
   font-weight: 600;
   line-height: normal;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .rb_faq_section .accordion .accordion-header h3 {
-    font-size: 8px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_faq_section .accordion .accordion-header h3 {
+    font-size: 12px;
   }
 }
 .rb_faq_section .accordion .accordion-header:hover {
@@ -32963,12 +32968,20 @@ header {
   transition: transform 0.3s ease;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
 }
+@media only screen and (max-width: 991px) {
+  .rb_faq_section .accordion .accordion-header .icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .rb_faq_section .accordion .accordion-header .icon {
-    width: 14px;
-    height: 14px;
-    line-height: 13px;
-    font-size: 8px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 10px;
   }
 }
 .rb_faq_section .accordion .accordion-content {
@@ -32986,10 +32999,12 @@ header {
   font-weight: 500;
   line-height: 30px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .rb_faq_section .accordion .accordion-content p {
-    font-size: 8px;
-    padding: 10px;
+    padding: 15px 20px 25px 20px;
+    color: rgba(3, 26, 38, 0.6);
+    font-size: 12px;
+    line-height: 22px;
   }
 }
 

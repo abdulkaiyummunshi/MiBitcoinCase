@@ -743,8 +743,8 @@
         .accordion-header {
             @include flex(row, space-between, center);
             padding: 15px 24px;
-            @include sm{
-                padding: 4px 15px;
+            @include md {
+                padding: 8px 20px;
             }
             cursor: pointer;
                 transition: background 0.3s ease;
@@ -755,8 +755,11 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
-                @include sm{
-                    font-size: 8px;
+                @include md {
+                    font-size: 14px;
+                }
+                @include xxs {
+                    font-size: 12px;
                 }
             }
 
@@ -773,11 +776,17 @@
                 background-color: #FFEED8;
                 transition: transform 0.3s ease;
                 box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
-                @include sm{
-                    width: 14px;
-                    height: 14px;
-                    line-height: 13px;
-                    font-size: 8px;
+                @include md {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 12px;
+                }
+                @include sm {
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 10px;
                 }
             }
         }
@@ -795,9 +804,11 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 30px; 
-                @include sm{
-                    font-size: 8px;
-                    padding: 10px;
+                @include md {
+                    padding: 15px 20px 25px 20px;
+                    color: rgba(3, 26, 38, 0.60);
+                    font-size: 12px;
+                    line-height: 22px; 
                 }
             }
         }
