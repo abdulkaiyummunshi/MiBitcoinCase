@@ -32902,6 +32902,20 @@ header {
   transition: all 0.3s ease;
   border-radius: 0;
 }
+@media only screen and (max-width: 991px) {
+  .nav-pills .nav-link {
+    height: 40px;
+    padding: 8px 26px;
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .nav-pills .nav-link {
+    height: 38px;
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+}
 .nav-pills .nav-link.active {
   color: #031a26;
   border-radius: 100px;
@@ -32909,6 +32923,19 @@ header {
   height: 50px;
   padding: 8px 30px;
   margin-left: 2px;
+}
+@media only screen and (max-width: 991px) {
+  .nav-pills .nav-link.active {
+    height: 40px;
+    padding: 8px 24px;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .nav-pills .nav-link.active {
+    height: 38px;
+    padding: 6px 14px;
+  }
 }
 .nav-pills .nav-link:first-child.active {
   border-radius: 30px;
@@ -42918,6 +42945,16 @@ ul.children {
 .rb_testimonial1 {
   position: relative;
 }
+@media only screen and (max-width: 1199px) {
+  .rb_testimonial1 .rb_heading_area {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_testimonial1 .rb_heading_area {
+    text-align: start;
+  }
+}
 .rb_testimonial1 .rb_testimonial_shape {
   position: absolute;
   top: -14%;
@@ -42953,9 +42990,76 @@ ul.children {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 30px;
   margin-bottom: 22px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+@media only screen and (max-width: 1599px) {
+  .rb_testimonial1 .rb_testi_card .rb_content .rb_desc {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .rb_testimonial1 .rb_testi_card .rb_content .rb_desc {
+    padding-bottom: 30px;
+    margin-bottom: 22px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_testimonial1 .rb_testi_card .rb_content .rb_desc {
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 0.7;
+    padding-bottom: 18px;
+    margin-bottom: 11px;
+  }
+}
+.rb_testimonial1 .rb_testi_card .rb_content .rb_title {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 144.444% */
+}
+@media only screen and (max-width: 991px) {
+  .rb_testimonial1 .rb_testi_card .rb_content .rb_title {
+    font-size: 14px;
+  }
 }
 .rb_testimonial1 .rb_testi_card .rb_content .rb_label {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
   text-transform: uppercase;
+  opacity: 0.7;
+}
+@media only screen and (max-width: 991px) {
+  .rb_testimonial1 .rb_testi_card .rb_content .rb_label {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1599px) {
+  .rb_testimonial1 .rb_testi_card .rb_content {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .rb_testimonial1 .rb_testi_card .rb_content {
+    padding: 34px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_testimonial1 .rb_testi_card .rb_content {
+    padding: 24px 20px;
+  }
 }
 .rb_testimonial1 .rb_testi_card2 {
   position: relative;
@@ -42964,6 +43068,11 @@ ul.children {
 }
 .rb_testimonial1 .rb_testi_card2 .rb_content {
   padding: 40px 34px 34px;
+}
+@media only screen and (max-width: 991px) {
+  .rb_testimonial1 .rb_testi_card2 .rb_content {
+    padding: 30px 30px 30px;
+  }
 }
 .rb_testimonial1 .rb_testi_card2 .rb_content .rb_profile .rb_quote {
   margin-left: -20px;
@@ -42979,6 +43088,17 @@ ul.children {
   font-weight: 500;
   line-height: 30px; /* 187.5% */
 }
+@media only screen and (max-width: 991px) {
+  .rb_testimonial1 .rb_testi_card2 .rb_content .rb_desc {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_testimonial1 .rb_testi_card2 .rb_content .rb_desc {
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+  }
+}
 .rb_testimonial1 .rb_testi_card2 .rb_content .rb_title {
   color: #031A26;
   font-family: Inter;
@@ -42986,6 +43106,11 @@ ul.children {
   font-style: normal;
   font-weight: 700;
   line-height: 26px;
+}
+@media only screen and (max-width: 991px) {
+  .rb_testimonial1 .rb_testi_card2 .rb_content .rb_title {
+    font-size: 14px;
+  }
 }
 .rb_testimonial1 .rb_testi_card2 .rb_content .rb_label {
   color: #031A26;
@@ -42996,6 +43121,11 @@ ul.children {
   line-height: 26px; /* 185.714% */
   text-transform: uppercase;
   opacity: 0.7;
+}
+@media only screen and (max-width: 991px) {
+  .rb_testimonial1 .rb_testi_card2 .rb_content .rb_label {
+    font-size: 12px;
+  }
 }
 
 .footer {
