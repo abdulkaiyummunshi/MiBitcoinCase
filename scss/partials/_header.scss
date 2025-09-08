@@ -359,6 +359,15 @@ header{
 							background-color: $white;
 						}
 					}
+					&:first-child {
+						a {
+							background-color: inherit;
+							&:hover{
+								color: $primary;
+								background-color: $white;
+							}
+						}
+					}
 					&.active{
 						background-color: $white;
 

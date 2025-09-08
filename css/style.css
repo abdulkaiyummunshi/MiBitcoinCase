@@ -31297,6 +31297,13 @@ header {
   color: #ff9916;
   background-color: #fff;
 }
+.header-1 .header-wrap .header-right .login_signup_area .sign_up_user:first-child a {
+  background-color: inherit;
+}
+.header-1 .header-wrap .header-right .login_signup_area .sign_up_user:first-child a:hover {
+  color: #ff9916;
+  background-color: #fff;
+}
 .header-1 .header-wrap .header-right .login_signup_area .sign_up_user.active {
   background-color: #fff;
 }
