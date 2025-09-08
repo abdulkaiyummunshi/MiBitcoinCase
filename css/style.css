@@ -34477,19 +34477,69 @@ header {
   width: 80px;
   height: 80px;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_about2 .rb_content .item .icon {
+    width: 57px;
+    height: 57px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+  }
+}
 .rb_about2 .rb_content .item .icon img {
   border-radius: 100px;
   border: 1px solid #E6E8E9;
   background: #FFF;
   padding: 23px 18px;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_about2 .rb_content .item .icon img {
+    padding: 16px 12px;
+  }
+}
+.rb_about2 .rb_content .item .rb_title {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 136.364% */
+}
+@media only screen and (max-width: 991px) {
+  .rb_about2 .rb_content .item .rb_title {
+    font-size: 18px;
+  }
+}
+.rb_about2 .rb_content .item .rb_desc {
+  color: rgba(3, 26, 38, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+}
+@media only screen and (max-width: 991px) {
+  .rb_about2 .rb_content .item .rb_desc {
+    font-size: 12px;
+  }
+}
 .rb_about2 .rb_content .item.style1 .icon img {
   padding: 18px 22px;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_about2 .rb_content .item.style1 .icon img {
+    padding: 12px 15px;
+  }
 }
 .rb_about2 .rb_btn_area {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_about2 .rb_btn_area {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 .rb_about2 .rb_btn_area .rb_profile {
   display: flex;
@@ -34515,9 +34565,20 @@ header {
 .rb_about2 .rb_thumb {
   position: relative;
   border-radius: 20px;
+  width: fit-content;
+}
+@media only screen and (max-width: 991px) {
+  .rb_about2 .rb_thumb {
+    width: 100%;
+  }
 }
 .rb_about2 .rb_thumb img {
   border-radius: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .rb_about2 .rb_thumb img {
+    width: 100%;
+  }
 }
 
 /*---Sidebar Start---*/
