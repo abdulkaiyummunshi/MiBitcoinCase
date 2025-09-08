@@ -32290,6 +32290,12 @@ header {
 .rb_heading_area .rb_desc.styel1 {
   color: rgba(3, 26, 38, 0.6);
 }
+@media only screen and (max-width: 991px) {
+  .rb_heading_area .rb_desc {
+    font-size: 16px;
+    line-height: 26px; /* 162.5% */
+  }
+}
 
 .rb-t50 {
   color: #031a26;
@@ -32433,6 +32439,12 @@ header {
   line-height: 30px;
   margin-bottom: 13px;
 }
+@media only screen and (max-width: 991px) {
+  .common_input .form-group label {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
 .common_input .form-group input[type=text],
 .common_input .form-group input[type=number],
 .common_input .form-group input[type=tel],
@@ -32473,6 +32485,18 @@ header {
 .common_input .form-group input[type=password]:focus,
 .common_input .form-group textarea:focus {
   outline: none;
+}
+@media only screen and (max-width: 991px) {
+  .common_input .form-group input[type=text],
+  .common_input .form-group input[type=number],
+  .common_input .form-group input[type=tel],
+  .common_input .form-group input[type=date],
+  .common_input .form-group input[type=time],
+  .common_input .form-group input[type=email],
+  .common_input .form-group input[type=password],
+  .common_input .form-group textarea {
+    font-size: 14px;
+  }
 }
 .common_input .form-group textarea {
   height: 122px;
@@ -32515,6 +32539,12 @@ header {
   background-position: right 15px center;
   background-size: 12px 8px;
   cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  .common_input .form-group .nice-select,
+  .common_input .form-group select {
+    font-size: 14px;
+  }
 }
 .common_input .form-group .nice-select:after {
   width: 7px;
@@ -42120,6 +42150,41 @@ ul.children {
   bottom: 0;
   left: 42%;
 }
+@media only screen and (max-width: 1199px) {
+  .rb_contact1 .contact_shape {
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    right: 4%;
+    top: 33%;
+  }
+  .rb_contact1 .contact_shape img {
+    width: 143.803px;
+    height: 119px;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_contact1 .contact_shape {
+    top: 27%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_contact1 .contact_shape {
+    right: 7%;
+    top: 22%;
+  }
+  .rb_contact1 .contact_shape img {
+    width: 51.963px;
+    height: 43.001px;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_contact1 .contact_shape {
+    top: 24%;
+  }
+}
 .rb_contact1 .contact_shape2 {
   position: absolute;
   top: -14%;
@@ -42130,15 +42195,72 @@ ul.children {
   background: #FFEED8;
   padding: 120px 75px;
 }
+.rb_contact1 .section_padding .rb_heading_area {
+  padding-top: 40px;
+}
+@media only screen and (max-width: 1199px) {
+  .rb_contact1 .section_padding .rb_heading_area {
+    padding-top: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_contact1 .section_padding .rb_heading_area .rb_title {
+    max-width: 422px;
+  }
+}
+@media only screen and (max-width: 1599px) {
+  .rb_contact1 .section_padding {
+    padding: 80px 40px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .rb_contact1 .section_padding {
+    padding: 60px 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_contact1 .section_padding {
+    padding: 40px 32px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_contact1 .section_padding {
+    padding: 30px 20px;
+  }
+}
 .rb_contact1 .section_padding .rb_contact_area {
   display: flex;
   gap: 30px;
   align-items: center;
 }
+@media only screen and (max-width: 1399px) {
+  .rb_contact1 .section_padding .rb_contact_area {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .rb_contact1 .section_padding .rb_contact_area {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_contact1 .section_padding .rb_contact_area {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 .rb_contact1 .section_padding .rb_contact_area .item {
   display: flex;
   align-items: center;
   gap: 14px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_contact1 .section_padding .rb_contact_area .item img {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
 }
 .rb_contact1 .section_padding .rb_contact_area .item a {
   color: rgba(3, 26, 38, 0.6);
@@ -42151,11 +42273,27 @@ ul.children {
 .rb_contact1 .section_padding .rb_contact_area .item a:hover {
   color: #FF9916;
 }
+@media only screen and (max-width: 991px) {
+  .rb_contact1 .section_padding .rb_contact_area .item a {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_contact1 .section_padding .rb_contact_area .item a {
+    font-size: 12px;
+  }
+}
 .rb_contact1 .section_padding .rb_contact_form {
   padding: 54px 44px;
   border-radius: 14px;
   border: 1px solid rgba(3, 26, 38, 0.1);
   background: #FFF;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_contact1 .section_padding .rb_contact_form {
+    padding: 20px 20px;
+  }
 }
 
 .rb_blog1 .container {

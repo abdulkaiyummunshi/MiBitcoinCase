@@ -53,6 +53,10 @@
         &.styel1 {
             color: rgba(3, 26, 38, 0.60);
         }
+        @include md {
+            font-size: 16px;
+            line-height: 26px; /* 162.5% */
+        }
     }
 }
 // Heading Area End
@@ -196,6 +200,10 @@
             font-weight: 600;
             line-height: 30px; 
             margin-bottom: 13px;
+            @include md {
+                font-size: 16px;
+                line-height: 30px; 
+            }
         }
 
         input[type="text"],
@@ -224,6 +232,9 @@
             }
             &:focus {
                 outline: none;
+            }
+            @include md {
+                font-size: 14px;
             }
         }
         textarea {
@@ -272,6 +283,9 @@
             background-position: right 15px center;
             background-size: 12px 8px;
             cursor: pointer;
+            @include md {
+                font-size: 14px;
+            }
         }
         .nice-select:after {
             width: 7px;
