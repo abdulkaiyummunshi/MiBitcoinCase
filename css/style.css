@@ -30752,7 +30752,8 @@ p {
 }
 .mb_count_properties.style_1 span {
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .mb_count_properties.style_1 span:nth-child(1) {
   padding-left: 10px;
@@ -33483,7 +33484,7 @@ header {
   -o-border-radius: 50%;
   display: block;
 }
-.mb_how_work .md_title h3 {
+.mb_how_work .mb_title h3 {
   font-weight: 600;
   font-size: 34px;
   color: #031a26;
@@ -33534,10 +33535,10 @@ header {
   -o-transform: translateX(-50%);
 }
 .mb_browse_properties .row.style_1 {
-  gap: 30px;
+  gap: 15px;
 }
 .mb_browse_properties .row.style_1 .col-lg-3 {
-  width: calc(25% - 25px);
+  width: calc(25% - 12px);
 }
 .mb_browse_properties .row.style_2 {
   padding-bottom: 50px;
@@ -42371,6 +42372,22 @@ ul.children {
   background: #F4DEC2;
   border: none;
   height: 42px;
+  color: rgba(3, 26, 38, 0.7);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.rb_blog2 .rb_dropdown .btn_one span {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.rb_blog2 .rb_dropdown .btn_one span i {
+  fill: #031A26;
+  stroke-width: 0.5px;
+  stroke: #031A26;
+  opacity: 0.7;
 }
 .rb_blog2 .rb_dropdown .btn_one:hover {
   background: #FFF;
@@ -42478,7 +42495,7 @@ ul.children {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px;
+  line-height: 16px;
 }
 .rb_blog2 .rb_blog_card .rb_thumb .rb_bitcoin {
   width: 44px;

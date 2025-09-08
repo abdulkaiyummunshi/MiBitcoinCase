@@ -217,6 +217,22 @@
             background: #F4DEC2;
             border: none;
             height: 42px;
+            color: rgba(3, 26, 38, 0.70);
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            span {
+                padding-left: 2px;
+                padding-right: 2px;
+                i {
+                    fill: #031A26;
+                    stroke-width: 0.5px;
+                    stroke: #031A26;
+                    opacity: 0.7;
+                }
+            }
             &:hover {
                 background: #FFF;
             }
@@ -320,7 +336,7 @@
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 600;
-                line-height: 26px; 
+                line-height: 16px; 
             }
             .rb_bitcoin {
                 width: 44px;
