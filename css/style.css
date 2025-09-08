@@ -32142,6 +32142,7 @@ header {
   font-weight: 600;
   font-size: 16px;
   color: #031a26;
+  transition: all 0.4s ease;
 }
 .btn_wrapper a span {
   width: 36px;
@@ -32173,6 +32174,13 @@ header {
 .btn_wrapper a:hover span {
   background-color: white;
   color: #031a26;
+}
+.btn_wrapper a:hover span i {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
 }
 .btn_wrapper.style_1 a {
   background-color: #031a26;
@@ -33325,6 +33333,10 @@ header {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.mb_our_features .mb_feature_card .mb_single_card .mb_icon.style_1 img {
+  width: 74px;
+  height: 74px;
 }
 .mb_our_features .mb_feature_card .mb_single_card h4 {
   font-weight: 600;

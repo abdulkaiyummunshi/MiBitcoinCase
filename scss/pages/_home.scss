@@ -269,6 +269,12 @@
                     height: 100%;
                     object-fit: contain;
                 }
+                &.style_1 {
+                    img {
+                        width: 74px;
+                        height: 74px;  
+                    }
+                }
             }
             h4{
                 font-weight: 600;
