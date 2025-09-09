@@ -295,19 +295,28 @@
 /*--How It Work Start---*/
 .mb_how_work{
     position: relative;
+    @include lg {
+        margin-bottom: 50px;
+    }
+    @include md {
+        margin-bottom: 80px;
+    }
     .mb_how_work_item{
         position: relative;
         padding: 150px 100px;
         background-color: #ffeed8;
         @include border-radius(24px);
+        @include lg {
+            padding: 130px 70px;
+        }
+        @include md {
+            padding: 32px 65px;
+        }
+        @include xxs {
+            padding: 30px 30px;
+        }
     }
         .left-arrow{
-            @include md{
-                display: none !important;
-            }
-            @include sm{
-                display: none !important;
-            }
         border-radius: 50%;
         border: 1px solid $border;
         width: 44px;
@@ -327,19 +336,24 @@
         background-color: $white;
         z-index: 10;
         @include transition(0.4s);
+        @include lg {
+            top: auto;
+            right: auto;
+            bottom: -11.6%;
+            left: 40.5%;
+            transform: translate(-50%, 0px);
+        }
+        @include md {
+            bottom: -11%;
+            left: 37.5%;
+        }
         &:hover{
             background-color: $primary;
             color: $white;
         }
 }
    .right-arrow{
-            @include md{
-                display: none !important;
-            }
-            @include sm{
-                display: none !important;
-            }
-            border: 1px solid $border;
+        border: 1px solid $border;
         border-radius: 50%;
         width: 44px;
         height: 44px;
@@ -358,6 +372,17 @@
         top: -97px;
         z-index: 10;
         @include transition(0.4s);
+        @include lg {
+            top: auto;
+            right: auto;
+            bottom: -11.6%;
+            left: 59.5%;
+            transform: translate(-50%, 0px);
+        }
+        @include md {
+            bottom: -11%;
+            left: 62.5%;
+        }
         &:hover{
             background-color: $primary;
             color: $white;
@@ -371,6 +396,15 @@
         position: absolute;
         top: 55px;
         right: 11px;
+        @include lg {
+            top: auto;
+            bottom: -10%;
+            left: 50%;
+            transform: translate(-50%, 0px);
+        }
+        @include sm {
+            width: 186px;
+        }
     }
     .mb_how_work_dots{
         
@@ -379,6 +413,13 @@
         position: absolute;
         top: -80px;
         right: 79px;
+        @include lg {
+            top: auto;
+            right: auto;
+            bottom: -11%;
+            left: 50%;
+            transform: translate(-50%, 0px);
+        }
     
         li{
             position: relative;
@@ -405,6 +446,13 @@
         margin: 10px 0px;
     }
     .mb_number{
+        @include md {
+            display: flex;
+            justify-content: center;
+        }
+        @include xxs {
+            justify-content: start;
+        }
         span{
             font-weight: 600;
             font-size: 20px;
@@ -416,6 +464,12 @@
             border: 1px solid  rgba(3, 26, 38, 0.1);
             @include border-radius(50%);
             display: block;
+            @include md {
+                font-size: 14px;
+                width: 54px;
+                height: 54px;
+                line-height: 54px;
+            }
 
         }
     }
@@ -424,12 +478,43 @@
             font-weight: 600;
             font-size: 34px;
             color: #031a26;
+            @include md {
+                font-size: 24px;
+                line-height: 40px;
+                text-align: center;
+            }
+            @include xxs {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 40px; /* 200% */
+                text-align: start;
+            }
+        }
+    }
+    .btn_wrapper {
+        @include md {
+            text-align: center;
+        }
+        @include xxs {
+            text-align: start;
         }
     }
     .mb_work_details{
         padding-left: 30px;
+        @include xxs {
+            padding-left: 0;
+        }
     }
     .mb_icon{
+        @include md {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+        @include xxs {
+            justify-content: start;
+            margin-top: 50px;
+        }
         span{
             width: 120px;
             background-color: $primary;
@@ -438,12 +523,46 @@
             @include flex(row, center, center);
             text-align: center;
             line-height: 120px;
+            @include lg {
+                width: 100px;
+                height: 100px;
+            }
+            @include md {
+                width: 80px;
+                height: 80px;
+                flex-shrink: 0;
+                aspect-ratio: 1/1;
+            }
             img{
                 width: fit-content;
                 height: fit-content;
                 object-fit: contain;
+                @include md {
+                    width: 40.275px;
+                    height: 40.48px;
+                    flex-shrink: 0;
+                }
 
             };
+        }
+    }
+    @include lg {
+        .describtion {
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    @include md {
+        .describtion {
+            text-align: center;
+        }
+    }
+    @include xxs {
+        .describtion {
+            text-align: start;
         }
     }
 }
