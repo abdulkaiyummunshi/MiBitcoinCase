@@ -22,6 +22,9 @@
                 background-color: $white;
                 @include border-radius(50%);
             }
+            @include md {
+                font-size: 12px;
+            }
         }
         h5{
             font-weight: 500;
@@ -49,6 +52,10 @@
             font-weight: 700;
             font-size: 50px;
             color: $white;
+            @include md {
+                font-size: 30px;
+                line-height: 40px; /* 133.333% */
+            }
         }
         h3{
             font-weight: 500;
@@ -77,6 +84,10 @@
         font-weight: 500;
         font-size: 18px;
         color: rgba(3, 26, 38, 0.6);
+    }
+    @include md {
+        font-size: 16px;
+        line-height: 26px; /* 162.5% */
     }
 }
 

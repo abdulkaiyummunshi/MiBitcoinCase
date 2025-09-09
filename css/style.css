@@ -32015,6 +32015,11 @@ header {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+@media only screen and (max-width: 991px) {
+  .heading_area .sub_heading h4 {
+    font-size: 12px;
+  }
+}
 .heading_area .sub_heading h5 {
   font-weight: 500;
   font-size: 16px;
@@ -32038,6 +32043,12 @@ header {
   font-size: 50px;
   color: #fff;
 }
+@media only screen and (max-width: 991px) {
+  .heading_area .heading h2 {
+    font-size: 30px;
+    line-height: 40px; /* 133.333% */
+  }
+}
 .heading_area .heading h3 {
   font-weight: 500;
   font-size: 40px;
@@ -32058,6 +32069,12 @@ header {
   font-weight: 500;
   font-size: 18px;
   color: rgba(3, 26, 38, 0.6);
+}
+@media only screen and (max-width: 991px) {
+  .describtion {
+    font-size: 16px;
+    line-height: 26px; /* 162.5% */
+  }
 }
 
 @media (min-width: 1200px) {
@@ -34010,9 +34027,12 @@ header {
   font-size: 12px;
 }
 .mb_popular_housing .mb_house_reviews p {
+  color: #747D87;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
   font-weight: 500;
-  font-size: 11px;
-  color: #747d87;
+  line-height: 10px;
 }
 .mb_popular_housing .title h4 a {
   font-weight: 600;
@@ -34044,6 +34064,21 @@ header {
   align-items: center;
   padding: 0px 30px 0px 15px;
 }
+@media only screen and (max-width: 1199px) {
+  .mb_selling .mb_selling_contains {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 32px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_selling .mb_selling_contains {
+    padding: 24px 20px;
+  }
+}
 .mb_selling .mb_selling_contains .mb_left_contains {
   display: flex;
   flex-direction: row;
@@ -34051,10 +34086,29 @@ header {
   align-items: center;
   gap: 35px;
 }
+@media only screen and (max-width: 1399px) {
+  .mb_selling .mb_selling_contains .mb_left_contains {
+    gap: 5px;
+  }
+}
 .mb_selling .mb_selling_contains .mb_sell_img {
   width: 238px;
   height: 100px;
   position: relative;
+}
+@media only screen and (max-width: 1199px) {
+  .mb_selling .mb_selling_contains .mb_sell_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_selling .mb_selling_contains .mb_sell_img {
+    width: 174.304px;
+    height: 73.001px;
+    flex-shrink: 0;
+  }
 }
 .mb_selling .mb_selling_contains .mb_sell_img img {
   width: 100%;
@@ -34063,10 +34117,23 @@ header {
   position: absolute;
   bottom: -3px;
 }
+@media only screen and (max-width: 1199px) {
+  .mb_selling .mb_selling_contains .mb_selling_content {
+    padding-bottom: 30px;
+  }
+}
 .mb_selling .mb_selling_contains h4 {
   font-weight: 700;
   font-size: 24px;
   color: #031a26;
+}
+@media only screen and (max-width: 991px) {
+  .mb_selling .mb_selling_contains h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+  }
 }
 .mb_selling .mb_selling_contains p {
   font-weight: 500;
@@ -34074,6 +34141,17 @@ header {
   color: #031a26;
   opacity: 0.7;
   margin-top: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .mb_selling .mb_selling_contains p {
+    font-size: 14px;
+    max-width: 417px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_selling .mb_selling_contains p {
+    display: none;
+  }
 }
 
 /*--Selling End---*/
@@ -34085,6 +34163,11 @@ header {
   position: absolute;
   top: -17%;
   left: 2%;
+}
+@media only screen and (max-width: 1599px) {
+  .mb_our_agents .mb_our_agent_shape {
+    display: none;
+  }
 }
 .mb_our_agents .mb_our_agents_card {
   display: flex;
