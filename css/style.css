@@ -33379,6 +33379,16 @@ header {
   background-color: #ffeed8;
   position: relative;
 }
+@media only screen and (max-width: 1699px) {
+  .mb_our_features .mb_feature_card {
+    padding: 83px 120px 83px 120px;
+  }
+}
+@media only screen and (max-width: 1599px) {
+  .mb_our_features .mb_feature_card {
+    padding: 83px 90px 83px 90px;
+  }
+}
 .mb_our_features .mb_feature_card .mb_shape1 {
   position: absolute;
   top: 0px;

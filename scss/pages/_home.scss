@@ -230,6 +230,12 @@
         padding: 110px 120px 110px 120px;
         background-color: #ffeed8;
         position: relative;
+        @include xxxl {
+            padding: 83px 120px 83px 120px;
+        }
+        @include xxl {
+            padding: 83px 90px 83px 90px;
+        }
         .mb_shape1{
             position: absolute;
             top: 0px;
