@@ -239,6 +239,30 @@
                     display: flex;
                     align-items: center;
                 }
+                .rb_title {
+                    color: #031A26;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding-bottom: 5px;
+                    @include md {
+                        font-size: 16px;
+                    }
+                }
+                .rb_desc {
+                    color: rgba(3, 26, 38, 0.60);
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 26px; /* 185.714% */
+                    text-transform: uppercase;
+                    @include md {
+                        font-size: 12px;
+                    }
+                }
             }
         }
     }

@@ -34562,6 +34562,34 @@ header {
   display: flex;
   align-items: center;
 }
+.rb_about2 .rb_btn_area .rb_profile .item .rb_title {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+@media only screen and (max-width: 991px) {
+  .rb_about2 .rb_btn_area .rb_profile .item .rb_title {
+    font-size: 16px;
+  }
+}
+.rb_about2 .rb_btn_area .rb_profile .item .rb_desc {
+  color: rgba(3, 26, 38, 0.6);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 185.714% */
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 991px) {
+  .rb_about2 .rb_btn_area .rb_profile .item .rb_desc {
+    font-size: 12px;
+  }
+}
 .rb_about2 .rb_thumb {
   position: relative;
   border-radius: 20px;
@@ -42277,6 +42305,11 @@ ul.children {
   position: absolute;
   top: -14%;
   left: 0%;
+}
+@media only screen and (max-width: 1399px) {
+  .rb_contact1 .contact_shape2 {
+    display: none;
+  }
 }
 .rb_contact1 .section_padding {
   border-radius: 24px;

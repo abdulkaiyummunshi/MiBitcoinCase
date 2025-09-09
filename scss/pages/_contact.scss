@@ -36,6 +36,9 @@
         position: absolute;
         top: -14%;
         left: 0%;
+        @include xl {
+            display: none;
+        }
     }
     .section_padding {
         .rb_heading_area {
