@@ -31174,12 +31174,6 @@ header {
   position: relative;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
-  .container-fluid {
-    margin: 0px !important;
-    padding: 0px !important;
-  }
-}
 .header-1 {
   width: 100%;
   z-index: 999;
@@ -43569,12 +43563,56 @@ ul.children {
   width: 100%;
   position: absolute;
   padding-right: 23px;
+  width: 100%;
+  height: -webkit-fill-available;
+  padding-bottom: 10px;
 }
 .footer .section-padding {
   position: relative;
   padding: 107px 75px 34px;
   border-radius: 24px;
   background: rgba(3, 26, 38, 0.9);
+}
+@media only screen and (max-width: 1199px) {
+  .footer .section-padding {
+    padding: 80px 32px 34px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer .section-padding {
+    padding: 47px 32px 34px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .footer .section-padding {
+    padding: 37px 20px 30px;
+  }
+}
+.footer .section-padding .fix_mb_90 {
+  margin-bottom: 90px;
+}
+@media only screen and (max-width: 991px) {
+  .footer .section-padding .fix_mb_90 {
+    margin-bottom: 0;
+  }
+}
+.footer .section-padding .fix_mt_150 {
+  margin-top: 150px;
+}
+@media only screen and (max-width: 1399px) {
+  .footer .section-padding .fix_mt_150 {
+    margin-top: 110px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .footer .section-padding .fix_mt_150 {
+    margin-top: 75px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer .section-padding .fix_mt_150 {
+    margin-top: 40px;
+  }
 }
 .footer .rb_logoInfo {
   max-width: 370px;
@@ -43586,6 +43624,11 @@ ul.children {
   font-style: normal;
   font-weight: 600;
   line-height: 30px; /* 166.667% */
+}
+@media only screen and (max-width: 1199px) {
+  .footer .rb_logoInfo .rb_logo_text {
+    font-size: 16px;
+  }
 }
 .footer .rb_logoInfo .subscribe-form {
   position: relative;
@@ -43637,6 +43680,11 @@ ul.children {
   line-height: normal;
   opacity: 0.7;
 }
+@media only screen and (max-width: 1199px) {
+  .footer .rb_label {
+    font-size: 18px;
+  }
+}
 .footer .rb_text {
   color: #FFF;
   font-family: Inter;
@@ -43644,6 +43692,11 @@ ul.children {
   font-style: normal;
   font-weight: 600;
   line-height: 30px; /* 150% */
+}
+@media only screen and (max-width: 1199px) {
+  .footer .rb_text br {
+    display: none;
+  }
 }
 .footer .rb_text:hover {
   color: #FF9916;
@@ -43666,9 +43719,19 @@ ul.children {
   font-weight: 600;
   line-height: 30px;
 }
+@media only screen and (max-width: 1199px) {
+  .footer .rb_star .rb_text {
+    font-size: 20px;
+  }
+}
 .footer .nav.footer-menu {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 991px) {
+  .footer .nav.footer-menu {
+    flex-direction: column;
+  }
 }
 .footer .footer-menu .nav-link {
   color: rgba(255, 255, 255, 0.7);
@@ -43679,12 +43742,23 @@ ul.children {
   line-height: 44px;
   padding: 0;
 }
+@media only screen and (max-width: 1199px) {
+  .footer .footer-menu .nav-link {
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
 .footer .footer-menu .nav-link:hover {
   color: #FFF;
   text-decoration: underline;
 }
 .footer .rb_social_links {
   padding-left: 80px;
+}
+@media only screen and (max-width: 991px) {
+  .footer .rb_social_links {
+    padding-left: 0;
+  }
 }
 .footer .rb_social_links a {
   width: 40px;
@@ -43709,6 +43783,32 @@ ul.children {
   font-weight: 600;
   line-height: 74px; /* 105.714% */
 }
+@media only screen and (max-width: 1699px) {
+  .footer .rb_hunting {
+    font-size: 62px;
+  }
+}
+@media only screen and (max-width: 1599px) {
+  .footer .rb_hunting {
+    font-size: 54px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .footer .rb_hunting {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .footer .rb_hunting {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer .rb_hunting {
+    padding-bottom: 10px;
+  }
+}
 .footer .footer_bottom {
   text-align: center;
   padding-top: 30px;
@@ -43719,6 +43819,13 @@ ul.children {
   font-style: normal;
   font-weight: 500;
   line-height: 30px; /* 187.5% */
+}
+@media only screen and (max-width: 991px) {
+  .footer .footer_bottom {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 15px;
+  }
 }
 
 .mb_wiki_area .mb_breadcrumbs {
