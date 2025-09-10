@@ -33548,10 +33548,37 @@ header {
   padding: 130px 0px 107px 0px;
   position: relative;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_blockquote_section {
+    padding: 70px 0px 36px 0px;
+  }
+}
 .mb_blockquote_section .mb_bitcoion_rocket {
   position: absolute;
   bottom: -79px;
   right: 84px;
+}
+@media only screen and (max-width: 1199px) {
+  .mb_blockquote_section .mb_bitcoion_rocket {
+    bottom: -60px;
+  }
+  .mb_blockquote_section .mb_bitcoion_rocket img {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mb_blockquote_section .mb_bitcoion_rocket {
+    bottom: -25px;
+    right: 0;
+  }
+  .mb_blockquote_section .mb_bitcoion_rocket img {
+    width: 52%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_blockquote_section .mb_bitcoion_rocket {
+    display: none;
+  }
 }
 .mb_blockquote_section .mb_shape {
   position: absolute;
@@ -33597,6 +33624,17 @@ header {
   color: rgba(3, 26, 38, 0.7);
   margin-top: 40px;
 }
+@media only screen and (max-width: 1199px) {
+  .mb_blockquote_section .mb_blockquote_content blockquote {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mb_blockquote_section .mb_blockquote_content blockquote {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
 .mb_blockquote_section .mb_blockquote_content .mb_author_info {
   display: flex;
   flex-direction: row;
@@ -33605,10 +33643,30 @@ header {
   gap: 10px;
   margin-top: 40px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_blockquote_section .mb_blockquote_content .mb_author_info {
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_blockquote_section .mb_blockquote_content .mb_author_info {
+    flex-direction: column;
+  }
+}
 .mb_blockquote_section .mb_blockquote_content .mb_author_info h4 {
   font-size: 24px;
   font-weight: 700px;
   color: #031a26;
+}
+@media only screen and (max-width: 991px) {
+  .mb_blockquote_section .mb_blockquote_content .mb_author_info h4 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_blockquote_section .mb_blockquote_content .mb_author_info h4 {
+    font-size: 16px;
+  }
 }
 .mb_blockquote_section .mb_blockquote_content .mb_author_info h5 {
   font-size: 16px;
@@ -33637,6 +33695,11 @@ header {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   background-color: rgba(3, 26, 38, 0.5);
+}
+@media only screen and (max-width: 991px) {
+  .mb_blockquote_section .mb_blockquote_content .mb_author_info h5 {
+    font-size: 14px;
+  }
 }
 
 /*--blockquote End---*/

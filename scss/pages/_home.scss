@@ -293,10 +293,29 @@
 .mb_blockquote_section{
     padding: 130px 0px 107px 0px;
     position: relative;
+    @include xxs {
+        padding: 70px 0px 36px 0px;
+    }
     .mb_bitcoion_rocket{
         position: absolute;
         bottom: -79px;
         right: 84px;
+        @include lg {
+            bottom: -60px;
+            img {
+                width: 70%;
+            }
+        }
+        @include md {
+            bottom: -25px;
+            right: 0;
+            img {
+                width: 52%;
+            }
+        }
+        @include xxs {
+            display: none;
+        }
     }
     .mb_shape{
         position: absolute;
@@ -325,15 +344,34 @@
             text-align: center;
             color: rgba(3, 26, 38, 0.7);
             margin-top: 40px;
+            @include lg {
+                font-size: 24px;
+            }
+            @include md {
+                font-size: 18px;
+                line-height: 32px
+            }
         }
         .mb_author_info{
             @include flex(row, center, center);
             gap: 10px;
             margin-top: 40px;
+            @include sm {
+                margin-top: 10px;
+            }
+            @include xxs {
+                flex-direction: column;
+            }
             h4{
                 font-size: 24px;
                 font-weight: 700px;
                 color: $text_color;
+                @include md {
+                    font-size: 20px;
+                }
+                @include xxs {
+                    font-size: 16px;
+                }
             }
             h5{
                 font-size: 16px;
@@ -353,6 +391,9 @@
                     height: 6px;
                     @include border-radius(50%);
                     background-color: rgba(3, 26, 38, 0.5);;
+                }
+                @include md {
+                    font-size: 14px;
                 }
 
             }
