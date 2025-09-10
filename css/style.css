@@ -43844,6 +43844,11 @@ ul.children {
   top: -14%;
   right: 2.7%;
 }
+@media only screen and (max-width: 1399px) {
+  .rb_testimonial1 .rb_testimonial_shape {
+    display: none;
+  }
+}
 .rb_testimonial1 .container {
   max-width: 1754px;
 }
