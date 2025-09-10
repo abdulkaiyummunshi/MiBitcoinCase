@@ -5,44 +5,108 @@
         position: absolute;
         top: -9%;
         left: 4%;
+        @include xxxl {
+            display: none;
+        }
     }
     .rb_service_shape2 {
         position: absolute;
         bottom: -35%;
         right: 3%;
+        @include xxxl {
+            display: none;
+        }
     }
     .row.style1 {
         --bs-gutter-y: 4rem;
         --bs-gutter-x: 4rem;
-        // @include breakpoint (md){
-        //     --bs-gutter-y: 3rem;
-        //     --bs-gutter-x: 3rem;
-        // }
-        // @include breakpoint (xl){
-        //     --bs-gutter-y: 4rem;
-        //     --bs-gutter-x: 4rem;
-        // }
         border-top: 1px solid rgba(3, 26, 38, 0.12);
         margin-top: 0;
         padding-bottom: 30px;
         padding-top: 10px;
+        @include sm {
+            --bs-gutter-y: 2rem;
+            --bs-gutter-x: 2rem;
+        }
     }
     .service_card {
         display: flex;
         gap: 22px;
+        .icon {
+            img {
+                @include md {
+                    width: 64px;
+                    height: 64px;
+                    flex-shrink: 0;
+                    aspect-ratio: 1/1;
+                }
+                @include xxs {
+                    width: 54px;
+                    height: 54px;
+                    flex-shrink: 0;
+                    aspect-ratio: 1/1;
+                }
+            }
+        }
+        .content {
+            .rb_title {
+                color: #031A26;
+                font-family: Inter;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @include md {
+                    font-size: 20px;
+                }
+                @include xxs {
+                    font-size: 16px;
+                }
+            }
+            .rb_desc {
+                color: rgba(3, 26, 38, 0.60);
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px; /* 166.667% */
+                @include xxs {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
 .rb_counter1 {
     .counter_box {
         display: flex;
         justify-content: space-between;
-        gap: 50px;
         flex-wrap: wrap;
+        gap: 70px;
         border-radius: 14px;
         background: #FFEED8;
         padding: 52px 100px;
+        @include lg {
+            gap: 115px;
+        }
         .counter_item {
             width: 175px;
+            .rb_numb {
+                color: #031A26;
+                font-family: Inter;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 64px; /* 128% */
+            }
+            .rb_text {
+                color: rgba(3, 26, 38, 0.60);
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px; /* 166.667% */
+            }
         }
     }
 }

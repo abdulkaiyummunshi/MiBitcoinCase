@@ -41009,10 +41009,20 @@ ul.children {
   top: -9%;
   left: 4%;
 }
+@media only screen and (max-width: 1699px) {
+  .rb_service1 .rb_service_shape1 {
+    display: none;
+  }
+}
 .rb_service1 .rb_service_shape2 {
   position: absolute;
   bottom: -35%;
   right: 3%;
+}
+@media only screen and (max-width: 1699px) {
+  .rb_service1 .rb_service_shape2 {
+    display: none;
+  }
 }
 .rb_service1 .row.style1 {
   --bs-gutter-y: 4rem;
@@ -41022,22 +41032,96 @@ ul.children {
   padding-bottom: 30px;
   padding-top: 10px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_service1 .row.style1 {
+    --bs-gutter-y: 2rem;
+    --bs-gutter-x: 2rem;
+  }
+}
 .rb_service1 .service_card {
   display: flex;
   gap: 22px;
+}
+@media only screen and (max-width: 991px) {
+  .rb_service1 .service_card .icon img {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_service1 .service_card .icon img {
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+  }
+}
+.rb_service1 .service_card .content .rb_title {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media only screen and (max-width: 991px) {
+  .rb_service1 .service_card .content .rb_title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_service1 .service_card .content .rb_title {
+    font-size: 16px;
+  }
+}
+.rb_service1 .service_card .content .rb_desc {
+  color: rgba(3, 26, 38, 0.6);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_service1 .service_card .content .rb_desc {
+    font-size: 14px;
+  }
 }
 
 .rb_counter1 .counter_box {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
   flex-wrap: wrap;
+  gap: 70px;
   border-radius: 14px;
   background: #FFEED8;
   padding: 52px 100px;
 }
+@media only screen and (max-width: 1199px) {
+  .rb_counter1 .counter_box {
+    gap: 115px;
+  }
+}
 .rb_counter1 .counter_box .counter_item {
   width: 175px;
+}
+.rb_counter1 .counter_box .counter_item .rb_numb {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 128% */
+}
+.rb_counter1 .counter_box .counter_item .rb_text {
+  color: rgba(3, 26, 38, 0.6);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 166.667% */
 }
 
 .rb_step_thumb img {
