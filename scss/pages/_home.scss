@@ -4,6 +4,18 @@
         background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
         @include border-radius(20px);
         position: relative;
+        @include xxl {
+            height: 870px;
+        }
+        @include lg {
+            height: 700px;
+        }
+        @include md {
+            height: 500px;
+        }
+        @include sm {
+            height: 760px;
+        }
         
         .mb_hero_contain{
             height: 100%;
@@ -22,6 +34,32 @@
             background-size: cover;
             width: 100%;
             height: 100%;
+            .heading_area {
+                .describtion {
+                    p {
+                        @include xl {
+                            max-width: 470px;
+                            br {
+                                display: none;
+                            }
+                        }
+                        @include md {
+                            max-width: 385px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 24px; 
+                        }
+                    }
+                }
+            }
+            .mb_choose_option {
+                label {
+                    @include md {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
         }
         .mb_search_bar{
              form{
@@ -31,6 +69,19 @@
                     background-color: $white;
                     height: 72px;
                     line-height: 72px;
+                    @include xl {
+                        max-width: 485px;
+                    }
+                    @include lg {
+                        max-width: 415px;
+                    }
+                    @include md {
+                        display: flex;
+                        align-items: center;
+                        max-width: 330px;
+                        height: 40px;
+                        line-height: 37px;
+                    }
                     input{
                         border-radius: 50px;
                         width: 90%;
@@ -43,6 +94,17 @@
                         &::placeholder{
                             color: rgba(3, 26, 38, 0.7);
                         }
+                        @include xl {
+                            width: 87%;
+                        }
+                        @include lg {
+                            width: 84%;
+                        }
+                        @include md {
+                            font-size: 10px;
+                            line-height: 20px;
+                            width: 88%;
+                        }
                     }
                     button{
                         width: 52px;
@@ -52,7 +114,15 @@
                         text-align: center;
                         color: $white;
                         background-color: $text_color;
+                        @include md {
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                        }
                     }
+                }
+                @include xs {
+                    margin-bottom: 80px;
                 }
         }
         .header_area{
@@ -64,11 +134,30 @@
             right: 0px;
             z-index: 4;
             @include border-radius(0px 0px 20px 0px);
+            text-align: end;             
            img{
              width:fit-content;
             height: fit-content;
             object-fit: contain;
-            @include border-radius(0px 0px 20px 0px)
+            @include border-radius(0px 0px 20px 0px);
+            @include xxxl {
+                width: 90%;
+            }
+            @include xxl {
+                width: 70%;
+            }
+            @include lg {
+                width: 55%;
+            }
+            @include md {
+                width: 51%;
+            }
+            @include xs {
+                width: 60%;
+            }
+            @include xxs {
+                width: 75%;
+            }
            }
         }
         .mb_group_house{
@@ -81,18 +170,31 @@
              width:fit-content;
             height: fit-content;
             object-fit: contain;
-            @include border-radius(0px 0px 0px 20px)
+            @include border-radius(0px 0px 0px 20px);
+            @include lg {
+                width: 66%;
+            }
            }
         }
         .mb_shape{
             position: absolute;
             top: -120px;
             left: -62px;
+            @include xxxl {
+                left: 0px;
+            }
+            @include md {
+                left: 0px;
+                top: -70px;
+            }
            img{
              width:fit-content;
             height: fit-content;
             object-fit: contain;
-            @include border-radius(0px 0px 0px 20px)
+            @include border-radius(0px 0px 0px 20px);
+            @include md {
+                width: 75%;
+            }
            }
         }
         .group_house{
@@ -110,7 +212,56 @@
         .mb_bitcoin{
             position: absolute;
             top: -165px;
-    right: 33%;
+            right: 33%;
+            @include xxxl {
+                position: absolute;
+                top: -70px;
+                right: 37%;
+            }
+            @include xxl {
+                top: 15%;
+                right: 30%;
+                img {
+                    width: 70%;
+                }
+            }
+            @include xl {
+                top: 19%;
+                right: 35%;
+                img {
+                    width: 70%;
+                }
+            }
+            @include lg {
+                top: 22%;
+                right: 30%;
+                img {
+                    width: 60%;
+                }
+            }
+            @include md {
+                top: 28%;
+                right: 22%;
+                img {
+                    width: 40%;
+                }
+            }
+            @include sm {
+                top: 96%;
+                right: 5%;
+                z-index: 6;
+                img {
+                    width: 40%;
+                }
+            }
+            @include xs {
+                top: 89%;
+                right: 8%;
+                z-index: 6;
+                img {
+                    width: 35%;
+                }
+            }
     
         }
     }
