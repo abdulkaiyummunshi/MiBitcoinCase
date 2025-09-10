@@ -300,6 +300,9 @@ header{
 					@include md {
 						max-width: 80%;
 					}
+					@include xs {
+						max-width: 100%;
+					}
 				}
 			}
 			.sticky-logo{

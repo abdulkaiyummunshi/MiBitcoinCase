@@ -31230,6 +31230,11 @@ header {
     max-width: 80%;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .header-1 .header-wrap .logo .primary-logo img {
+    max-width: 100%;
+  }
+}
 .header-1 .header-wrap .logo .sticky-logo {
   display: none;
 }
@@ -31808,7 +31813,7 @@ header {
 }
 
 .offcanvas__logo a img {
-  width: 80px;
+  width: 100px;
 }
 
 .offcanvas__wrapper {
@@ -33316,6 +33321,7 @@ header {
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .mb_hero_area .mb_hero_bg .mb_search_bar {
     margin-bottom: 80px;
+    margin-top: 20px !important;
   }
 }
 .mb_hero_area .mb_hero_bg .header_area {
