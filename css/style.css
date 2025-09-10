@@ -31191,6 +31191,16 @@ header {
   height: 90px;
   margin-top: 7px;
 }
+@media only screen and (max-width: 1699px) {
+  .header-1 {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header-1 {
+    padding: 0 8px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
   .header-1 {
     height: 80px;
@@ -31203,7 +31213,7 @@ header {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .header-1 {
-    padding: 0px 5px;
+    padding: 0px 12px;
     height: 87px;
   }
 }
@@ -31319,9 +31329,14 @@ header {
 .header-1 .header-wrap .header-right .login_signup_area .sign_up_user a span {
   margin-right: 8px;
 }
+@media only screen and (max-width: 1399px) {
+  .header-1 .header-wrap .header-right .login_signup_area .sign_up_user a {
+    padding: 15px 16px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .header-1 .header-wrap .header-right .login_signup_area .sign_up_user a {
-    padding: 10px 17px;
+    padding: 10px 15px;
     font-size: 14px;
   }
 }
@@ -31524,6 +31539,9 @@ header {
 .sticky_top .login_signup_area .sign_up_user a:hover {
   color: #ff9916;
   background-color: #fff;
+}
+.sticky_top .login_signup_area .sign_up_user.style_1 a {
+  border: none;
 }
 .sticky_top .login_signup_area .sign_up_user.active {
   background-color: #fff;
@@ -41122,10 +41140,6 @@ ul.children {
   font-style: normal;
   font-weight: 500;
   line-height: 30px; /* 166.667% */
-}
-
-.rb_step_thumb img {
-  width: 100%;
 }
 
 .rb_step_slider {
