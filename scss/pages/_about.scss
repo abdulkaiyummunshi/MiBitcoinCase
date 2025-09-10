@@ -112,6 +112,41 @@
     .container {
         max-width: 1754px;
     }
+    .rb_thumb {
+        img {
+            @include xxl {
+                width: 100%;
+            }
+        }
+    }
+    .rb_heading_area {
+        .rb_title {
+            font-size: 40px;
+            @include md {
+                font-size: 30px;
+                line-height: 40px; /* 133.333% */
+            }
+        }
+    }
+    .rb_list {
+        margin-top: 45px;
+        @include lg {
+            margin-top: 20px;
+        }
+        ul>li {
+            color: rgba(37, 37, 37, 0.90);
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; 
+            @include lg {
+                margin-bottom: 10px;
+                font-size: 16px;
+                line-height: 26px; 
+            }
+        }
+    }
     .mission_card {
         display: flex;
         flex-direction: column;
@@ -121,6 +156,12 @@
         padding: 99px 77px 198px;
         border-radius: 10px;
         background: #031A26;
+        @include xxl {
+            padding: 99px 30px 186px;
+        }
+        @include xl {
+            padding: 99px 77px 198px;
+        }
         .icon {
             display: flex;
             justify-content: center;
