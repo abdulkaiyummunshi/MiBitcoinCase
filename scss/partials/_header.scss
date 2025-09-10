@@ -51,6 +51,9 @@
 				@include transformY(-50%);
 				right: 10px;
 				@include transition(0.4s);
+				@include md {
+					font-size: 12px;
+				}
 				
 			}
 			&:hover{
@@ -129,6 +132,10 @@
 			  font-size: 16px;
 			  font-weight: 500;
 			  color: $white;
+			  @include md {
+				font-size: 12px;
+				padding: 4px 5px;
+			  }
 			  &:hover{
 						background-color: $white;
 						color: $text_color;
@@ -268,7 +275,7 @@ header{
 		height: 80px;
 	}
 	@include md{
-		height: 90px;
+		height: 60px;
 	}
 	@include sm{
 		padding: 0px 5px;
@@ -281,24 +288,36 @@ header{
 			height: 80px;
 		}
 		@include md{
-			height: 90px;
+			height: 60px;
 		}
 		@include sm{
 			height: 87px;
 		}
 		
 		.logo{
-			@include xs{
-				width: 30%;
+			.primary-logo {
+				img {
+					@include md {
+						max-width: 80%;
+					}
+				}
 			}
 			.sticky-logo{
 				display: none;
+			}
+		}
+		.main-menu-wrap {
+			@include md {
+				margin-right: 25px;
 			}
 		}
 		.header-right{
 			display: flex;
 			align-items: center;
 			gap: 30px;
+			@include xl {
+				gap: 0px;
+			}
 			
 			.nice-select {
 				box-sizing: border-box;
@@ -342,6 +361,9 @@ header{
 			.login_signup_area{
 				@include flex(row, space-between, center);
 				gap: 20px;
+				@include sm {
+					margin-right: 20px;
+				}
 				.sign_up_user{
 					a{
 						padding: 15px 23px;
@@ -353,6 +375,10 @@ header{
 						background-color: $white;
 						span{
 							margin-right: 8px;
+						}
+						@include md {
+							padding: 10px 17px;
+							font-size: 14px;
 						}
 						&:hover{
 							color: $primary;
@@ -383,12 +409,19 @@ header{
 			.offcanvas-bar{
 				background-color: transparent;
 				border: none;
-				@media (max-width:1199px){
+				@media (max-width:767px){
 					display: block !important;
 				}
 				span{
 					color: #000;
-					font-size: 26px;
+					font-size: 22px;
+					border: 1px solid #000;
+					border-radius: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 40px;
+					height: 40px;
 				}
 			}
 		}
@@ -447,6 +480,11 @@ header{
 				}
 				.sticky-logo{
 					display: block;
+					img {
+						@include md {
+							max-width: 80%;
+					}
+				}
 				}
 			}
 		
@@ -512,6 +550,10 @@ header{
 					a {
 					  padding: 9px 13px;
 					  color: $text_color;
+						@include md {
+							font-size: 12px;
+							padding: 4px 5px;
+						}
 					  &:hover{
 						color: $primary;
 					  }
