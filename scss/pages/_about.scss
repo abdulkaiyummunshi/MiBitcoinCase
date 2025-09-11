@@ -11,8 +11,11 @@
     .mb_inner_content {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         margin-top: 90px;
+        @include md {
+            align-items: center;            
+        }
     }
     .mb_blur_circle{
 		width: 671px;

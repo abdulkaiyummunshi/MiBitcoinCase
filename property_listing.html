@@ -115,15 +115,17 @@
     <div class="offcanvas__overlay"></div>
     <!-- Header Start -->
     <header>
-      <div class="header-1" id="header-sticky">
+      <div class="header-1 style_1" id="header-sticky">
         <div class="container-xxl">
-          <div class="header-wrap style_1">
+          <div class="header-wrap">
             <div class="logo">
               <a class="primary-logo" href="index.html">
-                <img src="./images/logo/logo.png" alt="logo">
+                <img class="d-none d-sm-block" src="./images/logo/logo.png" alt="logo">
+                <img class="d-sm-none d-lg-none" src="./images/logo/logo-icon-sm.png" alt="logo">
               </a>
               <a class="sticky-logo" href="index.html">
-                <img src="./images/logo/logo.png" alt="logo">
+                <img class="d-none d-sm-block" src="./images/logo/logo.png" alt="logo">
+                <img class="d-sm-none d-lg-none" src="./images/logo/logo-icon-sm.png" alt="logo">
               </a>
             </div>
             <div class="main-menu-wrap">
@@ -183,7 +185,7 @@
               </div>
             </div>
             <div class="header-right">
-              <div class="language_select">
+              <div class="language_select d-none d-xl-block">
                 <select>
                   <option selected>En</option>
                   <option value="Bn">Bn</option>
@@ -191,16 +193,16 @@
                 </select>
               </div>
               <div class="login_signup_area">
-                <div class="login_btn sign_up_user">
-                <a href="#"><span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>Log in</a>
-              </div>
-              <span>or</span>
-              <div class="signup_btn sign_up_user">
-                <a href="#"><span><i class="fa-regular fa-circle-user"></i></span>Sign up</a>
-              </div>
+                <div class="login_btn sign_up_user style_1 d-none d-xl-block">
+                  <a href="#"><span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>Log in</a>
+                </div>
+                <span class="d-none d-xl-block">or</span>
+                <div class="signup_btn sign_up_user">
+                  <a href="#"><span><i class="fa-regular fa-circle-user"></i></span>Sign up</a>
+                </div>
               </div>
 
-              <button class="offcanvas-bar text-white sidebar__toggle d-lg-none">
+              <button class="offcanvas-bar text-white sidebar__toggle d-md-none d-lg-none">
                 <span><i class="fa-solid fa-bars"></i></span>
               </button>
             </div>
@@ -215,13 +217,12 @@
     
      <!-- Inner Page Hero Section Start -->
      <section class="mb_inner_page_hero">
-      
       <div class="mb_blur_circle"></div>
       <div class="container-xxl">
         <div class="mb_inner_hero_contains">
           <div class="row">
-            <div class="col-lg-6 d-flex align-items-center">
-              <div class="mb_inner_content mt-90">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+              <div class="mb_inner_content">
                 <ul>
                   <li><a href="#"><span><i class="fa-solid fa-house"></i></span>Home</a></li>
                   <li><a href="#"><span><i class="fa-solid fa-arrow-right"></i></span>Property Listing</a></li>
@@ -775,7 +776,7 @@
       <div class="container-fluid pb-10">
         <div class="footer_thumb"><img src="images/footer/footer-thumb.png" alt="png"></div>
         <div class="section-padding">
-          <div class="row justify-content-between align-items-start">
+          <div class="row g-4 justify-content-between align-items-start">
             <div class="col-lg-5">
               <div class="rb_logoInfo">
                   <div class="rb_logo pb-30">
@@ -809,9 +810,9 @@
             </div>
             
             <!-- Left Menu -->
-            <div class="col-md-7 mb-4">
-              <div class="row">
-                <div class="col-12 mb-90">
+            <div class="col-lg-7 mb-4">
+              <div class="row g-4">
+                <div class="col-12 fix_mb_90">
                   <ul class="nav footer-menu">
                     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link active">Property Listing</a></li>
@@ -819,21 +820,21 @@
                     <li class="nav-item"><a href="#" class="nav-link">Listing Form</a></li>
                   </ul>
                 </div>
-                <div class="col-6">
-                  <div class="mb-3">
+                <div class="col-lg-6">
+                  <div class="mb-30">
                     <small class="rb_label">Call Me</small>
-                    <p class="mb-1">
+                    <p class="mt-10">
                       <a href="tel:+50322223333" class="text-decoration-none rb_text">(+503) 2222-3333</a>
                     </p>
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-30">
                     <small class="rb_label">Location</small>
-                    <p class="mb-1 rb_text">
+                    <p class="mt-10 rb_text">
                       Calle a San Jose el Naranjo <br> Caserio El Salvador
                     </p>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                   <div class="d-flex gap-2 rb_social_links">
                     <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener">
                       <i class="fab fa-facebook-f"></i>
@@ -849,7 +850,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-12 mt-150">
+                <div class="col-md-12 fix_mt_150">
                   <h4 class="rb_hunting">Hunting For a Deal? Let’s Go!</h4>
                   <div class="btn_wrapper mt-38">
                     <a href="#">Browse All Listings <span><i class="fa-solid fa-arrow-right"></i></span></a>
