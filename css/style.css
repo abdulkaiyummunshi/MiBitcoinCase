@@ -36263,7 +36263,7 @@ header {
 }
 .rb_project1 .section-padding {
   position: relative;
-  padding: 120px 75px 110px;
+  padding: 0px 75px 0px;
 }
 @media only screen and (max-width: 1199px) {
   .rb_project1 .section-padding {
@@ -36426,6 +36426,11 @@ header {
   border-radius: 10px;
   border: 1px solid rgba(3, 26, 38, 0.12);
 }
+@media only screen and (max-width: 991px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card {
+    padding: 30px 20px;
+  }
+}
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
   color: #031A26;
   font-family: Inter;
@@ -36433,6 +36438,11 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+@media only screen and (max-width: 991px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
+    font-size: 20px;
+  }
 }
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title i {
   color: rgba(3, 26, 38, 0.4);
@@ -36464,6 +36474,54 @@ header {
   padding: 19px 99px;
   border: none;
 }
+@media only screen and (max-width: 991px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
+    padding: 19px 75px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
+    display: none;
+  }
+}
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 50px;
+  border-radius: 999px;
+  background: var(--P, #FF9916);
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 19px 99px;
+  border: none;
+}
+@media only screen and (max-width: 991px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+    padding: 19px 75px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached {
+    display: none;
+  }
+}
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h5 {
   color: #031A26;
   text-align: right;
@@ -36472,6 +36530,12 @@ header {
   font-weight: 600;
   line-height: normal;
   padding-bottom: 15px;
+}
+@media only screen and (max-width: 991px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h5 {
+    font-size: 18px;
+    padding-bottom: 7px;
+  }
 }
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h6 {
   color: #031A26;
@@ -36518,6 +36582,11 @@ header {
   font-weight: 700;
   line-height: normal;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc h4 {
+    font-size: 20px;
+  }
+}
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc p {
   color: rgba(3, 26, 38, 0.6);
   font-size: 16px;
@@ -36536,6 +36605,11 @@ header {
   padding: 45px 50px;
   border-radius: 10px;
   border: 1px solid rgba(3, 26, 38, 0.12);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_history_content .rb_history_card {
+    padding: 20px 20px;
+  }
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_title h4 {
   color: #031A26;
@@ -36556,6 +36630,11 @@ header {
   padding: 38px 44px;
   border-radius: 10px;
   background: #FFEED8;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
+    padding: 38px 17px;
+  }
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .inner_card_vLine {
   position: absolute;
@@ -36746,6 +36825,11 @@ header {
   padding: 45px 50px;
   border-radius: 10px;
   border: 1px solid rgba(3, 26, 38, 0.12);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_feature_content .rb_feature_card {
+    padding: 20px 20px;
+  }
 }
 .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_title h4 {
   color: #031A26;
@@ -37130,12 +37214,20 @@ header {
 }
 
 /*--- Monthly Payment Start---*/
+.mb_monthly_payment_area {
+  margin-top: 60px;
+}
 .mb_monthly_payment_area .mb_monthly_payment_container {
   position: relative;
   border: 1px solid #e6e9ea;
   border-radius: 20px;
   width: 100%;
   padding: 50px;
+}
+@media only screen and (max-width: 991px) {
+  .mb_monthly_payment_area .mb_monthly_payment_container {
+    padding: 40px 20px;
+  }
 }
 .mb_monthly_payment_area .mb_payment_tag {
   position: absolute;
@@ -37153,10 +37245,26 @@ header {
   -o-border-radius: 10px;
   background-color: #FFEED8;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_tag {
+    font-size: 14px;
+  }
+}
 .mb_monthly_payment_area .mb_payment_card .mb_title {
   font-weight: 700;
   font-size: 34px;
   color: #031a26;
+}
+@media only screen and (max-width: 991px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_title {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_title {
+    font-size: 20px;
+    line-height: 34px;
+  }
 }
 .mb_monthly_payment_area .mb_payment_card .mb_edit_payment h4 {
   font-weight: 600;
@@ -37165,6 +37273,11 @@ header {
 }
 .mb_monthly_payment_area .mb_payment_card .mb_edit_payment h4 img {
   margin-right: 8px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_edit_payment h4 img {
+    width: 17%;
+  }
 }
 .mb_monthly_payment_area .mb_payment_card .mb_pricing_area {
   margin-top: 26px;
@@ -37178,14 +37291,39 @@ header {
   font-size: 34px;
   color: #031a26;
 }
+@media only screen and (max-width: 991px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 {
+    font-size: 16px;
+  }
+}
 .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .price {
   margin-left: 5px;
   font-size: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .price {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .price {
+    font-size: 14px;
+  }
 }
 .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .month {
   font-weight: 500;
   font-size: 15px;
   color: #68767d;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .month {
+    font-size: 14px;
+  }
 }
 .mb_monthly_payment_area .mb_payment_card .mb_section_item {
   display: flex;
@@ -37199,11 +37337,31 @@ header {
   font-size: 22px;
   color: #031a26;
 }
+@media only screen and (max-width: 991px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_label {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_label {
+    font-size: 16px;
+  }
+}
 .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_value {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 22px;
   color: #031a26;
+}
+@media only screen and (max-width: 991px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_value {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_value {
+    font-size: 16px;
+  }
 }
 .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_value .mb_usd {
   font-size: 14px;
@@ -37219,6 +37377,11 @@ header {
   font-weight: 400;
   font-size: 16px;
   color: #68767d;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_loan_price span {
+    font-size: 12px;
+  }
 }
 .mb_monthly_payment_area .mb_payment_card .mb_progress_bar {
   width: 100%;
@@ -37280,6 +37443,12 @@ header {
   font-size: 16px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_label a {
   color: #031A26;
   text-decoration: underline;
@@ -37295,8 +37464,20 @@ header {
   line-height: 150%;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_value {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_value .mb_usd {
   font-size: 12px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_value .mb_usd {
+    font-size: 10px;
+    line-height: 24px;
+  }
 }
 .mb_monthly_payment_area .mb_payment_card .mb_total_due {
   margin-top: 33px;
@@ -37310,9 +37491,27 @@ header {
   font-size: 24px;
   color: #031a26;
 }
+@media only screen and (max-width: 991px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_total_due h5 {
+    font-size: 20px;
+    line-height: 34px; /* 170% */
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_total_due h5 {
+    font-size: 16px;
+    line-height: 34px; /* 170% */
+  }
+}
 .mb_monthly_payment_area .mb_payment_card .mb_total_due h5 span {
   font-size: 14px;
   font-weight: 500px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_total_due h5 span {
+    font-size: 12px;
+    line-height: 34px; /* 170% */
+  }
 }
 .mb_monthly_payment_area .mb_payment_card .mb_total_due_item {
   margin-top: 10px;
@@ -37328,6 +37527,11 @@ header {
   font-weight: 400;
   font-size: 16px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_label, .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_value {
+    font-size: 14px;
+  }
 }
 .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_label span, .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_value span {
   font-size: 12px;
@@ -37345,6 +37549,11 @@ header {
   font-size: 24px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_apply_benefits h5 {
+    font-size: 20px;
+  }
+}
 .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons {
   display: flex;
   flex-direction: row;
@@ -37352,6 +37561,12 @@ header {
   align-items: center;
   margin-top: 31px;
   gap: 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons button {
   background-color: #ff9916;
@@ -37366,6 +37581,7 @@ header {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 16px;
 }
 .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons button:hover {
   background-color: rgb(226, 127.0643776824, 0);
@@ -37415,6 +37631,11 @@ header {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_toggle_switch .mb_toggle_text {
+    font-size: 13px;
+  }
 }
 .mb_toggle_switch input {
   opacity: 0;
@@ -37481,6 +37702,12 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .costs_home_area .cost_heading_area {
+    flex-direction: column;
+    align-items: start;
+  }
 }
 .costs_home_area .cost_heading_area h3 {
   font-weight: 700;
@@ -37733,6 +37960,11 @@ header {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
+@media only screen and (max-width: 1599px) {
+  .costs_home_area .mb-down-payment-row {
+    gap: 0;
+  }
+}
 .costs_home_area .mb-down-payment-row label {
   margin-bottom: 10px;
   font-weight: 400;
@@ -37775,6 +38007,11 @@ header {
   font-size: 16px;
   font-weight: bold;
   height: 46px;
+}
+@media only screen and (max-width: 1599px) {
+  .costs_home_area .mb-percentage-input .mb-percent-field {
+    width: 22px;
+  }
 }
 .costs_home_area .mb-percentage-input .mb-percent-symbol {
   color: #68767d;
