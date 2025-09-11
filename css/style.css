@@ -43718,6 +43718,15 @@ ul.children {
     top: -31px;
   }
 }
+.rb_blog2 .rb_blog_card .rb_content .rb_price span {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 5px;
+}
 .rb_blog2 .rb_blog_card .rb_content h4 {
   color: #031A26;
   font-family: Inter;
