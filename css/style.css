@@ -36265,20 +36265,49 @@ header {
   position: relative;
   padding: 120px 75px 110px;
 }
+@media only screen and (max-width: 1199px) {
+  .rb_project1 .section-padding {
+    padding: 60px 40px 70px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_project1 .section-padding {
+    padding: 35px 30px 35px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_project1 .section-padding {
+    padding: 30px 0px 30px;
+  }
+}
+.rb_project1 .rb_project1_card .rb_thumb {
+  position: relative;
+}
 .rb_project1 .rb_project1_card .rb_thumb img {
   border-radius: 15px;
   width: 100%;
   max-height: 520px;
 }
-.rb_project1 .rb_project1_card .rb_btn {
+.rb_project1 .rb_project1_card .rb_thumb .rb_btn {
   display: flex;
   align-items: center;
   gap: 10px;
   position: absolute;
-  bottom: 20%;
-  left: 6.3%;
+  bottom: 7%;
+  left: 4%;
 }
-.rb_project1 .rb_project1_card .rb_btn .item {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project1 .rb_project1_card .rb_thumb .rb_btn {
+    bottom: 5%;
+    left: 2%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_project1 .rb_project1_card .rb_thumb .rb_btn {
+    display: none;
+  }
+}
+.rb_project1 .rb_project1_card .rb_thumb .rb_btn .item {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -36293,7 +36322,14 @@ header {
   font-weight: 600;
   line-height: normal;
 }
-.rb_project1 .rb_project1_card .rb_btn .item img {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project1 .rb_project1_card .rb_thumb .rb_btn .item {
+    padding: 8px 6px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+.rb_project1 .rb_project1_card .rb_thumb .rb_btn .item img {
   padding-right: 8px;
   width: fit-content;
 }
@@ -36305,12 +36341,24 @@ header {
   background: #FFF;
   padding: 20px 16px;
 }
+@media only screen and (max-width: 1599px) {
+  .rb_project1 .rb_project1_card .rb_content {
+    bottom: 1%;
+    left: 1%;
+    padding: 19px 12px;
+  }
+}
 .rb_project1 .rb_project1_card .rb_content .rb_title {
   color: #031A26;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+@media only screen and (max-width: 1699px) {
+  .rb_project1 .rb_project1_card .rb_content .rb_title {
+    font-size: 14px;
+  }
 }
 .rb_project1 .rb_project1_card .rb_content .rb_desc {
   color: var(--900, #031A26);
@@ -36319,6 +36367,11 @@ header {
   font-weight: 500;
   line-height: 30px; /* 150% */
 }
+@media only screen and (max-width: 1699px) {
+  .rb_project1 .rb_project1_card .rb_content .rb_desc {
+    font-size: 14px;
+  }
+}
 .rb_project1 .rb_project1_card .rb_content .rb_desc2 {
   color: rgba(3, 26, 38, 0.6);
   font-size: 16px;
@@ -36326,13 +36379,17 @@ header {
   font-weight: 500;
   line-height: 26px; /* 162.5% */
 }
+@media only screen and (max-width: 1699px) {
+  .rb_project1 .rb_project1_card .rb_content .rb_desc2 {
+    font-size: 14px;
+  }
+}
 
 .rb_project_tab {
   position: relative;
 }
-.rb_project_tab .section-padding {
+.rb_project_tab .rb_project_content {
   position: relative;
-  padding: 0 75px;
 }
 .rb_project_tab .rb_tab_buttons {
   display: flex;
@@ -36390,8 +36447,13 @@ header {
   opacity: 0.7;
 }
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
-  display: inline-block;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: fit-content;
+  height: 50px;
   border-radius: 999px;
   background: var(--P, #FF9916);
   color: #FFF;
