@@ -28644,10 +28644,6 @@ header {
       -moz-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%); }
-  .mb_browse_properties .row.style_1 {
-    gap: 30px; }
-    .mb_browse_properties .row.style_1 .col-lg-3 {
-      width: calc(25% - 25px); }
   .mb_browse_properties .row.style_2 {
     padding-bottom: 50px;
     border-bottom: 1px solid rgba(3, 26, 38, 0.1); }
@@ -28699,6 +28695,7 @@ header {
     border: 1px solid rgba(3, 26, 38, 0.1);
     border-radius: 14px;
     padding: 26px 34px 32px 34px;
+    width: 100%;
     background-color: #fff;
     position: relative; }
     .mb_browse_properties .mb_properties_card .title a {
@@ -28713,7 +28710,8 @@ header {
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      gap: 14px; }
+      gap: 14px;
+      flex-wrap: wrap; }
     .mb_browse_properties .mb_properties_card .mb_count_properties {
       border: 1px solid rgba(3, 26, 38, 0.1);
       border-radius: 100px;
