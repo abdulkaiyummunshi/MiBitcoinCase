@@ -232,20 +232,54 @@
         howWork()
 
         // Step Slider Section
-        function stepSlider(){
-            $('.rb_step_slide_container').slick({
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    arrows: true,
-                    dots: false,
-                    autoplay: true,
-                    speed: 3000,
-                    autoplaySpeed: 3000,
-                    prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-                    nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-                });
+        function stepSlider() {
+        $('.rb_step_slide_container').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            autoplay: true,
+            speed: 3000,
+            autoplaySpeed: 3000,
+            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
+            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
+            responsive: [
+            {
+                breakpoint: 1400, // <1400px
+                settings: {
+                slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1200, // <1200px
+                settings: {
+                slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992, // <992px
+                settings: {
+                slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768, // <768px
+                settings: {
+                slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576, // <576px
+                settings: {
+                slidesToShow: 1,
+                }
+            }
+            ]
+        });
         }
-        stepSlider()
+
+        stepSlider();
+
 
         // Mission Slider Section
         function missionSlider(){
