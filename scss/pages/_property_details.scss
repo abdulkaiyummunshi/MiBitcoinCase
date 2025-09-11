@@ -309,8 +309,8 @@
             padding: 45px 50px;
             border-radius: 10px;
             border: 1px solid rgba(3, 26, 38, 0.12);
-            @include sm {
-                padding: 20px 20px;
+            @include md {
+                padding: 30px 20px;
             }
             .rb_history_title {
                 h4 {
@@ -333,6 +333,9 @@
                 padding: 38px 44px;
                 border-radius: 10px;
                 background: #FFEED8;
+                @include xxl {
+                    padding: 38px 35px;
+                }
                 @include sm {
                     padding: 38px 17px;
                 }
@@ -344,6 +347,9 @@
                     height: 242px;
                     flex-shrink: 0;
                     background: rgba(3, 26, 38, 0.12);
+                    @include xl {
+                        left: 4.5%;
+                    }
                 }
                 .rb_content {
                     width: 100%;
@@ -353,12 +359,18 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
+                        @include xs {
+                            font-size: 14px;
+                        }
                         span {
                             color: #031A26;
                             font-size: 20px;
                             font-style: normal;
                             font-weight: 600;
                             line-height: normal;
+                            @include xs {
+                                font-size: 18px;
+                            }
                         }
                         .rb_current_view {
                             padding: 7px 14px;
@@ -1325,6 +1337,15 @@
   @include border-radius(15px);
   overflow: hidden;
   margin-bottom: 20px;
+  @include xxl {
+    width: 424px;
+  }
+  @include xl {
+    width: 580px;
+  }
+  @include lg {
+    width: 432px;
+  }
 
   .mb-progress-fill {
     height: 100%;
@@ -1361,6 +1382,12 @@
 .mb_item_header{
     @include flex(row, space-between, center);
     max-width: 500px;
+    @include xl {
+        max-width: 606px;
+    }
+    @include lg {
+        max-width: 548px;
+    }
 
 }
 .mb_input_box{

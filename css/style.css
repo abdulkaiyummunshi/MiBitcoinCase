@@ -36606,9 +36606,9 @@ header {
   border-radius: 10px;
   border: 1px solid rgba(3, 26, 38, 0.12);
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .rb_project_tab .rb_history_content .rb_history_card {
-    padding: 20px 20px;
+    padding: 30px 20px;
   }
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_title h4 {
@@ -36631,6 +36631,11 @@ header {
   border-radius: 10px;
   background: #FFEED8;
 }
+@media only screen and (max-width: 1599px) {
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
+    padding: 38px 35px;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
     padding: 38px 17px;
@@ -36645,6 +36650,11 @@ header {
   flex-shrink: 0;
   background: rgba(3, 26, 38, 0.12);
 }
+@media only screen and (max-width: 1399px) {
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .inner_card_vLine {
+    left: 4.5%;
+  }
+}
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content {
   width: 100%;
 }
@@ -36655,12 +36665,22 @@ header {
   font-weight: 600;
   line-height: normal;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date {
+    font-size: 14px;
+  }
+}
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date span {
   color: #031A26;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date span {
+    font-size: 18px;
+  }
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date .rb_current_view {
   padding: 7px 14px;
@@ -37743,6 +37763,21 @@ header {
   overflow: hidden;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 1599px) {
+  .costs_home_area .cost_heading_area .mb-progress-bar {
+    width: 424px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .costs_home_area .cost_heading_area .mb-progress-bar {
+    width: 580px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .costs_home_area .cost_heading_area .mb-progress-bar {
+    width: 432px;
+  }
+}
 .costs_home_area .cost_heading_area .mb-progress-bar .mb-progress-fill {
   height: 100%;
   background: linear-gradient(to right, #ff9916 70%, #68767d 30%);
@@ -37775,6 +37810,16 @@ header {
   justify-content: space-between;
   align-items: center;
   max-width: 500px;
+}
+@media only screen and (max-width: 1399px) {
+  .costs_home_area .mb_item_header {
+    max-width: 606px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .costs_home_area .mb_item_header {
+    max-width: 548px;
+  }
 }
 .costs_home_area .mb_input_box label {
   font-weight: 400;
