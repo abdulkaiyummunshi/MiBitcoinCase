@@ -2,37 +2,59 @@
     position: relative;
     .section-padding {
         position: relative;
-        padding: 120px 75px 110px;
+        padding: 0px 75px 0px;
+        @include lg {
+            padding: 60px 40px 70px;
+        }
+        @include xs {
+            padding: 35px 30px 35px;
+        }
+        @include xxs {
+           padding: 30px 0px 30px;
+        }
     }
     .rb_project1_card {
         .rb_thumb {
+            position: relative;
             img {
                 border-radius: 15px;
                 width: 100%;
                 max-height: 520px;
             }
-        }
-        .rb_btn {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            position: absolute;
-            bottom: 20%;
-            left: 6.3%;
-            .item {
-                @include flex(row, center,center);
-                border-radius: 6px;
-                background: #FFF;
-                padding: 8px 8px;
-                height: 40px;
-                color: #031A26;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: normal;
-                img {
-                    padding-right: 8px;
-                    width: fit-content;
+            .rb_btn {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                position: absolute;
+                bottom: 7%;
+                left: 4%;
+                @include sm {
+                    bottom: 5%;
+                    left: 2%;
+                }
+                @include xs {
+                    display: none
+                }
+                .item {
+                    @include flex(row, center,center);
+                    border-radius: 6px;
+                    background: #FFF;
+                    padding: 8px 8px;
+                    height: 40px;
+                    color: #031A26;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    @include sm {
+                        padding: 8px 6px;
+                        height: 35px;
+                        font-size: 14px;
+                    }
+                    img {
+                        padding-right: 8px;
+                        width: fit-content;
+                    }
                 }
             }
         }
@@ -43,12 +65,20 @@
             border-radius: 10px;
             background: #FFF;
             padding: 20px 16px;
+            @include xxl {
+                bottom: 1%;
+                left: 1%;
+                padding: 19px 12px;
+            }
             .rb_title {
                 color: #031A26;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
+                @include xxxl {
+                    font-size: 14px;
+                }
             }
             .rb_desc {
                 color: var(--900, #031A26);
@@ -56,6 +86,9 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 30px; /* 150% */
+                @include xxxl {
+                    font-size: 14px;
+                }
             }
             .rb_desc2 {
                 color: rgba(3, 26, 38, 0.60);
@@ -63,6 +96,9 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 26px; /* 162.5% */
+                @include xxxl {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -70,9 +106,8 @@
 
 .rb_project_tab {
     position: relative;
-    .section-padding {
+    .rb_project_content {
         position: relative;
-        padding: 0 75px;
     }
     .rb_tab_buttons {
         display: flex;
@@ -106,6 +141,9 @@
             padding: 45px 50px;
             border-radius: 10px;
             border: 1px solid rgba(3, 26, 38, 0.12);
+            @include md {
+                padding: 30px 20px;
+            }
             .rb_location {
                 .rb_title {
                     color: #031A26;
@@ -114,6 +152,9 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
+                    @include md {
+                        font-size: 20px;
+                    }
                     i {
                         color: rgba(3, 26, 38, 0.40);
                     }
@@ -129,8 +170,10 @@
                 }
             }
             .rb_btn {
-                display: inline-block;
+                display: flex;
+                @include flex(row, center, center);
                 width: fit-content;
+                height: 50px;
                 border-radius: 999px;
                 background: var(--P, #FF9916);
                 color: #FFF;
@@ -140,9 +183,47 @@
                 line-height: normal;
                 padding: 19px 99px;
                 border: none;
+
+                @include md {
+                    padding: 19px 75px;
+                }
+                @include sm {
+                    display: none;
+                }
                 
             }
+            .rb_btn2 {
+                display: flex;
+                @include flex(row, center, center);
+                width: fit-content;
+                height: 50px;
+                border-radius: 999px;
+                background: var(--P, #FF9916);
+                color: #FFF;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                padding: 19px 99px;
+                border: none;
+
+                @include md {
+                    padding: 19px 75px;
+                }
+                @include xxs {
+                    width: 100%;
+                }
+                @media (min-width: 768px) {
+                    display: none !important;
+                }
+
+                
+            }
+
             .rb_detached {
+                @include sm {
+                    display: none;
+                }
                 h5 {
                     color: #031A26;
                     text-align: right;
@@ -151,6 +232,10 @@
                     font-weight: 600;
                     line-height: normal;
                     padding-bottom: 15px;
+                    @include md {
+                        font-size: 18px;
+                        padding-bottom: 7px;
+                    }
                 }
                 h6 {
                     color: #031A26;
@@ -197,6 +282,9 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
+                    @include xxs {
+                        font-size: 20px;
+                    }
                 }
                 p {
                     color: rgba(3, 26, 38, 0.60);
@@ -221,6 +309,9 @@
             padding: 45px 50px;
             border-radius: 10px;
             border: 1px solid rgba(3, 26, 38, 0.12);
+            @include md {
+                padding: 30px 20px;
+            }
             .rb_history_title {
                 h4 {
                     color: #031A26;
@@ -242,6 +333,12 @@
                 padding: 38px 44px;
                 border-radius: 10px;
                 background: #FFEED8;
+                @include xxl {
+                    padding: 38px 35px;
+                }
+                @include sm {
+                    padding: 38px 17px;
+                }
                 .inner_card_vLine {
                     position: absolute;
                     top: 9.5%;
@@ -250,6 +347,9 @@
                     height: 242px;
                     flex-shrink: 0;
                     background: rgba(3, 26, 38, 0.12);
+                    @include xl {
+                        left: 4.5%;
+                    }
                 }
                 .rb_content {
                     width: 100%;
@@ -259,12 +359,18 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
+                        @include xs {
+                            font-size: 14px;
+                        }
                         span {
                             color: #031A26;
                             font-size: 20px;
                             font-style: normal;
                             font-weight: 600;
                             line-height: normal;
+                            @include xs {
+                                font-size: 18px;
+                            }
                         }
                         .rb_current_view {
                             padding: 7px 14px;
@@ -447,6 +553,9 @@
             padding: 45px 50px;
             border-radius: 10px;
             border: 1px solid rgba(3, 26, 38, 0.12);
+            @include sm {
+                padding: 20px 20px;
+            }
             .rb_feature_title {
                 h4 {
                     color: #031A26;
@@ -816,12 +925,16 @@
 
 /*--- Monthly Payment Start---*/
 .mb_monthly_payment_area{
+    margin-top: 60px;
     .mb_monthly_payment_container {
         position: relative;
         border: 1px solid #e6e9ea;
         border-radius: 20px;
         width: 100%;
         padding: 50px;
+        @include md {
+            padding: 40px 20px;
+        }
     }
     .mb_payment_tag {
         position: absolute;
@@ -834,12 +947,22 @@
         color: #000;
         @include border-radius(10px);
         background-color: #FFEED8;
+        @include xxs {
+            font-size: 14px;
+        }
     }
     .mb_payment_card{
         .mb_title {
             font-weight: 700;
             font-size: 34px;
             color: #031a26;
+            @include md {
+                font-size: 30px;
+            }
+            @include xxs {
+                font-size: 20px;
+                line-height: 34px;
+            }
         }
         .mb_edit_payment{
             h4{
@@ -848,6 +971,9 @@
                 color: #031a26;
                 img{
                     margin-right: 8px;
+                    @include xxs {
+                        width: 17%;
+                    }
                 }
             }
         }
@@ -858,14 +984,29 @@
                 font-weight: 600;
                 font-size: 34px;
                 color: #031a26;
+                @include md {
+                    font-size: 20px;
+                }
+                @include xxs {
+                    font-size: 16px;
+                }
                 .price{
                     margin-left: 5px;
                     font-size: 24px;
+                    @include md {
+                        font-size: 18px;
+                    }
+                    @include xxs {
+                        font-size: 14px;
+                    }
                 }
                 .month{
                     font-weight: 500;
                     font-size: 15px;
                     color: #68767d;
+                    @include xxs {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -876,12 +1017,24 @@
                 font-weight: 500;
                 font-size: 22px;
                 color: #031a26;
+                @include md {
+                    font-size: 18px;
+                }
+                @include xxs {
+                    font-size: 16px;
+                }
             }
             .mb_value{
                 font-family: var(--font-family);
                 font-weight: 500;
                 font-size: 22px;
                 color: #031a26;
+                @include md {
+                    font-size: 18px;
+                }
+                @include xxs {
+                    font-size: 16px;
+                }
                 .mb_usd{
                     font-size: 14px;
                 }
@@ -894,6 +1047,9 @@
                 font-weight: 400;
                 font-size: 16px;
                 color: #68767d;
+                @include xxs {
+                    font-size: 12px;
+                }
             }
         }
         .mb_progress_bar {
@@ -936,6 +1092,10 @@
                 font-weight: 400;
                 font-size: 16px;
                 color: #031a26;
+                @include xxs {
+                    font-size: 14px;
+                    line-height: 24px; 
+                }
                 a{
                     color: #031A26;
                     text-decoration: underline;
@@ -951,8 +1111,16 @@
                 font-size: 16px;
                 line-height: 150%;
                 color: #031a26;
+                @include xxs {
+                    font-size: 14px;
+                    line-height: 24px; 
+                }
                 .mb_usd{
                     font-size: 12px;
+                    @include xxs {
+                        font-size: 10px;
+                        line-height: 24px; 
+                    }
                 }
             }
         }
@@ -963,9 +1131,21 @@
                 font-weight: 700;
                 font-size: 24px;
                 color: #031a26;
+                @include md {
+                    font-size: 20px;
+                    line-height: 34px; /* 170% */
+                }
+                @include xxs {
+                    font-size: 16px;
+                    line-height: 34px; /* 170% */
+                }
                 span{
                     font-size: 14px;
                     font-weight: 500px;
+                    @include xxs {
+                        font-size: 12px;
+                        line-height: 34px; /* 170% */
+                    }
                 }
             }
         }
@@ -979,6 +1159,9 @@
                 font-weight: 400;
                 font-size: 16px;
                 color: #031a26;
+                @include xxs {
+                    font-size: 14px;
+                }
                 span{
                     font-size: 12px;
                 }
@@ -992,6 +1175,9 @@
                 font-weight: 700;
                 font-size: 24px;
                 color: #031a26;
+                @include xxs {
+                    font-size: 20px;
+                }
             }
             
           
@@ -1000,6 +1186,10 @@
             @include flex(row, flex-start, center);
             margin-top: 31px;
             gap: 20px;
+            @include xxs {
+                flex-direction: column;
+                align-items: start;
+            }
             button {
                 background-color: $primary;
                 color: #fff;
@@ -1009,6 +1199,7 @@
                 font-weight: bold;
                 cursor: pointer;
                 transition: background-color 0.3s;
+                font-size: 16px;
                 &:hover {
                     background-color: darken($primary, 10%);
                 }
@@ -1054,7 +1245,10 @@
                 left: 32px;
                 color: $white;
                 font-size: 16px;
-                font-weight: 400;                           
+                font-weight: 400;   
+                @include xxs {
+                    font-size: 13px;
+                }                        
             }
                 input {
                     opacity: 0;
@@ -1111,6 +1305,10 @@
 .mb-dot-text1 { background-color: #818c92; }
 .cost_heading_area{
     @include flex(row, space-between, center);
+    @include md {
+        flex-direction: column;
+        align-items: start;
+    }
     h3{
         font-weight: 700;
         font-size: 34px;
@@ -1139,6 +1337,15 @@
   @include border-radius(15px);
   overflow: hidden;
   margin-bottom: 20px;
+  @include xxl {
+    width: 424px;
+  }
+  @include xl {
+    width: 580px;
+  }
+  @include lg {
+    width: 432px;
+  }
 
   .mb-progress-fill {
     height: 100%;
@@ -1175,6 +1382,12 @@
 .mb_item_header{
     @include flex(row, space-between, center);
     max-width: 500px;
+    @include xl {
+        max-width: 606px;
+    }
+    @include lg {
+        max-width: 548px;
+    }
 
 }
 .mb_input_box{
@@ -1382,6 +1595,9 @@
   justify-content: space-between;
   border: 1px solid #cccccc;
   @include border-radius(10px);
+  @include xxl {
+    gap: 0;
+  }
   label{
     margin-bottom: 10px;
     font-weight: 400;
@@ -1422,6 +1638,9 @@
     font-size: 16px;
     font-weight: bold;
     height: 46px;
+    @include xxl {
+        width: 22px;
+    }
   }
 
   .mb-percent-symbol {

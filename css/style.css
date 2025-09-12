@@ -28842,8 +28842,7 @@ header {
       flex-direction: row;
       justify-content: flex-start;
       align-items: flex-start;
-      gap: 44px;
-      flex-wrap: wrap; }
+      gap: 44px; }
       @media only screen and (min-width: 992px) and (max-width: 1024px) {
         .mb_our_features .mb_feature_card .mb_single_card {
           flex-wrap: nowrap; } }
@@ -28852,6 +28851,7 @@ header {
           flex-wrap: nowrap; } }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .mb_our_features .mb_feature_card .mb_single_card {
+          flex-wrap: wrap;
           gap: 28px; } }
       .mb_our_features .mb_feature_card .mb_single_card .mb_card_contains {
         border-bottom: 1px solid rgba(3, 26, 38, 0.12);
@@ -30994,35 +30994,58 @@ header {
   position: relative; }
   .rb_project1 .section-padding {
     position: relative;
-    padding: 120px 75px 110px; }
-  .rb_project1 .rb_project1_card .rb_thumb img {
-    border-radius: 15px;
-    width: 100%;
-    max-height: 520px; }
-  .rb_project1 .rb_project1_card .rb_btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: absolute;
-    bottom: 20%;
-    left: 6.3%; }
-    .rb_project1 .rb_project1_card .rb_btn .item {
+    padding: 0px 75px 0px; }
+    @media only screen and (max-width: 1199px) {
+      .rb_project1 .section-padding {
+        padding: 60px 40px 70px; } }
+    @media only screen and (min-width: 0px) and (max-width: 575px) {
+      .rb_project1 .section-padding {
+        padding: 35px 30px 35px; } }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .rb_project1 .section-padding {
+        padding: 30px 0px 30px; } }
+  .rb_project1 .rb_project1_card .rb_thumb {
+    position: relative; }
+    .rb_project1 .rb_project1_card .rb_thumb img {
+      border-radius: 15px;
+      width: 100%;
+      max-height: 520px; }
+    .rb_project1 .rb_project1_card .rb_thumb .rb_btn {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
       align-items: center;
-      border-radius: 6px;
-      background: #FFF;
-      padding: 8px 8px;
-      height: 40px;
-      color: #031A26;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal; }
-      .rb_project1 .rb_project1_card .rb_btn .item img {
-        padding-right: 8px;
-        width: fit-content; }
+      gap: 10px;
+      position: absolute;
+      bottom: 7%;
+      left: 4%; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .rb_project1 .rb_project1_card .rb_thumb .rb_btn {
+          bottom: 5%;
+          left: 2%; } }
+      @media only screen and (min-width: 0px) and (max-width: 575px) {
+        .rb_project1 .rb_project1_card .rb_thumb .rb_btn {
+          display: none; } }
+      .rb_project1 .rb_project1_card .rb_thumb .rb_btn .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        background: #FFF;
+        padding: 8px 8px;
+        height: 40px;
+        color: #031A26;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .rb_project1 .rb_project1_card .rb_thumb .rb_btn .item {
+            padding: 8px 6px;
+            height: 35px;
+            font-size: 14px; } }
+        .rb_project1 .rb_project1_card .rb_thumb .rb_btn .item img {
+          padding-right: 8px;
+          width: fit-content; }
   .rb_project1 .rb_project1_card .rb_content {
     position: absolute;
     bottom: 4%;
@@ -31030,12 +31053,20 @@ header {
     border-radius: 10px;
     background: #FFF;
     padding: 20px 16px; }
+    @media only screen and (max-width: 1599px) {
+      .rb_project1 .rb_project1_card .rb_content {
+        bottom: 1%;
+        left: 1%;
+        padding: 19px 12px; } }
     .rb_project1 .rb_project1_card .rb_content .rb_title {
       color: #031A26;
       font-size: 20px;
       font-style: normal;
       font-weight: 600;
       line-height: normal; }
+      @media only screen and (max-width: 1699px) {
+        .rb_project1 .rb_project1_card .rb_content .rb_title {
+          font-size: 14px; } }
     .rb_project1 .rb_project1_card .rb_content .rb_desc {
       color: var(900, #031A26);
       font-size: 20px;
@@ -31043,6 +31074,9 @@ header {
       font-weight: 500;
       line-height: 30px;
       /* 150% */ }
+      @media only screen and (max-width: 1699px) {
+        .rb_project1 .rb_project1_card .rb_content .rb_desc {
+          font-size: 14px; } }
     .rb_project1 .rb_project1_card .rb_content .rb_desc2 {
       color: rgba(3, 26, 38, 0.6);
       font-size: 16px;
@@ -31050,12 +31084,14 @@ header {
       font-weight: 500;
       line-height: 26px;
       /* 162.5% */ }
+      @media only screen and (max-width: 1699px) {
+        .rb_project1 .rb_project1_card .rb_content .rb_desc2 {
+          font-size: 14px; } }
 
 .rb_project_tab {
   position: relative; }
-  .rb_project_tab .section-padding {
-    position: relative;
-    padding: 0 75px; }
+  .rb_project_tab .rb_project_content {
+    position: relative; }
   .rb_project_tab .rb_tab_buttons {
     display: flex;
     gap: 10px; }
@@ -31086,6 +31122,9 @@ header {
     padding: 45px 50px;
     border-radius: 10px;
     border: 1px solid rgba(3, 26, 38, 0.12); }
+    @media only screen and (max-width: 991px) {
+      .rb_project_tab .rb_overview_content .rb_overview_card {
+        padding: 30px 20px; } }
     .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
       color: #031A26;
       font-family: Inter;
@@ -31093,6 +31132,9 @@ header {
       font-style: normal;
       font-weight: 700;
       line-height: normal; }
+      @media only screen and (max-width: 991px) {
+        .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
+          font-size: 20px; } }
       .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title i {
         color: rgba(3, 26, 38, 0.4); }
     .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_text {
@@ -31104,8 +31146,13 @@ header {
       line-height: normal;
       opacity: 0.7; }
     .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
-      display: inline-block;
+      display: flex;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       width: fit-content;
+      height: 50px;
       border-radius: 999px;
       background: var(--P, #FF9916);
       color: #FFF;
@@ -31115,6 +31162,41 @@ header {
       line-height: normal;
       padding: 19px 99px;
       border: none; }
+      @media only screen and (max-width: 991px) {
+        .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
+          padding: 19px 75px; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
+          display: none; } }
+    .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+      display: flex;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      height: 50px;
+      border-radius: 999px;
+      background: var(--P, #FF9916);
+      color: #FFF;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      padding: 19px 99px;
+      border: none; }
+      @media only screen and (max-width: 991px) {
+        .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+          padding: 19px 75px; } }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+          width: 100%; } }
+      @media (min-width: 768px) {
+        .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+          display: none !important; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached {
+        display: none; } }
     .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h5 {
       color: #031A26;
       text-align: right;
@@ -31123,6 +31205,10 @@ header {
       font-weight: 600;
       line-height: normal;
       padding-bottom: 15px; }
+      @media only screen and (max-width: 991px) {
+        .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h5 {
+          font-size: 18px;
+          padding-bottom: 7px; } }
     .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h6 {
       color: #031A26;
       text-align: right;
@@ -31162,6 +31248,9 @@ header {
       font-style: normal;
       font-weight: 700;
       line-height: normal; }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc h4 {
+          font-size: 20px; } }
     .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc p {
       color: rgba(3, 26, 38, 0.6);
       font-size: 16px;
@@ -31178,6 +31267,9 @@ header {
     padding: 45px 50px;
     border-radius: 10px;
     border: 1px solid rgba(3, 26, 38, 0.12); }
+    @media only screen and (max-width: 991px) {
+      .rb_project_tab .rb_history_content .rb_history_card {
+        padding: 30px 20px; } }
     .rb_project_tab .rb_history_content .rb_history_card .rb_history_title h4 {
       color: #031A26;
       font-size: 24px;
@@ -31195,6 +31287,12 @@ header {
       padding: 38px 44px;
       border-radius: 10px;
       background: #FFEED8; }
+      @media only screen and (max-width: 1599px) {
+        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
+          padding: 38px 35px; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
+          padding: 38px 17px; } }
       .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .inner_card_vLine {
         position: absolute;
         top: 9.5%;
@@ -31203,6 +31301,9 @@ header {
         height: 242px;
         flex-shrink: 0;
         background: rgba(3, 26, 38, 0.12); }
+        @media only screen and (max-width: 1399px) {
+          .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .inner_card_vLine {
+            left: 4.5%; } }
       .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content {
         width: 100%; }
         .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date {
@@ -31211,12 +31312,18 @@ header {
           font-style: normal;
           font-weight: 600;
           line-height: normal; }
+          @media only screen and (min-width: 0px) and (max-width: 575px) {
+            .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date {
+              font-size: 14px; } }
           .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date span {
             color: #031A26;
             font-size: 20px;
             font-style: normal;
             font-weight: 600;
             line-height: normal; }
+            @media only screen and (min-width: 0px) and (max-width: 575px) {
+              .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date span {
+                font-size: 18px; } }
           .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date .rb_current_view {
             padding: 7px 14px;
             margin-left: 14px;
@@ -31363,6 +31470,9 @@ header {
     padding: 45px 50px;
     border-radius: 10px;
     border: 1px solid rgba(3, 26, 38, 0.12); }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .rb_project_tab .rb_feature_content .rb_feature_card {
+        padding: 20px 20px; } }
     .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_title h4 {
       color: #031A26;
       font-size: 24px;
@@ -31678,224 +31788,310 @@ header {
         text-underline-position: from-font; }
 
 /*--- Monthly Payment Start---*/
-.mb_monthly_payment_area .mb_monthly_payment_container {
-  position: relative;
-  border: 1px solid #e6e9ea;
-  border-radius: 20px;
-  width: 100%;
-  padding: 50px; }
-.mb_monthly_payment_area .mb_payment_tag {
-  position: absolute;
-  top: -27px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 9px 20px;
-  font-weight: 600;
-  font-size: 20px;
-  color: #000;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  background-color: #FFEED8; }
-.mb_monthly_payment_area .mb_payment_card .mb_title {
-  font-weight: 700;
-  font-size: 34px;
-  color: #031a26; }
-.mb_monthly_payment_area .mb_payment_card .mb_edit_payment h4 {
-  font-weight: 600;
-  font-size: 34px;
-  color: #031a26; }
-  .mb_monthly_payment_area .mb_payment_card .mb_edit_payment h4 img {
-    margin-right: 8px; }
-.mb_monthly_payment_area .mb_payment_card .mb_pricing_area {
-  margin-top: 26px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 {
+.mb_monthly_payment_area {
+  margin-top: 60px; }
+  .mb_monthly_payment_area .mb_monthly_payment_container {
+    position: relative;
+    border: 1px solid #e6e9ea;
+    border-radius: 20px;
+    width: 100%;
+    padding: 50px; }
+    @media only screen and (max-width: 991px) {
+      .mb_monthly_payment_area .mb_monthly_payment_container {
+        padding: 40px 20px; } }
+  .mb_monthly_payment_area .mb_payment_tag {
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 9px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #FFEED8; }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .mb_monthly_payment_area .mb_payment_tag {
+        font-size: 14px; } }
+  .mb_monthly_payment_area .mb_payment_card .mb_title {
+    font-weight: 700;
+    font-size: 34px;
+    color: #031a26; }
+    @media only screen and (max-width: 991px) {
+      .mb_monthly_payment_area .mb_payment_card .mb_title {
+        font-size: 30px; } }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .mb_monthly_payment_area .mb_payment_card .mb_title {
+        font-size: 20px;
+        line-height: 34px; } }
+  .mb_monthly_payment_area .mb_payment_card .mb_edit_payment h4 {
     font-weight: 600;
     font-size: 34px;
     color: #031a26; }
-    .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .price {
-      margin-left: 5px;
-      font-size: 24px; }
-    .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .month {
-      font-weight: 500;
-      font-size: 15px;
-      color: #68767d; }
-.mb_monthly_payment_area .mb_payment_card .mb_section_item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 21px; }
-  .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_label {
-    font-weight: 500;
-    font-size: 22px;
-    color: #031a26; }
-  .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_value {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 22px;
-    color: #031a26; }
-    .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_value .mb_usd {
-      font-size: 14px; }
-.mb_monthly_payment_area .mb_payment_card .mb_loan_price {
-  margin-top: 13px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .mb_monthly_payment_area .mb_payment_card .mb_loan_price span {
-    font-weight: 400;
-    font-size: 16px;
-    color: #68767d; }
-.mb_monthly_payment_area .mb_payment_card .mb_progress_bar {
-  width: 100%;
-  height: 15px;
-  background-color: #031a26;
-  border-radius: 999px;
-  -moz-border-radius: 999px;
-  -webkit-border-radius: 999px;
-  -ms-border-radius: 999px;
-  -o-border-radius: 999px;
-  overflow: hidden;
-  margin-top: 23px; }
-  .mb_monthly_payment_area .mb_payment_card .mb_progress_bar .mb_progress_fill {
-    height: 100%;
-    width: 90%;
-    background: linear-gradient(to right, #ff9916 90%, #68767d 10%); }
-.mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown {
-  margin-top: 23px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px; }
-  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_item {
+    .mb_monthly_payment_area .mb_payment_card .mb_edit_payment h4 img {
+      margin-right: 8px; }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_edit_payment h4 img {
+          width: 17%; } }
+  .mb_monthly_payment_area .mb_payment_card .mb_pricing_area {
+    margin-top: 26px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center; }
-  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_dot {
-    width: 15px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 {
+      font-weight: 600;
+      font-size: 34px;
+      color: #031a26; }
+      @media only screen and (max-width: 991px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 {
+          font-size: 20px; } }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 {
+          font-size: 16px; } }
+      .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .price {
+        margin-left: 5px;
+        font-size: 24px; }
+        @media only screen and (max-width: 991px) {
+          .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .price {
+            font-size: 18px; } }
+        @media only screen and (min-width: 0px) and (max-width: 479px) {
+          .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .price {
+            font-size: 14px; } }
+      .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .month {
+        font-weight: 500;
+        font-size: 15px;
+        color: #68767d; }
+        @media only screen and (min-width: 0px) and (max-width: 479px) {
+          .mb_monthly_payment_area .mb_payment_card .mb_pricing_area h4 .month {
+            font-size: 14px; } }
+  .mb_monthly_payment_area .mb_payment_card .mb_section_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 21px; }
+    .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_label {
+      font-weight: 500;
+      font-size: 22px;
+      color: #031a26; }
+      @media only screen and (max-width: 991px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_label {
+          font-size: 18px; } }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_label {
+          font-size: 16px; } }
+    .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_value {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 22px;
+      color: #031a26; }
+      @media only screen and (max-width: 991px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_value {
+          font-size: 18px; } }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_value {
+          font-size: 16px; } }
+      .mb_monthly_payment_area .mb_payment_card .mb_section_item .mb_value .mb_usd {
+        font-size: 14px; }
+  .mb_monthly_payment_area .mb_payment_card .mb_loan_price {
+    margin-top: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .mb_monthly_payment_area .mb_payment_card .mb_loan_price span {
+      font-weight: 400;
+      font-size: 16px;
+      color: #68767d; }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_loan_price span {
+          font-size: 12px; } }
+  .mb_monthly_payment_area .mb_payment_card .mb_progress_bar {
+    width: 100%;
     height: 15px;
-    margin-right: 10px;
-    display: inline-block; }
-  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_dot_orange {
-    background-color: #ff9916; }
-  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_dotred {
-    background-color: #031a26; }
-  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_dot_darkred {
-    background-color: #031a26; }
-  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_dot_gray_light {
-    background-color: #ffebd0; }
-  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_dot_gray {
-    background-color: #818c92; }
-  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_label {
-    flex-grow: 1;
-    font-weight: 400;
-    font-size: 16px;
-    color: #031a26; }
-    .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_label a {
-      color: #031A26;
+    background-color: #031a26;
+    border-radius: 999px;
+    -moz-border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    overflow: hidden;
+    margin-top: 23px; }
+    .mb_monthly_payment_area .mb_payment_card .mb_progress_bar .mb_progress_fill {
+      height: 100%;
+      width: 90%;
+      background: linear-gradient(to right, #ff9916 90%, #68767d 10%); }
+  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown {
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+    .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_dot {
+      width: 15px;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      height: 15px;
+      margin-right: 10px;
+      display: inline-block; }
+    .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_dot_orange {
+      background-color: #ff9916; }
+    .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_dotred {
+      background-color: #031a26; }
+    .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_dot_darkred {
+      background-color: #031a26; }
+    .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_dot_gray_light {
+      background-color: #ffebd0; }
+    .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_dot_gray {
+      background-color: #818c92; }
+    .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_label {
+      flex-grow: 1;
+      font-weight: 400;
+      font-size: 16px;
+      color: #031a26; }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_label {
+          font-size: 14px;
+          line-height: 24px; } }
+      .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_label a {
+        color: #031A26;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        transition: all 0.4s ease; }
+        .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_label a:hover {
+          color: #ff9916; }
+    .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_value {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #031a26; }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_value {
+          font-size: 14px;
+          line-height: 24px; } }
+      .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_value .mb_usd {
+        font-size: 12px; }
+        @media only screen and (min-width: 0px) and (max-width: 479px) {
+          .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_value .mb_usd {
+            font-size: 10px;
+            line-height: 24px; } }
+  .mb_monthly_payment_area .mb_payment_card .mb_total_due {
+    margin-top: 33px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .mb_monthly_payment_area .mb_payment_card .mb_total_due h5 {
+      font-weight: 700;
+      font-size: 24px;
+      color: #031a26; }
+      @media only screen and (max-width: 991px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_total_due h5 {
+          font-size: 20px;
+          line-height: 34px;
+          /* 170% */ } }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_total_due h5 {
+          font-size: 16px;
+          line-height: 34px;
+          /* 170% */ } }
+      .mb_monthly_payment_area .mb_payment_card .mb_total_due h5 span {
+        font-size: 14px;
+        font-weight: 500px; }
+        @media only screen and (min-width: 0px) and (max-width: 479px) {
+          .mb_monthly_payment_area .mb_payment_card .mb_total_due h5 span {
+            font-size: 12px;
+            line-height: 34px;
+            /* 170% */ } }
+  .mb_monthly_payment_area .mb_payment_card .mb_total_due_item {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .mb_monthly_payment_area .mb_payment_card .mb_total_due_item.style_1 {
+      margin-top: 19px; }
+    .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_label, .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_value {
+      font-weight: 400;
+      font-size: 16px;
+      color: #031a26; }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_label, .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_value {
+          font-size: 14px; } }
+      .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_label span, .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_value span {
+        font-size: 12px; }
+  .mb_monthly_payment_area .mb_payment_card .mb_apply_benefits {
+    margin-top: 23px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .mb_monthly_payment_area .mb_payment_card .mb_apply_benefits h5 {
+      font-weight: 700;
+      font-size: 24px;
+      color: #031a26; }
+      @media only screen and (min-width: 0px) and (max-width: 479px) {
+        .mb_monthly_payment_area .mb_payment_card .mb_apply_benefits h5 {
+          font-size: 20px; } }
+  .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 31px;
+    gap: 20px; }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons {
+        flex-direction: column;
+        align-items: start; } }
+    .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons button {
+      background-color: #ff9916;
+      color: #fff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      -moz-border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 16px; }
+      .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons button:hover {
+        background-color: #e27f00; }
+    .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons a {
+      font-weight: 400;
+      font-size: 16px;
       text-decoration: underline;
       text-decoration-skip-ink: none;
+      color: #031a26;
       transition: all 0.4s ease; }
-      .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_label a:hover {
+      .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons a:hover {
         color: #ff9916; }
-  .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_value {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #031a26; }
-    .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_value .mb_usd {
-      font-size: 12px; }
-.mb_monthly_payment_area .mb_payment_card .mb_total_due {
-  margin-top: 33px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .mb_monthly_payment_area .mb_payment_card .mb_total_due h5 {
-    font-weight: 700;
-    font-size: 24px;
-    color: #031a26; }
-    .mb_monthly_payment_area .mb_payment_card .mb_total_due h5 span {
-      font-size: 14px;
-      font-weight: 500px; }
-.mb_monthly_payment_area .mb_payment_card .mb_total_due_item {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .mb_monthly_payment_area .mb_payment_card .mb_total_due_item.style_1 {
-    margin-top: 19px; }
-  .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_label, .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_value {
-    font-weight: 400;
-    font-size: 16px;
-    color: #031a26; }
-    .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_label span, .mb_monthly_payment_area .mb_payment_card .mb_total_due_item .mb_value span {
-      font-size: 12px; }
-.mb_monthly_payment_area .mb_payment_card .mb_apply_benefits {
-  margin-top: 23px;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .mb_monthly_payment_area .mb_payment_card .mb_apply_benefits h5 {
-    font-weight: 700;
-    font-size: 24px;
-    color: #031a26; }
-.mb_monthly_payment_area .mb_payment_card .mb_cta_buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 31px;
-  gap: 20px; }
-  .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons button {
-    background-color: #ff9916;
-    color: #fff;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 30px;
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s; }
-    .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons button:hover {
-      background-color: #e27f00; }
-  .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons a {
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: #031a26;
-    transition: all 0.4s ease; }
-    .mb_monthly_payment_area .mb_payment_card .mb_cta_buttons a:hover {
-      color: #ff9916; }
-.mb_monthly_payment_area .mb_payment_card .mb_disclosure_link {
-  margin-top: 30px; }
-  .mb_monthly_payment_area .mb_payment_card .mb_disclosure_link a {
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: underline;
-    transition: all 0.4s ease;
-    text-decoration-skip-ink: none;
-    color: #031a26; }
-    .mb_monthly_payment_area .mb_payment_card .mb_disclosure_link a:hover {
-      color: #ff9916; }
+  .mb_monthly_payment_area .mb_payment_card .mb_disclosure_link {
+    margin-top: 30px; }
+    .mb_monthly_payment_area .mb_payment_card .mb_disclosure_link a {
+      font-weight: 400;
+      font-size: 16px;
+      text-decoration: underline;
+      transition: all 0.4s ease;
+      text-decoration-skip-ink: none;
+      color: #031a26; }
+      .mb_monthly_payment_area .mb_payment_card .mb_disclosure_link a:hover {
+        color: #ff9916; }
 
 /*--- Monthly Payment End---*/
 .mb_toggle_switch {
@@ -31915,6 +32111,9 @@ header {
     color: #fff;
     font-size: 16px;
     font-weight: 400; }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .mb_toggle_switch .mb_toggle_text {
+        font-size: 13px; } }
   .mb_toggle_switch input {
     opacity: 0;
     width: 0;
@@ -31969,6 +32168,10 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 991px) {
+    .costs_home_area .cost_heading_area {
+      flex-direction: column;
+      align-items: start; } }
   .costs_home_area .cost_heading_area h3 {
     font-weight: 700;
     font-size: 34px;
@@ -31998,6 +32201,15 @@ header {
     -o-border-radius: 15px;
     overflow: hidden;
     margin-bottom: 20px; }
+    @media only screen and (max-width: 1599px) {
+      .costs_home_area .cost_heading_area .mb-progress-bar {
+        width: 424px; } }
+    @media only screen and (max-width: 1399px) {
+      .costs_home_area .cost_heading_area .mb-progress-bar {
+        width: 580px; } }
+    @media only screen and (max-width: 1199px) {
+      .costs_home_area .cost_heading_area .mb-progress-bar {
+        width: 432px; } }
     .costs_home_area .cost_heading_area .mb-progress-bar .mb-progress-fill {
       height: 100%;
       background: linear-gradient(to right, #ff9916 70%, #68767d 30%);
@@ -32025,6 +32237,12 @@ header {
   justify-content: space-between;
   align-items: center;
   max-width: 500px; }
+  @media only screen and (max-width: 1399px) {
+    .costs_home_area .mb_item_header {
+      max-width: 606px; } }
+  @media only screen and (max-width: 1199px) {
+    .costs_home_area .mb_item_header {
+      max-width: 548px; } }
 .costs_home_area .mb_input_box label {
   font-weight: 400;
   font-size: 16px;
@@ -32180,6 +32398,9 @@ header {
   -webkit-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px; }
+  @media only screen and (max-width: 1599px) {
+    .costs_home_area .mb-down-payment-row {
+      gap: 0; } }
   .costs_home_area .mb-down-payment-row label {
     margin-bottom: 10px;
     font-weight: 400;
@@ -32216,6 +32437,9 @@ header {
     font-size: 16px;
     font-weight: bold;
     height: 46px; }
+    @media only screen and (max-width: 1599px) {
+      .costs_home_area .mb-percentage-input .mb-percent-field {
+        width: 22px; } }
   .costs_home_area .mb-percentage-input .mb-percent-symbol {
     color: #68767d;
     margin: 0 5px; }
