@@ -4,6 +4,20 @@
         background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
         @include border-radius(20px);
         position: relative;
+        @include xxl {
+            height: 870px;
+        }
+        @include lg {
+            height: 860px;
+        }
+        @include md {
+            padding-top: 30px;
+            height: 576px;
+        }
+        @include sm {
+            padding-top: 0;
+            height: 760px;
+        }
         
         .mb_hero_contain{
             height: 100%;
@@ -22,6 +36,36 @@
             background-size: cover;
             width: 100%;
             height: 100%;
+            .heading_area {
+                @include sm {
+                    margin-bottom: 130px;
+                }
+                .describtion {
+                    p {
+                        @include xl {
+                            max-width: 470px;
+                            br {
+                                display: none;
+                            }
+                        }
+                        @include md {
+                            max-width: 385px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 24px; 
+                        }
+                    }
+                }
+            }
+            .mb_choose_option {
+                
+                label {
+                    @include md {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
         }
         .mb_search_bar{
              form{
@@ -31,6 +75,19 @@
                     background-color: $white;
                     height: 72px;
                     line-height: 72px;
+                    @include xl {
+                        max-width: 485px;
+                    }
+                    @include lg {
+                        max-width: 415px;
+                    }
+                    @include md {
+                        display: flex;
+                        align-items: center;
+                        max-width: 330px;
+                        height: 40px;
+                        line-height: 37px;
+                    }
                     input{
                         border-radius: 50px;
                         width: 90%;
@@ -43,6 +100,17 @@
                         &::placeholder{
                             color: rgba(3, 26, 38, 0.7);
                         }
+                        @include xl {
+                            width: 87%;
+                        }
+                        @include lg {
+                            width: 84%;
+                        }
+                        @include md {
+                            font-size: 10px;
+                            line-height: 20px;
+                            width: 88%;
+                        }
                     }
                     button{
                         width: 52px;
@@ -52,7 +120,16 @@
                         text-align: center;
                         color: $white;
                         background-color: $text_color;
+                        @include md {
+                            width: 30px;
+                            height: 30px;
+                            line-height: 30px;
+                        }
                     }
+                }
+                @include xs {
+                    margin-bottom: 80px;
+                    margin-top: 20px !important;
                 }
         }
         .header_area{
@@ -64,11 +141,30 @@
             right: 0px;
             z-index: 4;
             @include border-radius(0px 0px 20px 0px);
+            text-align: end;             
            img{
              width:fit-content;
             height: fit-content;
             object-fit: contain;
-            @include border-radius(0px 0px 20px 0px)
+            @include border-radius(0px 0px 20px 0px);
+            @include xxxl {
+                width: 90%;
+            }
+            @include xxl {
+                width: 70%;
+            }
+            @include lg {
+                width: 55%;
+            }
+            @include md {
+                width: 51%;
+            }
+            @include xs {
+                width: 60%;
+            }
+            @include xxs {
+                width: 75%;
+            }
            }
         }
         .mb_group_house{
@@ -81,18 +177,35 @@
              width:fit-content;
             height: fit-content;
             object-fit: contain;
-            @include border-radius(0px 0px 0px 20px)
+            @include border-radius(0px 0px 0px 20px);
+            @include lg {
+                width: 66%;
+            }
            }
         }
         .mb_shape{
             position: absolute;
             top: -120px;
             left: -62px;
+            @include xxxl {
+                left: 0px;
+            }
+            @include xxl {
+                left: 0px;
+                top: -80px;
+            }
+            @include md {
+                left: 0px;
+                top: -35px;
+            }
            img{
              width:fit-content;
             height: fit-content;
             object-fit: contain;
-            @include border-radius(0px 0px 0px 20px)
+            @include border-radius(0px 0px 0px 20px);
+            @include md {
+                width: 48%;
+            }
            }
         }
         .group_house{
@@ -110,7 +223,56 @@
         .mb_bitcoin{
             position: absolute;
             top: -165px;
-    right: 33%;
+            right: 33%;
+            @include xxxl {
+                position: absolute;
+                top: -70px;
+                right: 37%;
+            }
+            @include xxl {
+                top: 15%;
+                right: 30%;
+                img {
+                    width: 70%;
+                }
+            }
+            @include xl {
+                top: 19%;
+                right: 35%;
+                img {
+                    width: 70%;
+                }
+            }
+            @include lg {
+                top: 22%;
+                right: 30%;
+                img {
+                    width: 60%;
+                }
+            }
+            @include md {
+                top: 28%;
+                right: 22%;
+                img {
+                    width: 40%;
+                }
+            }
+            @include sm {
+                top: 96%;
+                right: 5%;
+                z-index: 6;
+                img {
+                    width: 40%;
+                }
+            }
+            @include xs {
+                top: 89%;
+                right: 8%;
+                z-index: 6;
+                img {
+                    width: 35%;
+                }
+            }
     
         }
     }
@@ -132,10 +294,29 @@
 .mb_blockquote_section{
     padding: 130px 0px 107px 0px;
     position: relative;
+    @include xxs {
+        padding: 70px 0px 36px 0px;
+    }
     .mb_bitcoion_rocket{
         position: absolute;
         bottom: -79px;
         right: 84px;
+        @include lg {
+            bottom: -60px;
+            img {
+                width: 70%;
+            }
+        }
+        @include md {
+            bottom: -25px;
+            right: 0;
+            img {
+                width: 52%;
+            }
+        }
+        @include xxs {
+            display: none;
+        }
     }
     .mb_shape{
         position: absolute;
@@ -164,15 +345,34 @@
             text-align: center;
             color: rgba(3, 26, 38, 0.7);
             margin-top: 40px;
+            @include lg {
+                font-size: 24px;
+            }
+            @include md {
+                font-size: 18px;
+                line-height: 32px
+            }
         }
         .mb_author_info{
             @include flex(row, center, center);
             gap: 10px;
             margin-top: 40px;
+            @include sm {
+                margin-top: 10px;
+            }
+            @include xxs {
+                flex-direction: column;
+            }
             h4{
                 font-size: 24px;
                 font-weight: 700px;
                 color: $text_color;
+                @include md {
+                    font-size: 20px;
+                }
+                @include xxs {
+                    font-size: 16px;
+                }
             }
             h5{
                 font-size: 16px;
@@ -193,6 +393,9 @@
                     @include border-radius(50%);
                     background-color: rgba(3, 26, 38, 0.5);;
                 }
+                @include md {
+                    font-size: 14px;
+                }
 
             }
         }
@@ -203,12 +406,31 @@
 
 /*--Our Features Start---*/
 .mb_our_features{
-    max-height: 870px;
+    // max-height: 870px;
     background-color: $text_color;
+    .row{
+        &.style_01{
+            @include md{
+                flex-wrap: nowrap;
+
+            }
+        }
+    }
+  
    
     .mb_feature_image{
+        @include sm{
+            display: none;
+        }
         width: 100%;
         height: 868px !important;
+        @include nesthub{
+            height: 600px !important;
+        }
+        @include md{
+            height: 600px !important;
+        }
+        
         img{
             width: 100%;
             height: 100%;
@@ -220,6 +442,12 @@
         height: 100%;
         @include flex(column, space-between, flex-start);
         padding: 80px 30px 80px 55px;
+        @include sm{
+            padding: 30px 20px;
+            .btn_wrapper{
+                margin-top: 70px;
+            }
+        }
     }
     .mb_feature_heading{
         background-color: $text_color;
@@ -230,55 +458,139 @@
         padding: 110px 120px 110px 120px;
         background-color: #ffeed8;
         position: relative;
+        @include xxxl {
+            padding: 83px 120px 83px 120px;
+        }
+        @include xxl {
+            padding: 83px 90px 83px 90px;
+        }
+        @include md{
+            padding: 60px 30px;
+        }
+        @include sm{
+            padding:72px 20px 30px 20px;
+        }
         .mb_shape1{
             position: absolute;
             top: 0px;
             left: 0px;
             pointer-events: none;
+            height: 50px;
+            width: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .mb_shape3{
             position: absolute;
             bottom: 0px;
             left: 0px;
             pointer-events: none;
+            height: 50px;
+            width: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .mb_shape4{
             position: absolute;
             bottom: 0px;
             right: 0px;
             pointer-events: none;
+            height: 50px;
+            width: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .mb_shape2{
             position: absolute;
             top: 0px;
             right: 0px;
             pointer-events: none;
+            width: 50%;
+            height: 50px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .mb_single_card{
             @include flex(row, flex-start, flex-start);
             gap: 44px;
+            flex-wrap: wrap;
+            @include nesthub{
+                flex-wrap: nowrap;
+            }
+            @include md{
+                flex-wrap: nowrap;
+            }
+            @include sm{
+                gap: 28px;
+            }
             .mb_card_contains{
                 border-bottom: 1px solid  rgba(3, 26, 38, 0.12);
                 padding-bottom: 55px;
+                @include sm{
+                    padding-bottom: 35px;
+                    &.style_1{
+                        border-bottom: none;
+                    }
+                }
+                @include md{
+                    padding-bottom: 15px;
+                    &.style_1{
+                        border-bottom: none;
+                    }
+                }
             }
             .mb_icon{
                 width: 74px;
                 height: 74px;
+                @include md{
+                    width: 60px;
+                    height: 60px;
+                }
                 img{
                     width: 100%;
                     height: 100%;
                     object-fit: contain;
                 }
+                &.style_1 {
+                    img {
+                        width: 74px;
+                        height: 74px;  
+                    }
+                }
             }
             h4{
                 font-weight: 600;
                 font-size: 24px;
+                @include md{
+                    font-size: 20px;
+                }
+                @include sm{
+                    font-size: 20px;
+                }
                 color: #031a26;
             }
             p{
                 margin-top: 7px;
                 font-weight: 500;
                 font-size: 18px;
+                @include md{
+                    font-size: 16px;
+                }
+                @include sm{
+                    font-size: 16px;
+                }
                 color: rgba(3, 26, 38, 0.6);
             }
         }
@@ -289,19 +601,28 @@
 /*--How It Work Start---*/
 .mb_how_work{
     position: relative;
+    @include lg {
+        margin-bottom: 50px;
+    }
+    @include md {
+        margin-bottom: 80px;
+    }
     .mb_how_work_item{
         position: relative;
         padding: 150px 100px;
         background-color: #ffeed8;
         @include border-radius(24px);
+        @include lg {
+            padding: 130px 70px;
+        }
+        @include md {
+            padding: 32px 65px;
+        }
+        @include xxs {
+            padding: 30px 30px;
+        }
     }
         .left-arrow{
-            @include md{
-                display: none !important;
-            }
-            @include sm{
-                display: none !important;
-            }
         border-radius: 50%;
         border: 1px solid $border;
         width: 44px;
@@ -321,19 +642,24 @@
         background-color: $white;
         z-index: 10;
         @include transition(0.4s);
+        @include lg {
+            top: auto;
+            right: auto;
+            bottom: -11.6%;
+            left: 40.5%;
+            transform: translate(-50%, 0px);
+        }
+        @include md {
+            bottom: -11%;
+            left: 37.5%;
+        }
         &:hover{
             background-color: $primary;
             color: $white;
         }
 }
    .right-arrow{
-            @include md{
-                display: none !important;
-            }
-            @include sm{
-                display: none !important;
-            }
-            border: 1px solid $border;
+        border: 1px solid $border;
         border-radius: 50%;
         width: 44px;
         height: 44px;
@@ -352,6 +678,17 @@
         top: -97px;
         z-index: 10;
         @include transition(0.4s);
+        @include lg {
+            top: auto;
+            right: auto;
+            bottom: -11.6%;
+            left: 59.5%;
+            transform: translate(-50%, 0px);
+        }
+        @include md {
+            bottom: -11%;
+            left: 62.5%;
+        }
         &:hover{
             background-color: $primary;
             color: $white;
@@ -365,6 +702,15 @@
         position: absolute;
         top: 55px;
         right: 11px;
+        @include lg {
+            top: auto;
+            bottom: -10%;
+            left: 50%;
+            transform: translate(-50%, 0px);
+        }
+        @include sm {
+            width: 186px;
+        }
     }
     .mb_how_work_dots{
         
@@ -373,6 +719,13 @@
         position: absolute;
         top: -80px;
         right: 79px;
+        @include lg {
+            top: auto;
+            right: auto;
+            bottom: -11%;
+            left: 50%;
+            transform: translate(-50%, 0px);
+        }
     
         li{
             position: relative;
@@ -399,6 +752,13 @@
         margin: 10px 0px;
     }
     .mb_number{
+        @include md {
+            display: flex;
+            justify-content: center;
+        }
+        @include xxs {
+            justify-content: start;
+        }
         span{
             font-weight: 600;
             font-size: 20px;
@@ -410,20 +770,57 @@
             border: 1px solid  rgba(3, 26, 38, 0.1);
             @include border-radius(50%);
             display: block;
+            @include md {
+                font-size: 14px;
+                width: 54px;
+                height: 54px;
+                line-height: 54px;
+            }
 
         }
     }
-    .md_title{
+    .mb_title{
         h3{
             font-weight: 600;
             font-size: 34px;
             color: #031a26;
+            @include md {
+                font-size: 24px;
+                line-height: 40px;
+                text-align: center;
+            }
+            @include xxs {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 40px; /* 200% */
+                text-align: start;
+            }
+        }
+    }
+    .btn_wrapper {
+        @include md {
+            text-align: center;
+        }
+        @include xxs {
+            text-align: start;
         }
     }
     .mb_work_details{
         padding-left: 30px;
+        @include xxs {
+            padding-left: 0;
+        }
     }
     .mb_icon{
+        @include md {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+        }
+        @include xxs {
+            justify-content: start;
+            margin-top: 50px;
+        }
         span{
             width: 120px;
             background-color: $primary;
@@ -432,12 +829,46 @@
             @include flex(row, center, center);
             text-align: center;
             line-height: 120px;
+            @include lg {
+                width: 100px;
+                height: 100px;
+            }
+            @include md {
+                width: 80px;
+                height: 80px;
+                flex-shrink: 0;
+                aspect-ratio: 1/1;
+            }
             img{
                 width: fit-content;
                 height: fit-content;
                 object-fit: contain;
+                @include md {
+                    width: 40.275px;
+                    height: 40.48px;
+                    flex-shrink: 0;
+                }
 
             };
+        }
+    }
+    @include lg {
+        .describtion {
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    @include md {
+        .describtion {
+            text-align: center;
+        }
+    }
+    @include xxs {
+        .describtion {
+            text-align: start;
         }
     }
 }
@@ -446,6 +877,33 @@
 /*--Browse Properties Start---*/
 .mb_browse_properties{
     position: relative;
+    .mb_choose_option{
+        @include sm{
+            margin-top: 7px;
+        }
+    }
+    @include nesthubmax{
+        .mb_properties_card_container{
+            width: 33.33%;
+        }
+    }
+    @include nesthub{
+        .mb_properties_card_container{
+            width: 50%;
+        }
+    }
+    @include md{
+         #property-list{
+        margin-top: 0px !important;
+            --bs-gutter-y: 20px;
+    }
+    }
+   @include sm{
+     #property-list{
+        margin-top: 0px !important;
+            --bs-gutter-y: 10px;
+    }
+   }
     .vector{
         position: absolute;
         top: -34px;
@@ -455,17 +913,34 @@
             top: -16px;
             left: 50%;
             @include transformX(-50%);
+             @include md{
+                top: 5px;
+                width: 50px;
+                height: 47px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+             @include sm{
+                top: 5px;
+                width: 50px;
+                height: 47px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
         }
     }
     .row{
-        // &.style_1{
-        //     gap: 30px;
-        //     .col-lg-3{
-        //         width: calc(25% - 25px);
-        //     }
-        // }
         &.style_2{
             padding-bottom: 50px;
+            @include sm{
+                padding-bottom: 20px;
+            }
             border-bottom: 1px solid rgba(3, 26, 38, 0.1);
         }
     }
@@ -484,13 +959,33 @@
     .mb_browse_wrapper{
         background-color: #ffeed8;
         padding: 120px 77px 140px 77px;
+        @include md{
+            padding: 40px 24px;
+            .explore_btn{
+                display: none;
+            }
+        }
+        @include sm{
+            padding: 30px 20px;
+            
+        }
         @include border-radius(24px);
     }
     .mb_properties_btn{
+        @include flex(row, flex-start, center);
+        flex-wrap: nowrap;
+        gap: 6px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+  display: none;
+}
         button{
             border: 1px solid rgba(3, 26, 38, 0.1);
             border-radius: 30px;
             padding: 8px 16px;
+            @include sm{
+                padding: 4px 16px;
+            }
             background-color: transparent;
             color: $text_color;
             font-size: 16px;
@@ -525,12 +1020,24 @@
         border-radius: 14px;
         padding: 26px 34px 32px 34px;
         width: 100%;
+        @include md{
+            padding: 20px 16px;
+        }
+        @include sm{
+            padding: 20px 16px;
+        }
         background-color: $white;
         position: relative;
         .title{
             a{
                 font-weight: 600;
                 font-size: 20px;
+                @include md{
+                    font-size: 16px;
+                }
+                @include sm{
+                    font-size: 16px;
+                }
                 color: #031a26;
                 @include transition(0.4s);
                 &:hover{
@@ -549,9 +1056,23 @@
             padding: 4px 12px;
             width: fit-content;
             min-width: 136px;
+            @include md{
+                padding: 0px 10px;
+                min-width: 113px !important;
+            }
+            @include sm{
+                padding: 0px 10px;
+                min-width: 113px !important;
+            }
             span{
                 font-weight: 500;
                 font-size: 14px;
+                @include md{
+                    font-size: 12px;
+                }
+                @include sm{
+                    font-size: 12px;
+                }
                 color: #031a26;
                 display: inline-block;
                 &:first-child{
@@ -577,6 +1098,12 @@
                 font-weight: 500;
                 font-size: 15px;
                 color: #031a26;
+                @include md{
+                    font-size: 14px;
+                }
+                @include sm{
+                    font-size: 14px;
+                }
                 &:first-child{
                     margin-right: 5px;
                 }
@@ -588,6 +1115,12 @@
             top: 50%;
             @include transformY(-50%);
             right: 34px;
+            @include md{
+                right: 16px;
+            }
+            @include sm{
+                right: 16px;
+            }
            a{
              width: 36px;
             height: 36px;
@@ -797,9 +1330,12 @@
             font-size: 12px;
         }
         p{
+            color: #747D87;
+            font-family: Inter;
+            font-size: 13px;
+            font-style: normal;
             font-weight: 500;
-            font-size: 11px;
-            color: #747d87;
+            line-height: 10px; 
         }
     }
     .title{
@@ -833,14 +1369,38 @@
         @include border-radius(14px);
         @include flex(row, space-between, center);
         padding: 0px 30px 0px 15px;
+        @include lg {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            padding: 32px;
+        }
+        @include xxs {
+            padding: 24px 20px;
+        }
         .mb_left_contains{
             @include flex(row, flex-start, center);
             gap: 35px;
+            @include xl {
+                gap: 5px;
+            }
         }
         .mb_sell_img{
             width: 238px;
             height: 100px;
             position: relative;
+            @include lg {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            @include xxs {
+                width: 174.304px;
+                height: 73.001px;
+                flex-shrink: 0;
+            }
             img{
                 width: 100%;
                 height: 100%;
@@ -849,10 +1409,21 @@
                 bottom: -3px;
             }
         }
+        .mb_selling_content {
+            @include lg {
+                padding-bottom: 30px;
+            }
+        }
         h4{
             font-weight: 700;
             font-size: 24px;
             color: #031a26;
+            @include md {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px; 
+            }
         }
         p{
             font-weight: 500;
@@ -860,6 +1431,13 @@
             color: #031a26;
             opacity: 0.7;
             margin-top: 10px;
+            @include md {
+                font-size: 14px;
+                max-width: 417px;
+            }
+            @include xxs {
+                display: none;
+            }
         }
     }
 }
@@ -872,13 +1450,28 @@
         position: absolute;
         top: -17%;
         left: 2%;
+        @include xxl {
+            display: none
+        }
     }
     .mb_our_agents_card{
         @include flex(row, space-between, center);
+        @include sm {
+            flex-direction: column;
+            align-items: start;
+            row-gap: 24px;
+        }
         h4{
             font-weight: 600;
             font-size: 24px;
             color: #031a26;
+            @include md {
+                font-size: 20px;
+                line-height: 26px; 
+            }
+            @include xxs {
+                font-size: 18px;
+            }
         }
         p{
             font-weight: 500;
@@ -886,7 +1479,11 @@
             text-transform: uppercase;
             color: #031a26;
             opacity: 0.7;
-            margin-top: 14px
+            margin-top: 14px;
+            @include md {
+                font-size: 12px;
+                line-height: 26px; 
+            }
         }
         .mb_agent_contact{
             @include flex(column, center, flex-start);
@@ -905,6 +1502,13 @@
                 font-size: 16px;
                 color:#031a26;
                 @include transition(0.4s);
+                @include md {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 12px;
+                    flex-shrink: 0;
+                }
             }
             a{
                 @include transition(0.4s);
@@ -912,6 +1516,9 @@
                 font-size: 16px;
                 color: #031a26;
                 opacity: 0.7;
+                @include md {
+                    font-size: 12px;
+                }
                 &:hover{
                     color: $primary;
                 }
@@ -927,6 +1534,15 @@
         left: 100px;
         visibility: hidden;
         opacity: 0;
+        @include lg {
+            width: 252px;
+            height: 290px;
+            top: -112px;
+            left: 100px;
+        }
+        @include md {
+            display: none;
+        }
         img{
             width: 100%;
             height: 100%;
@@ -935,6 +1551,9 @@
         }
     }
     .mb_arrow_btn{
+        @include sm {
+            margin-top: 80px;
+        }
         a{
             width: 80px;
             height: 80px;
@@ -946,6 +1565,19 @@
             color: $white;
             @include border-radius(50%);
             font-size: 36px;
+            @include md {
+                width: 54px;
+                height: 54px;
+                line-height: 54px;
+                font-size: 22px;
+                flex-shrink: 0;
+            }
+            @include xs {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 20px;
+            }
             i{
                 @include transition(0.4s);
                 transform: rotate(-45deg);
@@ -954,16 +1586,6 @@
                 -ms-transform: rotate(-45deg);
                 -o-transform: rotate(-45deg);
             }
-            // &:hover{
-                
-            //     i{
-            //         transform: rotate(0deg);
-            //         -webkit-transform: rotate(0deg);
-            //         -moz-transform: rotate(0deg);
-            //         -ms-transform: rotate(0deg);
-            //         -o-transform: rotate(0deg);
-            //     }
-            // }
         }
         
     }
@@ -971,6 +1593,9 @@
         &.style_1{
             padding: 33px 0px;
             border-top: 1px solid rgba(3, 26, 38, 0.1);
+            @include md {
+                padding: 25px 0px;
+            }
             &:last-child{
                 border-bottom: 1px solid rgba(3, 26, 38, 0.1);
 
@@ -992,13 +1617,13 @@
                     a{
                         background-color: $primary;
                         color: $white;
-                        i{
+                        i {
                             transform: rotate(0deg);
                             -webkit-transform: rotate(0deg);
                             -moz-transform: rotate(0deg);
                             -ms-transform: rotate(0deg);
                             -o-transform: rotate(0deg);
-}
+                        }
                     }
                 }
             }
@@ -1034,6 +1659,9 @@
         max-height: 678px;
         overflow: hidden;
         transition: all 0.5s ease-in-out; 
+        @include xl {
+            padding: 43px 32px 45px;
+        }
         &.active{
             max-height: 100%;
             overflow: visible;
@@ -1043,6 +1671,10 @@
                 font-weight: 700;
                 font-size: 24px;
                 color: #031a26;
+                @include md {
+                    font-size: 18px;
+                    line-height: 30px; 
+                }
             }
         }
         .mb_brokerage_title{

@@ -21,6 +21,12 @@
             text-transform: uppercase;
             background: none;
         }
+        @include md {
+            font-size: 12px;
+        }
+        @include sm {
+            margin-bottom: 12px;
+        }
     }
     .rb_title {
         color: $text_color2;
@@ -32,6 +38,10 @@
         &.style1 {
             color: $text_color;
         }
+        @include md {
+            font-size: 30px;
+            line-height: 40px; /* 133.333% */
+        }
     }
     .rb_desc {
         color: rgba(37, 37, 37, 0.60);
@@ -42,6 +52,10 @@
         line-height: 30px;
         &.styel1 {
             color: rgba(3, 26, 38, 0.60);
+        }
+        @include md {
+            font-size: 16px;
+            line-height: 26px; /* 162.5% */
         }
     }
 }
@@ -186,6 +200,10 @@
             font-weight: 600;
             line-height: 30px; 
             margin-bottom: 13px;
+            @include md {
+                font-size: 16px;
+                line-height: 30px; 
+            }
         }
 
         input[type="text"],
@@ -214,6 +232,9 @@
             }
             &:focus {
                 outline: none;
+            }
+            @include md {
+                font-size: 14px;
             }
         }
         textarea {
@@ -262,6 +283,9 @@
             background-position: right 15px center;
             background-size: 12px 8px;
             cursor: pointer;
+            @include md {
+                font-size: 14px;
+            }
         }
         .nice-select:after {
             width: 7px;
@@ -673,6 +697,16 @@
     height: 54px;
     transition: all 0.3s ease;
     border-radius: 0; 
+    @include md {
+        height: 40px;
+        padding: 8px 26px;
+        font-size: 12px;
+    }
+    @include xxs {
+        height: 38px;
+        padding: 6px 16px;
+        font-size: 12px;
+    }
   
     &.active {
         color: $text_color;
@@ -681,6 +715,15 @@
         height: 50px;
         padding: 8px 30px;
         margin-left: 2px;
+        @include md {
+            height: 40px;
+            padding: 8px 24px;
+            margin-left: 0;
+        }
+        @include xxs {
+            height: 38px;
+            padding: 6px 14px;
+        }
     }
   
     &:first-child.active {
@@ -733,8 +776,8 @@
         .accordion-header {
             @include flex(row, space-between, center);
             padding: 15px 24px;
-            @include sm{
-                padding: 4px 15px;
+            @include md {
+                padding: 8px 20px;
             }
             cursor: pointer;
                 transition: background 0.3s ease;
@@ -745,8 +788,11 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
-                @include sm{
-                    font-size: 8px;
+                @include md {
+                    font-size: 14px;
+                }
+                @include xxs {
+                    font-size: 12px;
                 }
             }
 
@@ -763,11 +809,17 @@
                 background-color: #FFEED8;
                 transition: transform 0.3s ease;
                 box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
-                @include sm{
-                    width: 14px;
-                    height: 14px;
-                    line-height: 13px;
-                    font-size: 8px;
+                @include md {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 12px;
+                }
+                @include sm {
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 10px;
                 }
             }
         }
@@ -785,9 +837,11 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 30px; 
-                @include sm{
-                    font-size: 8px;
-                    padding: 10px;
+                @include md {
+                    padding: 15px 20px 25px 20px;
+                    color: rgba(3, 26, 38, 0.60);
+                    font-size: 12px;
+                    line-height: 22px; 
                 }
             }
         }

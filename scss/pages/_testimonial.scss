@@ -1,9 +1,22 @@
 .rb_testimonial1 {
     position: relative;
+    @include lg {
+        .rb_heading_area {
+            text-align: center;
+        }
+    }
+    @include xs {
+        .rb_heading_area {
+            text-align: start;
+        }
+    }
     .rb_testimonial_shape {
         position: absolute;
         top: -14%;
         right: 2.7%;
+        @include xl {
+            display: none;
+        }
     }
     .container {
         max-width: 1754px;
@@ -33,9 +46,60 @@
                 border-bottom: 1px solid rgba(255, 255, 255, 0.30);
                 padding-bottom: 30px;
                 margin-bottom: 22px;
+                color: #FFF;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                @include xxl {
+                    padding-bottom: 15px;
+                    margin-bottom: 15px;
+                }
+                @include xl {
+                    padding-bottom: 30px;
+                    margin-bottom: 22px;
+                }
+                @include md {
+                    font-size: 12px;
+                    line-height: 22px; 
+                    opacity: 0.7;
+                    padding-bottom: 18px;
+                    margin-bottom: 11px;
+                }
+            }
+            .rb_title {
+                color: #FFF;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px; /* 144.444% */
+                @include md {
+                    font-size: 14px;
+                }
             }
             .rb_label {
+                color: #FFF;
+                font-family: Inter;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; 
                 text-transform: uppercase;
+                opacity: 0.7;
+                @include md {
+                    font-size: 12px;
+                }
+            }
+            @include xxl {
+                padding: 20px;
+            }
+            @include xl {
+                padding: 34px;
+            }
+            @include md {
+                padding: 24px 20px;
             }
         }
     }
@@ -45,6 +109,9 @@
         background: #FFF;
         .rb_content {
             padding: 40px 34px 34px;
+            @include md {
+                padding: 30px 30px 30px;
+            }
             .rb_profile {
                 .rb_quote {
                     margin-left: -20px;
@@ -60,6 +127,13 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 30px; /* 187.5% */
+                @include md {
+                    font-size: 12px;
+                }
+                @include xxs {
+                    padding-bottom: 25px;
+                    margin-bottom: 15px;
+                }
             }
             .rb_title {
                 color: #031A26;
@@ -68,6 +142,9 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: 26px; 
+                @include md {
+                    font-size: 14px;
+                }
             }
             .rb_label {
                 color: #031A26;
@@ -78,6 +155,9 @@
                 line-height: 26px; /* 185.714% */
                 text-transform: uppercase;
                 opacity: 0.7;
+                @include md {
+                    font-size: 12px;
+                }
             }
         }
     }

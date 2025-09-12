@@ -120,10 +120,12 @@
           <div class="header-wrap">
             <div class="logo">
               <a class="primary-logo" href="index.html">
-                <img src="./images/logo/logo.png" alt="logo">
+                <img class="d-none d-sm-block" src="./images/logo/logo.png" alt="logo">
+                <img class="d-sm-none d-lg-none" src="./images/logo/logo-icon-sm.png" alt="logo">
               </a>
               <a class="sticky-logo" href="index.html">
-                <img src="./images/logo/logo.png" alt="logo">
+                <img class="d-none d-sm-block" src="./images/logo/logo.png" alt="logo">
+                <img class="d-sm-none d-lg-none" src="./images/logo/logo-icon-sm.png" alt="logo">
               </a>
             </div>
             <div class="main-menu-wrap">
@@ -134,7 +136,7 @@
                       <a class="active" href="index.html"> Home </a>
                     </li>
                     <li class="menu-item-has-children">
-                      <a href="#"> Pages </a>
+                      <a href="#"> Listings </a>
                       <ul class="submenu">
                         <li><a href="property_listing.html">Property Listing</a></li>
                         <li><a href="property_details.html">Property Details</a></li>
@@ -183,7 +185,7 @@
               </div>
             </div>
             <div class="header-right">
-              <div class="language_select">
+              <div class="language_select d-none d-xl-block">
                 <select>
                   <option selected>En</option>
                   <option value="Bn">Bn</option>
@@ -191,16 +193,16 @@
                 </select>
               </div>
               <div class="login_signup_area">
-                <div class="login_btn sign_up_user">
-                <a href="#"><span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>Log in</a>
-              </div>
-              <span>or</span>
-              <div class="signup_btn sign_up_user">
-                <a href="#"><span><i class="fa-regular fa-circle-user"></i></span>Sign up</a>
-              </div>
+                <div class="login_btn sign_up_user style_1 d-none d-xl-block">
+                  <a href="#"><span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>Log in</a>
+                </div>
+                <span class="d-none d-xl-block">or</span>
+                <div class="signup_btn sign_up_user">
+                  <a href="#"><span><i class="fa-regular fa-circle-user"></i></span>Sign up</a>
+                </div>
               </div>
 
-              <button class="offcanvas-bar text-white sidebar__toggle d-lg-none">
+              <button class="offcanvas-bar text-white sidebar__toggle d-md-none d-lg-none">
                 <span><i class="fa-solid fa-bars"></i></span>
               </button>
             </div>
@@ -213,59 +215,58 @@
       <div id="smooth-content">
         
     <!-- Hero Section Start -->
-     <section class="mb_hero_area position-relative">
+    <section class="mb_hero_area position-relative">
       <div class="container-fluid">
         <div class="mb_hero_bg">
           <div class="mb_bg_blur">
-             <div class="container-xxl">
+            <div class="container-xxl">
               <div class="row position-relative">
-                <div class="col-lg-8">
+                <div class="col-md-7 col-lg-7 col-xxl-8">
                   <div class="heading_area">
                     <div class="heading">
                       <h1>Explore More Than 245,000 <br> New Listings Every Month.</h1>
                     </div>
                     <div class="describtion mt-38">
                       <p>We are redefining real estate in El Salvador by connecting global buyers & local
-                       opportunities <br> through trusted Bitcoin payments.</p>
+                        opportunities <br> through trusted Bitcoin payments.</p>
                     </div>
                     <div class="mb_choose_option mt-49">
                       <div class="mb_buy">
                         <input type="radio" name="common" id="mb_buy">
-                      <label for="mb_buy">Buy</label>
+                        <label for="mb_buy">Buy</label>
                       </div>
                       <div class="mb_rent">
                         <input type="radio" name="common" id="mb_rent">
-                      <label for="mb_rent">Rent</label>
+                        <label for="mb_rent">Rent</label>
                       </div>
                     </div>
                     <div class="mb_search_bar mt-18">
-                      <form action="#"> 
+                      <form action="#">
                         <input type="text" placeholder="Address, school, city, zip or neighborhood">
                         <button><i class="fa-solid fa-search"></i></button>
                       </form>
                     </div>
-                     <div class="mb_shape">
-              <img src="./images/home_page/hero_section/shape.png" alt="">
-             </div>
-             <div class="mb_bitcoin">
-              <img src="./images/home_page/hero_section/bitcoin.png" alt="">
-             </div>
+                    <div class="mb_shape">
+                      <img src="./images/home_page/hero_section/shape.png" alt="">
+                    </div>
+                    <div class="mb_bitcoin">
+                      <img src="./images/home_page/hero_section/bitcoin.png" alt="">
+                    </div>
                   </div>
                 </div>
               </div>
-  
-             </div>
-             <div class="mb_house">
-              <img src="./images/home_page/hero_section/house.png" alt="">
-             </div>
-             <div class="mb_group_house">
-              <img src="./images/home_page/hero_section/group_house.png" alt="">
-             </div>
-            
+            </div>
+          </div>
+          <div class="mb_house">
+            <img src="./images/home_page/hero_section/house.png" alt="">
+          </div>
+          <div class="mb_group_house">
+            <img src="./images/home_page/hero_section/group_house.png" alt="">
           </div>
         </div>
       </div>
-     </section>
+    </section>
+
     <!-- Hero Section End -->
 
     <!-- Branding Logo Slider Start -->
@@ -359,10 +360,10 @@
     <section class="mb_our_features mt-90 position-relative">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-lg-6 px-0">
+          <div class="col-xxl-6 px-0">
            <div class="mb_feature_heading">
-             <div class="row align-items-between">
-              <div class="col-lg-6">
+             <div class="row  style_01 align-items-between">
+              <div class="col-lg-6 col-md-6">
                 <div class="mb_heading_content">
                   <div class="heading_area">
                   <div class="sub_heading">
@@ -377,7 +378,7 @@
                 </div>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 col-md-6">
                 <div class="mb_feature_image">
                   <img src="./images/home_page/features/features.png" alt="">
                 </div>
@@ -385,7 +386,7 @@
             </div>
            </div>
           </div>
-          <div class="col-lg-6 px-0">
+          <div class="col-xxl-6 px-0">
             <div class="mb_feature_card">
               <div class="mb_shape1">
                 <img src="./images/home_page/features/shape1.png" alt="">
@@ -418,7 +419,7 @@
                 </div>
               </div>
               <div class="mb_single_card mt-40">
-                <div class="mb_icon">
+                <div class="mb_icon style_1">
                   <img src="./images/home_page/features/icon3.png" alt="">
                 </div>
                 <div class="mb_card_contains">
@@ -430,7 +431,7 @@
                 <div class="mb_icon">
                   <img src="./images/home_page/features/icon4.png" alt="">
                 </div>
-                <div class="mb_card_contains">
+                <div class="mb_card_contains style_1">
                   <h4>You Are in Control</h4>
                   <p>We only review and publish listings. You handle your own deals and funds.</p>
                 </div>
@@ -610,9 +611,8 @@
     <!-- Browse Properties Start -->
     <section class="mb_browse_properties">
       <div class="vector">
-        <img src="./images/home_page/properties/shape.png" alt="">
         <div class="child_vector">
-          <img src="./images/home_page/properties/bitcoin.png" alt="">
+          <img src="./images/home_page/properties/bitcoin.svg" alt="">
         </div>
       </div>
  <div class="container-fluid">
@@ -658,7 +658,7 @@
        </div>
      </div>
      <div class="row g-4 mt-40" id="property-list">
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Tam O'Shanter-Sullivan</a>
@@ -680,7 +680,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Agincourt South - Malvern West</a>
@@ -702,7 +702,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Bendle</a>
@@ -724,7 +724,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Agincourt North</a>
@@ -746,7 +746,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Birchclife -Cliffside </a>
@@ -768,7 +768,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Cliffcrest </a>
@@ -790,7 +790,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">L`Amoreaux </a>
@@ -812,7 +812,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Clairlea - Birchmount </a>
@@ -834,7 +834,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Dorest Park </a>
@@ -856,7 +856,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Kennedy Park </a>
@@ -878,7 +878,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Centennial Scarborogh </a>
@@ -900,7 +900,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="brock">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="brock">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Malvern </a>
@@ -923,7 +923,7 @@
          </div>
        </div>
 
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="ajax">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="ajax">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Dorest Park </a>
@@ -945,7 +945,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="ajax">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="ajax">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Kennedy Park </a>
@@ -967,7 +967,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="ajax">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="ajax">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Centennial Scarborogh </a>
@@ -989,7 +989,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="ajax">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="ajax">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Malvern </a>
@@ -1012,7 +1012,7 @@
          </div>
        </div>
 
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="clarington">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="clarington">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Tam O'Shanter-Sullivan</a>
@@ -1034,7 +1034,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="clarington">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="clarington">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Agincourt South - Malvern West</a>
@@ -1056,7 +1056,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="clarington">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="clarington">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Bendle</a>
@@ -1079,7 +1079,7 @@
          </div>
        </div>
 
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="oshawa">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="oshawa">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Agincourt North</a>
@@ -1101,7 +1101,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="oshawa">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="oshawa">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Birchclife -Cliffside </a>
@@ -1124,7 +1124,7 @@
          </div>
        </div>
 
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="pickering">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="pickering">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Cliffcrest </a>
@@ -1146,7 +1146,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="pickering">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="pickering">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">L`Amoreaux </a>
@@ -1168,7 +1168,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="pickering">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="pickering">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Clairlea - Birchmount </a>
@@ -1190,7 +1190,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="pickering">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="pickering">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Dorest Park </a>
@@ -1212,7 +1212,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="pickering">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="pickering">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Kennedy Park </a>
@@ -1235,7 +1235,7 @@
          </div>
        </div>
 
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="scugog">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="scugog">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Centennial Scarborogh </a>
@@ -1257,7 +1257,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="scugog">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="scugog">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Malvern </a>
@@ -1280,7 +1280,7 @@
          </div>
        </div>
 
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="uxbridge">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="uxbridge">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Tam O'Shanter-Sullivan</a>
@@ -1302,7 +1302,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="uxbridge">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="uxbridge">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Agincourt South - Malvern West</a>
@@ -1324,7 +1324,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="uxbridge">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="uxbridge">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Bendle</a>
@@ -1346,7 +1346,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="uxbridge">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="uxbridge">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Agincourt North</a>
@@ -1368,7 +1368,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="uxbridge">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="uxbridge">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Birchclife -Cliffside </a>
@@ -1390,7 +1390,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="uxbridge">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="uxbridge">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Cliffcrest </a>
@@ -1413,7 +1413,7 @@
          </div>
        </div>
 
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="whitby">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="whitby">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">L`Amoreaux </a>
@@ -1435,7 +1435,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="whitby">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="whitby">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Clairlea - Birchmount </a>
@@ -1457,7 +1457,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="whitby">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="whitby">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Dorest Park </a>
@@ -1479,7 +1479,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="whitby">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="whitby">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Kennedy Park </a>
@@ -1501,7 +1501,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="whitby">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="whitby">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Centennial Scarborogh </a>
@@ -1523,7 +1523,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="whitby">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="whitby">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Malvern </a>
@@ -1545,7 +1545,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="whitby">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="whitby">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Birchclife -Cliffside </a>
@@ -1567,7 +1567,7 @@
            </div>
          </div>
        </div>
-       <div class="col-lg-3 col-12 mb_properties_card_container" data-city="whitby">
+       <div class="col-lg-3 col-md-6 col-12 mb_properties_card_container" data-city="whitby">
          <div class="mb_properties_card">
            <div class="title">
              <a href="#">Cliffcrest </a>
@@ -1781,8 +1781,8 @@
       <div class="rb_blog2_shape"><img src="images/shape/blog-shape.png" alt="png"></div>
       <div class="container-fluid">
         <div class="section-padding">
-          <div class="row mb-45">
-            <div class="col-3">
+          <div class="row g-4 mb-45">
+            <div class="col-xxl-6 d-flex flex-column flex-md-row align-items-md-end">
                 <div class="rb_heading_area">
                   <div class="rb_subtitle style1">
                     <img src="images/icon/dot-sm.svg" alt="svg">Active Listings
@@ -1791,24 +1791,22 @@
                     Active Listings
                   </h2>
                 </div>
-            </div>
-            <div class="col-5 d-flex align-items-end">
-              <div class="mb_choose_option mb-12">
-                <div class="mb_buy">
-                  <input type="radio" name="common" id="rb_buy">
-                <label for="rb_buy">Buy</label>
+                <div class="mb_choose_option mb-10">
+                  <div class="mb_buy">
+                    <input type="radio" name="common" id="rb_buy">
+                  <label for="rb_buy">Buy</label>
+                  </div>
+                  <div class="mb_rent">
+                    <input type="radio" name="common" id="rb_rent">
+                  <label for="rb_rent">Rent</label>
+                  </div>
                 </div>
-                <div class="mb_rent">
-                  <input type="radio" name="common" id="rb_rent">
-                <label for="rb_rent">Rent</label>
-                </div>
-              </div>
             </div>
-            <div class="col-4 d-flex align-items-end justify-content-end">
-              <div class="d-flex align-items-center gap-2">
+            <div class="col-xxl-6 d-flex align-items-end justify-content-xxl-end">
+              <div class="d-flex align-items-center gap-2 overflow-auto">
                 <div class="rb_dropdown">
                   <button class="btn_one dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
-                    Toronto     All of Toronto
+                    Toronto <span><i class="fa-solid fa-angle-right"></i></span>  All of Toronto
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -1839,29 +1837,29 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-3">
+          <div class="row g-4">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_1.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1">$60,000</div>
+                  <div class="rb_price">$60,000</div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Maple haven house</h4>
+                    <h4 class="pb-15">Maple haven house</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">789 Highrise Ave, Metro</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>789 Highrise Ave, Metro</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -1876,28 +1874,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_2.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1">$36,000</div>
+                  <div class="rb_price">$36,000</div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Tranquil oasis resort</h4>
+                    <h4 class="pb-15">Tranquil oasis resort</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">101 Heritage Ln, Oldtown</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>101 Heritage Ln, Oldtown</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -1912,28 +1910,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_3.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1">$30,000</div>
+                  <div class="rb_price">$30,000</div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Eternal hearth residence</h4>
+                    <h4 class="pb-15">Eternal hearth residence</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">123 Main St, Cityville</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>123 Main St, Cityville</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -1948,28 +1946,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_4.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1">$20,000</div>
+                  <div class="rb_price">$20,000</div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Tranquil Ember Estate</h4>
+                    <h4 class="pb-15">Tranquil Ember Estate</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">123 Main St, Cityville</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>123 Main St, Cityville</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -1997,6 +1995,7 @@
 
     <!-- Our Agents Start -->
     <section class="mb_our_agents mt-140">
+      <div class="mb_our_agent_shape"><img src="images/home_page/our_agents/agent_shape.svg" alt="shape"></div>
       <div class="container">
         <div class="row">
           <div class="heading_area">
@@ -2009,7 +2008,7 @@
           </div>
         </div>
         <div class="row style_1 align-items-center mt-50">
-          <div class="col-lg-6">
+          <div class="col-8 col-sm-6 col-md-8 col-lg-6">
                 <div class="mb_our_agents_card">
                   <div class="mb_agnet_name">
                     <h4>Norman Gordon</h4>
@@ -2027,7 +2026,7 @@
                   </div>
                 </div>
           </div>
-          <div class="col-lg-6 position-relative d-md-flex justify-content-end">
+          <div class="col-4 col-sm-6 col-md-4 col-lg-6 position-relative d-flex justify-content-end">
             <div class="mb_hover_img">
               <img src="./images/home_page/our_agents/agent1.png" alt="">
             </div>
@@ -2037,7 +2036,7 @@
           </div>
         </div>
         <div class="row style_1 align-items-center">
-          <div class="col-lg-6">
+          <div class="col-8 col-sm-6 col-md-8 col-lg-6">
                 <div class="mb_our_agents_card">
                   <div class="mb_agnet_name">
                     <h4>Braham Pigeon</h4>
@@ -2055,7 +2054,7 @@
                   </div>
                 </div>
           </div>
-          <div class="col-lg-6 position-relative d-md-flex justify-content-end">
+          <div class="col-4 col-sm-6 col-md-4 col-lg-6 position-relative d-flex justify-content-end">
             <div class="mb_hover_img">
               <img src="./images/home_page/our_agents/agent1.png" alt="">
             </div>
@@ -2065,7 +2064,7 @@
           </div>
         </div>
         <div class="row style_1 align-items-center">
-          <div class="col-lg-6">
+          <div class="col-8 col-sm-6 col-md-8 col-lg-6">
                 <div class="mb_our_agents_card">
                   <div class="mb_agnet_name">
                     <h4>Fig Nelson</h4>
@@ -2083,7 +2082,7 @@
                   </div>
                 </div>
           </div>
-          <div class="col-lg-6 position-relative d-md-flex justify-content-end">
+          <div class="col-4 col-sm-6 col-md-4 col-lg-6 position-relative d-flex justify-content-end">
             <div class="mb_hover_img">
               <img src="./images/home_page/our_agents/agent1.png" alt="">
             </div>
@@ -2093,7 +2092,7 @@
           </div>
         </div>
         <div class="row style_1 align-items-center">
-          <div class="col-lg-6">
+          <div class="col-8 col-sm-6 col-md-8 col-lg-6">
                 <div class="mb_our_agents_card">
                   <div class="mb_agnet_name">
                     <h4>Fleece Marigold</h4>
@@ -2111,7 +2110,7 @@
                   </div>
                 </div>
           </div>
-          <div class="col-lg-6 position-relative d-md-flex justify-content-end">
+          <div class="col-4 col-sm-6 col-md-4 col-lg-6 position-relative d-flex justify-content-end">
             <div class="mb_hover_img">
               <img src="./images/home_page/our_agents/agent1.png" alt="">
             </div>
@@ -2138,29 +2137,29 @@
                 </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-3">
+          <div class="row g-4">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb3_1.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">House</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1">$60,000</div>
+                  <div class="rb_price">$60,000</div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Small Apartment</h4>
+                    <h4 class="pb-15">Small Apartment</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">789 Highrise Ave, Metro</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>789 Highrise Ave, Metro</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -2175,28 +2174,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb3_2.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">House</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1">$36,000</div>
+                  <div class="rb_price">$36,000</div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Plaza Hotel & Suites</h4>
+                    <h4 class="pb-15">Plaza Hotel & Suites</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">101 Heritage Ln, Oldtown</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>101 Heritage Ln, Oldtown</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -2211,28 +2210,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb3_3.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">House</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1">$30,000</div>
+                  <div class="rb_price">$30,000</div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Stone House</h4>
+                    <h4 class="pb-15">Stone House</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">123 Main St, Cityville</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>123 Main St, Cityville</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -2247,28 +2246,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb3_4.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">House</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1">$20,000</div>
+                  <div class="rb_price">$20,000</div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Condominium</h4>
+                    <h4 class="pb-15">Condominium</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">123 Main St, Cityville</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>123 Main St, Cityville</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -2385,8 +2384,8 @@
                     </div>
                   </div>
                   <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                    <div class="mb_check style_1">
-                      <span><i class="fa-solid fa-circle-xmark"></i></span>
+                    <div class="mb_check">
+                      <span><i class="fa-solid fa-circle-check"></i></span>
                     </div>
                     
                   </div>
@@ -2407,8 +2406,8 @@
                     </div>
                   </div>
                   <div class="col-lg-6 d-flex justify-content-center">
-                    <div class="mb_check style_1">
-                      <span><i class="fa-solid fa-circle-xmark"></i></span>
+                    <div class="mb_check">
+                      <span><i class="fa-solid fa-circle-check"></i></span>
                     </div>
                     
                   </div>
@@ -3012,8 +3011,8 @@
      <!-- Testimonial Section  Start-->
     <section class="rb_testimonial1 mt-160">
       <div class="container">
-        <div class="row mb-60">
-          <div class="col-8">
+        <div class="row g-4 mb-60">
+          <div class="col-md-12 col-xl-8 d-flex justify-content-sm-center justify-content-xl-start">
               <div class="rb_heading_area">
                 <div class="rb_subtitle style1">
                   <img src="images/icon/dot-sm.svg" alt="svg">Testimonials
@@ -3023,7 +3022,7 @@
                 </h2>
               </div>
           </div>
-          <div class="col-4 d-flex align-items-end justify-content-end">
+          <div class="col-md-12 col-xl-4 d-flex justify-content-sm-center align-items-end justify-content-xl-end">
             <div class="nav nav-pills" id="pills-tab" role="tablist">
                 <div class="nav-item" role="presentation">
                     <button class="nav-link" id="pills-owner-tab" data-bs-toggle="pill"
@@ -3043,21 +3042,21 @@
 
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade" id="pills-owner" role="tabpanel" aria-labelledby="pills-owner-tab">
-            <div class="row">
-              <div class="col-3">
+            <div class="row g-4">
+              <div class="col-md-6 col-xxl-3">
                 <div class="rb_testi_card2">
                   <div class="rb_content">
                     <div class="rb_profile pb-25">
                       <span><img src="images/testimonial/testi-thumb2_1.png" alt="png"></span>
                       <span class="rb_quote"><img src="images/icon/quote-icon-mdsvg.svg" alt="svg"></span>
                     </div>
-                    <div class="rb_desc">"Excellent service and unique properties. I loved the convenience of paying with Bitcoin no hassle with traditional banks."</div>
+                    <div class="rb_desc">"Excellent service and unique properties. I loved the convenience of paying with Bitcoin no hassle."</div>
                     <div class="rb_title">Giles Posture <img class="ms-2" src="images/icon/star-icon-dark.svg" alt="svg"></div>
                     <div class="rb_label">Medical Assistant</div>
                   </div>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-md-6 col-xxl-3">
                 <div class="rb_testi_card2">
                   <div class="rb_content">
                     <div class="rb_profile pb-25">
@@ -3070,7 +3069,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-md-6 col-xxl-3">
                 <div class="rb_testi_card2">
                   <div class="rb_content">
                     <div class="rb_profile pb-25">
@@ -3083,7 +3082,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-md-6 col-xxl-3">
                 <div class="rb_testi_card2">
                   <div class="rb_content">
                     <div class="rb_profile pb-25">
@@ -3091,7 +3090,7 @@
                       <span class="rb_quote"><img src="images/icon/quote-icon-mdsvg.svg" alt="svg"></span>
                     </div>
                     <div class="rb_desc">"Proparty helps property owners reach the right buyers fast. The listing process is residential or commercial space..”</div>
-                    <div class="rb_title">Brooklyn Simmons <img class="ms-2" src="images/icon/star-icon-dark.svg" alt="svg"></div>
+                    <div class="rb_title">Giles Posture <img class="ms-2" src="images/icon/star-icon-dark.svg" alt="svg"></div>
                     <div class="rb_label">Marketing Coordinator</div>
                   </div>
                 </div>
@@ -3100,8 +3099,8 @@
             </div>
           </div>
           <div class="tab-pane fade active show" id="pills-buyer" role="tabpanel" aria-labelledby="pills-buyer-tab">
-            <div class="row">
-              <div class="col-3">
+            <div class="row g-4">
+              <div class="col-md-6 col-xxl-3">
                 <div class="rb_testi_card">
                   <div class="rb_thumb">
                     <img src="images/testimonial/testi-thumb1_1.png" alt="png">
@@ -3112,13 +3111,13 @@
                         <img src="images/icon/play-icon.svg" alt="Play Video">
                       </a>
                     </div>
-                    <div class="rb_desc rb-p16 style2">"Excellent service and unique properties. I loved the convenience of paying with Bitcoin no hassle with traditional banks."</div>
-                    <div class="rb_title rb-p18 style2">Giles Posture <img class="ms-2" src="images/icon/star-icon.svg" alt="svg"></div>
-                    <div class="rb_label rb-p15 style1">Medical Assistant</div>
+                    <div class="rb_desc">"Excellent service and unique properties. I loved the convenience of paying with Bitcoin no hassle with traditional banks."</div>
+                    <div class="rb_title">Giles Posture <img class="ms-2" src="images/icon/star-icon.svg" alt="svg"></div>
+                    <div class="rb_label">Medical Assistant</div>
                   </div>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-md-6 col-xxl-3">
                 <div class="rb_testi_card">
                   <div class="rb_thumb">
                     <img src="images/testimonial/testi-thumb1_2.png" alt="png">
@@ -3129,13 +3128,13 @@
                         <img src="images/icon/play-icon.svg" alt="Play Video">
                       </a>
                     </div>
-                    <div class="rb_desc rb-p16 style2">"Proparty is a user-friendly real platform that simplifies property buying, selling renting. It , and reliable agent support."</div>
-                    <div class="rb_title rb-p18 style2">Robert Fox <img class="ms-2" src="images/icon/star-icon.svg" alt="svg"></div>
-                    <div class="rb_label rb-p15 style1">Managing Broker</div>
+                    <div class="rb_desc">"Proparty is a user-friendly real platform that simplifies property buying, selling renting. It , and reliable agent support."</div>
+                    <div class="rb_title">Robert Fox <img class="ms-2" src="images/icon/star-icon.svg" alt="svg"></div>
+                    <div class="rb_label">Managing Broker</div>
                   </div>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-md-6 col-xxl-3">
                 <div class="rb_testi_card">
                   <div class="rb_thumb">
                     <img src="images/testimonial/testi-thumb1_3.png" alt="png">
@@ -3146,13 +3145,13 @@
                         <img src="images/icon/play-icon.svg" alt="Play Video">
                       </a>
                     </div>
-                    <div class="rb_desc rb-p16 style2">"Finding a home is easier with Proparty's smart filters and virtual tours. It saves time and removes the hassle of endless."</div>
-                    <div class="rb_title rb-p18 style2">Brooklyn Simmons <img class="ms-2" src="images/icon/star-icon.svg" alt="svg"></div>
-                    <div class="rb_label rb-p15 style1">Medical Assistant</div>
+                    <div class="rb_desc">"Finding a home is easier with Proparty's smart filters and virtual tours. It saves time and removes the hassle of endless."</div>
+                    <div class="rb_title">Brooklyn Simmons <img class="ms-2" src="images/icon/star-icon.svg" alt="svg"></div>
+                    <div class="rb_label">Medical Assistant</div>
                   </div>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-md-6 col-xxl-3">
                 <div class="rb_testi_card">
                   <div class="rb_thumb">
                     <img src="images/testimonial/testi-thumb1_4.png" alt="png">
@@ -3163,9 +3162,9 @@
                         <img src="images/icon/play-icon.svg" alt="Play Video">
                       </a>
                     </div>
-                    <div class="rb_desc rb-p16 style2">"Excellent service and unique properties. I loved the convenience of paying with Bitcoin no hassle with traditional banks."</div>
-                    <div class="rb_title rb-p18 style2">Brooklyn Simmons <img class="ms-2" src="images/icon/star-icon.svg" alt="svg"></div>
-                    <div class="rb_label rb-p15 style1">Lead Broker</div>
+                    <div class="rb_desc">"Excellent service and unique properties. I loved the convenience of paying with Bitcoin no hassle with traditional banks."</div>
+                    <div class="rb_title">Brooklyn Simmons <img class="ms-2" src="images/icon/star-icon.svg" alt="svg"></div>
+                    <div class="rb_label">Lead Broker</div>
                   </div>
                 </div>
               </div>
@@ -3181,8 +3180,8 @@
     <!-- About Two Section  Start-->
     <section class="rb_about2 mt-140">
       <div class="container">
-        <div class="row">
-          <div class="col-md-7">
+        <div class="row g-5">
+          <div class="col-xxl-7">
             <div class="rb_heading_area">
               <div class="rb_subtitle style1">
                 <img src="images/icon/dot-sm.svg" alt="svg">Get A Mortgage
@@ -3200,8 +3199,8 @@
                   <img src="images/icon/about-icon1.svg" alt="icon">
                 </div>
                 <div>
-                  <h4 class="rb-t22 pb-8">Quick Pre-Approvals</h4>
-                  <p class="rb-p16 style3"> Get pre-approved within 24 hours with a soft credit check that doesn't impact your score.</p>
+                  <h4 class="rb_title pb-8">Quick Pre-Approvals</h4>
+                  <p class="rb_desc"> Get pre-approved within 24 hours with a soft credit check that doesn't impact your score.</p>
                 </div>
               </div>
               <div class="item style1">
@@ -3209,8 +3208,8 @@
                   <img src="images/icon/about-icon2.svg" alt="icon">
                 </div>
                 <div>
-                  <h4 class="rb-t22 pb-8">Save Thousands</h4>
-                  <p class="rb-p16 style3">Save up to 0.25% on your mortgage rate & thousands on your mortgage.</p>
+                  <h4 class="rb_title pb-8">Save Thousands</h4>
+                  <p class="rb_desc">Save up to 0.25% on your mortgage rate & thousands on your mortgage.</p>
                 </div>
               </div>
             </div>
@@ -3226,13 +3225,13 @@
                   <span class="plus_icon"><img src="images/icon/about-icon3.svg" alt="icon"></span>
                 </div>
                 <div class="item">
-                  <h4 class="rb-p18 style3">Get a Free Consultation</h4>
-                  <p class="rb-p14">Our team is ready to assist you!</p>
+                  <h4 class="rb_title">Get a Free Consultation</h4>
+                  <p class="rb_desc">Our team is ready to assist you!</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-xxl-5">
             <div class="rb_thumb">
               <img src="images/about/about2_4.png" alt="png">
               <div class="rb_video_icon">
@@ -3254,8 +3253,8 @@
       <div class="contact_shape2"><img src="images/shape/contact-shape2.svg" alt="svg"></div>
       <div class="container-fluid">
         <div class="section_padding">
-          <div class="row">
-            <div class="col-md-5 mt-50">
+          <div class="row g-4">
+            <div class="col-xl-5">
               <div class="rb_heading_area">
                 <div class="rb_subtitle style1">
                   <img src="images/icon/dot-sm.svg" alt="svg">Dream Property
@@ -3267,7 +3266,7 @@
                   Got questions or thinking about your next move? Whether you're buying selling, or just exploring, we're here to help.
                 </div>
               </div>
-              <div class="rb_contact_area pt-48">
+              <div class="rb_contact_area pt-48 pb-30">
                 <div class="item">
                   <img src="images/icon/inbox-icon-lg.svg" alt="icon">
                   <a href="mailto:mibitcoincase@gmail.com" class="text-decoration-none">mibitcoincase@gmail.com</a>
@@ -3278,7 +3277,7 @@
                 </div>
             </div>
             </div>
-            <div class="offset-1 col-md-6">
+            <div class="offset-xl-1 col-xl-6">
               <div class="rb_contact_form common_input">
                 <div class="row g-4">
 
@@ -3369,7 +3368,7 @@
               </h2>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="faq-section">
                   <div class="accordion mt-49">
                       <div class="accordion-item">
@@ -3429,7 +3428,7 @@
                   </div>
               </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <div class="faq-section">
               <div class="accordion mt-49">
                     <div class="accordion-item">
@@ -3497,8 +3496,8 @@
    <!-- Blog Section  Start-->
     <section class="rb_blog1 mt-110">
       <div class="container">
-        <div class="row mb-45">
-          <div class="col-8">
+        <div class="row g-4 mb-45">
+          <div class="col-md-8">
               <div class="rb_heading_area">
                 <div class="rb_subtitle style1">
                   <img src="images/icon/dot-sm.svg" alt="svg">News & Blog
@@ -3508,79 +3507,79 @@
                 </h2>
               </div>
           </div>
-          <div class="col-4 d-flex align-items-end justify-content-end">
+          <div class="col-md-4 fix_button">
             <div class="btn_wrapper style_1">
               <a href="#">View All Blogs<span><i class="fa-solid fa-arrow-right"></i></span></a>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-3">
+        <div class="row g-4">
+          <div class="col-md-6 col-xxl-3">
             <div class="rb_blog_card">
               <div class="rb_thumb mb-25">
                 <img src="images/blog/blog-thumb1_1.png" alt="png">
               </div>
               <div class="rb_content">
                 <div class="rb_meta mb-18">
-                  <span class="rb-p15">News</span>
+                  <span>News</span>
                   <span><img src="images/icon/vertical-line-sm.svg" alt="icon"></span>
-                  <span class="rb-p15"><i class="fa-regular fa-calendar-days"></i> June 29, 2025</span>
+                  <span><i class="fa-regular fa-calendar-days"></i> June 29, 2025</span>
                 </div>
-                <h4 class="rb-t20">These Were The Most expensive Las Vegas Condo.</h4>
+                <h4>These Were The Most expensive Las Vegas Condo.</h4>
                 <div class="btn_wrapper style_1 mt-30">
                   <a href="#">Read More<span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-md-6 col-xxl-3">
             <div class="rb_blog_card">
               <div class="rb_thumb mb-25">
                 <img src="images/blog/blog-thumb1_2.png" alt="png">
               </div>
               <div class="rb_content">
                 <div class="rb_meta mb-18">
-                  <span class="rb-p15">Blog</span>
+                  <span>Blog</span>
                   <span><img src="images/icon/vertical-line-sm.svg" alt="icon"></span>
-                  <span class="rb-p15"><i class="fa-regular fa-calendar-days"></i>March 18, 2025</span>
+                  <span><i class="fa-regular fa-calendar-days"></i>March 18, 2025</span>
                 </div>
-                <h4 class="rb-t20">The Top 5 Most Livable Las Vegas Neighborhoods.</h4>
+                <h4>The Top 5 Most Livable Las Vegas Neighborhoods.</h4>
                 <div class="btn_wrapper style_1 mt-30">
                   <a href="#">Read More<span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-md-6 col-xxl-3">
             <div class="rb_blog_card">
               <div class="rb_thumb mb-25">
                 <img src="images/blog/blog-thumb1_3.png" alt="png">
               </div>
               <div class="rb_content">
                 <div class="rb_meta mb-18">
-                  <span class="rb-p15">Market Trends</span>
+                  <span>Market Trends</span>
                   <span><img src="images/icon/vertical-line-sm.svg" alt="icon"></span>
-                  <span class="rb-p15"><i class="fa-regular fa-calendar-days"></i>April 24, 2025</span>
+                  <span><i class="fa-regular fa-calendar-days"></i>April 24, 2025</span>
                 </div>
-                <h4 class="rb-t20">Sam Bankman-Fried Bahamas Real Estate Assets.</h4>
+                <h4>Sam Bankman-Fried Bahamas Real Estate Assets.</h4>
                 <div class="btn_wrapper style_1 mt-30">
                   <a href="#">Read More<span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-md-6 col-xxl-3">
             <div class="rb_blog_card">
               <div class="rb_thumb mb-25">
                 <img src="images/blog/blog-thumb1_4.png" alt="png">
               </div>
               <div class="rb_content">
                 <div class="rb_meta mb-18">
-                  <span class="rb-p15">News</span>
+                  <span>News</span>
                   <span><img src="images/icon/vertical-line-sm.svg" alt="icon"></span>
-                  <span class="rb-p15"><i class="fa-regular fa-calendar-days"></i> June 29, 2025</span>
+                  <span><i class="fa-regular fa-calendar-days"></i> June 29, 2025</span>
                 </div>
-                <h4 class="rb-t20">These Were The Most expensive Resort in Asia.</h4>
+                <h4>These Were The Most expensive Resort in Asia.</h4>
                 <div class="btn_wrapper style_1 mt-30">
                   <a href="#">Read More<span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
@@ -3597,7 +3596,7 @@
       <div class="container-fluid pb-10">
         <div class="footer_thumb"><img src="images/footer/footer-thumb.png" alt="png"></div>
         <div class="section-padding">
-          <div class="row justify-content-between align-items-start">
+          <div class="row g-4 justify-content-between align-items-start">
             <div class="col-lg-5">
               <div class="rb_logoInfo">
                   <div class="rb_logo pb-30">
@@ -3615,7 +3614,7 @@
                     </button>
                   </div>
                   <small class="d-block rb_check">
-                    <input type="checkbox" class="form-check-input me-2"> I accept all terms & conditions
+                    <input type="checkbox" class="form-check-input me-2"> I here by accept all terms & conditions.
                 </small>
               </div>
               <div class="rb_star mt-110">
@@ -3631,9 +3630,9 @@
             </div>
             
             <!-- Left Menu -->
-            <div class="col-md-7 mb-4">
-              <div class="row">
-                <div class="col-12 mb-90">
+            <div class="col-lg-7 mb-4">
+              <div class="row g-4">
+                <div class="col-12 fix_mb_90">
                   <ul class="nav footer-menu">
                     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link active">Property Listing</a></li>
@@ -3641,21 +3640,21 @@
                     <li class="nav-item"><a href="#" class="nav-link">Listing Form</a></li>
                   </ul>
                 </div>
-                <div class="col-6">
-                  <div class="mb-3">
+                <div class="col-lg-6">
+                  <div class="mb-30">
                     <small class="rb_label">Call Me</small>
-                    <p class="mb-1">
+                    <p class="mt-10">
                       <a href="tel:+50322223333" class="text-decoration-none rb_text">(+503) 2222-3333</a>
                     </p>
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-30">
                     <small class="rb_label">Location</small>
-                    <p class="mb-1 rb_text">
+                    <p class="mt-10 rb_text">
                       Calle a San Jose el Naranjo <br> Caserio El Salvador
                     </p>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                   <div class="d-flex gap-2 rb_social_links">
                     <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener">
                       <i class="fab fa-facebook-f"></i>
@@ -3671,11 +3670,11 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-12 mt-150">
+                <div class="col-md-12 fix_mt_150">
                   <h4 class="rb_hunting">Hunting For a Deal? Let’s Go!</h4>
-                  <a href="#" class="btn btn-light rounded-pill mt-3">
-                    Browse All Properties <i class="bi bi-arrow-up-right ms-1"></i>
-                  </a>
+                  <div class="btn_wrapper mt-38">
+                    <a href="#">Browse All Listings <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
                 </div>  
               </div>
             </div>  

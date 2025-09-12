@@ -115,15 +115,17 @@
     <div class="offcanvas__overlay"></div>
     <!-- Header Start -->
     <header>
-      <div class="header-1" id="header-sticky">
+      <div class="header-1 style_1" id="header-sticky">
         <div class="container-xxl">
-          <div class="header-wrap style_1">
+          <div class="header-wrap">
             <div class="logo">
               <a class="primary-logo" href="index.html">
-                <img src="./images/logo/logo.png" alt="logo">
+                <img class="d-none d-sm-block" src="./images/logo/logo.png" alt="logo">
+                <img class="d-sm-none d-lg-none" src="./images/logo/logo-icon-sm.png" alt="logo">
               </a>
               <a class="sticky-logo" href="index.html">
-                <img src="./images/logo/logo.png" alt="logo">
+                <img class="d-none d-sm-block" src="./images/logo/logo.png" alt="logo">
+                <img class="d-sm-none d-lg-none" src="./images/logo/logo-icon-sm.png" alt="logo">
               </a>
             </div>
             <div class="main-menu-wrap">
@@ -134,7 +136,7 @@
                       <a class="active" href="index.html"> Home </a>
                     </li>
                     <li class="menu-item-has-children">
-                      <a href="#"> Pages </a>
+                      <a href="#"> Listings </a>
                       <ul class="submenu">
                         <li><a href="property_listing.html">Property Listing</a></li>
                         <li><a href="property_details.html">Property Details</a></li>
@@ -183,7 +185,7 @@
               </div>
             </div>
             <div class="header-right">
-              <div class="language_select">
+              <div class="language_select d-none d-xl-block">
                 <select>
                   <option selected>En</option>
                   <option value="Bn">Bn</option>
@@ -191,16 +193,16 @@
                 </select>
               </div>
               <div class="login_signup_area">
-                <div class="login_btn sign_up_user">
-                <a href="#"><span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>Log in</a>
-              </div>
-              <span>or</span>
-              <div class="signup_btn sign_up_user">
-                <a href="#"><span><i class="fa-regular fa-circle-user"></i></span>Sign up</a>
-              </div>
+                <div class="login_btn sign_up_user style_1 d-none d-xl-block">
+                  <a href="#"><span><i class="fa-solid fa-arrow-right-to-bracket"></i></span>Log in</a>
+                </div>
+                <span class="d-none d-xl-block">or</span>
+                <div class="signup_btn sign_up_user">
+                  <a href="#"><span><i class="fa-regular fa-circle-user"></i></span>Sign up</a>
+                </div>
               </div>
 
-              <button class="offcanvas-bar text-white sidebar__toggle d-lg-none">
+              <button class="offcanvas-bar text-white sidebar__toggle d-md-none d-lg-none">
                 <span><i class="fa-solid fa-bars"></i></span>
               </button>
             </div>
@@ -215,13 +217,12 @@
     
      <!-- Inner Page Hero Section Start -->
      <section class="mb_inner_page_hero">
-      
       <div class="mb_blur_circle"></div>
       <div class="container-xxl">
         <div class="mb_inner_hero_contains">
           <div class="row">
-            <div class="col-lg-6 d-flex align-items-center">
-              <div class="mb_inner_content mt-90">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start">
+              <div class="mb_inner_content">
                 <ul>
                   <li><a href="#"><span><i class="fa-solid fa-house"></i></span>Home</a></li>
                   <li><a href="#"><span><i class="fa-solid fa-arrow-right"></i></span>Property Listing</a></li>
@@ -249,15 +250,15 @@
     <section class="rb_blog2">
       <div class="container-fluid">
         <div class="section-padding style1">
-          <div class="row mb-45">
-            <div class="col-3">
+          <div class="row g-4 mb-45">
+            <div class="col-xl-3">
                 <div class="rb_blog_header">
                   <h4 class="mb-12">Listing in MiBitcoin</h4>
                   <h5><span>Active|</span>1265 Listing</h5>
                 </div>
             </div>
-            <div class="col-9 d-flex align-items-end justify-content-end">
-              <div class="d-flex align-items-center gap-2">
+            <div class="col-xl-9 d-flex align-items-end justify-content-end">
+              <div class="d-flex align-items-center gap-2 overflow-auto">
                 <div class="rb_dropdown_1">
                   <button class="btn_one dropdown-toggle" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
                     Active
@@ -321,28 +322,28 @@
             </div>
           </div>
           <div class="row g-4">
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_1.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 6,00</span> $10,000</div>
+                  <div class="rb_price">BTC 6,00<span>$10,000</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Maple haven house</h4>
+                    <h4 class="pb-15">Maple haven house</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">789 Highrise Ave, Metro</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>123 Main St, Cityville</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -357,28 +358,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_2.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 10,00</span> $35,000</div>
+                  <div class="rb_price">BTC 10,00<span>$35,000</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Tranquil oasis resort</h4>
+                    <h4 class="pb-15">Tranquil oasis resort</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">101 Heritage Ln, Oldtown</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>101 Heritage Ln, Oldtown</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -393,28 +394,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_3.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 1,000</span> $11,000</div>
+                  <div class="rb_price">BTC 1,000<span>$11,000</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Eternal hearth residence</h4>
+                    <h4 class="pb-15">Eternal hearth residence</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">123 Main St, Cityville</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>123 Main St, Cityville</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -429,28 +430,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_4.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 5,00</span> $5,500</div>
+                  <div class="rb_price">BTC 5,00<span>$5,500</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Tranquil Ember Estate</h4>
+                    <h4 class="pb-15">Tranquil Ember Estate</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">123 Main St, Cityville</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>123 Main St, Cityville</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">4 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">3 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -465,28 +466,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_5.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 5,00</span> $5,500</div>
+                  <div class="rb_price">BTC 5,00<span>$5,500</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Vacation home AlMa</h4>
+                    <h4 class="pb-15">Vacation home AlMa</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">57, Colebert E1 4GS, United Kingdom</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>57, Colebert E1 4GS, United Kingdom</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">3 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">2 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2100sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -501,28 +502,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_6.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 5,00</span> $5,500</div>
+                  <div class="rb_price">BTC 5,00<span>$5,500</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Penthouse Apartment.</h4>
+                    <h4 class="pb-15">Penthouse Apartment.</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">113 London E2 0QN, United Kingdom.</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>113 London E2 0QN, United Kingdom.</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">3 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">2 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">1900sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -537,28 +538,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_7.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 5,00</span> $5,500</div>
+                  <div class="rb_price">BTC 5,00<span>$5,500</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Bursa Modern Art Museum</h4>
+                    <h4 class="pb-15">Bursa Modern Art Museum</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">115A London E2 0QN, United Kingdom.</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>115A London E2 0QN, United Kingdom.</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">3 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">2 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2100sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -573,28 +574,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_8.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 5,00</span> $5,500</div>
+                  <div class="rb_price">BTC 5,00<span>$5,500</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Tranquil Sunny Spa Wellness</h4>
+                    <h4 class="pb-15">Tranquil Sunny Spa Wellness</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">51 Grove Rd., Bow, United Kingdom</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>51 Grove Rd., Bow, United Kingdom</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">3 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">2 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2600sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -609,28 +610,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_9.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 5,00</span> $5,500</div>
+                  <div class="rb_price">BTC 5,00<span>$5,500</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Rome’s Trams and Funiculars</h4>
+                    <h4 class="pb-15">Rome’s Trams and Funiculars</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">Great Russell St, London.</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>Great Russell St, London.</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">3 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">2 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2200sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -645,28 +646,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_10.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 5,00</span> $5,500</div>
+                  <div class="rb_price">BTC 5,00<span>$5,500</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Adana Jazz Celebration</h4>
+                    <h4 class="pb-15">Adana Jazz Celebration</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">High Rd, Buckhurst, United Kingdom.</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>High Rd, Buckhurst, United Kingdom.</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">3 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">2 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">1500sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -681,28 +682,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_11.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 5,00</span> $5,500</div>
+                  <div class="rb_price">BTC 5,00<span>$5,500</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">Welford Gardens</h4>
+                    <h4 class="pb-15">Welford Gardens</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">23 High St, UK.</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>23 High St, UK.</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">3 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">2 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">2800sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -717,28 +718,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-6 col-xxl-3">
               <div class="rb_blog_card">
                 <div class="rb_thumb mb-25">
                   <a href="#">
                     <img src="images/blog/blog-thumb2_12.png" alt="png">
                   </a>
-                  <div class="rb_sale rb-p16 style1">For Sale</div>
+                  <div class="rb_sale">For Sale</div>
                   <div class="rb_bitcoin"><img src="images/icon/bitcoin-icon-md.svg" alt="icon"></div>
                 </div>
                 <div class="rb_content">
-                  <div class="rb_price rb-p16 style1"><span>BTC 5,00</span> $5,500</div>
+                  <div class="rb_price">BTC 5,00<span>$5,500</span></div>
                   <a href="#">
-                    <h4 class="rb-t24 pb-15">The Grove</h4>
+                    <h4 class="pb-15">The Grove</h4>
                   </a>
-                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span class="rb-p15">Mile End Rd, Bethnal Green, London.</span></div>
+                  <div class="rb_location pb-22"><i class="fa-solid fa-location-dot"></i><span>Mile End Rd, Bethnal Green, London.</span></div>
                   <div class="rb_meta pb-40 mb-10">
-                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span class="rb-p15">3 Beds</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span class="rb-p15">2 Baths</span></div>
-                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span class="rb-p15">30000sqft</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_1.svg" alt="icon"><span>4 Beds</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_2.svg" alt="icon"><span>3 Baths</span></div>
+                    <div class="rb_item"><img src="images/icon/blog-icon2_3.svg" alt="icon"><span>2800sqft</span></div>
                   </div>
                   <div class="rb_card_link">
-                    <a href="#" class="rb_link rb-p16">More Details <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="rb_link">More Details <i class="fa-solid fa-arrow-right"></i></a>
                       <div class="rb_star">
                         <ul>
                           <li><i class="fa-solid fa-star"></i></li>
@@ -775,7 +776,7 @@
       <div class="container-fluid pb-10">
         <div class="footer_thumb"><img src="images/footer/footer-thumb.png" alt="png"></div>
         <div class="section-padding">
-          <div class="row justify-content-between align-items-start">
+          <div class="row g-4 justify-content-between align-items-start">
             <div class="col-lg-5">
               <div class="rb_logoInfo">
                   <div class="rb_logo pb-30">
@@ -793,7 +794,7 @@
                     </button>
                   </div>
                   <small class="d-block rb_check">
-                    <input type="checkbox" class="form-check-input me-2"> I accept all terms & conditions
+                    <input type="checkbox" class="form-check-input me-2"> I here by accept all terms & conditions.
                 </small>
               </div>
               <div class="rb_star mt-110">
@@ -809,9 +810,9 @@
             </div>
             
             <!-- Left Menu -->
-            <div class="col-md-7 mb-4">
-              <div class="row">
-                <div class="col-12 mb-90">
+            <div class="col-lg-7 mb-4">
+              <div class="row g-4">
+                <div class="col-12 fix_mb_90">
                   <ul class="nav footer-menu">
                     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link active">Property Listing</a></li>
@@ -819,21 +820,21 @@
                     <li class="nav-item"><a href="#" class="nav-link">Listing Form</a></li>
                   </ul>
                 </div>
-                <div class="col-6">
-                  <div class="mb-3">
+                <div class="col-lg-6">
+                  <div class="mb-30">
                     <small class="rb_label">Call Me</small>
-                    <p class="mb-1">
+                    <p class="mt-10">
                       <a href="tel:+50322223333" class="text-decoration-none rb_text">(+503) 2222-3333</a>
                     </p>
                   </div>
-                  <div class="mb-3">
+                  <div class="mb-30">
                     <small class="rb_label">Location</small>
-                    <p class="mb-1 rb_text">
+                    <p class="mt-10 rb_text">
                       Calle a San Jose el Naranjo <br> Caserio El Salvador
                     </p>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                   <div class="d-flex gap-2 rb_social_links">
                     <a href="https://www.facebook.com/YourPage" target="_blank" rel="noopener">
                       <i class="fab fa-facebook-f"></i>
@@ -849,10 +850,10 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-12 mt-150">
+                <div class="col-md-12 fix_mt_150">
                   <h4 class="rb_hunting">Hunting For a Deal? Let’s Go!</h4>
-                  <div class="btn_wrapper style_2 mt-36">
-                    <a href="#">Browse All Properties<span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <div class="btn_wrapper mt-38">
+                    <a href="#">Browse All Listings <span><i class="fa-solid fa-arrow-right"></i></span></a>
                   </div>
                 </div>  
               </div>
