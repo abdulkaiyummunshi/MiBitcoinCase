@@ -38607,10 +38607,26 @@ header {
   height: 100%;
   padding: 50px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_map_block .mb_overly_map_content {
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_map_block .mb_overly_map_content {
+    padding: 10px;
+  }
+}
 .mb_map_block .mb_map_heading h3 {
   font-weight: 700;
   font-size: 24px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_map_block .mb_map_heading h3 {
+    font-size: 20px;
+    line-height: 34px;
+  }
 }
 .mb_map_block .mb_map_heading p {
   font-weight: 500;
@@ -38628,6 +38644,11 @@ header {
   -webkit-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_map_block .mb_map_content {
+    margin-top: 15px;
+  }
 }
 .mb_map_block .mb_location_select {
   position: relative;
@@ -38695,6 +38716,16 @@ header {
   border-radius: 10px;
   padding: 50px;
 }
+@media only screen and (max-width: 991px) {
+  .mb_virtual_tour .mb_virtual_tour_block {
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_virtual_tour .mb_virtual_tour_block {
+    padding: 20px;
+  }
+}
 .mb_virtual_tour .mb_header {
   margin-bottom: 20px;
 }
@@ -38703,10 +38734,20 @@ header {
   font-size: 24px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_virtual_tour .mb_header h2 {
+    font-size: 20px;
+  }
+}
 .mb_virtual_tour .mb_header p {
   font-weight: 500;
   font-size: 16px;
   color: rgba(3, 26, 38, 0.6);
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_virtual_tour .mb_header p {
+    font-size: 14px;
+  }
 }
 .mb_virtual_tour .mb_video_card {
   border-radius: 8px;
@@ -38765,6 +38806,19 @@ header {
   border-color: transparent transparent transparent #fff;
   margin-left: 4px;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_virtual_tour .mb_play_button::after {
+    border-width: 10px 0 10px 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_virtual_tour .mb_play_button {
+    width: 59px;
+    height: 40px;
+    flex-shrink: 0;
+    aspect-ratio: 59/40;
+  }
+}
 .mb_virtual_tour .mb_video_actions {
   display: flex;
   justify-content: space-between;
@@ -38789,6 +38843,11 @@ header {
   font-size: 20px;
   color: #fff;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_virtual_tour .mb_channel_name {
+    font-size: 12px;
+  }
+}
 .mb_virtual_tour .mb_action_buttons {
   display: flex;
   gap: 10px;
@@ -38806,6 +38865,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_virtual_tour .mb_action_btn {
+    font-size: 10px;
+  }
 }
 .mb_virtual_tour .mb_watch_on_youtube {
   font-weight: 600;
@@ -38827,6 +38891,11 @@ header {
   align-items: center;
   gap: 5px;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_virtual_tour .mb_watch_on_youtube {
+    font-size: 13px;
+  }
+}
 .mb_virtual_tour .mb_watch_on_youtube img {
   margin-left: 8px;
 }
@@ -38838,13 +38907,28 @@ header {
   border-radius: 10px;
   padding: 40px;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_environment_risk .mb_risk_block {
+    padding: 20px;
+  }
+}
 .mb_environment_risk .mb_risk_header {
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_environment_risk .mb_risk_header {
+    margin-bottom: 20px;
+  }
 }
 .mb_environment_risk .mb_risk_header h2 {
   font-weight: 700;
   font-size: 24px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_environment_risk .mb_risk_header h2 {
+    font-size: 20px;
+  }
 }
 .mb_environment_risk .mb_risk_list {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -38857,6 +38941,11 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.2s ease;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_environment_risk .mb_risk_item {
+    padding: 20px 0px 14px 0px;
+  }
 }
 .mb_environment_risk .mb_risk_content {
   display: flex;
@@ -38881,6 +38970,11 @@ header {
   color: #031a26;
   margin-bottom: 2px;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_environment_risk .mb_risk_title {
+    font-size: 12px;
+  }
+}
 .mb_environment_risk .mb_risk_level {
   font-weight: 500;
   font-size: 14px;
@@ -38897,6 +38991,11 @@ header {
   font-size: 15px;
   color: #68767d;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_environment_risk .mb_risk_description {
+    font-size: 10px;
+  }
+}
 .mb_environment_risk .mb_arrow_icon {
   font-size: 18px;
   color: #031a26;
@@ -38910,6 +39009,11 @@ header {
   color: #031a26;
   opacity: 0.7;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_environment_risk .mb_risk_footer {
+    font-size: 10px;
+  }
+}
 .mb_environment_risk .mb_info_icon {
   margin-left: 10px;
 }
@@ -38921,13 +39025,39 @@ header {
   border-radius: 10px;
   padding: 50px;
 }
+@media only screen and (max-width: 991px) {
+  .mb_market_insights .mb_insights_block {
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_market_insights .mb_insights_block {
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_market_insights .mb_insights_block {
+    padding: 0;
+    border: none;
+  }
+}
 .mb_market_insights .mb_header {
   margin-bottom: 37px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_market_insights .mb_header {
+    margin-bottom: 20px;
+  }
 }
 .mb_market_insights .mb_header h2 {
   font-weight: 700;
   font-size: 24px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_market_insights .mb_header h2 {
+    font-size: 20px;
+  }
 }
 .mb_market_insights .mb_insights_grid {
   padding: 30px;
@@ -38937,6 +39067,14 @@ header {
   -webkit-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_market_insights .mb_insights_grid {
+    padding: 20px;
+    border: 1px solid rgba(3, 26, 38, 0.12);
+    border-radius: 10px;
+    background-color: inherit;
+  }
 }
 .mb_market_insights .mb_insight_card {
   padding: 15px;
@@ -38956,6 +39094,11 @@ header {
   color: #252525;
   margin-bottom: 5px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_market_insights .mb_insight_title {
+    font-size: 14px;
+  }
+}
 .mb_market_insights .mb_insight_value {
   font-weight: 700;
   font-size: 26px;
@@ -38966,14 +39109,29 @@ header {
   width: fit-content;
   gap: 5px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_market_insights .mb_insight_value {
+    font-size: 22px;
+  }
+}
 .mb_market_insights .mb_currency {
   font-weight: 700;
   font-size: 26px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_market_insights .mb_currency {
+    font-size: 20px;
+  }
+}
 .mb_market_insights .mb_price {
   font-weight: 500;
   font-size: 14px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_market_insights .mb_price {
+    font-size: 12px;
+  }
 }
 .mb_market_insights .mb_insight_date {
   font-weight: 500;
@@ -38981,10 +39139,20 @@ header {
   color: rgba(3, 26, 38, 0.7);
   margin-top: 5px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_market_insights .mb_insight_date {
+    font-size: 10px;
+  }
+}
 .mb_market_insights .mb_positive_growth {
   font-weight: 700;
   font-size: 26px;
   color: #ff9916;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_market_insights .mb_positive_growth {
+    font-size: 22px;
+  }
 }
 .mb_market_insights .mb_arrow_up {
   color: #ff9916;
