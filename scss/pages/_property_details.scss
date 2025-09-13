@@ -120,6 +120,7 @@
             align-items: center;
             flex-shrink: 0;
             border-radius: 5px;
+            cursor: pointer;
             &:hover {
                 background: var(--P, #FF9916);
                 color: $white;
@@ -577,6 +578,9 @@
             padding: 45px 50px;
             border-radius: 10px;
             border: 1px solid rgba(3, 26, 38, 0.12);
+            @include md {
+                padding: 30px 20px;
+            }
             @include sm {
                 padding: 20px 20px;
             }
@@ -587,6 +591,9 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
+                    @include md {
+                        font-size: 20px;
+                    }
                 }
             }
             .rb_feature_desc {
@@ -595,6 +602,9 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+                @include md {
+                    font-size: 14px;
+                }
             }
             .rb_feature_tab {
                 display: flex;
@@ -605,14 +615,24 @@
                     border-radius: 6px 6px 0 0;
                     background: #FFEED8;
                     padding: 14px 18px;
+                    color: #031A26;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    @include md {
+                        font-size: 14px;
+                    }
                 }
             }
             .rb_feature_faq {
                 .accordion {
                     width: 100%;
                     .accordion-item {
-                        border-radius: 14px;
+                        border-radius: 6px;
                         border: 1px solid rgba(3, 26, 38, 0.10);
+                        background: #FFF;
                         margin-bottom: 30px;
                         overflow: hidden; 
                         @include sm{
@@ -642,7 +662,7 @@
                         @include flex(row, space-between, center);
                         padding: 15px 24px;
                         @include sm{
-                            padding: 4px 15px;
+                            padding: 10px 15px;
                         }
                         cursor: pointer;
                         transition: background 0.3s ease;
@@ -659,7 +679,7 @@
                             font-weight: 600;
                             line-height: normal;
                             @include sm {
-                                font-size: 12px;
+                                font-size: 16px;
                             }
                         }
 
@@ -705,6 +725,9 @@
                         }
                         .rb_content_table {
                             padding: 30px 70px 40px 70px;
+                            @include sm {
+                                padding: 12px 40px 30px 18px;
+                            }
                             .rb_item {
                                 h6 {
                                     color: rgba(3, 26, 38, 0.70);
@@ -733,6 +756,10 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: normal;
+                    @include md {
+                        font-size: 20px;
+                        padding-top: 20px;
+                    }
                 }
                 .order_table {
                     .row {
@@ -746,7 +773,7 @@
                             }
                             @include breakpoint (max-sm){
                                 row-gap: 20px;
-                                padding: 30px 0px 30px;
+                                padding: 20px 0px 20px;
                             }
                             .title{
                                 h4 {
@@ -755,6 +782,9 @@
                                     font-style: normal;
                                     font-weight: 500;
                                     line-height: normal;
+                                    @include xs {
+                                        font-size: 14px;
+                                    }
                                 }
                             }
                         }
@@ -1318,6 +1348,9 @@
             }
 /*--- Costs For home Start---*/
 .costs_home_area{
+@include md {
+    display: none;
+}
 .mb-dot {
   width: 15px;
   height: 15px;
