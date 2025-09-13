@@ -35696,6 +35696,13 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-bottom: 15px;
+}
+@media only screen and (max-width: 991px) {
+  .mb_property_sidebar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 .mb_property_sidebar ul li {
   padding: 13px 24px;
@@ -35726,6 +35733,31 @@ header {
   border-radius: 10px;
   background: #fff;
   padding: 56px 50px 70px 50px;
+}
+@media only screen and (max-width: 1199px) {
+  .mb_post_property_wrapper {
+    padding: 30px 30px 40px 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_post_property_wrapper {
+    padding: 25px 15px 40px 15px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mb_post_property_wrapper .heading_area .heading h3 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_post_property_wrapper .heading_area .heading h3 {
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_post_property_wrapper .heading_area .heading h3 {
+    font-size: 20px;
+  }
 }
 .mb_post_property_wrapper .mb_radio_custom {
   appearance: none;
@@ -35847,6 +35879,31 @@ header {
   -o-border-radius: 10px;
   border: 1px solid rgba(3, 26, 38, 0.1);
 }
+@media only screen and (max-width: 1199px) {
+  .mb_property_common {
+    padding: 30px 30px 40px 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_property_common {
+    padding: 25px 15px 40px 15px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mb_property_common .heading_area .heading h3 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_property_common .heading_area .heading h3 {
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_property_common .heading_area .heading h3 {
+    font-size: 20px;
+  }
+}
 .mb_property_common .mb_title h4 {
   font-weight: 600;
   font-size: 24px;
@@ -35861,8 +35918,18 @@ header {
   gap: 12px;
   width: calc(33.33% - 30px);
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_property_common .mb_single_input {
+    width: 100%;
+  }
+}
 .mb_property_common .mb_single_input.style_1 {
   width: 63.67%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_property_common .mb_single_input.style_1 {
+    width: 100%;
+  }
 }
 .mb_property_common .mb_single_input .nice-select {
   width: 100%;
@@ -35902,6 +35969,11 @@ header {
   outline: none;
   padding: 0px 20px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_property_common input {
+    font-size: 14px;
+  }
+}
 .mb_property_common input::placeholder {
   opacity: 0.7;
 }
@@ -35918,6 +35990,11 @@ header {
   -o-border-radius: 10px;
   background-color: #fff;
   border: 1px solid rgba(3, 26, 38, 0.1);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_property_common .mb_dubble_input {
+    width: 100%;
+  }
 }
 .mb_property_common .mb_dubble_input input {
   border: none;
@@ -35952,6 +36029,17 @@ header {
   border-radius: 10px;
   width: 100%;
   padding: 25px;
+  color: rgba(3, 26, 38, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; /* 187.5% */
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_single_listing p {
+    font-size: 14px;
+  }
 }
 .mb_single_listing p a {
   text-decoration: underline;
@@ -35961,12 +36049,18 @@ header {
 .mb_single_listing p a:hover {
   color: #ff9916;
 }
-.mb_single_listing .mb_maps iframe {
+
+.mb_maps iframe {
   border-radius: 10px !important;
   -webkit-border-radius: 10px !important;
   -moz-border-radius: 10px !important;
   -ms-border-radius: 10px !important;
   -o-border-radius: 10px !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_maps iframe {
+    height: 480px;
+  }
 }
 
 .mb_property_info textarea {
@@ -35977,6 +36071,11 @@ header {
   border: 1px solid rgba(3, 26, 38, 0.1);
   width: 100%;
   margin-top: 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_property_info textarea {
+    height: 120px;
+  }
 }
 .mb_property_info .mb_check_box {
   padding-bottom: 35px;
@@ -36058,6 +36157,11 @@ header {
   border-radius: 1.5rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_tour_schedule .mb_main_container.fix_padding {
+    padding: 0 !important;
+  }
+}
 .mb_tour_schedule .mb_section_header {
   font-weight: 600;
 }
@@ -36066,20 +36170,40 @@ header {
   border-radius: 1rem;
   padding: 1.5rem;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_tour_schedule .mb_calendar_container {
+    padding: 14px;
+  }
+}
 .mb_tour_schedule .mb_calendar_header {
   border: 1px solid #E5E7EB;
   border-radius: 0.75rem;
   padding: 0.5rem 1rem;
   display: inline-block;
 }
+@media only screen and (max-width: 991px) {
+  .mb_tour_schedule .mb_calendar_header {
+    margin-bottom: 15px;
+  }
+}
 .mb_tour_schedule .mb_calendar_header span {
   font-size: 1.1rem;
   font-weight: 500;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_tour_schedule .mb_calendar_header span {
+    font-size: 12px;
+  }
 }
 .mb_tour_schedule .mb_day_label {
   color: #6B7280;
   font-weight: 500;
   text-align: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_tour_schedule .mb_day_label {
+    font-size: 14px;
+  }
 }
 .mb_tour_schedule .mb_day_grid {
   display: grid;
@@ -36096,6 +36220,11 @@ header {
   transition: all 0.2s ease-in-out;
   font-weight: 500;
   color: #1F2937;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_tour_schedule .mb_day {
+    font-size: 12px;
+  }
 }
 .mb_tour_schedule .mb_day:hover {
   background-color: #FEF3F0;
