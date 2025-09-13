@@ -39166,8 +39166,18 @@ header {
   border-radius: 10px;
   padding: 40px;
 }
+@media only screen and (max-width: 991px) {
+  .mb_broker_info_area .mb_broker_info_block {
+    padding: 30px;
+  }
+}
 .mb_broker_info_area .mb_agent_info {
   padding: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .mb_broker_info_area .mb_agent_info {
+    padding: 0;
+  }
 }
 .mb_broker_info_area .mb_agent_photo {
   width: 80px;
@@ -39189,6 +39199,12 @@ header {
   color: #000;
   margin-top: 25px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_broker_info_area .mb_agent_details .mb_listed_by {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
 .mb_broker_info_area .mb_agent_details .mb_listed_by .mb_agent_name {
   color: #000;
   text-decoration: underline;
@@ -39204,11 +39220,23 @@ header {
   margin-top: 20px;
   color: #000;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_broker_info_area .mb_agent_details .mb_brokerage_name {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
 .mb_broker_info_area .mb_agent_details .mb_phone_number {
   margin-top: 25px;
   font-weight: 400;
   font-size: 16px;
   color: #000;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_broker_info_area .mb_agent_details .mb_phone_number {
+    font-size: 14px;
+    margin-top: 10px;
+  }
 }
 .mb_broker_info_area .mb_broker_data {
   display: flex;
@@ -39230,12 +39258,22 @@ header {
   padding-right: 15px;
   flex-basis: 40%;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_broker_info_area .mb_data_label {
+    font-size: 12px;
+  }
+}
 .mb_broker_info_area .mb_data_value {
   font-weight: 400;
   font-size: 16px;
   color: #000;
   text-align: right;
   flex-basis: 60%;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_broker_info_area .mb_data_value {
+    font-size: 12px;
+  }
 }
 .mb_broker_info_area .mb_copyright_row .mb_data_value {
   font-weight: normal;

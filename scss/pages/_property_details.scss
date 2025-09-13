@@ -2415,15 +2415,17 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(3, 26, 38, 0.12);
     border-radius: 10px;
     padding: 40px;
-}
-
-.mb_broker_content {
-  
+    @include md {
+        padding: 30px;
+    }
 }
 
 .mb_agent_info {
   
   padding: 20px;
+  @include md {
+    padding: 0;
+  }
 }
 
 .mb_agent_photo {
@@ -2445,6 +2447,10 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 16px;
     color: #000;
     margin-top: 25px;
+    @include xxs {
+        font-size: 14px;
+        margin-top: 10px;
+    }
     
     .mb_agent_name {
         color: #000;
@@ -2462,6 +2468,10 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 16px;
     margin-top: 20px;
     color: #000;
+    @include xxs {
+        font-size: 14px;
+        margin-top: 10px;
+    }
   }
 
   .mb_phone_number {
@@ -2469,6 +2479,10 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-weight: 400;
     font-size: 16px;
     color: #000;
+        @include xxs {
+        font-size: 14px;
+        margin-top: 10px;
+    }
   }
 }
 
@@ -2494,6 +2508,9 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #000;
   padding-right: 15px;
   flex-basis: 40%;
+      @include xxs {
+        font-size: 12px;
+    }
 }
 
 .mb_data_value {
@@ -2502,6 +2519,9 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #000;
   text-align: right;
   flex-basis: 60%;
+      @include xxs {
+        font-size: 12px;
+    }
 }
 
 .mb_copyright_row {
