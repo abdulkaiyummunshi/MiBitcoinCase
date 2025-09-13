@@ -36346,6 +36346,11 @@ header {
   padding: 30px;
   position: relative;
 }
+@media only screen and (max-width: 1599px) {
+  .mb_map_content .mb_search_conent .mb_map_sidebar_content {
+    padding: 12px;
+  }
+}
 .mb_map_content .mb_search_conent .mb_map_sidebar_content .left-arrow {
   border-radius: 50%;
   border: 1px solid rgba(3, 26, 38, 0.12);

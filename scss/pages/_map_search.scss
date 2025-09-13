@@ -83,6 +83,9 @@
            max-height: 860px;
            padding: 30px;
            position: relative;
+           @include xxl {
+            padding: 12px;
+           }
            .left-arrow{
             @include md{
                 display: none !important;
