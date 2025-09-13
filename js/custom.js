@@ -8,7 +8,7 @@
         //>> Mobile Menu Js Start <<//
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
-            meanScreenWidth: "767",
+            meanScreenWidth: "992",
             meanExpand: ['<i class="far fa-plus"></i>'],
         });
 
@@ -199,22 +199,18 @@
         }
         Brand()
 
-        $(document).ready(function () {
-            $('.mb_card_option').on('click', function () {
-                $('.mb_card_option').removeClass('mb_selected');
-
-                $(this).addClass('mb_selected');
-
-                $(this).find('input[type="radio"]').prop('checked', true);
-            });
-
-            $('input[name="mb_property_type"]').on('change', function () {
-                $('.mb_card_option').removeClass('mb_selected');
-
-                $(this).closest('.mb_card_option').addClass('mb_selected');
-            });
-        });
-
+         function cardOption(){
+             $('.mb_card_option').on('click', function () {
+                 $('.mb_card_option').removeClass('mb_selected');    
+                 $(this).addClass('mb_selected');    
+                 $(this).find('input[type="radio"]').prop('checked', true);
+             });    
+             $('input[name="mb_property_type"]').on('change', function () {
+                 $('.mb_card_option').removeClass('mb_selected');    
+                 $(this).closest('.mb_card_option').addClass('mb_selected');
+             })    
+         }
+         cardOption()
         // How It Work
         function howWork(){
             $('.mb_how_work_slider').slick({
@@ -277,9 +273,7 @@
             ]
         });
         }
-
         stepSlider();
-
 
         // Mission Slider Section
         function missionSlider(){
@@ -367,7 +361,6 @@
             ]
         });
        
-        $(document).ready(function () {
             $('.read-more-btn').on('click', function (e) {
                 e.preventDefault();
                 var container = $(this).closest('.read-more-container');
@@ -379,7 +372,6 @@
                     $(this).text('More....');
                 }
             });
-        });
         $(document).ready(function () {
             $('.header nav ul li').on('click', function () {
                 $('.header nav ul li').removeClass('active');
@@ -407,56 +399,45 @@
         switchOFF()
 
         function costsHome(){
-            $(document).ready(function () {
-                // Helper function to format numbers with commas
                 function formatNumber(num) {
                     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 }
 
-                // Update costs and progress bar
                 function updateCosts() {
-                    // Get values from inputs, cleaning up commas
                     const principalInterest = parseFloat($('#mb_principal_interest').val().replace(/,/g, ''));
                     const propertyTax = parseFloat($('#mb_property_tax').val().replace(/,/g, ''));
                     const homeInsurance = parseFloat($('#mb_home_insurance').val().replace(/,/g, ''));
                     const hoaFees = parseFloat($('#mb_hoa_fees').val().replace(/,/g, ''));
                     const mortgageInsurance = parseFloat($('#mb_mortgage_insurance').val().replace(/,/g, ''));
 
-                    // Calculate total cost
                     const totalCost = principalInterest + propertyTax + homeInsurance + hoaFees + mortgageInsurance;
                     $('#mb_total_btc').text(formatNumber(totalCost));
 
-                    // Update progress bar
-                    const maxCost = 10000; // Example max cost for the progress bar
+                    const maxCost = 10000; 
                     const progressPercentage = (totalCost / maxCost) * 100;
                     $('.mb_progress_fill').css('width', `${Math.min(progressPercentage, 100)}%`);
                 }
 
-                // Update home price input and down payment based on slider
                 $('#mb_home_price_slider').on('input', function () {
                     const homePrice = parseInt($(this).val());
                     $('#mb_home_price_input').val(formatNumber(homePrice));
 
-                    // Update down payment fields
                     const downPaymentPercent = parseInt($('#mb_down_payment_percent').val());
                     const downPaymentAmount = (homePrice * downPaymentPercent) / 100;
                     $('#mb_down_payment_input').val(formatNumber(downPaymentAmount));
                     updateCosts();
                 });
 
-                // Update home price input and down payment based on text input
                 $('#mb_home_price_input').on('input', function () {
                     const homePrice = parseFloat($(this).val().replace(/,/g, ''));
                     $('#mb_home_price_slider').val(homePrice);
 
-                    // Update down payment fields
                     const downPaymentPercent = parseInt($('#mb_down_payment_percent').val());
                     const downPaymentAmount = (homePrice * downPaymentPercent) / 100;
                     $('#mb_down_payment_input').val(formatNumber(downPaymentAmount));
                     updateCosts();
                 });
 
-                // Update down payment amount and slider based on percent input
                 $('#mb_down_payment_percent').on('input', function () {
                     const percent = parseInt($(this).val());
                     const homePrice = parseFloat($('#mb_home_price_input').val().replace(/,/g, ''));
@@ -466,7 +447,6 @@
                     updateCosts();
                 });
 
-                // Update down payment percent and input based on slider
                 $('#mb_down_payment_slider').on('input', function () {
                     const percent = parseInt($(this).val());
                     const homePrice = parseFloat($('#mb_home_price_input').val().replace(/,/g, ''));
@@ -475,19 +455,16 @@
                     $('#mb_down_payment_percent').val(percent);
                     updateCosts();
                 });
-
-                // Update costs on any field change
                 $('.mb_cost_breakdown input').on('input', updateCosts);
                 $('.mb_input_clear').on('click', function () {
                     $(this).siblings('.mb_input_field').val('0');
                     updateCosts();
                 });
 
-                // Initial update
                 updateCosts();
-            });
+         
         }
-        costsHome()
+        // costsHome()
             $('.mb_tab').on('click', function () {
                 var tabTarget = $(this).data('tab-target');
 
@@ -513,23 +490,23 @@
         });
 
         // Header h1 Animate
-        function textAnimation() {
-            const blogNewsContains = document.querySelectorAll(".heading h1");
-            if (blogNewsContains.length > 0) {
-                gsap.from(blogNewsContains, {
-                    scrollTrigger: {
-                        trigger: ".header_area",
-                        start: "top 80%",
-                        toggleActions: "play none none reverse",
-                    },
-                    opacity: 0,
-                    y: 50,
-                    duration: 1.5,
-                    stagger: 0.3,
-                });
-            }
-        }
-        textAnimation()
+        // function textAnimation() {
+        //     const blogNewsContains = document.querySelectorAll(".heading h1");
+        //     if (blogNewsContains.length > 0) {
+        //         gsap.from(blogNewsContains, {
+        //             scrollTrigger: {
+        //                 trigger: ".header_area",
+        //                 start: "top 80%",
+        //                 toggleActions: "play none none reverse",
+        //             },
+        //             opacity: 0,
+        //             y: 50,
+        //             duration: 1.5,
+        //             stagger: 0.3,
+        //         });
+        //     }
+        // }
+        // textAnimation()
       
         // Counting
         $(".about_count").each(function () {
@@ -651,7 +628,6 @@
         generateCalendar();
 
         // Map Search Filter
-        $(document).ready(function () {
             function searchFilter() {
                 $(".mb_single_filter button").on("click", function () {
                     $(this).toggleClass("active");
@@ -668,7 +644,6 @@
                 $('.status-button').removeClass('selected');
                 $(this).addClass('selected');
             });
-        });
      
         // Back to Top Button
         $(window).on("scroll", function () {
@@ -764,7 +739,6 @@
         }
         filterCard()
     });
-
     // Preloader
     $(window).on("load", function () {
         const preloader = document.querySelector(".preloader_area");
@@ -775,4 +749,5 @@
             preloader.style.display = "none";
         }, 600);
     });
+
 })(jQuery);

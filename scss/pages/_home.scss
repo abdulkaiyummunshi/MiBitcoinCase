@@ -58,6 +58,7 @@
                 }
             }
             .mb_choose_option {
+                
                 label {
                     @include md {
                         font-size: 14px;
@@ -405,12 +406,31 @@
 
 /*--Our Features Start---*/
 .mb_our_features{
-    max-height: 870px;
+    // max-height: 870px;
     background-color: $text_color;
+    .row{
+        &.style_01{
+            @include md{
+                flex-wrap: nowrap;
+
+            }
+        }
+    }
+  
    
     .mb_feature_image{
+        @include sm{
+            display: none;
+        }
         width: 100%;
         height: 868px !important;
+        @include nesthub{
+            height: 600px !important;
+        }
+        @include md{
+            height: 600px !important;
+        }
+        
         img{
             width: 100%;
             height: 100%;
@@ -422,6 +442,12 @@
         height: 100%;
         @include flex(column, space-between, flex-start);
         padding: 80px 30px 80px 55px;
+        @include sm{
+            padding: 30px 20px;
+            .btn_wrapper{
+                margin-top: 70px;
+            }
+        }
     }
     .mb_feature_heading{
         background-color: $text_color;
@@ -438,40 +464,100 @@
         @include xxl {
             padding: 83px 90px 83px 90px;
         }
+        @include md{
+            padding: 60px 30px;
+        }
+        @include sm{
+            padding:72px 20px 30px 20px;
+        }
         .mb_shape1{
             position: absolute;
             top: 0px;
             left: 0px;
             pointer-events: none;
+            height: 50px;
+            width: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .mb_shape3{
             position: absolute;
             bottom: 0px;
             left: 0px;
             pointer-events: none;
+            height: 50px;
+            width: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .mb_shape4{
             position: absolute;
             bottom: 0px;
             right: 0px;
             pointer-events: none;
+            height: 50px;
+            width: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .mb_shape2{
             position: absolute;
             top: 0px;
             right: 0px;
             pointer-events: none;
+            width: 50%;
+            height: 50px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .mb_single_card{
             @include flex(row, flex-start, flex-start);
             gap: 44px;
+            @include nesthub{
+                flex-wrap: nowrap;
+            }
+            @include md{
+                flex-wrap: nowrap;
+            }
+            @include sm{
+                flex-wrap: wrap;
+                gap: 28px;
+            }
             .mb_card_contains{
                 border-bottom: 1px solid  rgba(3, 26, 38, 0.12);
                 padding-bottom: 55px;
+                @include sm{
+                    padding-bottom: 35px;
+                    &.style_1{
+                        border-bottom: none;
+                    }
+                }
+                @include md{
+                    padding-bottom: 15px;
+                    &.style_1{
+                        border-bottom: none;
+                    }
+                }
             }
             .mb_icon{
                 width: 74px;
                 height: 74px;
+                @include md{
+                    width: 60px;
+                    height: 60px;
+                }
                 img{
                     width: 100%;
                     height: 100%;
@@ -487,12 +573,24 @@
             h4{
                 font-weight: 600;
                 font-size: 24px;
+                @include md{
+                    font-size: 20px;
+                }
+                @include sm{
+                    font-size: 20px;
+                }
                 color: #031a26;
             }
             p{
                 margin-top: 7px;
                 font-weight: 500;
                 font-size: 18px;
+                @include md{
+                    font-size: 16px;
+                }
+                @include sm{
+                    font-size: 16px;
+                }
                 color: rgba(3, 26, 38, 0.6);
             }
         }
@@ -779,6 +877,33 @@
 /*--Browse Properties Start---*/
 .mb_browse_properties{
     position: relative;
+    .mb_choose_option{
+        @include sm{
+            margin-top: 7px;
+        }
+    }
+    @include nesthubmax{
+        .mb_properties_card_container{
+            width: 33.33%;
+        }
+    }
+    @include nesthub{
+        .mb_properties_card_container{
+            width: 50%;
+        }
+    }
+    @include md{
+         #property-list{
+        margin-top: 0px !important;
+            --bs-gutter-y: 20px;
+    }
+    }
+   @include sm{
+     #property-list{
+        margin-top: 0px !important;
+            --bs-gutter-y: 10px;
+    }
+   }
     .vector{
         position: absolute;
         top: -34px;
@@ -788,17 +913,34 @@
             top: -16px;
             left: 50%;
             @include transformX(-50%);
+             @include md{
+                top: 5px;
+                width: 50px;
+                height: 47px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+             @include sm{
+                top: 5px;
+                width: 50px;
+                height: 47px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
         }
     }
     .row{
-        &.style_1{
-            gap: 15px;
-            .col-lg-3{
-                width: calc(25% - 12px);
-            }
-        }
         &.style_2{
             padding-bottom: 50px;
+            @include sm{
+                padding-bottom: 20px;
+            }
             border-bottom: 1px solid rgba(3, 26, 38, 0.1);
         }
     }
@@ -817,13 +959,33 @@
     .mb_browse_wrapper{
         background-color: #ffeed8;
         padding: 120px 77px 140px 77px;
+        @include md{
+            padding: 40px 24px;
+            .explore_btn{
+                display: none;
+            }
+        }
+        @include sm{
+            padding: 30px 20px;
+            
+        }
         @include border-radius(24px);
     }
     .mb_properties_btn{
+        @include flex(row, flex-start, center);
+        flex-wrap: nowrap;
+        gap: 6px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+  display: none;
+}
         button{
             border: 1px solid rgba(3, 26, 38, 0.1);
             border-radius: 30px;
             padding: 8px 16px;
+            @include sm{
+                padding: 4px 16px;
+            }
             background-color: transparent;
             color: $text_color;
             font-size: 16px;
@@ -857,12 +1019,25 @@
         border: 1px solid rgba(3, 26, 38, 0.1);
         border-radius: 14px;
         padding: 26px 34px 32px 34px;
+        width: 100%;
+        @include md{
+            padding: 20px 16px;
+        }
+        @include sm{
+            padding: 20px 16px;
+        }
         background-color: $white;
         position: relative;
         .title{
             a{
                 font-weight: 600;
                 font-size: 20px;
+                @include md{
+                    font-size: 16px;
+                }
+                @include sm{
+                    font-size: 16px;
+                }
                 color: #031a26;
                 @include transition(0.4s);
                 &:hover{
@@ -873,6 +1048,7 @@
         .mb_properties_details{
             @include flex(row, flex-start, center);
             gap: 14px;
+            flex-wrap: wrap;
         }
         .mb_count_properties{
             border: 1px solid rgba(3, 26, 38, 0.1);
@@ -880,9 +1056,23 @@
             padding: 4px 12px;
             width: fit-content;
             min-width: 136px;
+            @include md{
+                padding: 0px 10px;
+                min-width: 113px !important;
+            }
+            @include sm{
+                padding: 0px 10px;
+                min-width: 113px !important;
+            }
             span{
                 font-weight: 500;
                 font-size: 14px;
+                @include md{
+                    font-size: 12px;
+                }
+                @include sm{
+                    font-size: 12px;
+                }
                 color: #031a26;
                 display: inline-block;
                 &:first-child{
@@ -908,6 +1098,12 @@
                 font-weight: 500;
                 font-size: 15px;
                 color: #031a26;
+                @include md{
+                    font-size: 14px;
+                }
+                @include sm{
+                    font-size: 14px;
+                }
                 &:first-child{
                     margin-right: 5px;
                 }
@@ -919,6 +1115,12 @@
             top: 50%;
             @include transformY(-50%);
             right: 34px;
+            @include md{
+                right: 16px;
+            }
+            @include sm{
+                right: 16px;
+            }
            a{
              width: 36px;
             height: 36px;
