@@ -36641,6 +36641,11 @@ header {
     padding: 38px 17px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
+    padding: 20px 8px;
+  }
+}
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .inner_card_vLine {
   position: absolute;
   top: 9.5%;
@@ -36657,6 +36662,11 @@ header {
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content {
   width: 100%;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_flex {
+    flex-direction: column;
+  }
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date {
   color: rgba(3, 26, 38, 0.7);
@@ -36682,9 +36692,13 @@ header {
     font-size: 18px;
   }
 }
-.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date .rb_current_view {
-  padding: 7px 14px;
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date .rb_file_tag {
   margin-left: 14px;
+}
+.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_current_view {
+  padding: 7px 14px;
+  width: fit-content;
+  height: 41px;
   border-radius: 4px;
   background: #FFF;
   box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
@@ -36693,9 +36707,10 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
-}
-.rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date .rb_file_tag {
-  margin-left: 14px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_login_to_view {
   color: #031A26;
@@ -36711,6 +36726,11 @@ header {
   box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
   padding: 40px 30px;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .icon {
+    display: none;
+  }
+}
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h4 {
   color: #252525;
   font-size: 16px;
@@ -36719,12 +36739,22 @@ header {
   line-height: normal;
   margin-bottom: 8px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h4 {
+    font-size: 14px;
+  }
+}
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h5 {
   color: rgba(3, 26, 38, 0.7);
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 26px; /* 185.714% */
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h5 {
+    font-size: 12px;
+  }
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .rb_element {
   display: flex;

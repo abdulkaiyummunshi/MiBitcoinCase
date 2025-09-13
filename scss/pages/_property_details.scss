@@ -339,6 +339,9 @@
                 @include sm {
                     padding: 38px 17px;
                 }
+                @include xxs {
+                    padding: 20px 8px;
+                }
                 .inner_card_vLine {
                     position: absolute;
                     top: 9.5%;
@@ -353,6 +356,11 @@
                 }
                 .rb_content {
                     width: 100%;
+                    .rb_flex {
+                        @include xs {
+                            flex-direction: column;
+                        }
+                    }
                     .rb_date {
                         color: rgba(3, 26, 38, 0.70);
                         font-size: 16px;
@@ -372,22 +380,27 @@
                                 font-size: 18px;
                             }
                         }
-                        .rb_current_view {
-                            padding: 7px 14px;
-                            margin-left: 14px;
-                            border-radius: 4px;
-                            background: #FFF;
-                            box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
-                            color: #031A26;
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: 26px; 
-                        }
                         .rb_file_tag {
                             margin-left: 14px;
                         }
                     }
+                    .rb_current_view {
+                        padding: 7px 14px;
+                        width: fit-content;
+                        height: 41px;
+                        border-radius: 4px;
+                        background: #FFF;
+                        box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+                        color: #031A26;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 26px;
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        -ms-border-radius: 4px;
+                        -o-border-radius: 4px;
+}
                     .rb_login_to_view {
                         color: #031A26;
                         font-size: 15px;
@@ -401,6 +414,11 @@
                         background: #FFF;
                         box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
                         padding: 40px 30px;
+                        .icon {
+                            @include xs {
+                                display: none;
+                            }
+                        }
                         .content {
                             h4 {
                                 color: #252525;
@@ -409,6 +427,9 @@
                                 font-weight: 500;
                                 line-height: normal;
                                 margin-bottom: 8px;
+                                @include xxs {
+                                    font-size: 14px;
+                                }
                             }
                             h5 {
                                 color: rgba(3, 26, 38, 0.70);
@@ -416,6 +437,9 @@
                                 font-style: normal;
                                 font-weight: 500;
                                 line-height: 26px; /* 185.714% */
+                                @include xxs {
+                                    font-size: 12px;
+                                }                                
                             }
                         }
                         .rb_element {
