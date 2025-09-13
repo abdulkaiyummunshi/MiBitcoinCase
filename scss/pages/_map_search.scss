@@ -66,8 +66,9 @@
 
 .mb_map_content{
     max-height: 950px;
-    // margin-bottom: 300px ;
-    // overflow: hidden;
+    @include lg {
+        max-height: none;
+    }
    .row{
     &.style_1{
         border: 1px solid rgba(3, 26, 38, 0.12);
@@ -85,6 +86,9 @@
            position: relative;
            @include xxl {
             padding: 12px;
+           }
+           @include lg {
+            overflow: visible;
            }
            .left-arrow{
             @include md{
@@ -188,6 +192,9 @@
    }
    iframe{
     @include border-radius(0px 10px 10px 0px);
+    @include lg {
+        height: 570px;
+    }
    }
 }
 

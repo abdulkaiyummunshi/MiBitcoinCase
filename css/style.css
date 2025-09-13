@@ -36327,6 +36327,11 @@ header {
 .mb_map_content {
   max-height: 950px;
 }
+@media only screen and (max-width: 1199px) {
+  .mb_map_content {
+    max-height: none;
+  }
+}
 .mb_map_content .row.style_1 {
   border: 1px solid rgba(3, 26, 38, 0.12);
   border-radius: 20px;
@@ -36349,6 +36354,11 @@ header {
 @media only screen and (max-width: 1599px) {
   .mb_map_content .mb_search_conent .mb_map_sidebar_content {
     padding: 12px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .mb_map_content .mb_search_conent .mb_map_sidebar_content {
+    overflow: visible;
   }
 }
 .mb_map_content .mb_search_conent .mb_map_sidebar_content .left-arrow {
@@ -36471,6 +36481,11 @@ header {
   -webkit-border-radius: 0px 10px 10px 0px;
   -ms-border-radius: 0px 10px 10px 0px;
   -o-border-radius: 0px 10px 10px 0px;
+}
+@media only screen and (max-width: 1199px) {
+  .mb_map_content iframe {
+    height: 570px;
+  }
 }
 
 .nice-select::after {
