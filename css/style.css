@@ -43150,6 +43150,12 @@ ul.children {
   margin-top: 17px;
   padding: 30px;
   background-color: #ffeed8;
+  border-radius: 10px 10px 0 0;
+}
+@media only screen and (max-width: 991px) {
+  .mb_manage_listing .mb_table_head {
+    padding: 19px;
+  }
 }
 .mb_manage_listing .mb_table_head h4 {
   font-weight: 600;
@@ -43159,6 +43165,11 @@ ul.children {
 .mb_manage_listing .mb_listing-details {
   display: flex;
   gap: 15px;
+}
+@media only screen and (max-width: 1399px) {
+  .mb_manage_listing .mb_listing-details {
+    flex-direction: column;
+  }
 }
 .mb_manage_listing .mb_listing-details .mb_image-container {
   position: relative;
@@ -43244,6 +43255,11 @@ ul.children {
   -o-border-radius: 0px 0px 10px 10px;
   background-color: #fff;
   border-top: none;
+}
+@media only screen and (max-width: 991px) {
+  .mb_manage_listing .mb_listing_table_content {
+    padding: 20px 20px 20px 20px;
+  }
 }
 .mb_manage_listing .btn {
   padding: 8px 12px;

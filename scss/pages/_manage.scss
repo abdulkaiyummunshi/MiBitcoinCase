@@ -110,6 +110,10 @@
     margin-top: 17px;
     padding: 30px;
     background-color: #ffeed8;
+    border-radius: 10px 10px 0 0;
+    @include md {
+        padding: 19px;
+    }
     h4{
         font-weight: 600;
         font-size: 20px;
@@ -119,6 +123,9 @@
  .mb_listing-details {
         display: flex;
         gap: 15px;
+        @include xl {
+            flex-direction: column;
+        }
 
         .mb_image-container {
             position: relative;
@@ -197,6 +204,9 @@
     @include border-radius(0px 0px 10px 10px);
     background-color: #fff;
     border-top: none;
+    @include md {
+        padding: 20px 20px 20px 20px;
+    }
 }
 
 
