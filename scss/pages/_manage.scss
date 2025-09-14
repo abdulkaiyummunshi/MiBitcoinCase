@@ -17,6 +17,9 @@
         list-style: none;
         padding: 0;
         margin-top: 12px;
+        @include xxs {
+            gap: 50px;
+        }
 
         li {
             font-weight: 600;
@@ -26,6 +29,9 @@
             @include transition(0.4s);
             padding-bottom: 17px;
             border-bottom: 2px solid transparent;
+            @include xxs {
+                font-size: 16px;
+            }
 
             &.active {
                 color: $primary;

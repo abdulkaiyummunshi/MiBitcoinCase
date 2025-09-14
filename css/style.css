@@ -43061,6 +43061,11 @@ ul.children {
   padding: 0;
   margin-top: 12px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_manage_listing .header nav ul {
+    gap: 50px;
+  }
+}
 .mb_manage_listing .header nav ul li {
   font-weight: 600;
   font-size: 20px;
@@ -43069,6 +43074,11 @@ ul.children {
   transition: all 0.4s ease;
   padding-bottom: 17px;
   border-bottom: 2px solid transparent;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_manage_listing .header nav ul li {
+    font-size: 16px;
+  }
 }
 .mb_manage_listing .header nav ul li.active {
   color: #ff9916;
@@ -43424,6 +43434,11 @@ ul.children {
   color: #031a26;
   transition: all 0.4s ease;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_listing_card h3 a {
+    font-size: 20px;
+  }
+}
 .mb_listing_card h3 a:hover {
   color: #ff9916;
 }
@@ -43455,6 +43470,11 @@ ul.children {
   font-size: 24px;
   line-height: 142%;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_listing_card .mb_list_price h4 {
+    font-size: 18px;
+  }
 }
 .mb_listing_card .mb_list_price h4 span {
   font-weight: 500;

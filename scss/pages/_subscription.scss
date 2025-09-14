@@ -93,6 +93,9 @@
             font-size: 24px;
             color: #031a26;
             @include transition(0.4s);
+            @include xxs {
+                font-size: 20px;
+            }
             &:hover{
                 color: $primary;
             }
@@ -122,6 +125,9 @@
             font-size: 24px;
             line-height: 142%;
             color: #031a26;
+            @include xxs {
+                font-size: 18px;
+            }
             span{
                 font-weight: 500;
                 font-size: 14px;
