@@ -44117,6 +44117,16 @@ ul.children {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 20px;
 }
+@media only screen and (max-width: 1599px) {
+  .mb_my_profile_area .mb_profile_card {
+    padding: 40px 40px 40px 40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_my_profile_area .mb_profile_card {
+    padding: 20px 25px 25px 25px;
+  }
+}
 .mb_my_profile_area .mb_profile_heading {
   margin-top: 0;
   margin-bottom: 20px;
@@ -44129,6 +44139,14 @@ ul.children {
   justify-content: center;
   align-items: flex-start;
   border-right: 1px solid #e6e9ea;
+}
+@media only screen and (max-width: 991px) {
+  .mb_my_profile_area .mb_profile_left {
+    align-items: center;
+    padding-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #e6e9ea;
+  }
 }
 .mb_my_profile_area .mb_profile_left .mb_btn_area {
   display: flex;
@@ -44143,6 +44161,15 @@ ul.children {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 1199px) {
+  .mb_my_profile_area .mb_profile_picture {
+    width: 315px;
+    height: 315px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
 }
 .mb_my_profile_area .mb_profile_picture img {
   width: 100%;
@@ -44162,6 +44189,11 @@ ul.children {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_my_profile_area .mb_edit_button {
+    font-size: 18px;
+  }
 }
 .mb_my_profile_area .mb_professional_toggle {
   margin-top: 30px;
@@ -44217,15 +44249,39 @@ ul.children {
   font-size: 16px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_my_profile_area .mb_professional_toggle .mb_professional_text {
+    font-size: 14px;
+  }
+}
 .mb_my_profile_area .mb_profile_right {
   flex-grow: 1;
   padding-left: 75px;
   padding-right: 60px;
 }
+@media only screen and (max-width: 991px) {
+  .mb_my_profile_area .mb_profile_right {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_my_profile_area .mb_profile_right {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .mb_my_profile_area .mb_profile_form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_my_profile_area .mb_profile_form {
+    display: flex;
+    flex-direction: column;
+    gap: 30;
+  }
 }
 .mb_my_profile_area .mb_form_group {
   display: flex;
@@ -44277,6 +44333,11 @@ ul.children {
   grid-column: span 2;
   margin-top: 18px;
 }
+@media only screen and (max-width: 991px) {
+  .mb_my_profile_area .mb_update_button {
+    margin-top: 20px !important;
+  }
+}
 .mb_my_profile_area .mb_update_button button {
   background-color: #ff9916;
   border: none;
@@ -44300,6 +44361,16 @@ ul.children {
   grid-column: span 2;
   margin-top: -15px;
 }
+@media only screen and (max-width: 991px) {
+  .mb_my_profile_area .mb_terms_text {
+    margin-top: 5px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_my_profile_area .mb_terms_text {
+    font-size: 12px;
+  }
+}
 .mb_my_profile_area .mb_terms_text a {
   color: #68767d;
   transition: all 0.4s ease;
@@ -44315,6 +44386,11 @@ ul.children {
   color: #000;
   text-align: center;
   margin-top: 43px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_my_profile_area .mb_account_link {
+    margin-top: 30px;
+  }
 }
 .mb_my_profile_area .mb_account_link a {
   color: #000;

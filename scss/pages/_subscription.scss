@@ -678,6 +678,12 @@
     padding: 41px 60px 60px 60px;
     border: 1px solid rgba(3, 26, 38, 0.1);
     border-radius: 20px;
+    @include xxl {
+        padding: 40px 40px 40px 40px;
+    }
+    @include xxs {
+        padding: 20px 25px 25px 25px;
+    }
 }
 
 .mb_profile_heading {
@@ -690,6 +696,12 @@
 .mb_profile_left {
     @include flex(column, center, flex-start);
     border-right: 1px solid #e6e9ea;
+    @include md {
+        align-items: center;
+        padding-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #e6e9ea;        
+    }
     .mb_btn_area{
         @include flex(column, center, center);
         width: fit-content;
@@ -702,6 +714,13 @@
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 20px;
+    @include lg {
+        width: 315px;
+        height: 315px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
 
     img {
         width: 100%;
@@ -719,6 +738,9 @@
     color: #000;
     @include border-radius(10px);
     border: none;
+    @include xxs {
+        font-size: 18px;
+    }
 }
 
 
@@ -778,6 +800,9 @@
         font-weight: 400;
         font-size: 16px;
         color: #031a26;
+        @include xxs {
+            font-size: 14px;
+        }        
     }
 }
 
@@ -786,12 +811,25 @@
     flex-grow: 1;
     padding-left: 75px;
     padding-right: 60px;
+    @include md {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include sm {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .mb_profile_form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px;
+    @include sm {
+        display: flex;
+        flex-direction: column;
+        gap: 30;
+    }
 }
 
 .mb_form_group {
@@ -848,6 +886,9 @@
 }
 
 .mb_update_button {
+    @include md {
+        margin-top: 20px !important;
+    }
     button{
         background-color: $primary;
         border: none;
@@ -870,6 +911,12 @@
     color: #68767d;
     grid-column: span 2;
     margin-top: -15px;
+    @include md {
+        margin-top: 5px;
+    }
+    @include xxs {
+        font-size: 12px;
+    }    
     
     a {
         color: #68767d;
@@ -888,6 +935,9 @@
     color: #000;
     text-align: center;
     margin-top: 43px;
+    @include xxs {
+        margin-top: 30px;
+    }    
     a {
         color: #000;
         text-decoration: none;
