@@ -32092,6 +32092,11 @@ header {
   font-size: 16px;
   color: rgba(3, 26, 38, 0.6);
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .heading_area .sub_heading h5 {
+    font-size: 14px;
+  }
+}
 .heading_area .sub_heading.style_01 h4 {
   border: 1px solid rgba(3, 26, 38, 0.12);
   background: #fff;
@@ -43463,6 +43468,11 @@ ul.children {
   font-size: 16px;
   line-height: 150%;
   color: #68767d;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_listing_card .mb_address p {
+    font-size: 14px;
+  }
 }
 .mb_listing_card .mb_address p span {
   color: #031a26;

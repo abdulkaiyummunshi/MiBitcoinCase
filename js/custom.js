@@ -319,7 +319,7 @@
             ]
         });
         $('.mb_saved_listing_slider').slick({
-            slidesToShow: 4,
+            slidesToShow: 2,
             slidesToScroll: 1,
             arrows: false,
             autoplay: true,
