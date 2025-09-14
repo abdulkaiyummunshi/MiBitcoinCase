@@ -294,6 +294,12 @@
             }
         }
     }
+    .mb_listing_card {
+        @include lg {
+            border: none;
+            padding: 0;
+        }
+    }
     .agent_details_sidebar{
         padding: 30px;
         border: 1px solid rgba(0, 0, 0, 0.1);

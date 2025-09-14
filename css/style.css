@@ -42605,6 +42605,12 @@ ul.children {
   height: 1px;
   background-color: rgba(3, 26, 38, 0.12);
 }
+@media only screen and (max-width: 1199px) {
+  .agent_details_area .mb_listing_card {
+    border: none;
+    padding: 0;
+  }
+}
 .agent_details_area .agent_details_sidebar {
   padding: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
