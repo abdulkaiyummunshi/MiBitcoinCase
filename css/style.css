@@ -42856,27 +42856,57 @@ ul.children {
   background: #ffeed8;
   padding: 30px 30px 32px 40px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_pricing_membership_area .mb_pricing_card .mb_card_heading {
+    padding: 30px 30px;
+  }
+}
 .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h4 {
   font-weight: 600;
   font-size: 24px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h4 {
+    font-size: 20px;
+  }
 }
 .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h3 {
   font-weight: 700;
   font-size: 34px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h3 {
+    font-size: 30px;
+  }
+}
 .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h3 span {
   font-weight: 500;
   font-size: 15px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h3 span {
+    font-size: 14px;
+  }
+}
 .mb_pricing_membership_area .mb_pricing_card .mb_card_body {
   padding: 40px 44px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_pricing_membership_area .mb_pricing_card .mb_card_body {
+    padding: 30px 30px;
+  }
 }
 .mb_pricing_membership_area .mb_pricing_card .mb_card_body h4 {
   font-weight: 600;
   font-size: 24px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_pricing_membership_area .mb_pricing_card .mb_card_body h4 {
+    font-size: 20px;
+  }
 }
 .mb_pricing_membership_area .mb_pricing_card .mb_card_body p {
   font-weight: 500;
@@ -42885,6 +42915,11 @@ ul.children {
   height: 68px;
   border-bottom: 1px solid rgba(3, 26, 38, 0.12);
   margin-top: 10px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_pricing_membership_area .mb_pricing_card .mb_card_body p {
+    font-size: 14px;
+  }
 }
 .mb_pricing_membership_area .mb_pricing_card .mb_card_body .btn_wrappeer {
   margin-top: 40px;
@@ -42928,15 +42963,36 @@ ul.children {
   font-size: 16px;
   color: rgba(3, 26, 38, 0.6);
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_account_content h5 {
+    font-size: 14px;
+  }
+}
 .mb_account_content h2 {
   font-weight: 700;
   font-size: 40px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_account_content h2 {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_account_content h2 {
+    font-size: 24px;
+    line-height: 34px; /* 141.667% */
+  }
+}
 .mb_account_content p {
   font-weight: 400;
   font-size: 16px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_account_content p {
+    font-size: 14px;
+  }
 }
 .mb_account_content .manage_btn a {
   padding: 14px 30px;
@@ -42964,6 +43020,11 @@ ul.children {
   font-weight: 400;
   font-size: 16px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_contact_support p {
+    font-size: 14px;
+  }
 }
 .mb_contact_support p a {
   text-decoration: underline;

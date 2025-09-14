@@ -3,16 +3,29 @@
         font-weight: 500;
         font-size: 16px;
         color: rgba(3, 26, 38, 0.6);
+        @include xxs {
+            font-size: 14px;
+        }
     }
     h2{
         font-weight: 700;
         font-size: 40px;
         color: #031a26;
+        @include sm {
+            font-size: 32px;
+        }
+        @include xxs {
+            font-size: 24px;
+            line-height: 34px; /* 141.667% */
+        }
     }
     p{
         font-weight: 400;
         font-size: 16px;
         color: #031a26;
+        @include xxs {
+            font-size: 14px;
+        }
     }
     .manage_btn{
         a{
@@ -38,6 +51,9 @@
         font-weight: 400;
         font-size: 16px;
         color: #031a26;
+        @include xxs {
+            font-size: 14px;
+        }
         a{
             text-decoration: underline;
             text-decoration-skip-ink: none;
