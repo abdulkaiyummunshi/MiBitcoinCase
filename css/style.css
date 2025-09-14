@@ -43963,6 +43963,11 @@ ul.children {
   font-size: 16px;
   color: #68767d;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_saved_serach .mb_result_alphabetical .mb_result span {
+    font-size: 14px;
+  }
+}
 .mb_saved_serach .mb_result_alphabetical .mb_alphabetic {
   display: flex;
   flex-direction: center;
@@ -43974,6 +43979,11 @@ ul.children {
   font-weight: 600;
   font-size: 24px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_saved_serach .mb_result_alphabetical .mb_alphabetic h5 {
+    font-size: 16px;
+  }
 }
 .mb_saved_serach .mb_result_alphabetical .mb_alphabetic .mb_arrow_btn span {
   display: flex;
@@ -43997,10 +44007,28 @@ ul.children {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_saved_serach .mb_cabins_sale {
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_saved_serach .mb_cabins_sale {
+    padding: 23px 20px;
+    flex-direction: column;
+    row-gap: 38px;
+    align-items: start;
+  }
+}
 .mb_saved_serach .mb_cabins_sale .mb_cabin_tag h4 {
   font-weight: 600;
   font-size: 24px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_saved_serach .mb_cabins_sale .mb_cabin_tag h4 {
+    font-size: 20px;
+  }
 }
 .mb_saved_serach .mb_cabins_sale .mb_cabin_tag h4 span {
   margin-right: 10px;
@@ -44013,10 +44041,20 @@ ul.children {
   gap: 10px;
   margin-top: 29px;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_saved_serach .mb_cabins_sale .mb_cabin_tag .mb_tag {
+    margin-top: 20px;
+  }
+}
 .mb_saved_serach .mb_cabins_sale .mb_cabin_tag .mb_tag h5 {
   font-weight: 600;
   font-size: 24px;
   color: #000;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_saved_serach .mb_cabins_sale .mb_cabin_tag .mb_tag h5 {
+    font-size: 20px;
+  }
 }
 .mb_saved_serach .mb_cabins_sale .mb_cabin_tag .mb_tag ul {
   display: flex;
@@ -44030,6 +44068,11 @@ ul.children {
   font-size: 21px;
   color: #031a26;
   transition: all 0.4s ease;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_saved_serach .mb_cabins_sale .mb_cabin_tag .mb_tag ul li a {
+    font-size: 16px;
+  }
 }
 .mb_saved_serach .mb_cabins_sale .mb_cabin_tag .mb_tag ul li a:hover {
   color: #ff9916;
