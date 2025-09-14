@@ -227,6 +227,9 @@
             font-size: 20px;
             text-align: center;
             color: #031a26;
+            @include xxs {
+                font-size: 16px;
+            }
         }
          &:hover {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -306,6 +309,9 @@
         padding: 35px 40px;
         @include transition(0.5s);
         margin-bottom: 14px;
+        @include xxs {
+            padding: 30px 20px;
+        }
     }
 
     .notification-item:hover {
@@ -316,6 +322,10 @@
         font-weight: 600;
         font-size: 24px;
         color: #031a26;
+        @include xxs {
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
     }
 
     .notification-text p {
@@ -324,6 +334,9 @@
         font-size: 18px;
         line-height: 167%;
         color: rgba(3, 26, 38, 0.6);
+        @include xxs {
+            font-size: 14px;
+        }
     }
 
     .mb_toggle_switch_container {
@@ -331,6 +344,11 @@
         display: inline-block;
         width: 75px; 
         height: 41px; 
+        @include xxs {
+            width: 70px;
+            height: 38px;
+            flex-shrink: 0;
+        }
     }
     
     .mb_toggle_switch_container input {
@@ -361,6 +379,11 @@
         background-color: white;
         transition: .4s;
         border-radius: 50%;
+        @include xxs {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
     }
     
     input:checked + .mb_toggle_slider {

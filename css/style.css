@@ -32147,6 +32147,16 @@ header {
   line-height: 160%;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .heading_area .heading h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .heading_area .heading h3 {
+    font-size: 20px;
+  }
+}
 .heading_area .heading h3 span {
   margin-right: 10px;
 }
@@ -43597,6 +43607,11 @@ ul.children {
   text-align: center;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_card-grid .mb_card p {
+    font-size: 16px;
+  }
+}
 .mb_card-grid .mb_card:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-color: transparent;
@@ -43686,6 +43701,11 @@ ul.children {
   transition: all 0.5s ease;
   margin-bottom: 14px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_notification_area .mb_notification_item {
+    padding: 30px 20px;
+  }
+}
 .mb_notification_area .notification-item:hover {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -43694,6 +43714,12 @@ ul.children {
   font-size: 24px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_notification_area .notification-text h3 {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+}
 .mb_notification_area .notification-text p {
   font-weight: 500;
   margin-top: 5px;
@@ -43701,11 +43727,23 @@ ul.children {
   line-height: 167%;
   color: rgba(3, 26, 38, 0.6);
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_notification_area .notification-text p {
+    font-size: 14px;
+  }
+}
 .mb_notification_area .mb_toggle_switch_container {
   position: relative;
   display: inline-block;
   width: 75px;
   height: 41px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_notification_area .mb_toggle_switch_container {
+    width: 70px;
+    height: 38px;
+    flex-shrink: 0;
+  }
 }
 .mb_notification_area .mb_toggle_switch_container input {
   opacity: 0;
@@ -43733,6 +43771,13 @@ ul.children {
   background-color: white;
   transition: 0.4s;
   border-radius: 50%;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_notification_area .mb_toggle_slider:before {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
 }
 .mb_notification_area input:checked + .mb_toggle_slider {
   background-color: #ff9916;
