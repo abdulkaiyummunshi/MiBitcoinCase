@@ -43558,6 +43558,31 @@ ul.children {
   gap: 15px;
   cursor: pointer;
 }
+@media only screen and (max-width: 1399px) {
+  .mb_card-grid .mb_card {
+    width: 204px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .mb_card-grid .mb_card {
+    width: 260px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mb_card-grid .mb_card {
+    width: 225px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_card-grid .mb_card {
+    width: 212px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_card-grid .mb_card {
+    width: 100%;
+  }
+}
 .mb_card-grid .mb_card span {
   color: #ff9916;
 }
@@ -43584,9 +43609,26 @@ ul.children {
   align-items: center;
   gap: 20px;
 }
+@media only screen and (max-width: 991px) {
+  .mb_adding_btn {
+    margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_adding_btn {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 60px;
+  }
+}
 
 .mb_action_links {
   margin-top: 66px;
+}
+@media only screen and (max-width: 991px) {
+  .mb_action_links {
+    margin-top: 30px;
+  }
 }
 .mb_action_links li {
   margin-bottom: 10px;

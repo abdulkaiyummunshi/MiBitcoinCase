@@ -198,6 +198,21 @@
         @include flex(column, center, center);
         gap: 15px;
         cursor: pointer;
+        @include xl {
+            width: 204px;
+        }
+        @include lg {
+            width: 260px;
+        }
+        @include md {
+            width: 225px;
+        }
+        @include xs {
+            width: 212px;
+        }
+        @include xxs {
+            width: 100%;
+        }
         span{
             color: $primary;
             img{
@@ -223,9 +238,20 @@
 .mb_adding_btn{
     @include flex(row, flex-end, center);
     gap: 20px;
+    @include md {
+        margin-top: 30px;
+    }
+    @include sm {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 60px;
+    }
 }
 .mb_action_links {
     margin-top: 66px;
+    @include md {
+        margin-top: 30px;
+    }
 
     li {
         margin-bottom: 10px;
