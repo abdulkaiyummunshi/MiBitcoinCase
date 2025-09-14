@@ -5,6 +5,13 @@
             font-weight: 700;
             font-size: 40px;
             color: #031a26;
+            @include sm {
+                font-size: 32px;
+            }
+            @include xxs {
+                font-size: 20px;
+                line-height: 40px; 
+            }
         }
     }
     .mb_title{
@@ -24,18 +31,50 @@
             height: 50px;
             padding: 0px 25px;
             outline: none;
+            color: rgba(3, 26, 38, 0.60);
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @include xs {
+                width: 388px;
+            }
+            @include xxs {
+                font-size: 14px;
+                width: 100%;
+            }
         }
         .nice-select{
             height: 50px;
             line-height: 50px;
             width: 450px;
+            color: rgba(3, 26, 38, 0.60);
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            @include xs {
+                width: 388px;
+            }
+            @include xxs {
+                font-size: 14px;
+                width: 100%;
+            }
 
             @include border-radius(6px);
             .list{
                 width: 100%;
             }
         }
+        .fix_agent {
+            @include md {
+                flex-direction: column;
+            }
+        }
         .search_icon{
+            @include md {
+                align-self: self-start;
+            }
             span{
                 width: 50px;
                 height: 50px;
