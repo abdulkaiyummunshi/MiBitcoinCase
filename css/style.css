@@ -42508,9 +42508,20 @@ ul.children {
   align-items: column;
   gap: 34px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .agent_details_area .mb_braham_pigeo {
+    flex-direction: column;
+  }
+}
 .agent_details_area .mb_braham_pigeo .mb_image {
   width: 310px;
   height: 310px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .agent_details_area .mb_braham_pigeo .mb_image {
+    width: 100%;
+    height: auto;
+  }
 }
 .agent_details_area .mb_braham_pigeo .mb_image img {
   width: 100%;
@@ -42557,6 +42568,11 @@ ul.children {
   color: #031a26;
   width: 184px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .agent_details_area .mb_braham_pigeo .mb_braham_contains ul li p {
+    width: 138px;
+  }
+}
 .agent_details_area .mb_braham_pigeo .mb_braham_contains ul li span, .agent_details_area .mb_braham_pigeo .mb_braham_contains ul li a {
   font-weight: 400;
   font-size: 14px;
@@ -42594,6 +42610,11 @@ ul.children {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .agent_details_area .agent_details_sidebar {
+    padding: 20px;
+  }
+}
 .agent_details_area .agent_details_sidebar .send_specific p {
   font-weight: 500;
   font-size: 18px;
@@ -42602,6 +42623,11 @@ ul.children {
   border: 1px solid rgba(3, 26, 38, 0.12);
   border-radius: 10px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .agent_details_area .agent_details_sidebar .send_specific p {
+    font-size: 16px;
+  }
+}
 .agent_details_area .agent_details_sidebar .mb_contact_braham input {
   border: 1px solid rgba(3, 26, 38, 0.12);
   border-radius: 6px;
@@ -42609,6 +42635,17 @@ ul.children {
   padding: 10px 20px;
   margin-bottom: 23px;
   outline: none;
+  color: #031A26;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 173.333% */
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .agent_details_area .agent_details_sidebar .mb_contact_braham input {
+    font-size: 14px;
+  }
 }
 .agent_details_area .agent_details_sidebar .mb_contact_braham input::placeholder {
   font-weight: 400;
@@ -42638,10 +42675,20 @@ ul.children {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .agent_details_area .agent_details_sidebar .mb_contact_braham button {
+    font-size: 14px;
+  }
+}
 .agent_details_area .agent_details_sidebar .mb_contact_braham .description p {
   font-weight: 400;
   font-size: 16px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .agent_details_area .agent_details_sidebar .mb_contact_braham .description p {
+    font-size: 14px;
+  }
 }
 .agent_details_area .agent_details_sidebar .mb_contact_braham .description p span {
   font-weight: 500;
