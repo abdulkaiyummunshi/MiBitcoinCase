@@ -39487,9 +39487,30 @@ header {
   background-color: #fff;
   padding: 60px;
 }
+@media only screen and (max-width: 1399px) {
+  .mb_login_area .mb_login_container {
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_login_area .mb_login_container {
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_login_area .mb_login_container {
+    padding: 0;
+    border: none;
+  }
+}
 .mb_login_area .mb_image_wrapper {
   max-width: 670px;
   height: 650px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_login_area .mb_image_wrapper {
+    height: auto;
+  }
 }
 .mb_login_area .mb_image_wrapper img {
   width: 100%;
@@ -39508,6 +39529,22 @@ header {
   font-size: 48px;
   color: #222;
 }
+@media only screen and (max-width: 1199px) {
+  .mb_login_area .mb_login_heading {
+    font-size: 38px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_login_area .mb_login_heading {
+    font-size: 34px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_login_area .mb_login_heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
 .mb_login_area .mb_form_group {
   margin-bottom: 30px;
 }
@@ -39517,6 +39554,11 @@ header {
   color: #68767d;
   opacity: 0.75;
   transition: all 0.4s ease;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_login_area .mb_form_group a {
+    font-size: 14px;
+  }
 }
 .mb_login_area .mb_form_group a:hover {
   color: #ff9916;
@@ -39530,6 +39572,12 @@ header {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 10px;
   outline: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_login_area .mb_form_input {
+    font-size: 14px;
+    height: 50px;
+  }
 }
 .mb_login_area .mb_form_input::placeholder {
   opacity: 0.75;
@@ -39576,6 +39624,11 @@ header {
   justify-content: space-between;
   gap: 10px;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_login_area .mb_social_login {
+    flex-direction: column;
+  }
+}
 .mb_login_area .mb_social_link {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 10px;
@@ -39588,6 +39641,19 @@ header {
   line-height: 144%;
   color: #031a26;
 }
+@media only screen and (max-width: 1199px) {
+  .mb_login_area .mb_social_link {
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_login_area .mb_social_link {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .mb_login_area .mb_social_link i {
   margin-right: 8px;
 }
@@ -39595,10 +39661,30 @@ header {
   text-align: center;
   margin-top: 30px;
 }
+.mb_login_area .mb_no_account span {
+  color: var(--800, #68767D);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
 .mb_login_area .mb_no_account .mb_join_link {
   color: #ff9916;
   text-decoration: none;
   font-weight: bold;
+  color: var(--900, #031A26);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 
 .mb_payment_area .mb_payment_container {
