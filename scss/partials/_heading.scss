@@ -102,6 +102,14 @@
             }
             
         }
+        &.style_02{
+            h2{
+                color: $text_color;
+                @include xxs {
+                    font-size: 20px;
+                }
+            }
+        }
 
     }
 }

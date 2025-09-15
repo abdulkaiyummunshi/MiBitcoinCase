@@ -32171,6 +32171,14 @@ header {
 .heading_area .heading.style_01 h3 {
   font-weight: 700;
 }
+.heading_area .heading.style_02 h2 {
+  color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .heading_area .heading.style_02 h2 {
+    font-size: 20px;
+  }
+}
 
 .describtion p {
   font-weight: 500;
@@ -36519,6 +36527,52 @@ header {
   -o-border-radius: 20px;
   padding: 80px;
 }
+@media only screen and (max-width: 1399px) {
+  .mb_contact_us .mb_contact_container {
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mb_contact_us .mb_contact_container {
+    padding: 0;
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mb_contact_us .mb_contact_info {
+    padding: 40px;
+    box-shadow: 0 0 34px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 0px) and (max-width: 767px) {
+  .mb_contact_us .mb_contact_info {
+    padding: 30px;
+  }
+}
+@media only screen and (max-width: 991px) and (min-width: 0px) and (max-width: 479px) {
+  .mb_contact_us .mb_contact_info {
+    padding: 20px;
+  }
+}
+.mb_contact_us .mb_contact_info .description p {
+  color: var(--800, #68767D);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_contact_us .mb_contact_info .description p {
+    font-size: 14px;
+  }
+}
 .mb_contact_us .mb_get_in_touch_label {
   font-size: 14px;
   font-weight: 500;
@@ -36559,6 +36613,11 @@ header {
   color: #333;
   opacity: 0.7;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_contact_us .mb_contact_details a {
+    font-size: 14px;
+  }
+}
 .mb_contact_us .mb_social_media {
   display: flex;
   flex-direction: row;
@@ -36587,6 +36646,27 @@ header {
   top: 0px;
   left: 0px;
 }
+@media only screen and (max-width: 1199px) {
+  .mb_contact_us .mb_contact_form_wrapper {
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mb_contact_us .mb_contact_form_wrapper {
+    position: relative;
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_contact_us .mb_contact_form_wrapper {
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_contact_us .mb_contact_form_wrapper {
+    padding: 20px;
+  }
+}
 .mb_contact_us .mb_contact_form {
   display: flex;
   flex-direction: column;
@@ -36610,6 +36690,11 @@ header {
   font-size: 18px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_contact_us .mb_form_field label {
+    font-size: 16px;
+  }
+}
 .mb_contact_us .mb_form_field input {
   width: 100%;
   border-radius: 999px;
@@ -36619,6 +36704,11 @@ header {
   font-weight: 400;
   font-size: 16px;
   color: #333;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_contact_us .mb_form_field input {
+    font-size: 12px;
+  }
 }
 .mb_contact_us .mb_form_field input::placeholder {
   color: #68767d;
