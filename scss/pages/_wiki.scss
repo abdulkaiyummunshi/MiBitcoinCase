@@ -37,6 +37,15 @@
     border: 1px solid rgba(3, 26, 38, 0.1);
     border-radius: 10px;
     padding: 50px;
+    @include xl {
+        padding: 40px;
+    }
+    @include sm {
+        padding: 30px;
+    }    
+    @include xxs {
+        padding: 20px;
+    }    
 }
 
 .mb_search_bar {
@@ -61,6 +70,9 @@
     padding: 15px;
     font-size: 16px;
     outline: none;
+    @include xxs {
+        font-size: 14px;
+    }
 }
 
 .mb_search_input::placeholder {
@@ -91,6 +103,9 @@
     font-weight: 500;
     color: black;
     margin-bottom: 20px;
+    @include xxs {
+        font-size: 20px;
+    }    
 }
 
 .mb_wiki_grid {
@@ -134,6 +149,9 @@
         color: #031a26;
         @include transition(0.4s);
         margin: 0 0 5px 0;
+        @include xxs {
+            font-size: 16px;
+        }        
         &:hover{
             color: $primary;
         }
@@ -149,6 +167,13 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    @include lg {
+        white-space: inherit;
+        padding-top: 7px;
+    }
+    @include xxs {
+        font-size: 12px;
+    }    
 }
 
 .mb_item_icon {

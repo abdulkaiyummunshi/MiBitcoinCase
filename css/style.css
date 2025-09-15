@@ -46288,6 +46288,21 @@ ul.children {
   border-radius: 10px;
   padding: 50px;
 }
+@media only screen and (max-width: 1399px) {
+  .mb_wiki_area .mb_wiki_container {
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_wiki_area .mb_wiki_container {
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_wiki_area .mb_wiki_container {
+    padding: 20px;
+  }
+}
 .mb_wiki_area .mb_search_bar {
   display: flex;
   padding: 0px 10px;
@@ -46308,6 +46323,11 @@ ul.children {
   padding: 15px;
   font-size: 16px;
   outline: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_wiki_area .mb_search_input {
+    font-size: 14px;
+  }
 }
 .mb_wiki_area .mb_search_input::placeholder {
   font-weight: 500;
@@ -46338,6 +46358,11 @@ ul.children {
   font-weight: 500;
   color: black;
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_wiki_area .mb_section_heading {
+    font-size: 20px;
+  }
 }
 .mb_wiki_area .mb_wiki_grid {
   display: grid;
@@ -46377,6 +46402,11 @@ ul.children {
   transition: all 0.4s ease;
   margin: 0 0 5px 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_wiki_area .mb_item_title a {
+    font-size: 16px;
+  }
+}
 .mb_wiki_area .mb_item_title a:hover {
   color: #ff9916;
 }
@@ -46388,6 +46418,17 @@ ul.children {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media only screen and (max-width: 1199px) {
+  .mb_wiki_area .mb_item_subtitle {
+    white-space: inherit;
+    padding-top: 7px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_wiki_area .mb_item_subtitle {
+    font-size: 12px;
+  }
 }
 .mb_wiki_area .mb_item_icon {
   color: #031a26;
