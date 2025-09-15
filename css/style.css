@@ -42830,10 +42830,20 @@ ul.children {
   letter-spacing: -0.02em;
   color: #101010;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .privacy_policy_area h3 {
+    font-size: 24px;
+  }
+}
 .privacy_policy_area h4 {
   font-weight: 600;
   font-size: 20px;
   color: #101010;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .privacy_policy_area h4 {
+    font-size: 18px;
+  }
 }
 .privacy_policy_area h5 {
   font-weight: 600;
@@ -42845,8 +42855,18 @@ ul.children {
   font-size: 18px;
   color: #6a6e7b;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .privacy_policy_area p {
+    font-size: 14px;
+  }
+}
 .privacy_policy_area .heading.style_1 h4 {
   font-size: 24px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .privacy_policy_area .heading.style_1 h4 {
+    font-size: 20px;
+  }
 }
 .privacy_policy_area .update_date {
   margin-top: 9px;
@@ -42855,6 +42875,11 @@ ul.children {
   font-weight: 400;
   font-size: 16px;
   color: #6a6e7b;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .privacy_policy_area .update_date p {
+    font-size: 12px;
+  }
 }
 .privacy_policy_area .update_date span {
   color: #101010;
@@ -42884,8 +42909,14 @@ ul.children {
   -o-border-radius: 50%;
   background-color: #6a6e7b;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .privacy_policy_area ul li {
+    font-size: 14px;
+  }
+}
 .privacy_policy_area ul li span {
   color: #101010;
+  font-size: 18px;
 }
 .privacy_policy_area ul li a {
   color: #6a6e7b;
