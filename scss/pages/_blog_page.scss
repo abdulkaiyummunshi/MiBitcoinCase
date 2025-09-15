@@ -134,11 +134,17 @@ $font-family: "Outfit", sans-serif;
               font-weight: 400;
               font-size: 18px;
               color: #716f73;
+              @include xxs {
+                font-size: 16px;
+              }
               strong{
                 font-weight: 700;
                 font-size: 28px;
                 text-transform: capitalize;
                 color: #07000e;
+                @include xxs {
+                  font-size: 20px;
+                }                
               }
               
             }
@@ -160,16 +166,25 @@ $font-family: "Outfit", sans-serif;
                 font-size: 32px;
                 text-transform: capitalize;
                 color: #07000e;
+                  @include xs {
+                    font-size: 18px;
+                  }
               }
               h4{
                 font-weight: 500;
                 font-size: 24px;
                 color: #031a26;
+                @include xxs {
+                  font-size: 18px;
+                }
               }
               p{
                 font-weight: 400;
                 font-size: 18px;
                 color: #716f73;
+                  @include xxs {
+                    font-size: 16px;
+                  }
               }
             }
           }
