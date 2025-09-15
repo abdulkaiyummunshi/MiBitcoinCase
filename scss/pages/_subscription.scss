@@ -976,6 +976,9 @@
   @include lg {
     padding: 30px;
   }
+  @include xs {
+    padding: 20px;
+  }
 }
 
 .mb_mls_left {
@@ -993,6 +996,9 @@
     color: #68767d;
     margin-top: 14px;
   margin-bottom: 30px;
+      @include xxs {
+        font-size: 14px;
+    }  
 }
 
 .mb_user_info {
@@ -1015,7 +1021,7 @@
             font-size: 18px;
         }
         @include xxs {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
     a{
@@ -1029,7 +1035,7 @@
             font-size: 18px;
         } 
         @include xxs {
-            font-size: 16px;
+            font-size: 14px;
         }               
         &:hover{
             color: $primary;
@@ -1107,6 +1113,10 @@
     height: 60px;
     line-height: 60px;
     padding-left: 30px;
+    @include xs {
+        height: 50px;
+        line-height: 50px;
+    }
     .list{
         width: 100%;
     }

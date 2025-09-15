@@ -44423,6 +44423,11 @@ ul.children {
     padding: 30px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_sign_up_area .mb_mls_card {
+    padding: 20px;
+  }
+}
 .mb_sign_up_area .mb_mls_left {
   padding-right: 40px;
 }
@@ -44437,6 +44442,11 @@ ul.children {
   color: #68767d;
   margin-top: 14px;
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_sign_up_area .mb_mls_subtitle {
+    font-size: 14px;
+  }
 }
 .mb_sign_up_area .mb_user_info {
   display: flex;
@@ -44465,7 +44475,7 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .mb_sign_up_area .mb_user_info span {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .mb_sign_up_area .mb_user_info a {
@@ -44483,7 +44493,7 @@ ul.children {
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .mb_sign_up_area .mb_user_info a {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .mb_sign_up_area .mb_user_info a:hover {
@@ -44560,6 +44570,12 @@ ul.children {
   height: 60px;
   line-height: 60px;
   padding-left: 30px;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_sign_up_area .mb_form_group .nice-select {
+    height: 50px;
+    line-height: 50px;
+  }
 }
 .mb_sign_up_area .mb_form_group .nice-select .list {
   width: 100%;
