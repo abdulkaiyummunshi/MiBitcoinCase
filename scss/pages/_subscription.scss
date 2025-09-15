@@ -970,10 +970,19 @@
   padding: 60px;
   @include border-radius(20px);
   border: 1px solid rgba(3, 26, 38, 0.1);
+  @include xl {
+    padding: 40px;
+  }
+  @include lg {
+    padding: 30px;
+  }
 }
 
 .mb_mls_left {
   padding-right: 40px;
+  @include md {
+    padding-right: 0;
+  }
 }
 
 
@@ -994,10 +1003,20 @@
   padding: 25px 40px;
   margin-bottom: 30px;
   background: #e6e9ea;
+  @include lg {
+    border-radius: 20px;
+    padding: 18px 16px;
+  }
     span{
         font-weight: 600;
         font-size: 20px;
         color: #031a26;
+        @include lg {
+            font-size: 18px;
+        }
+        @include xxs {
+            font-size: 16px;
+        }
     }
     a{
         font-weight: 400;
@@ -1006,6 +1025,12 @@
         text-decoration-skip-ink: none;
         color: #031a26;
         @include transition(0.4s);
+        @include lg {
+            font-size: 18px;
+        } 
+        @include xxs {
+            font-size: 16px;
+        }               
         &:hover{
             color: $primary;
         }
@@ -1018,6 +1043,9 @@
     font-size: 20px;
     color: #031a26;
     margin-bottom: 29px;
+    @include xxs {
+        font-size: 16px;
+    }
 }
 
 .mb_radio_group {
@@ -1035,6 +1063,9 @@
     color: #68767d;
   cursor: pointer;
   margin-bottom: 2px;
+  @include xxs {
+    font-size: 14px;
+  }
 }
 
 .mb_radio_input {
@@ -1096,6 +1127,9 @@
     span{
         margin-left: 1px;
     }
+    @include xxs {
+        font-size: 16px;
+    }    
   }
 }
 
@@ -1129,6 +1163,9 @@
     font-size: 16px;
     color: #68767d;
     margin-top: 18px;
+    @include xxs {
+        font-size: 14px;
+    }      
 }
 
 .mb_verify_btn {
@@ -1144,6 +1181,9 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+    @include xxs {
+        font-size: 14px;
+    }    
   &:hover{
     background-color: $text_color;
   }
@@ -1152,8 +1192,11 @@
 .mb_mls_right{
     max-width: 820px;
     width: 100%;
-height: 969px;
-position: relative;
+    height: 969px;
+    position: relative;
+    @include md {
+        height: auto;
+    }
 .mb_cross{
     position: absolute;
     top: 30px;

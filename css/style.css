@@ -44413,8 +44413,23 @@ ul.children {
   -o-border-radius: 20px;
   border: 1px solid rgba(3, 26, 38, 0.1);
 }
+@media only screen and (max-width: 1399px) {
+  .mb_sign_up_area .mb_mls_card {
+    padding: 40px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .mb_sign_up_area .mb_mls_card {
+    padding: 30px;
+  }
+}
 .mb_sign_up_area .mb_mls_left {
   padding-right: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .mb_sign_up_area .mb_mls_left {
+    padding-right: 0;
+  }
 }
 .mb_sign_up_area .mb_mls_subtitle {
   font-weight: 400;
@@ -44432,10 +44447,26 @@ ul.children {
   margin-bottom: 30px;
   background: #e6e9ea;
 }
+@media only screen and (max-width: 1199px) {
+  .mb_sign_up_area .mb_user_info {
+    border-radius: 20px;
+    padding: 18px 16px;
+  }
+}
 .mb_sign_up_area .mb_user_info span {
   font-weight: 600;
   font-size: 20px;
   color: #031a26;
+}
+@media only screen and (max-width: 1199px) {
+  .mb_sign_up_area .mb_user_info span {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_sign_up_area .mb_user_info span {
+    font-size: 16px;
+  }
 }
 .mb_sign_up_area .mb_user_info a {
   font-weight: 400;
@@ -44445,6 +44476,16 @@ ul.children {
   color: #031a26;
   transition: all 0.4s ease;
 }
+@media only screen and (max-width: 1199px) {
+  .mb_sign_up_area .mb_user_info a {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_sign_up_area .mb_user_info a {
+    font-size: 16px;
+  }
+}
 .mb_sign_up_area .mb_user_info a:hover {
   color: #ff9916;
 }
@@ -44453,6 +44494,11 @@ ul.children {
   font-size: 20px;
   color: #031a26;
   margin-bottom: 29px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_sign_up_area .mb_section_title {
+    font-size: 16px;
+  }
 }
 .mb_sign_up_area .mb_radio_group {
   display: flex;
@@ -44468,6 +44514,11 @@ ul.children {
   color: #68767d;
   cursor: pointer;
   margin-bottom: 2px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_sign_up_area .mb_radio_label {
+    font-size: 14px;
+  }
 }
 .mb_sign_up_area .mb_radio_input {
   appearance: none;
@@ -44528,6 +44579,11 @@ ul.children {
 .mb_sign_up_area .mb_form_group label span {
   margin-left: 1px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_sign_up_area .mb_form_group label {
+    font-size: 16px;
+  }
+}
 .mb_sign_up_area .mb_form_input,
 .mb_sign_up_area .mb_form_select {
   width: 100%;
@@ -44556,6 +44612,11 @@ ul.children {
   color: #68767d;
   margin-top: 18px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_sign_up_area .mb_helper_text {
+    font-size: 14px;
+  }
+}
 .mb_sign_up_area .mb_verify_btn {
   margin-top: 39px;
 }
@@ -44571,6 +44632,11 @@ ul.children {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_sign_up_area .mb_verify_btn button {
+    font-size: 14px;
+  }
+}
 .mb_sign_up_area .mb_verify_btn button:hover {
   background-color: #031a26;
 }
@@ -44579,6 +44645,11 @@ ul.children {
   width: 100%;
   height: 969px;
   position: relative;
+}
+@media only screen and (max-width: 991px) {
+  .mb_sign_up_area .mb_mls_right {
+    height: auto;
+  }
 }
 .mb_sign_up_area .mb_mls_right .mb_cross {
   position: absolute;
