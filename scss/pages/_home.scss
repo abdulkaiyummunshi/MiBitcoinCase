@@ -280,9 +280,32 @@
 
 /*--Branding Start---*/
 .mb_branding_area{
-    .mb_branding_wrapper{
-        @include flex(row, space-between, center);
+    // .mb_branding_wrapper{
+    //     @include flex(row, space-between, center);
         
+    // }
+    .mb_brand {
+        img {
+            @include xxxl {
+                width: 150.107px;
+                height: 34.045px;
+                flex-shrink: 0;
+            }
+            @include xl {
+                width: 180px;
+                flex-shrink: 0;
+            }
+            @include sm {
+                width: 128.188px;
+                height: 27.237px;
+                flex-shrink: 0;
+            }
+            @include xxs {
+                width: 100.188px;
+                height: 20.237px;
+                flex-shrink: 0;
+            }
+        }
     }
     .mb_branding_wrapper_rtl{
         direction: rtl;

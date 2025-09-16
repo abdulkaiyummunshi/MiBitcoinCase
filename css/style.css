@@ -33573,11 +33573,32 @@ header {
 }
 
 /*--Branding Start---*/
-.mb_branding_area .mb_branding_wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+@media only screen and (max-width: 1699px) {
+  .mb_branding_area .mb_brand img {
+    width: 150.107px;
+    height: 34.045px;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .mb_branding_area .mb_brand img {
+    width: 180px;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_branding_area .mb_brand img {
+    width: 128.188px;
+    height: 27.237px;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_branding_area .mb_brand img {
+    width: 100.188px;
+    height: 20.237px;
+    flex-shrink: 0;
+  }
 }
 .mb_branding_area .mb_branding_wrapper_rtl {
   direction: rtl;
