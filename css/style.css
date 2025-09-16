@@ -46134,6 +46134,7 @@ ul.children {
   position: relative;
 }
 .footer .footer_thumb img {
+  border-radius: 45px;
   width: 100%;
   position: absolute;
   padding-right: 23px;
