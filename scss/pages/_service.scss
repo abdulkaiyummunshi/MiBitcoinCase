@@ -64,7 +64,7 @@
                 }
             }
             .rb_desc {
-                color: rgba(3, 26, 38, 0.60);
+                color: $text_style2;
                 font-family: Inter;
                 font-size: 18px;
                 font-style: normal;
@@ -100,7 +100,7 @@
                 line-height: 64px; /* 128% */
             }
             .rb_text {
-                color: rgba(3, 26, 38, 0.60);
+                color: $text_style2;
                 font-family: Inter;
                 font-size: 18px;
                 font-style: normal;

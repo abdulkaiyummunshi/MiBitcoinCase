@@ -250,7 +250,7 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
                 width: 5px;
                 height: 5px;
                 @include border-radius(5px);
-                background-color: #68767d;
+                background-color: $text_color3;
                 position: absolute;
                 left: 0;
                 top: 50%;

@@ -242,7 +242,7 @@
         .btn_one {
             padding: 5px 22px;
             border-radius: 100px;
-            border: 1px solid rgba(3, 26, 38, 0.12);
+            border: 1px solid $border;
             height: 50px;
             background-color: $white;
             color: rgba(3, 26, 38, 0.70);
@@ -258,7 +258,7 @@
         align-items: center;
         padding: 5px 22px;
         border-radius: 100px;
-        border: 1px solid rgba(3, 26, 38, 0.12);
+        border: 1px solid $border;
         height: 50px;
         background-color: $white;
         color: rgba(3, 26, 38, 0.70);
@@ -287,7 +287,7 @@
     .rb_dropdown_3 {
         @include flex(row, center, center);
         border-radius: 100px;
-        border: 1px solid rgba(3, 26, 38, 0.12);
+        border: 1px solid $border;
         width: 50px;
         height: 50px;
         flex-shrink: 0;

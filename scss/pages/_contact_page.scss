@@ -175,7 +175,7 @@ $primary-color: #ff9100;
         font-size: 12px;
     }
     &::placeholder{
-        color: #68767d;
+        color: $text_color3;
 
     }
 
@@ -193,7 +193,7 @@ $primary-color: #ff9100;
     color: $text_color;
 
     &::placeholder{
-        color: #68767d;
+        color: $text_color3;
 
     }
 

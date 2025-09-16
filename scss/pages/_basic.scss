@@ -7,7 +7,7 @@
         gap: 8px;
         padding: 6px 30px;
         border-radius: 100px;
-        border: 1px solid rgba(3, 26, 38, 0.12);
+        border: 1px solid $border;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #F2F2F2 100%);
         color: $text_color2;
         font-family: $inter-font;
@@ -51,7 +51,7 @@
         font-weight: 500;
         line-height: 30px;
         &.styel1 {
-            color: rgba(3, 26, 38, 0.60);
+            color: $text_style2;
         }
         @include md {
             font-size: 16px;
@@ -98,7 +98,7 @@
     line-height: 30px; 
 }
 .rb-p18 {
-    color: rgba(3, 26, 38, 0.60);
+    color: $text_style2;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
@@ -149,7 +149,7 @@
         line-height: 30px; 
     }
     &.style3 {
-        color: rgba(3, 26, 38, 0.60);
+        color: $text_style2;
         font-family: Inter;
         font-size: 16px;
         font-style: normal;
@@ -176,7 +176,7 @@
     }
 }
 .rb-p14 {
-    color: rgba(3, 26, 38, 0.60);
+    color: $text_style2;
     font-family: Inter;
     font-size: 14px;
     font-style: normal;
@@ -387,7 +387,7 @@
             padding: 12px 20px;
             height: 46px;
             border-radius: 6px;
-            border: 1px solid rgba(3, 26, 38, 0.12);
+            border: 1px solid $border;
 
             color: $text_color;
             font-family: Inter;
@@ -543,7 +543,7 @@
 
     .checkbox-left input[type="checkbox"] {
         border-radius: 2px;
-        border: 1px solid rgba(3, 26, 38, 0.12);
+        border: 1px solid $border;
         width: 15px;
         height: 15px;
         cursor: pointer;
@@ -831,7 +831,7 @@
             p {
                 padding: 21px 24px 40px 24px;
                 margin: 0; 
-                color: rgba(3, 26, 38, 0.60);
+                color: $text_style2;
                 font-family: Inter;
                 font-size: 16px;
                 font-style: normal;
@@ -839,7 +839,7 @@
                 line-height: 30px; 
                 @include md {
                     padding: 15px 20px 25px 20px;
-                    color: rgba(3, 26, 38, 0.60);
+                    color: $text_style2;
                     font-size: 12px;
                     line-height: 22px; 
                 }

@@ -77,7 +77,7 @@
             span{
                 font-weight: 400;
                 font-size: 14px;
-                color: #68767d;
+                color: $text_color3;
                 padding: 5px 15px;
                 background-color: $white;
                 border: 1px solid rgba(0, 0, 0, 0.1);
@@ -110,7 +110,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 150%;
-            color: #68767d;
+            color: $text_color3;
             @include xxs {
                 font-size: 14px;
             }
@@ -279,7 +279,7 @@
             font-weight: 500;
             font-size: 18px;
             text-decoration-skip-ink: none;
-            color: rgba(3, 26, 38, 0.7);
+            color: $text_style3;
             text-decoration: none;
             @include transition(0.4s);
 
@@ -423,7 +423,7 @@
     
     input {
         width: 100%;
-        border: 1px solid rgba(3, 26, 38, 0.12);
+        border: 1px solid $border;
         border-radius: 6px;
         padding: 11px 25px;
         font-weight: 400;
@@ -548,7 +548,7 @@
         span{
             font-weight: 400;
             font-size: 16px;
-            color: #68767d;
+            color: $text_color3;
             @include xxs {
                 font-size: 14px
             }
@@ -908,7 +908,7 @@
 .mb_terms_text {
     font-weight: 400;
     font-size: 16px;
-    color: #68767d;
+    color: $text_color3;
     grid-column: span 2;
     margin-top: -15px;
     @include md {
@@ -919,7 +919,7 @@
     }    
     
     a {
-        color: #68767d;
+        color: $text_color3;
         @include transition(0.4s);
         text-decoration: underline;
         text-decoration-skip-ink: none;
@@ -993,7 +993,7 @@
 .mb_mls_subtitle {
     font-weight: 400;
     font-size: 16px;
-    color: #68767d;
+    color: $text_color3;
     margin-top: 14px;
   margin-bottom: 30px;
       @include xxs {
@@ -1066,7 +1066,7 @@
   align-items: center;
     font-weight: 400;
     font-size: 16px;
-    color: #68767d;
+    color: $text_color3;
   cursor: pointer;
   margin-bottom: 2px;
   @include xxs {
@@ -1171,7 +1171,7 @@
 .mb_helper_text {
     font-weight: 400;
     font-size: 16px;
-    color: #68767d;
+    color: $text_color3;
     margin-top: 18px;
     @include xxs {
         font-size: 14px;
