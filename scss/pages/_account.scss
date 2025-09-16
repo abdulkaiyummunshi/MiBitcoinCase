@@ -10,7 +10,7 @@
     h2{
         font-weight: 700;
         font-size: 40px;
-        color: #031a26;
+        color: $text_color;
         @include sm {
             font-size: 32px;
         }
@@ -22,7 +22,7 @@
     p{
         font-weight: 400;
         font-size: 16px;
-        color: #031a26;
+        color: $text_color;
         @include xxs {
             font-size: 14px;
         }
@@ -32,7 +32,7 @@
             padding: 14px 30px;
             font-weight: 600;
             font-size: 16px;
-            color: #fff;
+            color: $white;
             background-color: $text_color;
             @include border-radius(6px);
             @include transition(0.4s);
@@ -50,14 +50,14 @@
     p{
         font-weight: 400;
         font-size: 16px;
-        color: #031a26;
+        color: $text_color;
         @include xxs {
             font-size: 14px;
         }
         a{
             text-decoration: underline;
             text-decoration-skip-ink: none;
-            color: #ff9916;
+            color: $primary;
             margin-right: 5px;
             @include transition(0.4s);
             &:hover{

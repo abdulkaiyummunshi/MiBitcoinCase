@@ -13,7 +13,7 @@
     .rb_blog_card {
         border-radius: 14px;
         border: 1px solid rgba(3, 26, 38, 0.10);
-        background: #FFF;
+        background: $white;
         padding: 10px 10px 30px 10px;
         @include transition(0.4s);
         .rb_thumb {
@@ -234,7 +234,7 @@
                 }
             }
             &:hover {
-                background: #FFF;
+                background: $white;
             }
         }
     }
@@ -276,7 +276,7 @@
             height: 26px;
             flex-shrink: 0;
             background-color: #FF9916;
-            color: #FFF;
+            color: $white;
             font-family: Inter;
             font-size: 16px;
             font-style: normal;
@@ -306,7 +306,7 @@
     .rb_blog_card {
         border-radius: 14px;
         border: 1px solid rgba(3, 26, 38, 0.10);
-        background: #FFF;
+        background: $white;
         padding: 10px 10px 16px 10px;
         @include transition(0.4s);
         .rb_thumb {
@@ -331,7 +331,7 @@
                 top: 7%;
                 left: 7%;
                 z-index: 9;
-                color: #FFF;
+                color: $white;
                 font-family: Inter;
                 font-size: 16px;
                 font-style: normal;
@@ -344,7 +344,7 @@
                 flex-shrink: 0;
                 aspect-ratio: 1/1;
                 padding: 7px;
-                background: #FFF;
+                background: $white;
                 position: absolute;
                 top: 7%;
                 right: 7%;
@@ -365,7 +365,7 @@
                 position: absolute;
                 top: -46px;
                 right: 18px;
-                color: #FFF;
+                color: $white;
                 font-family: Inter;
                 font-size: 16px;
                 font-style: normal;
@@ -376,7 +376,7 @@
                     top: -31px;
                 }
                 span {
-                    color: #FFF;
+                    color: $white;
                     font-family: Inter;
                     font-size: 10px;
                     font-style: normal;
@@ -504,7 +504,7 @@
   .rb_blog_card {
         border-radius: 14px;
         border: 1px solid rgba(3, 26, 38, 0.10);
-        background: #FFF;
+        background: $white;
         padding: 10px 10px 16px 10px;
         @include transition(0.4s);
         .rb_thumb {
@@ -536,7 +536,7 @@
                 flex-shrink: 0;
                 aspect-ratio: 1/1;
                 padding: 7px;
-                background: #FFF;
+                background: $white;
                 position: absolute;
                 top: 7%;
                 right: 7%;

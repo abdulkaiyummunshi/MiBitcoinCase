@@ -78,7 +78,7 @@
   font-weight: 600;
   line-height: normal;
   &.style1 {
-    color: #FFF;
+    color: $white;
   }
 }
 .rb-t22 {
@@ -108,7 +108,7 @@
         color: rgba(255, 255, 255, 0.60);
     }
     &.style2 {
-        color: #FFF;
+        color: $white;
         font-family: Inter;
         font-size: 18px;
         font-style: normal;
@@ -133,7 +133,7 @@
     line-height: 26px; 
     // text-transform: uppercase;
     &.style1 {
-        color: #FFF;
+        color: $white;
         font-family: Inter;
         font-size: 16px;
         font-style: normal;
@@ -141,7 +141,7 @@
         line-height: normal;
     }
     &.style2 {
-        color: #FFF;
+        color: $white;
         font-family: Inter;
         font-size: 16px;
         font-style: normal;
@@ -166,7 +166,7 @@
     line-height: normal;
     opacity: 0.7;
     &.style1 {
-        color: #FFF;
+        color: $white;
         font-family: Inter;
         font-size: 14px;
         font-style: normal;
@@ -582,7 +582,7 @@
         height: 46px;
         flex-shrink: 0;
         border-radius: 46px;
-        background: #FFF;
+        background: $white;
     }
     .item_2 {
         @include flex(row, center, center);
@@ -593,13 +593,13 @@
         height: 46px;
         flex-shrink: 0;
         border-radius: 46px;
-        background: #FFF;
+        background: $white;
     }
     button {
         &:hover {
             background-color: #FF9916;
             i {
-                color: #FFF;
+                color: $white;
             }
         }
     }
@@ -711,7 +711,7 @@
     &.active {
         color: $text_color;
         border-radius: 100px;
-        background: #FFF;
+        background: $white;
         height: 50px;
         padding: 8px 30px;
         margin-left: 2px;

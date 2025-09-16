@@ -1,6 +1,6 @@
 .mb_contact_us{
     $background-color: #f8f8f8;
-$card-bg-color: #fff;
+$card-bg-color: $white;
 $form-bg-color: #fef8f0;
 $text-color: #333;
 $light-text-color: #666;
@@ -157,7 +157,7 @@ $primary-color: #ff9100;
     label{
         font-weight: 500;
         font-size: 18px;
-        color: #031a26;
+        color: $text_color;
         @include xxs {
             font-size: 16px;
         }
@@ -209,7 +209,7 @@ $primary-color: #ff9100;
         background-color: $text_color;
         font-weight: 600;
         font-size: 16px;
-        color: #fff;
+        color: $white;
         border: none;
         @include transition(0.4s);
         span{

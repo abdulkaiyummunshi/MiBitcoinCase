@@ -100,7 +100,7 @@
         a {
           width: 100%;
           padding: 10px 0;
-          color: #031a26;
+          color: $text_color;
           font-size: 16px;
           line-height: 1.5;
           font-weight: 500;
@@ -114,7 +114,7 @@
           }
 
           &:hover {
-            color: #ff9916;
+            color: $primary;
           }
         }
 

@@ -280,10 +280,10 @@
 
 /*--Branding Start---*/
 .mb_branding_area{
-    // .mb_branding_wrapper{
-    //     @include flex(row, space-between, center);
+    .mb_branding_wrapper{
+        @include flex(row, space-between, center);
         
-    // }
+    }
     .mb_brand {
         img {
             @include xxxl {
@@ -602,7 +602,7 @@
                 @include sm{
                     font-size: 20px;
                 }
-                color: #031a26;
+                color: $text_color;
             }
             p{
                 margin-top: 7px;
@@ -785,7 +785,7 @@
         span{
             font-weight: 600;
             font-size: 20px;
-            color: #031a26;
+            color: $text_color;
             width: 74px;
             height: 74px;
             line-height: 74px;
@@ -806,7 +806,7 @@
         h3{
             font-weight: 600;
             font-size: 34px;
-            color: #031a26;
+            color: $text_color;
             @include md {
                 font-size: 24px;
                 line-height: 40px;
@@ -1029,7 +1029,7 @@
             font-weight: 600;
             font-size: 16px;
             @include transition(0.4s);
-            color: #031a26;
+            color: $text_color;
             span{
                 margin-left: 8px;
             }
@@ -1061,7 +1061,7 @@
                 @include sm{
                     font-size: 16px;
                 }
-                color: #031a26;
+                color: $text_color;
                 @include transition(0.4s);
                 &:hover{
                     color: $primary;
@@ -1096,7 +1096,7 @@
                 @include sm{
                     font-size: 12px;
                 }
-                color: #031a26;
+                color: $text_color;
                 display: inline-block;
                 &:first-child{
                     padding-left: 8px;
@@ -1120,7 +1120,7 @@
             span{
                 font-weight: 500;
                 font-size: 15px;
-                color: #031a26;
+                color: $text_color;
                 @include md{
                     font-size: 14px;
                 }
@@ -1440,7 +1440,7 @@
         h4{
             font-weight: 700;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
             @include md {
                 font-size: 20px;
                 font-style: normal;
@@ -1451,7 +1451,7 @@
         p{
             font-weight: 500;
             font-size: 15px;
-            color: #031a26;
+            color: $text_color;
             opacity: 0.7;
             margin-top: 10px;
             @include md {
@@ -1487,7 +1487,7 @@
         h4{
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
             @include md {
                 font-size: 20px;
                 line-height: 26px; 
@@ -1500,7 +1500,7 @@
             font-weight: 500;
             font-size: 16px;
             text-transform: uppercase;
-            color: #031a26;
+            color: $text_color;
             opacity: 0.7;
             margin-top: 14px;
             @include md {
@@ -1537,7 +1537,7 @@
                 @include transition(0.4s);
                 font-weight: 500;
                 font-size: 16px;
-                color: #031a26;
+                color: $text_color;
                 opacity: 0.7;
                 @include md {
                     font-size: 12px;
@@ -1706,7 +1706,7 @@
             h4{
                 font-weight: 700;
                 font-size: 24px;
-                color: #031a26;
+                color: $text_color;
                 @include md {
                     font-size: 18px;
                     line-height: 30px; 
@@ -1726,7 +1726,7 @@
             h4{
                 font-weight: 700;
                 font-size: 18px;
-                color: #031a26;
+                color: $text_color;
 
                 @include sm{
                     font-size: 15px;
@@ -1744,7 +1744,7 @@
             p{
                 font-weight: 500;
                 font-size: 16px;
-                color: #031a26;
+                color: $text_color;
                 opacity: 0.7;
 
                 @include xs{

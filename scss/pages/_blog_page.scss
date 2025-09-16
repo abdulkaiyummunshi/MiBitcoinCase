@@ -173,7 +173,7 @@ $font-family: "Outfit", sans-serif;
               h4{
                 font-weight: 500;
                 font-size: 24px;
-                color: #031a26;
+                color: $text_color;
                 @include xxs {
                   font-size: 18px;
                 }

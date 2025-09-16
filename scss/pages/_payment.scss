@@ -1,6 +1,6 @@
 .mb_payment_area{
     $background-color: #f8f8f8;
-$card-bg-color: #fff;
+$card-bg-color: $white;
 $text-color: #333;
 $light-text-color: #666;
 $border-color: #e0e0e0;
@@ -20,7 +20,7 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     h3{
         font-weight: 600;
         font-size: 24px;
-        color: #031a26;
+        color: $text_color;
         @include xxs {
             font-size: 20px;
         }        
@@ -52,7 +52,7 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         h4{
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
             @include xxs {
                 font-size: 16px;
             }                    
@@ -137,7 +137,7 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         .mb_bitcoin_title {
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
             @include xxs {
                 font-size: 20px;
             }        
@@ -167,7 +167,7 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         h4{
             font-weight: 600;
             font-size: 20px;
-            color: #031a26;
+            color: $text_color;
             margin-bottom: 13px;
         }
 
@@ -224,7 +224,7 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         font-weight: 600;
         margin-bottom: 11px;
         font-size: 24px;
-        color: #031a26;
+        color: $text_color;
          @include xxs {
             font-size: 20px;
         }        

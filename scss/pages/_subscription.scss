@@ -91,7 +91,7 @@
         a{
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
             @include transition(0.4s);
             @include xxs {
                 font-size: 20px;
@@ -127,7 +127,7 @@
             font-weight: 700;
             font-size: 24px;
             line-height: 142%;
-            color: #031a26;
+            color: $text_color;
             @include xxs {
                 font-size: 18px;
             }
@@ -156,7 +156,7 @@
             font-weight: 600;
             background-color: $white;
             font-size: 16px;
-            color: #031a26;
+            color: $text_color;
             span{
                 background-color: $text_color;
                 @include border-radius(50%);
@@ -229,7 +229,7 @@
             font-weight: 600;
             font-size: 20px;
             text-align: center;
-            color: #031a26;
+            color: $text_color;
             @include xxs {
                 font-size: 16px;
             }
@@ -324,7 +324,7 @@
     .notification-text h3 {
         font-weight: 600;
         font-size: 24px;
-        color: #031a26;
+        color: $text_color;
         @include xxs {
             padding-bottom: 10px;
             font-size: 18px;
@@ -413,7 +413,7 @@
         width: 100%;
         font-weight: 500;
         font-size: 15px;
-        color: #031a26;
+        color: $text_color;
         margin-bottom: 13px;
         span{
             opacity: 0.7;
@@ -433,7 +433,7 @@
             font-size: 14px;
         }
         &::placeholder{
-            color: #031a26;
+            color: $text_color;
             opacity: 0.7;
             position: relative;
             list-style: disc;
@@ -462,7 +462,7 @@
         font-weight: 600;
         font-size: 16px;
         @include border-radius(6px);
-        color: #fff;
+        color: $white;
     }
     
     .update-button:hover {
@@ -486,7 +486,7 @@
         height: 44px;
         font-weight: 600;
         font-size: 16px;
-        color: #fff;
+        color: $white;
         @include transition(0.4s);
         &:hover{
             background-color: $text_color;
@@ -512,7 +512,7 @@
             height: 12px;
             color: transparent;
             border: none;
-            background: #031a26;
+            background: $text_color;
             opacity: 0.1;
             @include transition(0.5s);
             @include border-radius(50%);
@@ -561,7 +561,7 @@
         h5{
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
             @include xxs {
                 font-size: 16px
             }            
@@ -598,7 +598,7 @@
         h4{
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
             @include xxs {
                 font-size: 20px
             }            
@@ -799,7 +799,7 @@
     .mb_professional_text {
         font-weight: 400;
         font-size: 16px;
-        color: #031a26;
+        color: $text_color;
         @include xxs {
             font-size: 14px;
         }        
@@ -841,7 +841,7 @@
 .mb_label {
     font-weight: 600;
     font-size: 18px;
-    color: #031a26;
+    color: $text_color;
     margin-bottom: 10px;
 }
 
@@ -853,9 +853,9 @@
     background-color: transparent;
     font-weight: 500;
     font-size: 16px;
-    color: #031a26;
+    color: $text_color;
     &::placeholder{
-        color: #031a26;
+        color: $text_color;
         opacity: 0.7;
         
     }
@@ -873,14 +873,14 @@
     line-height: 50px;
     font-weight: 500;
     font-size: 16px;
-    color: #031a26;
+    color: $text_color;
     width: 100%;
     .list{
         width: 100%;
 
     }
     .current{
-        color: #031a26;
+        color: $text_color;
         opacity: 0.7;
     }
 }
@@ -895,7 +895,7 @@
         padding: 11px 23px;
         font-weight: 600;
         font-size: 16px;
-        color: #fff;
+        color: $white;
         @include border-radius(999px);
         &:hover {
             background-color: $text_color;
@@ -1016,7 +1016,7 @@
     span{
         font-weight: 600;
         font-size: 20px;
-        color: #031a26;
+        color: $text_color;
         @include lg {
             font-size: 18px;
         }
@@ -1029,7 +1029,7 @@
         font-size: 20px;
         text-decoration: underline;
         text-decoration-skip-ink: none;
-        color: #031a26;
+        color: $text_color;
         @include transition(0.4s);
         @include lg {
             font-size: 18px;
@@ -1047,7 +1047,7 @@
 .mb_section_title {
     font-weight: 500;
     font-size: 20px;
-    color: #031a26;
+    color: $text_color;
     margin-bottom: 29px;
     @include xxs {
         font-size: 16px;
@@ -1132,7 +1132,7 @@
   label{
     font-weight: 600;
     font-size: 18px;
-    color: #031a26;
+    color: $text_color;
     margin-bottom: 15px;
     span{
         margin-left: 1px;

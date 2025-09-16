@@ -13,7 +13,7 @@
             h4{
                 font-weight: 600;
                 font-size: 24px;
-                color: #031a26;
+                color: $text_color;
                 @include xxs {
                     font-size: 20px;
                 }
@@ -21,7 +21,7 @@
             h3{
                 font-weight: 700;
                 font-size: 34px;
-                color: #031a26;
+                color: $text_color;
                 @include xxs {
                     font-size: 30px;
                 }
@@ -42,7 +42,7 @@
             h4{
                 font-weight: 600;
                 font-size: 24px;
-                color: #031a26;   
+                color: $text_color;   
                 @include xxs {
                     font-size: 20px;
                 }
@@ -69,7 +69,7 @@
                     @include border-radius(6px);
                     font-weight: 600;
                     font-size: 16px;
-                    color: #fff;
+                    color: $white;
                     @include transition(0.4s);
                     &:hover{
                         background-color: $primary;

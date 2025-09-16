@@ -46,7 +46,7 @@
                 border-bottom: 1px solid rgba(255, 255, 255, 0.30);
                 padding-bottom: 30px;
                 margin-bottom: 22px;
-                color: #FFF;
+                color: $white;
                 font-family: Inter;
                 font-size: 16px;
                 font-style: normal;
@@ -69,7 +69,7 @@
                 }
             }
             .rb_title {
-                color: #FFF;
+                color: $white;
                 font-family: Inter;
                 font-size: 18px;
                 font-style: normal;
@@ -80,7 +80,7 @@
                 }
             }
             .rb_label {
-                color: #FFF;
+                color: $white;
                 font-family: Inter;
                 font-size: 14px;
                 font-style: normal;
@@ -106,7 +106,7 @@
     .rb_testi_card2 {
         position: relative;
         border: 1px solid rgba(3, 26, 38, 0.10);
-        background: #FFF;
+        background: $white;
         .rb_content {
             padding: 40px 34px 34px;
             @include md {

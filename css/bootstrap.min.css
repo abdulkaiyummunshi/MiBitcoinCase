@@ -2346,7 +2346,7 @@ progress {
     --bs-table-bg           : #212529;
     --bs-table-border-color : #4d5154;
     --bs-table-striped-bg   : #2c3034;
-    --bs-table-striped-color: #fff;
+    --bs-table-striped-color: $white;
     --bs-table-active-bg    : #373b3e;
     --bs-table-active-color : #fff;
     --bs-table-hover-bg     : #323539;
@@ -4440,7 +4440,7 @@ fieldset:disabled .btn {
 
 .nav-pills {
     --bs-nav-pills-border-radius    : var(--bs-border-radius);
-    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-color: $white;
     --bs-nav-pills-link-active-bg   : #0d6efd
 }
 
@@ -7006,7 +7006,7 @@ fieldset:disabled .btn {
     margin-left     : 3px;
     text-indent     : -999px;
     cursor          : pointer;
-    background-color: #fff;
+    background-color: $white;
     background-clip : padding-box;
     border          : 0;
     border-top      : 10px solid transparent;

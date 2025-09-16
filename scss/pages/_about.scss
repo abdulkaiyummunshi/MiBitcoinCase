@@ -65,7 +65,7 @@
                 font-weight: 600;
                 font-size: 15px;
                 text-transform: uppercase;
-                color: #031a26;
+                color: $text_color;
                 @include transition(0.4s);
                 span{
                     margin-right: 10px;
@@ -84,7 +84,7 @@
         h1{
             font-weight: 600;
             font-size: 80px;
-            color: #031a26;
+            color: $text_color;
             margin-top: 20px;
             @include md {
                 font-size: 60px;
@@ -183,7 +183,7 @@
             justify-content: center;
         }
         h4 {
-            color: #FFF;
+            color: $white;
             font-family: Inter;
             font-size: 24px;
             font-style: normal;
@@ -206,7 +206,7 @@
         .icon {
             i {
                 font-size: 20px;
-                color: #FFF;
+                color: $white;
                 cursor: pointer;
             }
         }
@@ -218,7 +218,7 @@
         z-index: 10;
         i {
             font-size: 24px;
-            color: #FFF;
+            color: $white;
             cursor: pointer;
         }
     }
@@ -229,7 +229,7 @@
         z-index: 10;
         i {
             font-size: 24px;
-            color: #FFF;
+            color: $white;
             cursor: pointer;
         }
     }
@@ -261,7 +261,7 @@
                 img {
                     border-radius: 100px;
                     border: 1px solid #E6E8E9;
-                    background: #FFF;
+                    background: $white;
                     padding: 23px 18px;
                     @include xs {
                         padding: 16px 12px;

@@ -8,7 +8,7 @@
     h2{
         font-weight: 700;
         font-size: 40px;
-        color: #031a26;
+        color: $text_color;
     }
 
     nav ul {
@@ -56,9 +56,9 @@
         font-weight: 400;
         font-size: 16px;
         outline: none;
-        color: #031a26;
+        color: $text_color;
         &::placeholder{
-            color: #031a26;
+            color: $text_color;
 
         }
     }
@@ -71,7 +71,7 @@
         line-height: 50px;
         font-weight: 400;
         font-size: 16px;
-        color: #031a26;
+        color: $text_color;
         .list{
             width: 100%;
         }
@@ -79,7 +79,7 @@
 
     .mb_search_icon {
         background-color: $primary;
-        color: #fff;
+        color: $white;
 
         width: 50px;
         height: 50px;
@@ -100,7 +100,7 @@
         span{
             font-weight: 400;
             font-size: 19px;
-            color: #031a26;
+            color: $text_color;
         }
         display: flex;
         align-items: center;
@@ -129,7 +129,7 @@
     h4{
         font-weight: 600;
         font-size: 20px;
-        color: #031a26;
+        color: $text_color;
         @include xxs {
             font-size: 16px;
         }
@@ -149,7 +149,7 @@
  .mb_listing-details {
         padding: 30px 30px 40px 30px;
         @include border-radius(0px 0px 10px 10px);
-        background-color: #fff;
+        background-color: $white;
         border-top: none;
         display: flex;
         gap: 15px;
@@ -175,7 +175,7 @@
                 font-weight: 500;
                 font-size: 14px;
                 text-align: center;
-                color: #031a26;
+                color: $text_color;
                 font-size: 10px;
                 padding: 5px 10px;
                 @include border-radius(5px)
@@ -202,7 +202,7 @@
                     background: rgba(255, 153, 22, 0.1);
                     font-weight: 600;
                     font-size: 18px;
-                    color: #031a26;
+                    color: $text_color;
                     @include xxs {
                         font-size: 16px;
                     }
@@ -215,7 +215,7 @@
                     .current{
                         font-weight: 600;
                         font-size: 18px;
-                        color: #031a26;
+                        color: $text_color;
 
                     }
 
@@ -226,7 +226,7 @@
     .mb_listing_item{
         padding: 30px 30px 40px 30px;
         @include border-radius(0px 0px 10px 10px);
-        background-color: #fff;
+        background-color: $white;
         border-top: none;
         height: 231px;
         @include md {
@@ -256,13 +256,13 @@
     padding: 8px 12px;
     border: 1px solid #ccc;
     @include border-radius(30px);
-    background-color: #fff;
+    background-color: $white;
     cursor: pointer;
     font-size: 14px;
     
     &.btn-add-listing {
         background-color: $primary;
-        color: #fff;
+        color: $white;
         font-weight: bold;
         padding: 12px 24px;
         border: none;

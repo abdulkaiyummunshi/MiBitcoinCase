@@ -87,7 +87,7 @@
 .mb_search_button {
     background-color: #111827;
     border: none;
-    color: #fff;
+    color: $white;
     width: 50px;
     height: 50px;
     @include border-radius(6px);
@@ -149,7 +149,7 @@
     a{
         font-weight: 600;
         font-size: 20px;
-        color: #031a26;
+        color: $text_color;
         @include transition(0.4s);
         margin: 0 0 5px 0;
         @include xxs {
@@ -196,7 +196,7 @@
         h4{
             font-weight: 600;
             font-size: 20px;
-            color: #031a26;
+            color: $text_color;
             @include xxs {
                 font-size: 18px;
             }
@@ -220,7 +220,7 @@
 
                 font-weight: 600;
                 font-size: 16px;
-                color: #031a26;
+                color: $text_color;
                 padding-left: 15px;
                 position: relative;
                 @include xxs {
@@ -263,7 +263,7 @@
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 187%;
-                color: #031a26;
+                color: $text_color;
             }
             ul{
                 li{

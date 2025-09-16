@@ -32447,7 +32447,7 @@ header {
   line-height: normal;
 }
 .rb-t24.style1 {
-  color: #FFF;
+  color: #fff;
 }
 
 .rb-t22 {
@@ -32480,7 +32480,7 @@ header {
   color: rgba(255, 255, 255, 0.6);
 }
 .rb-p18.style2 {
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -32505,7 +32505,7 @@ header {
   line-height: 26px;
 }
 .rb-p16.style1 {
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -32513,7 +32513,7 @@ header {
   line-height: normal;
 }
 .rb-p16.style2 {
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -32539,7 +32539,7 @@ header {
   opacity: 0.7;
 }
 .rb-p15.style1 {
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -32941,7 +32941,7 @@ header {
   height: 46px;
   flex-shrink: 0;
   border-radius: 46px;
-  background: #FFF;
+  background: #fff;
 }
 .rb_arrow_slider_btn .item_2 {
   display: flex;
@@ -32955,13 +32955,13 @@ header {
   height: 46px;
   flex-shrink: 0;
   border-radius: 46px;
-  background: #FFF;
+  background: #fff;
 }
 .rb_arrow_slider_btn button:hover {
   background-color: #FF9916;
 }
 .rb_arrow_slider_btn button:hover i {
-  color: #FFF;
+  color: #fff;
 }
 
 .rb_video_icon {
@@ -33051,7 +33051,7 @@ header {
 .nav-pills .nav-link.active {
   color: #031a26;
   border-radius: 100px;
-  background: #FFF;
+  background: #fff;
   height: 50px;
   padding: 8px 30px;
   margin-left: 2px;
@@ -33573,6 +33573,12 @@ header {
 }
 
 /*--Branding Start---*/
+.mb_branding_area .mb_branding_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 @media only screen and (max-width: 1699px) {
   .mb_branding_area .mb_brand img {
     width: 150.107px;
@@ -35688,7 +35694,7 @@ header {
   justify-content: center;
 }
 .rb_about1 .mission_card h4 {
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -35710,7 +35716,7 @@ header {
 }
 .rb_about1 .rb_arrow_btn .icon i {
   font-size: 20px;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
 }
 .rb_about1 .left-arrow {
@@ -35721,7 +35727,7 @@ header {
 }
 .rb_about1 .left-arrow i {
   font-size: 24px;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
 }
 .rb_about1 .right-arrow {
@@ -35732,7 +35738,7 @@ header {
 }
 .rb_about1 .right-arrow i {
   font-size: 24px;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -35765,7 +35771,7 @@ header {
 .rb_about2 .rb_content .item .icon img {
   border-radius: 100px;
   border: 1px solid #E6E8E9;
-  background: #FFF;
+  background: #fff;
   padding: 23px 18px;
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
@@ -36862,7 +36868,7 @@ header {
 .mb_contact_us .mb_form_field label {
   font-weight: 500;
   font-size: 18px;
-  color: #031a26;
+  color: #333;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .mb_contact_us .mb_form_field label {
@@ -37008,7 +37014,7 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 6px;
-  background: #FFF;
+  background: #fff;
   padding: 8px 8px;
   height: 40px;
   color: #031A26;
@@ -37033,7 +37039,7 @@ header {
   bottom: 4%;
   left: 3%;
   border-radius: 10px;
-  background: #FFF;
+  background: #fff;
   padding: 20px 16px;
 }
 @media only screen and (max-width: 1599px) {
@@ -37162,7 +37168,7 @@ header {
   height: 50px;
   border-radius: 999px;
   background: var(--P, #FF9916);
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -37190,7 +37196,7 @@ header {
   height: 50px;
   border-radius: 999px;
   background: var(--P, #FF9916);
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -37396,7 +37402,7 @@ header {
   width: fit-content;
   height: 41px;
   border-radius: 4px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
   color: #031A26;
   font-size: 14px;
@@ -37418,7 +37424,7 @@ header {
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table {
   border-radius: 10px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
   padding: 40px 30px;
 }
@@ -37634,7 +37640,7 @@ header {
 .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item {
   border-radius: 6px;
   border: 1px solid rgba(3, 26, 38, 0.1);
-  background: #FFF;
+  background: #fff;
   margin-bottom: 30px;
   overflow: hidden;
 }
@@ -37872,7 +37878,7 @@ header {
 }
 .rb_project_tab .rb_btc_card .rb_sale {
   border-radius: 4px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
   padding: 5px 10px;
   margin-left: 25px;
@@ -37954,7 +37960,7 @@ header {
   background: var(--P, #FF9916);
   padding: 19px 20px;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -39722,10 +39728,10 @@ header {
 
 
 [data-bs-theme="dark"] .banner_slider .heading h2 {
-    color: #fff;
+    color: $white;
 }
 [data-bs-theme="dark"] .banner_slider p {
-    color: #fff;
+    color: $white;
 }
 [data-bs-theme="dark"] .header-wrap .main-menu ul li a {
 	color: white;
@@ -39962,7 +39968,7 @@ header {
 .mb_payment_area .mb_section_title h3 {
   font-weight: 600;
   font-size: 24px;
-  color: #031a26;
+  color: #333;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .mb_payment_area .mb_section_title h3 {
@@ -40005,7 +40011,7 @@ header {
 .mb_payment_area .mb_order_summary .mb_summary_title h4 {
   font-weight: 600;
   font-size: 24px;
-  color: #031a26;
+  color: #333;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .mb_payment_area .mb_order_summary .mb_summary_title h4 {
@@ -40091,7 +40097,7 @@ header {
 .mb_payment_area .mb_bitcoin_info .mb_bitcoin_header .mb_bitcoin_title {
   font-weight: 600;
   font-size: 24px;
-  color: #031a26;
+  color: #333;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .mb_payment_area .mb_bitcoin_info .mb_bitcoin_header .mb_bitcoin_title {
@@ -40123,7 +40129,7 @@ header {
 .mb_payment_area .mb_bitcoin_info .mb_payment_detail h4 {
   font-weight: 600;
   font-size: 20px;
-  color: #031a26;
+  color: #333;
   margin-bottom: 13px;
 }
 .mb_payment_area .mb_bitcoin_info .mb_payment_detail .mb_copy_container {
@@ -40182,7 +40188,7 @@ header {
   font-weight: 600;
   margin-bottom: 11px;
   font-size: 24px;
-  color: #031a26;
+  color: #333;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .mb_payment_area .mb_instructions .mb_instructions_title {
@@ -43206,7 +43212,7 @@ ul.children {
   margin-top: 29px;
   font-weight: 600;
   font-size: 16px;
-  color: #fff;
+  color: #ffffff;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -43245,7 +43251,7 @@ ul.children {
   cursor: pointer;
   color: blue;
   text-decoration: none;
-  background-color: #fff;
+  background-color: #ffffff;
   padding-left: 5px;
   position: absolute;
   bottom: 0;
@@ -43500,7 +43506,7 @@ ul.children {
   -o-border-radius: 6px;
   font-weight: 600;
   font-size: 16px;
-  color: #fff;
+  color: #ffffff;
   transition: all 0.4s ease;
 }
 .mb_pricing_membership_area .mb_pricing_card .mb_card_body .btn_wrappeer a:hover {
@@ -43561,7 +43567,7 @@ ul.children {
   padding: 14px 30px;
   font-weight: 600;
   font-size: 16px;
-  color: #fff;
+  color: #ffffff;
   background-color: #031a26;
   border-radius: 6px;
   -moz-border-radius: 6px;
@@ -43683,7 +43689,7 @@ ul.children {
 }
 .mb_manage_listing .mb_filters .mb_search_icon {
   background-color: #ff9916;
-  color: #fff;
+  color: #ffffff;
   width: 50px;
   height: 50px;
   font-size: 20px;
@@ -43762,7 +43768,7 @@ ul.children {
   -webkit-border-radius: 0px 0px 10px 10px;
   -ms-border-radius: 0px 0px 10px 10px;
   -o-border-radius: 0px 0px 10px 10px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-top: none;
   display: flex;
   gap: 15px;
@@ -43851,7 +43857,7 @@ ul.children {
   -webkit-border-radius: 0px 0px 10px 10px;
   -ms-border-radius: 0px 0px 10px 10px;
   -o-border-radius: 0px 0px 10px 10px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-top: none;
   height: 231px;
 }
@@ -43895,13 +43901,13 @@ ul.children {
   -webkit-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  background-color: #fff;
+  background-color: #ffffff;
   cursor: pointer;
   font-size: 14px;
 }
 .mb_manage_listing .btn.btn-add-listing {
   background-color: #ff9916;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
   padding: 12px 24px;
   border: none;
@@ -44478,7 +44484,7 @@ ul.children {
   -webkit-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
-  color: #fff;
+  color: #ffffff;
 }
 .mb_change_password .update-button:hover {
   background-color: #2d3748;
@@ -44501,7 +44507,7 @@ ul.children {
   height: 44px;
   font-weight: 600;
   font-size: 16px;
-  color: #fff;
+  color: #ffffff;
   transition: all 0.4s ease;
 }
 .mb_saved_listing .saved_list_btn button:hover {
@@ -44960,7 +44966,7 @@ ul.children {
   padding: 11px 23px;
   font-weight: 600;
   font-size: 16px;
-  color: #fff;
+  color: #ffffff;
   border-radius: 999px;
   -moz-border-radius: 999px;
   -webkit-border-radius: 999px;
@@ -45474,7 +45480,7 @@ ul.children {
   padding: 54px 44px;
   border-radius: 14px;
   border: 1px solid rgba(3, 26, 38, 0.1);
-  background: #FFF;
+  background: #ffffff;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .rb_contact1 .section_padding .rb_contact_form {
@@ -45498,7 +45504,7 @@ ul.children {
 .rb_blog1 .rb_blog_card {
   border-radius: 14px;
   border: 1px solid rgba(3, 26, 38, 0.1);
-  background: #FFF;
+  background: #ffffff;
   padding: 10px 10px 30px 10px;
   transition: all 0.4s ease;
 }
@@ -45741,7 +45747,7 @@ ul.children {
   opacity: 0.7;
 }
 .rb_blog2 .rb_dropdown .btn_one:hover {
-  background: #FFF;
+  background: #ffffff;
 }
 .rb_blog2 .rb_dropdown_1 .btn_one {
   padding: 5px 22px;
@@ -45783,7 +45789,7 @@ ul.children {
   height: 26px;
   flex-shrink: 0;
   background-color: #FF9916;
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -45815,7 +45821,7 @@ ul.children {
 .rb_blog2 .rb_blog_card {
   border-radius: 14px;
   border: 1px solid rgba(3, 26, 38, 0.1);
-  background: #FFF;
+  background: #ffffff;
   padding: 10px 10px 16px 10px;
   transition: all 0.4s ease;
 }
@@ -45841,7 +45847,7 @@ ul.children {
   top: 7%;
   left: 7%;
   z-index: 9;
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -45854,7 +45860,7 @@ ul.children {
   flex-shrink: 0;
   aspect-ratio: 1/1;
   padding: 7px;
-  background: #FFF;
+  background: #ffffff;
   position: absolute;
   top: 7%;
   right: 7%;
@@ -45877,7 +45883,7 @@ ul.children {
   position: absolute;
   top: -46px;
   right: 18px;
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -45891,7 +45897,7 @@ ul.children {
   }
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_price span {
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 10px;
   font-style: normal;
@@ -46019,7 +46025,7 @@ ul.children {
 .rb_blog_card {
   border-radius: 14px;
   border: 1px solid rgba(3, 26, 38, 0.1);
-  background: #FFF;
+  background: #ffffff;
   padding: 10px 10px 16px 10px;
   transition: all 0.4s ease;
 }
@@ -46052,7 +46058,7 @@ ul.children {
   flex-shrink: 0;
   aspect-ratio: 1/1;
   padding: 7px;
-  background: #FFF;
+  background: #ffffff;
   position: absolute;
   top: 7%;
   right: 7%;
@@ -46163,7 +46169,7 @@ ul.children {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 30px;
   margin-bottom: 22px;
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -46192,7 +46198,7 @@ ul.children {
   }
 }
 .rb_testimonial1 .rb_testi_card .rb_content .rb_title {
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -46205,7 +46211,7 @@ ul.children {
   }
 }
 .rb_testimonial1 .rb_testi_card .rb_content .rb_label {
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -46237,7 +46243,7 @@ ul.children {
 .rb_testimonial1 .rb_testi_card2 {
   position: relative;
   border: 1px solid rgba(3, 26, 38, 0.1);
-  background: #FFF;
+  background: #ffffff;
 }
 .rb_testimonial1 .rb_testi_card2 .rb_content {
   padding: 40px 34px 34px;
@@ -46367,7 +46373,7 @@ ul.children {
   max-width: 370px;
 }
 .footer .rb_logoInfo .rb_logo_text {
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -46421,7 +46427,7 @@ ul.children {
   font-weight: 500;
 }
 .footer .rb_label {
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 19px;
   font-style: normal;
@@ -46435,7 +46441,7 @@ ul.children {
   }
 }
 .footer .rb_text {
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -46461,7 +46467,7 @@ ul.children {
   color: #F59E0B;
 }
 .footer .rb_star .rb_text {
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -46498,7 +46504,7 @@ ul.children {
   }
 }
 .footer .footer-menu .nav-link:hover {
-  color: #FFF;
+  color: #ffffff;
   text-decoration: underline;
 }
 .footer .rb_social_links {
@@ -46517,7 +46523,7 @@ ul.children {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #ffffff;
   transition: 0.3s;
 }
 .footer .rb_social_links a:hover {
@@ -46525,7 +46531,7 @@ ul.children {
   color: #041820;
 }
 .footer .rb_hunting {
-  color: #FFF;
+  color: #ffffff;
   font-family: Inter;
   font-size: 70px;
   font-style: normal;
@@ -46663,7 +46669,7 @@ ul.children {
 .mb_wiki_area .mb_search_button {
   background-color: #111827;
   border: none;
-  color: #fff;
+  color: #ffffff;
   width: 50px;
   height: 50px;
   border-radius: 6px;
@@ -46877,6 +46883,4 @@ ul.children {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   background-color: #031a26;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
