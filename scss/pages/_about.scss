@@ -9,6 +9,7 @@
     overflow: hidden;
     @include xxs {
         height: 400px;
+        margin: 5px 5px 0 5px;
     }
     .mb_inner_content {
         display: flex;
@@ -20,6 +21,13 @@
         }
         @include xs {
             margin-top: 140px;
+        }
+        .heading {
+            h1 {
+                @include md {
+                    text-align: center;
+                }
+            }
         }
     }
     .mb_blur_circle{
@@ -40,9 +48,6 @@
     .row{
         height: 100%;
         height: 470px
-        // .col-lg-6{
-        //     height: 100%
-        // }
     }
     ul{
         @include flex(row, flex-start, center);
@@ -52,6 +57,9 @@
         padding: 5px 20px;
         background: #f4d9b6;
         width: fit-content;
+        @include xxs {
+            padding: 5px 5px;
+        }
         li{
             a{
                 font-weight: 600;

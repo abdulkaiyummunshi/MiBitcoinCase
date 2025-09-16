@@ -35351,6 +35351,7 @@ header {
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .mb_inner_page_hero {
     height: 400px;
+    margin: 5px 5px 0 5px;
   }
 }
 .mb_inner_page_hero .mb_inner_content {
@@ -35367,6 +35368,11 @@ header {
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .mb_inner_page_hero .mb_inner_content {
     margin-top: 140px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mb_inner_page_hero .mb_inner_content .heading h1 {
+    text-align: center;
   }
 }
 .mb_inner_page_hero .mb_blur_circle {
@@ -35407,6 +35413,11 @@ header {
   padding: 5px 20px;
   background: #f4d9b6;
   width: fit-content;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_inner_page_hero ul {
+    padding: 5px 5px;
+  }
 }
 .mb_inner_page_hero ul li a {
   font-weight: 600;
