@@ -43525,7 +43525,7 @@ ul.children {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .mb_manage_listing .listings-summary .sort-by {
   display: flex;
@@ -43545,23 +43545,51 @@ ul.children {
   justify-content: center;
   align-items: center;
 }
-.mb_manage_listing .mb_table_head {
-  margin-top: 17px;
+.mb_manage_listing .mb_listing_header {
   padding: 30px;
   background-color: #ffeed8;
-  border-radius: 10px 10px 0 0;
+  border-radius: 0px 0px 0 0;
+}
+.mb_manage_listing .mb_listing_header.fix_radious {
+  border-radius: 10px 0px 0 0;
+}
+.mb_manage_listing .mb_listing_header.fix_radious2 {
+  border-radius: 0px 10px 0 0;
 }
 @media only screen and (max-width: 991px) {
-  .mb_manage_listing .mb_table_head {
+  .mb_manage_listing .mb_listing_header {
     padding: 19px;
+    border-radius: 10px 10px 0 0 !important;
   }
 }
-.mb_manage_listing .mb_table_head h4 {
+.mb_manage_listing .mb_listing_header h4 {
   font-weight: 600;
   font-size: 20px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_manage_listing .mb_listing_header h4 {
+    font-size: 16px;
+  }
+}
+.mb_manage_listing .mb_listing_table_content .row {
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.1);
+  border-top: none;
+}
+.mb_manage_listing .mb_listing_table_content .row > * {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
 .mb_manage_listing .mb_listing-details {
+  padding: 30px 30px 40px 30px;
+  border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -ms-border-radius: 0px 0px 10px 10px;
+  -o-border-radius: 0px 0px 10px 10px;
+  background-color: #fff;
+  border-top: none;
   display: flex;
   gap: 15px;
 }
@@ -43607,6 +43635,11 @@ ul.children {
   font-size: 16px;
   color: #68767d;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_manage_listing .mb_listing-details .mb_property-info .address {
+    font-size: 14px;
+  }
+}
 .mb_manage_listing .mb_listing-details .mb_property-info .mb_actions {
   margin-top: 10px;
   display: flex;
@@ -43621,6 +43654,11 @@ ul.children {
   font-size: 18px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_manage_listing .mb_listing-details .mb_property-info .mb_actions button {
+    font-size: 16px;
+  }
+}
 .mb_manage_listing .mb_listing-details .mb_property-info .mb_actions .nice-select {
   border: 1px solid rgba(3, 26, 38, 0.1);
   background: rgba(255, 153, 22, 0.1);
@@ -43631,6 +43669,32 @@ ul.children {
   font-weight: 600;
   font-size: 18px;
   color: #031a26;
+}
+.mb_manage_listing .mb_listing_item {
+  padding: 30px 30px 40px 30px;
+  border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  -ms-border-radius: 0px 0px 10px 10px;
+  -o-border-radius: 0px 0px 10px 10px;
+  background-color: #fff;
+  border-top: none;
+  height: 231px;
+}
+@media only screen and (max-width: 991px) {
+  .mb_manage_listing .mb_listing_item {
+    height: 195px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_manage_listing .mb_listing_item {
+    height: 170px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_manage_listing .mb_listing_item {
+    height: 140px;
+  }
 }
 .mb_manage_listing .mb_listing_item ul {
   display: flex;
@@ -43644,20 +43708,9 @@ ul.children {
   font-size: 18px;
   color: #68767d;
 }
-.mb_manage_listing .mb_listing_table_content {
-  padding: 30px 30px 40px 30px;
-  border: 1px solid rgba(3, 26, 38, 0.1);
-  border-radius: 0px 0px 10px 10px;
-  -moz-border-radius: 0px 0px 10px 10px;
-  -webkit-border-radius: 0px 0px 10px 10px;
-  -ms-border-radius: 0px 0px 10px 10px;
-  -o-border-radius: 0px 0px 10px 10px;
-  background-color: #fff;
-  border-top: none;
-}
-@media only screen and (max-width: 991px) {
-  .mb_manage_listing .mb_listing_table_content {
-    padding: 20px 20px 20px 20px;
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_manage_listing .mb_listing_item ul li {
+    font-size: 14px;
   }
 }
 .mb_manage_listing .btn {
@@ -43688,6 +43741,21 @@ ul.children {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+.mb_manage_listing .add-listing-section p {
+  color: #031A26;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_manage_listing .add-listing-section p {
+    font-size: 14px;
+  }
 }
 @media (min-width: 768px) {
   .mb_manage_listing .filters .search-icon-container {
