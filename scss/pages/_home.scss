@@ -1685,6 +1685,19 @@
         @include xl {
             padding: 43px 32px 45px;
         }
+
+        @include sm{
+            padding: 25px;
+            padding-bottom: 40px;
+        }
+        @include xs{
+            padding: 16px;
+            padding-bottom: 38px;
+        }
+        @include xxs{
+            padding: 10px;
+            padding-bottom: 32px;
+        }
         &.active{
             max-height: 100%;
             overflow: visible;
@@ -1698,6 +1711,15 @@
                     font-size: 18px;
                     line-height: 30px; 
                 }
+
+                @include xs{
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                @include xxs{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
             }
         }
         .mb_brokerage_title{
@@ -1705,6 +1727,17 @@
                 font-weight: 700;
                 font-size: 18px;
                 color: #031a26;
+
+                @include sm{
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+                @include xs{
+                    font-size: 14px;
+                }
+                @include xxs{
+                    font-size: 12px;
+                }
             }
         }
         .mb_item_title{
@@ -1713,6 +1746,13 @@
                 font-size: 16px;
                 color: #031a26;
                 opacity: 0.7;
+
+                @include xs{
+                    font-size: 14px;
+                }
+                @include xxs{
+                    font-size: 12px;
+                }
             }
         }
         .mb_check{
@@ -1735,8 +1775,18 @@
         }
         overflow: hidden;
         background-color: $white;
-        border: 1px solid rgba(3, 26, 38, 0.1);
+        
         @include border-radius(14px);
+
+        @include sm{
+            padding: 0 25px;
+        }
+        @include xs{
+            padding: 0 16px;
+        }
+        @include xxs{
+            padding: 0 10px;
+        }
     }
     .btn_wrapper{
         position: absolute;
@@ -1764,3 +1814,61 @@
     }
 }
 /*--MiBitcoin vs Brokerage End---*/
+
+.process-item,
+.process-header{
+    display: grid;
+    grid-template-columns: 55% 22% 23%;
+    border-bottom: 1px solid rgba(3, 26, 38, 0.1);
+
+    @include sm{
+        grid-template-columns: 54% 23% 23%;
+    }
+
+    &:last-child{
+        border-bottom: none;
+    }
+    
+    .mb_check{
+        text-align: center;
+       
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mb_item_title{
+        justify-content: flex-start;
+        padding:10px 0;
+        padding-right: 7px;
+    }
+
+    .style-10{
+        padding: 12px 0;
+        justify-content: flex-start;
+    }
+}
+
+.process-header{
+    border-bottom: none;
+    .mb_title{
+        justify-content: flex-start;
+    }
+
+    .mb_mibitcoin_logo img{
+        @include lg{
+            max-width: 120px;
+        }
+        @include md{
+            max-width: 100px;
+        }
+        @include sm{
+            max-width: 80px;
+        }
+        @include xxs{
+            max-width: 60px;
+        }
+    }
+}

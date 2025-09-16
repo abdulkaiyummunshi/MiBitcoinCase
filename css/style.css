@@ -35252,6 +35252,24 @@ header {
     padding: 43px 32px 45px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage {
+    padding: 25px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage {
+    padding: 16px;
+    padding-bottom: 38px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage {
+    padding: 10px;
+    padding-bottom: 32px;
+  }
+}
 .mb_mibitcoin_casa .mb_casa_brokerage.active {
   max-height: 100%;
   overflow: visible;
@@ -35267,16 +35285,54 @@ header {
     line-height: 30px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
   font-weight: 700;
   font-size: 18px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
+    font-size: 12px;
+  }
 }
 .mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
   font-weight: 500;
   font-size: 16px;
   color: #031a26;
   opacity: 0.7;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
+    font-size: 12px;
+  }
 }
 .mb_mibitcoin_casa .mb_casa_brokerage .mb_check {
   color: #12cc3b;
@@ -35291,7 +35347,6 @@ header {
   transition: all 0.5s ease-in-out;
   overflow: hidden;
   background-color: #fff;
-  border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 14px;
   -moz-border-radius: 14px;
   -webkit-border-radius: 14px;
@@ -35300,6 +35355,21 @@ header {
 }
 .mb_mibitcoin_casa .mb_casa_brokerage_contains.active {
   max-height: 100%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage_contains {
+    padding: 0 25px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage_contains {
+    padding: 0 16px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_mibitcoin_casa .mb_casa_brokerage_contains {
+    padding: 0 10px;
+  }
 }
 .mb_mibitcoin_casa .btn_wrapper {
   position: absolute;
@@ -35331,6 +35401,71 @@ header {
 }
 
 /*--MiBitcoin vs Brokerage End---*/
+.process-item,
+.process-header {
+  display: grid;
+  grid-template-columns: 55% 22% 23%;
+  border-bottom: 1px solid rgba(3, 26, 38, 0.1);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .process-item,
+  .process-header {
+    grid-template-columns: 54% 23% 23%;
+  }
+}
+.process-item:last-child,
+.process-header:last-child {
+  border-bottom: none;
+}
+.process-item .mb_check,
+.process-header .mb_check {
+  text-align: center;
+}
+.process-item div,
+.process-header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.process-item .mb_item_title,
+.process-header .mb_item_title {
+  justify-content: flex-start;
+  padding: 10px 0;
+  padding-right: 7px;
+}
+.process-item .style-10,
+.process-header .style-10 {
+  padding: 12px 0;
+  justify-content: flex-start;
+}
+
+.process-header {
+  border-bottom: none;
+}
+.process-header .mb_title {
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 1199px) {
+  .process-header .mb_mibitcoin_logo img {
+    max-width: 120px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .process-header .mb_mibitcoin_logo img {
+    max-width: 100px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .process-header .mb_mibitcoin_logo img {
+    max-width: 80px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .process-header .mb_mibitcoin_logo img {
+    max-width: 60px;
+  }
+}
+
 /*---Inner Page Hero Section Start---*/
 .mb_inner_page_hero {
   height: 470px;
@@ -46699,4 +46834,6 @@ ul.children {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   background-color: #031a26;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
