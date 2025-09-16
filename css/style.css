@@ -35780,7 +35780,7 @@ header {
   }
 }
 .rb_about2 .rb_content .item .rb_title {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 22px;
   font-style: normal;
@@ -35846,7 +35846,7 @@ header {
   align-items: center;
 }
 .rb_about2 .rb_btn_area .rb_profile .item .rb_title {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -37017,7 +37017,7 @@ header {
   background: #fff;
   padding: 8px 8px;
   height: 40px;
-  color: #031A26;
+  color: #031a26;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -37050,7 +37050,7 @@ header {
   }
 }
 .rb_project1 .rb_project1_card .rb_content .rb_title {
-  color: #031A26;
+  color: #031a26;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -37062,7 +37062,7 @@ header {
   }
 }
 .rb_project1 .rb_project1_card .rb_content .rb_desc {
-  color: var(--900, #031A26);
+  color: #031a26;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -37116,7 +37116,7 @@ header {
   justify-content: end;
   align-items: center;
   gap: 10px;
-  color: #031A26;
+  color: #031a26;
   font-size: 15px;
   font-style: normal;
   font-weight: 600;
@@ -37134,7 +37134,7 @@ header {
   }
 }
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -37150,7 +37150,7 @@ header {
   color: rgba(3, 26, 38, 0.4);
 }
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_text {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -37225,7 +37225,7 @@ header {
   }
 }
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h5 {
-  color: #031A26;
+  color: #031a26;
   text-align: right;
   font-size: 20px;
   font-style: normal;
@@ -37240,7 +37240,7 @@ header {
   }
 }
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h6 {
-  color: #031A26;
+  color: #031a26;
   text-align: right;
   font-size: 15px;
   font-style: normal;
@@ -37262,7 +37262,7 @@ header {
   gap: 15px;
 }
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_service_item .text h5 {
-  color: #031A26;
+  color: #031a26;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -37271,14 +37271,14 @@ header {
   padding-bottom: 5px;
 }
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_service_item .text h4 {
-  color: #031A26;
+  color: #031a26;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc h4 {
-  color: #031A26;
+  color: #031a26;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -37314,7 +37314,7 @@ header {
   }
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_title h4 {
-  color: #031A26;
+  color: #031a26;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -37383,7 +37383,7 @@ header {
   }
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date span {
-  color: #031A26;
+  color: #031a26;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -37404,7 +37404,7 @@ header {
   border-radius: 4px;
   background: #fff;
   box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
-  color: #031A26;
+  color: #031a26;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -37415,7 +37415,7 @@ header {
   -o-border-radius: 4px;
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_login_to_view {
-  color: #031A26;
+  color: #031a26;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -37465,7 +37465,7 @@ header {
   align-items: center;
 }
 .rb_project_tab .rb_history_content .rb_history_card .rb_fullhistory {
-  color: #FF9916;
+  color: #ff9916;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -37477,7 +37477,7 @@ header {
   border: 1px solid rgba(3, 26, 38, 0.12);
 }
 .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_miBitcoin_title h4 {
-  color: #031A26;
+  color: #031a26;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -37510,7 +37510,7 @@ header {
   border-radius: 9px 9px 0 0;
   background: #FFEED8;
   padding: 18px 60px;
-  color: #031A26;
+  color: #031a26;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -37548,7 +37548,6 @@ header {
   position: relative;
   /* Y-axis labels */
   /* X-axis labels */
-  /* Horizontal grid lines */
 }
 .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart .y-label {
   color: rgba(3, 26, 38, 0.7);
@@ -37589,7 +37588,7 @@ header {
   }
 }
 .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_title h4 {
-  color: #031A26;
+  color: #031a26;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -37622,7 +37621,7 @@ header {
   border-radius: 6px 6px 0 0;
   background: #FFEED8;
   padding: 14px 18px;
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -37653,7 +37652,7 @@ header {
   background: #fff;
 }
 .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header h3 {
-  color: #031A26;
+  color: #031a26;
 }
 .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header .iconPlus {
   display: none;
@@ -37685,7 +37684,7 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
-  color: #031A26;
+  color: #031a26;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -37759,14 +37758,14 @@ header {
   padding-bottom: 8px;
 }
 .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table .rb_item h5 {
-  color: #031A26;
+  color: #031a26;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .rb_title {
-  color: #031A26;
+  color: #031a26;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -37798,7 +37797,7 @@ header {
   }
 }
 .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 .title h4 {
-  color: var(--900, #031A26);
+  color: #031a26;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -37862,7 +37861,7 @@ header {
   padding: 22px 40px 36px 40px;
 }
 .rb_project_tab .rb_btc_card .rb_btc_text {
-  color: #031A26;
+  color: #031a26;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -37870,7 +37869,7 @@ header {
   padding-right: 10px;
 }
 .rb_project_tab .rb_btc_card .rb_btc_value {
-  color: #031A26;
+  color: #031a26;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -37884,14 +37883,14 @@ header {
   margin-left: 25px;
 }
 .rb_project_tab .rb_btc_card .rb_est {
-  color: #031A26;
+  color: #031a26;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 .rb_project_tab .rb_btc_card .rb_est span {
-  color: #031A26;
+  color: #031a26;
   font-size: 8px;
   font-style: normal;
   font-weight: 500;
@@ -37907,14 +37906,14 @@ header {
   padding: 20px 40px 36px 40px;
 }
 .rb_project_tab .rb_schedule_card .rb_schedule_title {
-  color: #031A26;
+  color: #031a26;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 64px; /* 213.333% */
 }
 .rb_project_tab .rb_schedule_card .rb_schedule_text {
-  color: #031A26;
+  color: #031a26;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -37939,7 +37938,7 @@ header {
   line-height: 24px; /* 150% */
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .item h4 {
-  color: var(--900, #031A26);
+  color: #031a26;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -37967,7 +37966,7 @@ header {
   line-height: normal;
 }
 .rb_project_tab .rb_schedule_card .rb_more_about_property {
-  color: #031A26;
+  color: #031a26;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -37977,7 +37976,7 @@ header {
   border-radius: 6px;
   border: 1px solid rgba(3, 26, 38, 0.12);
   padding: 18px 20px;
-  color: var(--900, #031A26);
+  color: #031a26;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -37985,7 +37984,7 @@ header {
   text-align: center;
 }
 .rb_project_tab .rb_schedule_card .rb_message_sent {
-  color: var(--900, #031A26);
+  color: #031a26;
   font-size: 16px;
   text-align: center;
   font-style: normal;
@@ -37993,7 +37992,7 @@ header {
   line-height: 24px;
 }
 .rb_project_tab .rb_schedule_card .rb_desc {
-  color: var(--900, #031A26);
+  color: #031a26;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -38245,7 +38244,7 @@ header {
   }
 }
 .mb_monthly_payment_area .mb_payment_card .mb_cost_breakdown .mb_breakdown_label a {
-  color: #031A26;
+  color: #031a26;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   transition: all 0.4s ease;
@@ -39943,7 +39942,7 @@ header {
   color: #ff9916;
   text-decoration: none;
   font-weight: bold;
-  color: var(--900, #031A26);
+  color: #031a26;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -40019,7 +40018,7 @@ header {
   }
 }
 .mb_payment_area .mb_order_summary .mb_summary_title h5 {
-  color: #031A26;
+  color: #333;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -40360,7 +40359,7 @@ header {
   padding-top: 0px !important;
 }
 .blog-area .blog-posts .single-post-item .post-content-wrapper .post-heading .post-title a {
-  color: var(--900, #031A26);
+  color: #031a26;
   font-family: Inter;
   font-size: 42px;
   font-style: normal;
@@ -40820,7 +40819,7 @@ header {
   border-bottom: 1px solid #ff9916;
 }
 .blog-area .sidebar .side-section-heading .section-title {
-  color: var(--900, #031A26);
+  color: #031a26;
   font-family: Inter;
   font-size: 26px;
   font-style: normal;
@@ -41161,7 +41160,7 @@ header {
   margin-top: 20px;
 }
 .blog-area .blog-details-wrapper .single-post-item .post-content-wrapper .post-heading .post-title {
-  color: var(--900, #031A26);
+  color: #031a26;
   font-family: Inter;
   font-size: 40px;
   font-style: normal;
@@ -42665,7 +42664,7 @@ ul.children {
   }
 }
 .rb_service1 .service_card .content .rb_title {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -42714,7 +42713,7 @@ ul.children {
   width: 175px;
 }
 .rb_counter1 .counter_box .counter_item .rb_numb {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 50px;
   font-style: normal;
@@ -42732,7 +42731,7 @@ ul.children {
 
 .rb_step_slider {
   position: relative;
-  background: #031A26;
+  background: #031a26;
   padding: 120px 0 130px;
 }
 .rb_step_slider .left-arrow {
@@ -43179,7 +43178,7 @@ ul.children {
   padding: 10px 20px;
   margin-bottom: 23px;
   outline: none;
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -43923,7 +43922,7 @@ ul.children {
   gap: 20px;
 }
 .mb_manage_listing .add-listing-section p {
-  color: #031A26;
+  color: #031a26;
   leading-trim: both;
   text-edge: cap;
   font-family: Inter;
@@ -45531,7 +45530,7 @@ ul.children {
   gap: 20px;
 }
 .rb_blog1 .rb_blog_card .rb_content .rb_meta span {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -45546,11 +45545,11 @@ ul.children {
 }
 .rb_blog1 .rb_blog_card .rb_content .rb_meta i {
   padding-right: 5px;
-  color: #031A26;
+  color: #031a26;
   opacity: 0.7;
 }
 .rb_blog1 .rb_blog_card .rb_content h4 {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
@@ -45596,7 +45595,7 @@ ul.children {
   }
 }
 .rb_blog2 .rb_blog_header h4 {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -45612,7 +45611,7 @@ ul.children {
   line-height: normal;
 }
 .rb_blog2 .rb_blog_header h5 span {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -45906,7 +45905,7 @@ ul.children {
   padding-left: 5px;
 }
 .rb_blog2 .rb_blog_card .rb_content h4 {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -45927,7 +45926,7 @@ ul.children {
   }
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_location span {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -45942,7 +45941,7 @@ ul.children {
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_location i {
   padding-right: 8px;
-  color: #031A26;
+  color: #031a26;
   opacity: 0.7;
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_meta {
@@ -45952,7 +45951,7 @@ ul.children {
   border-bottom: 1px solid rgba(3, 26, 38, 0.1);
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_meta .rb_item span {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
@@ -45980,7 +45979,7 @@ ul.children {
   justify-content: space-between;
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_card_link .rb_link {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -46079,7 +46078,7 @@ ul.children {
 }
 .rb_blog_card .rb_content .rb_location i {
   padding-right: 8px;
-  color: #031A26;
+  color: #031a26;
   opacity: 0.7;
 }
 .rb_blog_card .rb_content .rb_meta {
@@ -46279,7 +46278,7 @@ ul.children {
   }
 }
 .rb_testimonial1 .rb_testi_card2 .rb_content .rb_title {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
@@ -46292,7 +46291,7 @@ ul.children {
   }
 }
 .rb_testimonial1 .rb_testi_card2 .rb_content .rb_label {
-  color: #031A26;
+  color: #031a26;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;

@@ -50,7 +50,7 @@
         }
         .content {
             .rb_title {
-                color: #031A26;
+                color: $text_color;
                 font-family: Inter;
                 font-size: 24px;
                 font-style: normal;
@@ -92,7 +92,7 @@
         .counter_item {
             width: 175px;
             .rb_numb {
-                color: #031A26;
+                color: $text_color;
                 font-family: Inter;
                 font-size: 50px;
                 font-style: normal;
@@ -116,7 +116,7 @@
 // Step Slider Start
 .rb_step_slider {
     position: relative;
-    background: #031A26;
+    background: $text_color;
     padding: 120px 0 130px;
 
     .left-arrow{

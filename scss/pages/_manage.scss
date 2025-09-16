@@ -276,7 +276,7 @@
     @include flex(column, center, center);
     gap: 20px;
     p {
-        color: #031A26;
+        color: $text_color;
         leading-trim: both;
         text-edge: cap;
         font-family: Inter;

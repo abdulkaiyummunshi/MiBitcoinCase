@@ -94,7 +94,6 @@
         p{
             border: 1px solid rgba(3, 26, 38, 0.12);
             max-width: 410px;
-            // height: 110px;
             padding: 30px;
             border-radius: 6px;
             a{
@@ -231,7 +230,7 @@
                     font-weight: 500;
                     font-size: 18px;
                     line-height: 167%;
-                    color: rgba(3, 26, 38, 0.6);
+                    color: $text_style2;
                 }
                 
             }
@@ -239,7 +238,6 @@
                 margin-top: 24px;
 
                 li{
-                    // margin-bottom: 24px;
                     font-weight: 500;
                     font-size: 16px;
                     color: $text_color;
@@ -328,7 +326,7 @@
                 padding: 10px 20px;
                 margin-bottom: 23px;
                 outline: none;
-                color: #031A26;
+                color: $text_color;
                 font-family: Inter;
                 font-size: 15px;
                 font-style: normal;

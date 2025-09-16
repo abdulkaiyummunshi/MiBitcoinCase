@@ -29,7 +29,7 @@
         h5{
             font-weight: 500;
             font-size: 16px;
-            color: rgba(3, 26, 38, 0.6);
+            color: $text_style2;
             @include xxs {
                 font-size: 14px;
             }
@@ -117,7 +117,7 @@
     p{
         font-weight: 500;
         font-size: 18px;
-        color: rgba(3, 26, 38, 0.6);
+        color: $text_style2;
         @include md {
             font-size: 16px;
             line-height: 26px; /* 162.5% */

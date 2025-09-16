@@ -41,7 +41,7 @@
                     background: $white;
                     padding: 8px 8px;
                     height: 40px;
-                    color: #031A26;
+                    color: $text_color;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 600;
@@ -71,7 +71,7 @@
                 padding: 19px 12px;
             }
             .rb_title {
-                color: #031A26;
+                color: $text_color;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 600;
@@ -81,7 +81,7 @@
                 }
             }
             .rb_desc {
-                color: var(--900, #031A26);
+                color: $text_color;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 500;
@@ -130,7 +130,7 @@
     .rb_add_favorite_btn {
         @include flex(row, end, center);
         gap: 10px;
-        color: #031A26;
+        color: $text_color;
         font-size: 15px;
         font-style: normal;
         font-weight: 600;
@@ -147,7 +147,7 @@
             }
             .rb_location {
                 .rb_title {
-                    color: #031A26;
+                    color: $text_color;
                     font-family: Inter;
                     font-size: 24px;
                     font-style: normal;
@@ -161,7 +161,7 @@
                     }
                 }
                 .rb_text {
-                    color: #031A26;
+                    color: $text_color;
                     font-family: Inter;
                     font-size: 15px;
                     font-style: normal;
@@ -226,7 +226,7 @@
                     display: none;
                 }
                 h5 {
-                    color: #031A26;
+                    color: $text_color;
                     text-align: right;
                     font-size: 20px;
                     font-style: normal;
@@ -239,7 +239,7 @@
                     }
                 }
                 h6 {
-                    color: #031A26;
+                    color: $text_color;
                     text-align: right;
                     font-size: 15px;
                     font-style: normal;
@@ -259,7 +259,7 @@
                 gap: 15px;
                 .text {
                     h5 {
-                        color: #031A26;
+                        color: $text_color;
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 400;
@@ -268,7 +268,7 @@
                         padding-bottom: 5px;
                     }
                     h4 {
-                        color: #031A26;
+                        color: $text_color;
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 600;
@@ -278,7 +278,7 @@
             }
             .rb_desc {
                 h4 {
-                    color: #031A26;
+                    color: $text_color;
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 700;
@@ -315,7 +315,7 @@
             }
             .rb_history_title {
                 h4 {
-                    color: #031A26;
+                    color: $text_color;
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 700;
@@ -372,7 +372,7 @@
                             font-size: 14px;
                         }
                         span {
-                            color: #031A26;
+                            color: $text_color;
                             font-size: 20px;
                             font-style: normal;
                             font-weight: 600;
@@ -392,7 +392,7 @@
                         border-radius: 4px;
                         background: $white;
                         box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
-                        color: #031A26;
+                        color: $text_color;
                         font-size: 14px;
                         font-style: normal;
                         font-weight: 500;
@@ -403,7 +403,7 @@
                         -o-border-radius: 4px;
 }
                     .rb_login_to_view {
-                        color: #031A26;
+                        color: $text_color;
                         font-size: 15px;
                         font-style: normal;
                         font-weight: 500;
@@ -422,7 +422,7 @@
                         }
                         .content {
                             h4 {
-                                color: #252525;
+                                color: $text_color2;
                                 font-size: 16px;
                                 font-style: normal;
                                 font-weight: 500;
@@ -453,7 +453,7 @@
                 }
             }
             .rb_fullhistory {
-                color: #FF9916;
+                color: $primary;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 600;
@@ -469,7 +469,7 @@
             border: 1px solid rgba(3, 26, 38, 0.12);
             .rb_miBitcoin_title {
                 h4 {
-                    color: #031A26;
+                    color: $text_color;
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 700;
@@ -501,7 +501,7 @@
                         border-radius: 9px 9px 0 0;
                         background: #FFEED8;
                         padding: 18px 60px;
-                        color: #031A26;
+                        color: $text_color;
                         text-align: center;
                         font-size: 18px;
                         font-style: normal;
@@ -562,12 +562,6 @@
                         padding-top: 8px;
                     }
                 
-                    /* Horizontal grid lines */
-                    // .grid-line {
-                    //     grid-column: 2 / 3;
-                    //     border-top: 1px solid #e5e7eb;
-                    //     opacity: 0.7;
-                    // }
                 }
             }
 
@@ -586,7 +580,7 @@
             }
             .rb_feature_title {
                 h4 {
-                    color: #031A26;
+                    color: $text_color;
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 700;
@@ -615,7 +609,7 @@
                     border-radius: 6px 6px 0 0;
                     background: #FFEED8;
                     padding: 14px 18px;
-                    color: #031A26;
+                    color: $text_color;
                     font-family: Inter;
                     font-size: 16px;
                     font-style: normal;
@@ -642,7 +636,7 @@
                             .accordion-header {
                                 background: $white;
                                 h3{
-                                    color: #031A26;
+                                    color: $text_color;
                                 }                  
 
                                 .iconPlus {
@@ -673,7 +667,7 @@
                             display: flex;
                             align-items: center;
                             gap: 20px;
-                            color: #031A26;
+                            color: $text_color;
                             font-size: 20px;
                             font-style: normal;
                             font-weight: 600;
@@ -738,7 +732,7 @@
                                     padding-bottom: 8px;
                                 }
                                 h5 {
-                                    color: #031A26;
+                                    color: $text_color;
                                     font-size: 16px;
                                     font-style: normal;
                                     font-weight: 500;
@@ -751,7 +745,7 @@
             }
             .rb_nearby_listing {
                 .rb_title {
-                    color: #031A26;
+                    color: $text_color;
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 700;
@@ -777,7 +771,7 @@
                             }
                             .title{
                                 h4 {
-                                    color: var(--900, #031A26);
+                                    color: $text_color;
                                     font-size: 18px;
                                     font-style: normal;
                                     font-weight: 500;
@@ -829,7 +823,7 @@
         border: 1px solid rgba(3, 26, 38, 0.12);
         padding: 22px 40px 36px 40px;
         .rb_btc_text {
-            color: #031A26;
+            color: $text_color;
             font-size: 40px;
             font-style: normal;
             font-weight: 700;
@@ -837,7 +831,7 @@
             padding-right: 10px;
         }
         .rb_btc_value {
-            color: #031A26;
+            color: $text_color;
             font-size: 24px;
             font-style: normal;
             font-weight: 500;
@@ -851,13 +845,13 @@
             margin-left: 25px;
         }
         .rb_est {
-            color: #031A26;
+            color: $text_color;
             font-size: 15px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
             span {
-                color: #031A26;
+                color: $text_color;
                 font-size: 8px;
                 font-style: normal;
                 font-weight: 500;
@@ -874,14 +868,14 @@
         border: 1px solid rgba(3, 26, 38, 0.12);
         padding: 20px 40px 36px 40px;
         .rb_schedule_title {
-            color: #031A26;
+            color: $text_color;
             font-size: 30px;
             font-style: normal;
             font-weight: 700;
             line-height: 64px; /* 213.333% */
         }
         .rb_schedule_text {
-            color: #031A26;
+            color: $text_color;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -904,7 +898,7 @@
                     line-height: 24px; /* 150% */
                 }
                 h4 {
-                    color: var(--900, #031A26);
+                    color: $text_color;
                     font-size: 22px;
                     font-style: normal;
                     font-weight: 700;
@@ -934,7 +928,7 @@
             line-height: normal;
         }
         .rb_more_about_property {
-            color: #031A26;
+            color: $text_color;
             font-size: 30px;
             font-style: normal;
             font-weight: 700;
@@ -944,7 +938,7 @@
             border-radius: 6px;
             border: 1px solid rgba(3, 26, 38, 0.12);
             padding: 18px 20px;
-            color: var(--900, #031A26);
+            color: $text_color;
             font-size: 16px;
             font-style: normal;
             font-weight: 600;
@@ -952,7 +946,7 @@
             text-align: center;
         }
         .rb_message_sent {
-            color: var(--900, #031A26);
+            color: $text_color;
             font-size: 16px;
             text-align: center;
             font-style: normal;
@@ -960,7 +954,7 @@
             line-height: 24px;
         }
         .rb_desc {
-            color: var(--900, #031A26);
+            color: $text_color;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -1151,7 +1145,7 @@
                     line-height: 24px; 
                 }
                 a{
-                    color: #031A26;
+                    color: $text_color;
                     text-decoration: underline;
                     text-decoration-skip-ink: none;
                     @include transition(0.4s);
@@ -1923,7 +1917,7 @@
         p{
             font-weight: 500;
             font-size: 16px;
-            color: rgba(3, 26, 38, 0.6);
+            color: $text_style2;
             margin-top: 10px;
         }
     }
@@ -1949,7 +1943,7 @@
         h4{
             font-weight: 500;
             font-size: 16px;
-            color: #252525;
+            color: $text_color2;
             padding-left: 30px;
             position: relative;
             &::before{
@@ -2024,7 +2018,7 @@
   p {
     font-weight: 500;
     font-size: 16px;
-    color: rgba(3, 26, 38, 0.6);
+    color: $text_style2;
     @include xs {
         font-size: 14px;
     }
@@ -2339,7 +2333,7 @@ background: rgba(3, 26, 38, 0.6);
 .mb_insight_title {
     font-weight: 500;
     font-size: 16px;
-    color: #252525;
+    color: $text_color2;
   margin-bottom: 5px;
       @include xxs {
         font-size: 14px;

@@ -269,7 +269,7 @@
                 }
             }
             .rb_title {
-                color: #031A26;
+                color: $text_color;
                 font-family: Inter;
                 font-size: 22px;
                 font-style: normal;
@@ -333,7 +333,7 @@
                     align-items: center;
                 }
                 .rb_title {
-                    color: #031A26;
+                    color: $text_color;
                     font-family: Inter;
                     font-size: 18px;
                     font-style: normal;

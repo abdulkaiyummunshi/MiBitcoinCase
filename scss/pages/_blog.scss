@@ -38,7 +38,7 @@
                 align-items: center;
                 gap: 20px;
                 span {
-                    color: #031A26;
+                    color: $text_color;
                     font-family: Inter;
                     font-size: 15px;
                     font-style: normal;
@@ -51,12 +51,12 @@
                 }
                 i {
                     padding-right: 5px;
-                    color: #031A26;
+                    color: $text_color;
                     opacity: 0.7;
                 }
             }
             h4 {
-                color: #031A26;
+                color: $text_color;
                 font-family: Inter;
                 font-size: 20px;
                 font-style: normal;
@@ -105,7 +105,7 @@
     }
     .rb_blog_header {
         h4 {
-            color: #031A26;
+            color: $text_color;
             font-family: Inter;
             font-size: 24px;
             font-style: normal;
@@ -120,7 +120,7 @@
             font-weight: 500;
             line-height: normal;
             span {
-                color: #031A26;
+                color: $text_color;
                 font-family: Inter;
                 font-size: 15px;
                 font-style: normal;
@@ -386,7 +386,7 @@
                 }
             }
             h4 {
-                color: #031A26;
+                color: $text_color;
                 font-family: Inter;
                 font-size: 24px;
                 font-style: normal;
@@ -404,7 +404,7 @@
             }
             .rb_location {
                 span {
-                    color: #031A26;
+                    color: $text_color;
                     font-family: Inter;
                     font-size: 15px;
                     font-style: normal;
@@ -417,7 +417,7 @@
                 }
                 i {
                     padding-right: 8px;
-                    color: #031A26;
+                    color: $text_color;
                     opacity: 0.7;
                 }
             }
@@ -428,7 +428,7 @@
                 border-bottom: 1px solid rgba(3, 26, 38, 0.10);;
                 .rb_item {
                     span {
-                        color: #031A26;
+                        color: $text_color;
                         font-family: Inter;
                         font-size: 15px;
                         font-style: normal;
@@ -453,7 +453,7 @@
                 align-items: center;
                 justify-content: space-between;
                 .rb_link {
-                    color: #031A26;
+                    color: $text_color;
                     font-family: Inter;
                     font-size: 16px;
                     font-style: normal;
@@ -558,7 +558,7 @@
             .rb_location {
                 i {
                     padding-right: 8px;
-                    color: #031A26;
+                    color: $text_color;
                     opacity: 0.7;
                 }
             }

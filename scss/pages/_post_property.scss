@@ -162,7 +162,7 @@
         outline: none;
         padding-left: 20px;
         &::placeholder{
-            color: rgba(3, 26, 38, 0.6);
+            color: $text_style2;
             
         }
     }
@@ -224,7 +224,7 @@
                 font-weight: 500;
                 font-size: 16px;
                 
-                color: rgba(3, 26, 38, 0.6);
+                color: $text_style2;
             }
             .list{
                 width: 100% ;
@@ -279,7 +279,7 @@
             .current{
                 font-weight: 500;
                 font-size: 18px;
-                color: rgba(3, 26, 38, 0.6);
+                color: $text_style2;
                 sub{
                     font-size: 12px;
                 }
@@ -360,7 +360,7 @@
        label{
         font-weight: 500;
         font-size: 16px;
-        color: rgba(3, 26, 38, 0.6);
+        color: $text_style2;
        }
     }
 }
@@ -410,7 +410,7 @@
         font-weight: 500;
         font-size: 16px;
         text-align: center;
-        color: rgba(3, 26, 38, 0.6);
+        color: $text_style2;
     }
 
 }
