@@ -21,6 +21,9 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
         font-weight: 600;
         font-size: 24px;
         color: #031a26;
+        @include xxs {
+            font-size: 20px;
+        }        
     }
 }
 .mb_payment_card {
@@ -28,6 +31,12 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     background: #fdf3e7;
     padding: 50px;
+    @include md {
+        padding: 40px;
+    }
+    @include sm {
+        padding: 20px;
+    }
 }
 
 .mb_order_summary {
@@ -35,12 +44,29 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     padding: 40px;
     background-color: $white;
+    @include sm {
+        padding: 20px;
+    }
     .mb_summary_title{
         @include flex(row, space-between, center);
         h4{
             font-weight: 600;
             font-size: 24px;
             color: #031a26;
+            @include xxs {
+                font-size: 16px;
+            }                    
+        }
+        h5 {
+            color: #031A26;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            @include xxs {
+                font-size: 16px;
+            }                    
         }
     }
     hr{
@@ -66,6 +92,9 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
             font-weight: 600;
             font-size: 16px;
             color: rgba(3, 26, 38, 0.6);
+            @include xxs {
+                font-size: 12px;
+            }                    
         }
     }
     
@@ -109,6 +138,9 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
             font-weight: 600;
             font-size: 24px;
             color: #031a26;
+            @include xxs {
+                font-size: 20px;
+            }        
         }
 
         .mb_bitcoin_subtitle {
@@ -116,14 +148,20 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
             font-size: 16px;
             color: rgba(3, 26, 38, 0.6);
             margin: 5px 0 0 0;
+             @include xxs {
+                font-size: 10px;
+            }        
         }
     }
-.mb_payment_details_area{
-    border: 1px solid rgba(3, 26, 38, 0.1);
-    border-radius: 10px;
-    padding: 40px;
-    background-color: $white;
-}
+    .mb_payment_details_area{
+        border: 1px solid rgba(3, 26, 38, 0.1);
+        border-radius: 10px;
+        padding: 40px;
+        background-color: $white;
+                @include sm {
+                    padding: 20px;
+                }        
+    }
     .mb_payment_detail {
 
         h4{
@@ -146,6 +184,9 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
                     font-weight: 500;
                     font-size: 16px;
                     color: rgba(3, 26, 38, 0.6);
+                    @include xxs {
+                    font-size: 14px;
+                }        
             }
             
         }
@@ -176,11 +217,17 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     padding: 35px 40px 30px 40px;
     margin-bottom: 30px;
     background-color: $white;
+    @include sm {
+        padding: 20px;
+    }     
     .mb_instructions_title {
         font-weight: 600;
         margin-bottom: 11px;
         font-size: 24px;
         color: #031a26;
+         @include xxs {
+            font-size: 20px;
+        }        
     }
 
     .mb_instruction_list {
@@ -194,6 +241,9 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
             padding-left: 15px;
             color: rgba(3, 26, 38, 0.6);
             margin-bottom: 9px;
+            @include xxs {
+                font-size: 10px;
+            }        
             
             &::before {
                 content: "";

@@ -39790,17 +39790,37 @@ header {
   font-size: 24px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_payment_area .mb_section_title h3 {
+    font-size: 20px;
+  }
+}
 .mb_payment_area .mb_payment_card {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 10px;
   background: #fdf3e7;
   padding: 50px;
 }
+@media only screen and (max-width: 991px) {
+  .mb_payment_area .mb_payment_card {
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_payment_area .mb_payment_card {
+    padding: 20px;
+  }
+}
 .mb_payment_area .mb_order_summary {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 10px;
   padding: 40px;
   background-color: #fff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_payment_area .mb_order_summary {
+    padding: 20px;
+  }
 }
 .mb_payment_area .mb_order_summary .mb_summary_title {
   display: flex;
@@ -39812,6 +39832,24 @@ header {
   font-weight: 600;
   font-size: 24px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_payment_area .mb_order_summary .mb_summary_title h4 {
+    font-size: 16px;
+  }
+}
+.mb_payment_area .mb_order_summary .mb_summary_title h5 {
+  color: #031A26;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_payment_area .mb_order_summary .mb_summary_title h5 {
+    font-size: 16px;
+  }
 }
 .mb_payment_area .mb_order_summary hr {
   margin-top: 45px;
@@ -39838,6 +39876,11 @@ header {
   font-weight: 600;
   font-size: 16px;
   color: rgba(3, 26, 38, 0.6);
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_payment_area .mb_order_summary .mb_summary_subtext span {
+    font-size: 12px;
+  }
 }
 .mb_payment_area .mb_order_summary .mb_summary_divider {
   border: none;
@@ -39876,17 +39919,32 @@ header {
   font-size: 24px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_payment_area .mb_bitcoin_info .mb_bitcoin_header .mb_bitcoin_title {
+    font-size: 20px;
+  }
+}
 .mb_payment_area .mb_bitcoin_info .mb_bitcoin_header .mb_bitcoin_subtitle {
   font-weight: 500;
   font-size: 16px;
   color: rgba(3, 26, 38, 0.6);
   margin: 5px 0 0 0;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_payment_area .mb_bitcoin_info .mb_bitcoin_header .mb_bitcoin_subtitle {
+    font-size: 10px;
+  }
+}
 .mb_payment_area .mb_bitcoin_info .mb_payment_details_area {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 10px;
   padding: 40px;
   background-color: #fff;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_payment_area .mb_bitcoin_info .mb_payment_details_area {
+    padding: 20px;
+  }
 }
 .mb_payment_area .mb_bitcoin_info .mb_payment_detail h4 {
   font-weight: 600;
@@ -39908,6 +39966,11 @@ header {
   font-weight: 500;
   font-size: 16px;
   color: rgba(3, 26, 38, 0.6);
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_payment_area .mb_bitcoin_info .mb_payment_detail .mb_copy_container span {
+    font-size: 14px;
+  }
 }
 .mb_payment_area .mb_bitcoin_info .mb_payment_detail .mb_detail_value {
   flex-grow: 1;
@@ -39936,11 +39999,21 @@ header {
   margin-bottom: 30px;
   background-color: #fff;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_payment_area .mb_instructions {
+    padding: 20px;
+  }
+}
 .mb_payment_area .mb_instructions .mb_instructions_title {
   font-weight: 600;
   margin-bottom: 11px;
   font-size: 24px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_payment_area .mb_instructions .mb_instructions_title {
+    font-size: 20px;
+  }
 }
 .mb_payment_area .mb_instructions .mb_instruction_list {
   list-style-type: none;
@@ -39953,6 +40026,11 @@ header {
   padding-left: 15px;
   color: rgba(3, 26, 38, 0.6);
   margin-bottom: 9px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_payment_area .mb_instructions .mb_instruction_list li {
+    font-size: 10px;
+  }
 }
 .mb_payment_area .mb_instructions .mb_instruction_list li::before {
   content: "";
