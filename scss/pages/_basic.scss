@@ -45,7 +45,7 @@
     }
     .rb_desc {
         color: rgba(37, 37, 37, 0.60);
-        font-family: Inter;
+        font-family: $inter-font;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -64,7 +64,7 @@
 // Typography Start
 .rb-t50 {
     color: $text_color;
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
@@ -83,7 +83,7 @@
 }
 .rb-t22 {
     color: $text_color;
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -91,7 +91,7 @@
 }
 .rb-t20 {
     color: $text_color;
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -99,7 +99,7 @@
 }
 .rb-p18 {
     color: $text_style2;
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -109,7 +109,7 @@
     }
     &.style2 {
         color: $white;
-        font-family: Inter;
+        font-family: $inter-font;
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
@@ -117,7 +117,7 @@
     }  
     &.style3 {
         color: $text_color;
-        font-family: Inter;
+        font-family: $inter-font;
         font-size: 18px;
         font-style: normal;
         font-weight: 600;
@@ -126,7 +126,7 @@
 }
 .rb-p16 {
     color: $text_color;
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -134,7 +134,7 @@
     // text-transform: uppercase;
     &.style1 {
         color: $white;
-        font-family: Inter;
+        font-family: $inter-font;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
@@ -142,7 +142,7 @@
     }
     &.style2 {
         color: $white;
-        font-family: Inter;
+        font-family: $inter-font;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -150,7 +150,7 @@
     }
     &.style3 {
         color: $text_style2;
-        font-family: Inter;
+        font-family: $inter-font;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -159,7 +159,7 @@
 }
 .rb-p15 {
     color: $text_color;
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -167,7 +167,7 @@
     opacity: 0.7;
     &.style1 {
         color: $white;
-        font-family: Inter;
+        font-family: $inter-font;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
@@ -177,7 +177,7 @@
 }
 .rb-p14 {
     color: $text_style2;
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -194,7 +194,7 @@
         label {
             display: block;
             color: $text_color;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 600;
@@ -221,7 +221,7 @@
             border-bottom: 1px solid rgba(3, 26, 38, 0.14);
 
             color: $text_color;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
@@ -267,7 +267,7 @@
             border-bottom: 1px solid rgba(3, 26, 38, 0.14);
 
             color: $text_color;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
@@ -367,7 +367,7 @@
         label {
             display: block;
             color: $text_color;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 600;
@@ -390,7 +390,7 @@
             border: 1px solid $border;
 
             color: $text_color;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 15px;
             font-style: normal;
             font-weight: 400;
@@ -434,7 +434,7 @@
             border-bottom: 1px solid rgba(3, 26, 38, 0.14);
 
             color: $text_color;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
@@ -562,7 +562,7 @@
             align-items: center;
             gap: 15px;
             color: rgba(37, 37, 37, 0.90);
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
@@ -638,7 +638,7 @@
                 border: 1px solid rgba(3, 26, 38, 0.10);
                 background: rgba(255, 255, 255, 0.00);
                 color: $text_color;
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 15px;
                 font-style: normal;
                 font-weight: 500;
@@ -686,7 +686,7 @@
   
   .nav-link {
     color: $text_color;
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -783,7 +783,7 @@
                 transition: background 0.3s ease;
             h3{
                 color: $text_color;
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 600;
@@ -832,7 +832,7 @@
                 padding: 21px 24px 40px 24px;
                 margin: 0; 
                 color: $text_style2;
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;

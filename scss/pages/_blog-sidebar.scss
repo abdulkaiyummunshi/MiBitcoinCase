@@ -27,7 +27,7 @@
         border-bottom: 1px solid $primary;
         .section-title {
           color: $text_color;
-          font-family: Inter;
+          font-family: $inter-font;
           font-size: 26px;
           font-style: normal;
           font-weight: 600;
@@ -42,7 +42,7 @@
         position: relative;
         input[type="text"] {
           color: var(--800, #68767D);
-          font-family: Inter;
+          font-family: $inter-font;
           font-size: 17px;
           font-style: normal;
           font-weight: 400;

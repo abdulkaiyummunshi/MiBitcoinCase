@@ -151,7 +151,7 @@
         }
         ul>li {
             color: rgba(37, 37, 37, 0.90);
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
@@ -171,7 +171,7 @@
         text-align: center;
         padding: 99px 77px 198px;
         border-radius: 10px;
-        background: #031A26;
+        background: $text_color;
         @include xxl {
             padding: 99px 30px 186px;
         }
@@ -184,7 +184,7 @@
         }
         h4 {
             color: $white;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 24px;
             font-style: normal;
             font-weight: 600;
@@ -193,7 +193,7 @@
         p {
             color: rgba(255, 255, 255, 0.60);
             text-align: center;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
@@ -270,7 +270,7 @@
             }
             .rb_title {
                 color: $text_color;
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 22px;
                 font-style: normal;
                 font-weight: 700;
@@ -281,7 +281,7 @@
             }
             .rb_desc {
                 color: $text_style2;
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
@@ -334,7 +334,7 @@
                 }
                 .rb_title {
                     color: $text_color;
-                    font-family: Inter;
+                    font-family: $inter-font;
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 600;
@@ -346,7 +346,7 @@
                 }
                 .rb_desc {
                     color: $text_style2;
-                    font-family: Inter;
+                    font-family: $inter-font;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 600;

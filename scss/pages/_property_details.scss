@@ -148,7 +148,7 @@
             .rb_location {
                 .rb_title {
                     color: $text_color;
-                    font-family: Inter;
+                    font-family: $inter-font;
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 700;
@@ -162,7 +162,7 @@
                 }
                 .rb_text {
                     color: $text_color;
-                    font-family: Inter;
+                    font-family: $inter-font;
                     font-size: 15px;
                     font-style: normal;
                     font-weight: 500;
@@ -610,7 +610,7 @@
                     background: #FFEED8;
                     padding: 14px 18px;
                     color: $text_color;
-                    font-family: Inter;
+                    font-family: $inter-font;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 600;
@@ -707,7 +707,7 @@
                             padding: 21px 24px 40px 24px;
                             margin: 0; 
                             color: $text_style2;
-                            font-family: Inter;
+                            font-family: $inter-font;
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 500;

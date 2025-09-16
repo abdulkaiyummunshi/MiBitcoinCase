@@ -50,7 +50,7 @@ $font-family: "Outfit", sans-serif;
               }
               a {
                 color: var(--800, #68767D);
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 400;
@@ -99,7 +99,7 @@ $font-family: "Outfit", sans-serif;
             .post-title {           
               a {
                 color: $text_color;
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 42px;
                 font-style: normal;
                 font-weight: 700;

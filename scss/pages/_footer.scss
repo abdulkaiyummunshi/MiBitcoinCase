@@ -52,7 +52,7 @@
     max-width: 370px;
     .rb_logo_text {
       color: $white;
-      font-family: Inter;
+      font-family: $inter-font;
       font-size: 18px;
       font-style: normal;
       font-weight: 600;
@@ -74,7 +74,7 @@
         background: transparent;
     
         color: rgba(255, 255, 255, 0.60);
-        font-family: Inter;
+        font-family: $inter-font;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
@@ -98,7 +98,7 @@
       display: flex;
       align-items: center;
       color: rgba(255, 255, 255, 0.60);
-      font-family: Inter;
+      font-family: $inter-font;
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -106,7 +106,7 @@
   }
   .rb_label {
     color: $white;
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 19px;
     font-style: normal;
     font-weight: 500;
@@ -118,7 +118,7 @@
   }
   .rb_text {
     color: $white;
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -147,7 +147,7 @@
     }
     .rb_text {
       color: $white;
-      font-family: Inter;
+      font-family: $inter-font;
       font-size: 24px;
       font-style: normal;
       font-weight: 600;
@@ -166,7 +166,7 @@
   }
   .footer-menu .nav-link {
     color: rgba(255, 255, 255, 0.70);
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -206,7 +206,7 @@
 
   .rb_hunting {
     color: $white;
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 70px;
     font-style: normal;
     font-weight: 600;
@@ -233,7 +233,7 @@
     padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.16);
     color: rgba(255, 255, 255, 0.60);
-    font-family: Inter;
+    font-family: $inter-font;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;

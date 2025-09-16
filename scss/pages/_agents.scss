@@ -32,7 +32,7 @@
             padding: 0px 25px;
             outline: none;
             color: $text_style2;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
@@ -50,7 +50,7 @@
             line-height: 50px;
             width: 450px;
             color: $text_style2;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 16px;
             font-weight: 500;
             @include xs {
@@ -327,7 +327,7 @@
                 margin-bottom: 23px;
                 outline: none;
                 color: $text_color;
-                font-family: Inter;
+                font-family: $inter-font;
                 font-size: 15px;
                 font-style: normal;
                 font-weight: 400;
