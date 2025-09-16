@@ -5,6 +5,8 @@
     @include border-radius(24px);
     @include flex(row, flex-start, center);
     position: relative;
+    margin: 10px 10px 0 10px;
+    overflow: hidden;
     @include xxs {
         height: 400px;
     }
@@ -15,6 +17,9 @@
         margin-top: 90px;
         @include md {
             align-items: center;            
+        }
+        @include xs {
+            margin-top: 140px;
         }
     }
     .mb_blur_circle{

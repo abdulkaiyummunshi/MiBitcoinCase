@@ -35345,6 +35345,8 @@ header {
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  margin: 10px 10px 0 10px;
+  overflow: hidden;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .mb_inner_page_hero {
@@ -35360,6 +35362,11 @@ header {
 @media only screen and (max-width: 991px) {
   .mb_inner_page_hero .mb_inner_content {
     align-items: center;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_inner_page_hero .mb_inner_content {
+    margin-top: 140px;
   }
 }
 .mb_inner_page_hero .mb_blur_circle {
@@ -46432,6 +46439,11 @@ ul.children {
   font-size: 14px;
   color: #031a26;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_wiki_area .mb_breadcrumbs {
+    margin-bottom: 35px;
+  }
+}
 .mb_wiki_area .mb_breadcrumbs .mb_breadcrumb_item {
   color: #031a26;
   text-decoration: none;
@@ -46461,7 +46473,7 @@ ul.children {
     padding: 40px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .mb_wiki_area .mb_wiki_container {
     padding: 30px;
   }
@@ -46608,10 +46620,20 @@ ul.children {
   border-radius: 6px;
   background-color: #ffffff;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_wiki_area .mb_wiki_content_details {
+    padding: 20px 20px 20px 20px;
+  }
+}
 .mb_wiki_area .mb_wiki_content_details .wiki_content_title h4 {
   font-weight: 600;
   font-size: 20px;
   color: #031a26;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_wiki_area .mb_wiki_content_details .wiki_content_title h4 {
+    font-size: 18px;
+  }
 }
 .mb_wiki_area .mb_wiki_content_details p {
   font-weight: 500;
@@ -46632,6 +46654,11 @@ ul.children {
   color: #031a26;
   padding-left: 15px;
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_wiki_area .objectives_item ul li h5 {
+    font-size: 14px;
+  }
 }
 .mb_wiki_area .objectives_item ul li h5::before {
   content: "";
@@ -46658,6 +46685,11 @@ ul.children {
   font-weight: 500;
   font-size: 16px;
   color: rgba(3, 26, 38, 0.6);
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_wiki_area .objectives_item ul li p {
+    font-size: 14px;
+  }
 }
 .mb_wiki_area .technology_item > ul {
   margin-top: 20px;

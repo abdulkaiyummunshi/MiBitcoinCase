@@ -8,7 +8,7 @@
         //>> Mobile Menu Js Start <<//
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
-            meanScreenWidth: "992",
+            meanScreenWidth: "767",
             meanExpand: ['<i class="far fa-plus"></i>'],
         });
 
