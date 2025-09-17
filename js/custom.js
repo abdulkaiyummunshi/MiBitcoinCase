@@ -737,7 +737,7 @@
                 }
             });
         }
-        filterCard()
+        // filterCard()
     });
     // Preloader
     $(window).on("load", function () {
