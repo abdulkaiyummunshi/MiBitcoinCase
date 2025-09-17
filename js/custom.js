@@ -774,23 +774,23 @@
     });
 
 
-    function handleScrollableFilters() {
-        const container = $('.mb_map_search_filter');
-        const filterWrapper = container.find('> div'); 
+    // function handleScrollableFilters() {
+    //     const container = $('.mb_map_search_filter');
+    //     const filterWrapper = container.find('> div'); 
 
-        filterWrapper.css({
-            'white-space': 'nowrap',
-            'display': 'flex'
-        });
+    //     filterWrapper.css({
+    //         'white-space': 'nowrap',
+    //         'display': 'flex'
+    //     });
 
-        container.css({
-            'overflow-x': 'auto',
-            'overflow-y': 'hidden' 
-        });
-    }
+    //     container.css({
+    //         'overflow-x': 'auto',
+    //         'overflow-y': 'visible!important',
+    //     });
+    // }
 
-    handleScrollableFilters();
-    $(window).on('resize', handleScrollableFilters);
+    // handleScrollableFilters();
+    // $(window).on('resize', handleScrollableFilters);
 
     
 

@@ -3,6 +3,8 @@
         .mb_search_filter{
             @include flex(row, flex-start, center);
             gap: 10px;
+            overflow-x: auto;
+            overflow-y: visible !important;
         }
         @include flex(row, space-between, center);
     }
