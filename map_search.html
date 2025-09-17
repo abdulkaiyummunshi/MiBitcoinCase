@@ -186,7 +186,7 @@
             </div>
             <div class="header-right">
               <div class="language_select d-none d-xl-block">
-                <select>
+                <select id="select">
                   <option selected>En</option>
                   <option value="Bn">Bn</option>
                   <option value="Hin">Hin</option>
@@ -251,13 +251,16 @@
             <div class="mb_map_search_filter">
                 <div class="mb_search_filter">
                     <div class="mb_single_filter">
-                    <select name="#" id="#">
+                    <div class="select_card">
+                      <select name="#" id="select">
                         <option selected>For Sale</option>
                         <option value="For Buy">For Buy</option>
                     </select>
+                    </div>
                 </div>
                 <div class="mb_single_filter">
-                    <select name="#" id="#">
+                  <div class="select_card">
+                    <select name="#" id="select">
                         <option selected>$ Price</option>
                         <option value="For Buy">$100</option>
                         <option value="For Buy">$1000</option>
@@ -265,20 +268,23 @@
                         <option value="For Buy">$100000</option>
                         <option value="For Buy">$1000000</option>
                     </select>
+                  </div>
                 </div>
                 <div class="mb_single_filter">
                     <button>Beds & Baths</button>
                 </div>
                 <div class="mb_single_filter style_1">
                     <button>Active</button>
-                    <select name="#" id="#">
-                        <option selected>All</option>
-                        <option value="For Buy">$100</option>
-                        <option value="For Buy">$1000</option>
-                        <option value="For Buy">$10000</option>
-                        <option value="For Buy">$100000</option>
-                        <option value="For Buy">$1000000</option>
-                    </select>
+                    <div class="select_card">
+                      <select name="#" id="select">
+                          <option selected>All</option>
+                          <option value="For Buy">$100</option>
+                          <option value="For Buy">$1000</option>
+                          <option value="For Buy">$10000</option>
+                          <option value="For Buy">$100000</option>
+                          <option value="For Buy">$1000000</option>
+                      </select>
+                    </div>
 
                 </div>
                 <div class="mb_single_filter">
@@ -297,10 +303,13 @@
                     <button><i class="fa-regular fa-clock"></i><span></span>Travel Time</button>
                 </div>
                 <div class="mb_single_filter">
-                    <select name="#" id="#">
+                  <div class="select_card">
+                    <select name="#" id="select">
                         <option selected>All Property Types</option>
                         <option value="For Buy">$100</option>
                     </select>
+
+                  </div>
                 </div>
                 </div>
                 <div class="mb_search_filter">
@@ -328,7 +337,7 @@
                         </div>
                         <div class="mb_short_list">
                             <p>Short By:</p>
-                            <select name="#" id="#">
+                            <select name="#" id="select">
                                 <option selected>Old to New</option>
                                 <option value="">Latest</option>
                                 <option value="">Old</option>
@@ -537,7 +546,6 @@
     <script src="./js/jquery.meanmenu.min.js"></script>
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/jquery.nice-select.js"></script>
     <script src="./js/gsap.min.js"></script>
     <script src="./js/ScrollTrigger.min.js"></script>
     <script src="./js/ScrollSmoother.min.js"></script>
