@@ -3,14 +3,37 @@
     var windowOn = $(window);
     $(document).ready(function () {
         windowOn.on('load', function () {
+        });        
+
+        // Mobile Menu JS
+        function initMobileMenu() {
+            $('#mobile-menu').meanmenu({
+                meanMenuContainer: '.mobile-menu',
+                meanScreenWidth: "767",
+                meanExpand: ['<i class="far fa-plus"></i>'],
+            });
+        }
+
+        $(document).ready(function () {
+            initMobileMenu();
+
+            $(window).on('resize', function () {
+                var screenWidth = $(window).width();
+                if (screenWidth > 767) {
+                    // Remove meanmenu if screen is larger than 767px
+                    if ($('.mean-bar').length) {
+                        $('.mean-bar').remove();
+                        $('#mobile-menu').show();
+                    }
+                } else {
+                    // Reinitialize meanmenu on small screen
+                    if (!$('.mean-bar').length) {
+                        initMobileMenu();
+                    }
+                }
+            });
         });
-        
-        //>> Mobile Menu Js Start <<//
-        $('#mobile-menu').meanmenu({
-            meanMenuContainer: '.mobile-menu',
-            meanScreenWidth: "992",
-            meanExpand: ['<i class="far fa-plus"></i>'],
-        });
+
 
         //>> Sidebar Toggle Js Start <<//
         $(".offcanvas__close,.offcanvas__overlay").on("click", function () {
