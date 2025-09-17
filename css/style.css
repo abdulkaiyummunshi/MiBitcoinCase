@@ -30975,11 +30975,6 @@ p {
   padding: 0px;
   display: grid !important;
   grid-template-columns: repeat(3, 1fr);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
   border-radius: 0px;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -30987,7 +30982,7 @@ p {
   -o-border-radius: 0px;
 }
 .header-wrap .main-menu ul li.menu-item-has-children ul.style_1 {
-  grid-template-columns: repeat(1, 2fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 .header-wrap .main-menu ul li.menu-item-has-children ul a {
   border-radius: 0px;
@@ -31787,7 +31782,7 @@ header {
   position: fixed;
   right: 0;
   top: 0;
-  width: 400px;
+  width: 350px;
   height: 100%;
   -webkit-transform: translateX(calc(100% + 80px));
   -moz-transform: translateX(calc(100% + 80px));
@@ -31813,11 +31808,6 @@ header {
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .offcanvas__info.info-open {
-    width: 100%;
-  }
 }
 
 .offcanvas__logo a img {
@@ -46799,4 +46789,6 @@ ul.children {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   background-color: #031a26;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

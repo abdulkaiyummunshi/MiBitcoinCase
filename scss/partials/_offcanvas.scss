@@ -9,7 +9,7 @@
 	position: fixed;
 	right: 0;
 	top: 0;
-	width: 400px;
+	width: 350px;
 	height: 100%;
 	-webkit-transform: translateX(calc(100% + 80px));
 	-moz-transform: translateX(calc(100% + 80px));
@@ -35,10 +35,6 @@
 	-ms-transform: translateX(0);
 	-o-transform: translateX(0);
 	transform: translateX(0);
-
-	@include sm{
-		width: 100%;
-	}
 }
 
 .offcanvas__logo {

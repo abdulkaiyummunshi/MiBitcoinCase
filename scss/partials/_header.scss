@@ -27,10 +27,9 @@
 					display: grid !important;
 					grid-template-columns: repeat(3, 1fr);
 					&.style_1{
-						grid-template-columns: repeat(1, 2fr)
+						grid-template-columns: repeat(1, 1fr)
 					}
-					@include flex(column, flex-start, flex-start);
-					flex-wrap: wrap;
+					
 					@include border-radius(0px);
 					a{
 						@include border-radius(0px);
