@@ -8,7 +8,7 @@
         //>> Mobile Menu Js Start <<//
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
-            meanScreenWidth: "767",
+            meanScreenWidth: "992",
             meanExpand: ['<i class="far fa-plus"></i>'],
         });
 
@@ -310,45 +310,16 @@
             nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
             responsive: [
                 {
-                    breakpoint: 1600, // <1600px
+                    breakpoint: 768, 
                     settings: {
-                    slidesToShow: 4,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
                     }
                 },
-                {
-                    breakpoint: 1400, // <1400px
-                    settings: {
-                    slidesToShow: 3,
-                    }
-                },
-                {
-                    breakpoint: 1200, // <1200px
-                    settings: {
-                    slidesToShow: 3,
-                    }
-                },
-                {
-                    breakpoint: 992, // <992px
-                    settings: {
-                    slidesToShow: 2,
-                    }
-                },
-                {
-                    breakpoint: 768, // <768px
-                    settings: {
-                    slidesToShow: 2,
-                    }
-                },
-                {
-                    breakpoint: 576, // <576px
-                    settings: {
-                    slidesToShow: 1,
-                    }
-                }
             ]
         });
         $('.mb_saved_listing_slider').slick({
-            slidesToShow: 2,
+            slidesToShow: 4,
             slidesToScroll: 1,
             arrows: false,
             autoplay: true,
@@ -766,7 +737,7 @@
                 }
             });
         }
-        // filterCard()
+        filterCard()
     });
     // Preloader
     $(window).on("load", function () {
@@ -778,5 +749,26 @@
             preloader.style.display = "none";
         }, 600);
     });
+
+
+    function handleScrollableFilters() {
+        const container = $('.mb_map_search_filter');
+        const filterWrapper = container.find('> div'); 
+
+        filterWrapper.css({
+            'white-space': 'nowrap',
+            'display': 'flex'
+        });
+
+        container.css({
+            'overflow-x': 'auto',
+            'overflow-y': 'hidden' 
+        });
+    }
+
+    handleScrollableFilters();
+    $(window).on('resize', handleScrollableFilters);
+
+    
 
 })(jQuery);

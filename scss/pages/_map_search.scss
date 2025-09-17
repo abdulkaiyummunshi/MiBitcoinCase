@@ -3,7 +3,6 @@
         .mb_search_filter{
             @include flex(row, flex-start, center);
             gap: 10px;
-            
         }
         @include flex(row, space-between, center);
     }
@@ -30,6 +29,8 @@
             font-weight: 600;
             font-size: 16px;
             @include border-radius(6px);
+            white-space: nowrap;
+            
             text-align: right;
             color: $text_color;
             span{
@@ -65,7 +66,7 @@
 }
 
 .mb_map_content{
-    max-height: 950px;
+    
     @include lg {
         max-height: none;
     }
@@ -77,11 +78,17 @@
     }
    }
    .mb_search_conent{
-       max-height: 950px;
+    @media (min-width: 1280px){
+        max-height: 950px;
+
+    }
        .mb_map_sidebar_content{
            overflow: hidden;
            overflow-y: scroll;
+           @media (min-width: 1280px){
            max-height: 860px;
+
+    }
            padding: 30px;
            position: relative;
            @include xxl {
@@ -188,6 +195,11 @@
                 color: $text_color;
             }
         }
+    }
+   }
+   .mb_maps{
+    @media (max-width: 1024px){
+        padding: 0px 5px 5px 5px;
     }
    }
    iframe{
