@@ -31033,10 +31033,6 @@ p {
     margin: 0 0;
   }
 }
-.header-wrap .main-menu ul li:hover > a {
-  color: #031a26;
-  background-color: #fff;
-}
 .header-wrap .main-menu ul li.active, .header-wrap .main-menu ul li.current-menu-ancestor {
   position: relative;
 }
@@ -31084,10 +31080,6 @@ p {
   color: #031a26;
 }
 .header-wrap .main-menu ul li a.active {
-  background-color: #fff;
-  color: #031a26;
-}
-.header-wrap .main-menu ul li a.active:hover {
   background-color: #fff;
   color: #031a26;
 }

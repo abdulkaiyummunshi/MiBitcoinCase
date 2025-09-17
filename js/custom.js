@@ -89,6 +89,8 @@
             setActivePage();
         });
 
+
+
         // FAQ
         function Faq() {
                 $('.accordion-item .accordion-header').on('click', function () {
@@ -133,7 +135,7 @@
                     dots: false,
                     arrows: false,
                     infinite: true,
-                    speed: 3000,
+                    speed: 9000,
                     slidesToShow: 7,
                     slidesToScroll: 1,
                     autoplay: true,
@@ -144,14 +146,12 @@
                             breakpoint: 768,
                             settings: {
                                 slidesToShow: 2,
-                                speed: 4000
                             }
                         },
                         {
                             breakpoint: 998,
                             settings: {
                                 slidesToShow: 2,
-                                speed: 4000,
 
                             }
                         },
@@ -159,7 +159,6 @@
                             breakpoint: 1200,
                             settings: {
                                 slidesToShow: 3,
-                                speed: 4000,
 
                             }
                         },
@@ -167,7 +166,6 @@
                             breakpoint: 1300,
                             settings: {
                                 slidesToShow: 3,
-                                speed: 4000,
 
                             }
                         }
@@ -177,7 +175,7 @@
                     dots: false,
                     arrows: false,
                     infinite: true,
-                    speed: 3000,
+                    speed: 9000,
                     slidesToShow: 7,
                     slidesToScroll: 1,
                     autoplay: true,
@@ -189,14 +187,12 @@
                             breakpoint: 768,
                             settings: {
                                 slidesToShow: 2,
-                                speed: 4000
                             }
                         },
                         {
                             breakpoint: 998,
                             settings: {
                                 slidesToShow: 2,
-                                speed: 4000,
 
                             }
                         },
@@ -204,7 +200,6 @@
                             breakpoint: 1200,
                             settings: {
                                 slidesToShow: 3,
-                                speed: 4000,
 
                             }
                         },
@@ -212,7 +207,6 @@
                             breakpoint: 1300,
                             settings: {
                                 slidesToShow: 3,
-                                speed: 4000,
 
                             }
                         }
