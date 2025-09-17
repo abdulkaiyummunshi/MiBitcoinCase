@@ -32429,135 +32429,6 @@ header {
   }
 }
 
-.rb-t50 {
-  color: #031a26;
-  font-family: "Inter", sans-serif;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 64px;
-}
-
-.rb-t24 {
-  color: #031a26;
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.rb-t24.style1 {
-  color: #fff;
-}
-
-.rb-t22 {
-  color: #031a26;
-  font-family: "Inter", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-}
-
-.rb-t20 {
-  color: #031a26;
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px;
-}
-
-.rb-p18 {
-  color: rgba(3, 26, 38, 0.6);
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-}
-.rb-p18.style1 {
-  color: rgba(255, 255, 255, 0.6);
-}
-.rb-p18.style2 {
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px;
-}
-.rb-p18.style3 {
-  color: #031a26;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.rb-p16 {
-  color: #031a26;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-}
-.rb-p16.style1 {
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.rb-p16.style2 {
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 30px;
-}
-.rb-p16.style3 {
-  color: rgba(3, 26, 38, 0.6);
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-}
-
-.rb-p15 {
-  color: #031a26;
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  opacity: 0.7;
-}
-.rb-p15.style1 {
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  opacity: 0.7;
-}
-
-.rb-p14 {
-  color: rgba(3, 26, 38, 0.6);
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
 .common_input {
   position: relative;
 }
@@ -42742,6 +42613,16 @@ ul.children {
   background: #031a26;
   padding: 120px 0 130px;
 }
+@media only screen and (max-width: 991px) {
+  .rb_step_slider {
+    padding: 100px 0 100px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_step_slider {
+    padding: 95px 0 95px;
+  }
+}
 .rb_step_slider .left-arrow {
   border-radius: 50%;
   border: 1px solid rgba(3, 26, 38, 0.12);
@@ -42834,6 +42715,35 @@ ul.children {
 }
 .rb_step_slider .step_item {
   max-width: 291px;
+}
+.rb_step_slider .step_item .rb_step_numb {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 20px;
+}
+.rb_step_slider .step_item .rb_step_title {
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 25px;
+}
+.rb_step_slider .step_item .icon {
+  padding-bottom: 30px;
+}
+.rb_step_slider .step_item .rb_step_desc {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
 }
 
 .mb_agents_area .heading h2 {
