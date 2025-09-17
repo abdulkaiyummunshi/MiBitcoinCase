@@ -9,7 +9,7 @@
         function initMobileMenu() {
             $('#mobile-menu').meanmenu({
                 meanMenuContainer: '.mobile-menu',
-                meanScreenWidth: "767",
+                meanScreenWidth: "991",
                 meanExpand: ['<i class="far fa-plus"></i>'],
             });
         }
@@ -19,7 +19,7 @@
 
             $(window).on('resize', function () {
                 var screenWidth = $(window).width();
-                if (screenWidth > 767) {
+                if (screenWidth > 991) {
                     // Remove meanmenu if screen is larger than 767px
                     if ($('.mean-bar').length) {
                         $('.mean-bar').remove();

@@ -31256,12 +31256,7 @@ header {
 .header-1 .header-wrap .header-right {
   display: flex;
   align-items: center;
-  gap: 30px;
-}
-@media only screen and (max-width: 1399px) {
-  .header-1 .header-wrap .header-right {
-    gap: 0px;
-  }
+  gap: 20px;
 }
 .header-1 .header-wrap .header-right .nice-select {
   box-sizing: border-box;
@@ -31307,11 +31302,6 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .header-1 .header-wrap .header-right .login_signup_area {
-    margin-right: 20px;
-  }
 }
 .header-1 .header-wrap .header-right .login_signup_area .sign_up_user a {
   padding: 15px 23px;

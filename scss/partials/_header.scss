@@ -323,10 +323,7 @@ header{
 		.header-right{
 			display: flex;
 			align-items: center;
-			gap: 30px;
-			@include xl {
-				gap: 0px;
-			}
+			gap: 20px;
 			
 			.nice-select {
 				box-sizing: border-box;
@@ -370,9 +367,6 @@ header{
 			.login_signup_area{
 				@include flex(row, space-between, center);
 				gap: 20px;
-				@include sm {
-					margin-right: 20px;
-				}
 				.sign_up_user{
 					a{
 						padding: 15px 23px;
