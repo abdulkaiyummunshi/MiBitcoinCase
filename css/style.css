@@ -33197,6 +33197,14 @@ header {
   }
 }
 
+.mb_hero_area {
+  padding-top: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .mb_hero_area {
+    padding-top: 8px;
+  }
+}
 .mb_hero_area .mb_hero_bg {
   height: 959px;
   background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
