@@ -136,7 +136,6 @@
             width: 100%;
             padding: 14px 0px;
             height: 54px;
-            border-radius: 5px;
             border: none;
             border-bottom: 1px solid rgba(3, 26, 38, 0.14);
 
@@ -152,7 +151,7 @@
             -webkit-appearance: none;
             -moz-appearance: none;
             /* Add custom arrow */
-            // background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23626262' d='M6 8L0 0h12z'/%3e%3c/svg%3e");
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23626262' d='M6 8L0 0h12z'/%3e%3c/svg%3e");
             background-repeat: no-repeat;
             background-position: right 15px center;
             background-size: 12px 8px;

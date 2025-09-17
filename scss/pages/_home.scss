@@ -680,6 +680,18 @@
             bottom: -11%;
             left: 37.5%;
         }
+        @include sm {
+            bottom: -11%;
+            left: 37.5%;
+        }
+        @include xs {
+            bottom: -11%;
+            left: 35.5%;
+        }
+        @include xxs {
+            bottom: -12%;
+            left: 31.5%;
+        }
         &:hover{
             background-color: $primary;
             color: $white;
@@ -715,6 +727,18 @@
         @include md {
             bottom: -11%;
             left: 62.5%;
+        }
+        @include sm {
+            bottom: -11%;
+            left: 62.5%;
+        }
+        @include xs {
+            bottom: -11%;
+            left: 64.5%;
+        }
+        @include xxs {
+            bottom: -11.7%;
+            left: 69%;
         }
         &:hover{
             background-color: $primary;

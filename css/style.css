@@ -32496,7 +32496,6 @@ header {
   width: 100%;
   padding: 14px 0px;
   height: 54px;
-  border-radius: 5px;
   border: none;
   border-bottom: 1px solid rgba(3, 26, 38, 0.14);
   color: #031a26;
@@ -32510,6 +32509,7 @@ header {
   -webkit-appearance: none;
   -moz-appearance: none;
   /* Add custom arrow */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23626262' d='M6 8L0 0h12z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 15px center;
   background-size: 12px 8px;
@@ -33923,6 +33923,24 @@ header {
     left: 37.5%;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_how_work .left-arrow {
+    bottom: -11%;
+    left: 37.5%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_how_work .left-arrow {
+    bottom: -11%;
+    left: 35.5%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_how_work .left-arrow {
+    bottom: -12%;
+    left: 31.5%;
+  }
+}
 .mb_how_work .left-arrow:hover {
   background-color: #ff9916;
   color: #fff;
@@ -33961,6 +33979,24 @@ header {
   .mb_how_work .right-arrow {
     bottom: -11%;
     left: 62.5%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_how_work .right-arrow {
+    bottom: -11%;
+    left: 62.5%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_how_work .right-arrow {
+    bottom: -11%;
+    left: 64.5%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_how_work .right-arrow {
+    bottom: -11.7%;
+    left: 69%;
   }
 }
 .mb_how_work .right-arrow:hover {
@@ -46799,6 +46835,44 @@ ul.children {
   padding-left: 30px;
   margin-bottom: 5px;
 }
+.mb_wiki_area .technology_item > ul li ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #031a26;
+}/*# sourceMappingURL=style.css.map */t;
+  gap: 30px;
+}
+
+.mb_wiki_area .technology_item > ul li h5 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 187%;
+  color: #031a26;
+}
+
+.mb_wiki_area .technology_item > ul li ul li {
+  font-weight: 500;
+  color: rgba(3, 26, 38, 0.6);
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+}
+
 .mb_wiki_area .technology_item > ul li ul li::before {
   content: "";
   position: absolute;
