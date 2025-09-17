@@ -389,6 +389,10 @@
                     $(this).text('More....');
                 }
             });
+
+        $('.select_card select').on('click', function () {
+            $(this).parent().toggleClass("selectActive");
+        });
         $(document).ready(function () {
             $('.header nav ul li').on('click', function () {
                 $('.header nav ul li').removeClass('active');
@@ -711,7 +715,10 @@
         });
 
         // Nice Select
-        $('select').niceSelect();
+        // if($.fn.niceSelect){
+        //     $('select').niceSelect();
+
+        // }
         // Filter 
         function filterCard() {
             const filterButtons = document.getElementById('city-filter-buttons');
@@ -767,25 +774,5 @@
         }, 600);
     });
 
-
-    function handleScrollableFilters() {
-        const container = $('.mb_map_search_filter');
-        const filterWrapper = container.find('> div'); 
-
-        filterWrapper.css({
-            'white-space': 'nowrap',
-            'display': 'flex'
-        });
-
-        container.css({
-            'overflow-x': 'auto',
-            'overflow-y': 'hidden' 
-        });
-    }
-
-    handleScrollableFilters();
-    $(window).on('resize', handleScrollableFilters);
-
-    
 
 })(jQuery);
