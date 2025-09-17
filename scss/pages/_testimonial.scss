@@ -46,8 +46,8 @@
                 border-bottom: 1px solid rgba(255, 255, 255, 0.30);
                 padding-bottom: 30px;
                 margin-bottom: 22px;
-                color: #FFF;
-                font-family: Inter;
+                color: $white;
+                font-family: $inter-font;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
@@ -69,8 +69,8 @@
                 }
             }
             .rb_title {
-                color: #FFF;
-                font-family: Inter;
+                color: $white;
+                font-family: $inter-font;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 700;
@@ -80,8 +80,8 @@
                 }
             }
             .rb_label {
-                color: #FFF;
-                font-family: Inter;
+                color: $white;
+                font-family: $inter-font;
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 500;
@@ -106,7 +106,7 @@
     .rb_testi_card2 {
         position: relative;
         border: 1px solid rgba(3, 26, 38, 0.10);
-        background: #FFF;
+        background: $white;
         .rb_content {
             padding: 40px 34px 34px;
             @include md {
@@ -121,8 +121,8 @@
                 border-bottom: 1px solid rgba(3, 26, 38, 0.10);;
                 padding-bottom: 48px;
                 margin-bottom: 22px;
-                color: rgba(3, 26, 38, 0.60);
-                font-family: Inter;
+                color: $text_style2;
+                font-family: $inter-font;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
@@ -136,8 +136,8 @@
                 }
             }
             .rb_title {
-                color: #031A26;
-                font-family: Inter;
+                color: $text_color;
+                font-family: $inter-font;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 700;
@@ -147,8 +147,8 @@
                 }
             }
             .rb_label {
-                color: #031A26;
-                font-family: Inter;
+                color: $text_color;
+                font-family: $inter-font;
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 500;

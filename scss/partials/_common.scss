@@ -42,7 +42,7 @@ p {
            span{
                font-weight: 500;
                font-size: 14px;
-               color: #031a26;
+               color: $text_color;
                display: inline-block;
                &:first-child{
                    padding-left: 8px;
@@ -93,7 +93,7 @@ p {
         label{
             font-weight: 600;
             font-size: 18px;
-            color: #031a26;
+            color: $text_color;
             cursor: pointer;
             position: relative;
             display: inline-block;

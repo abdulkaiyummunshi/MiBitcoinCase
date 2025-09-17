@@ -21,18 +21,18 @@
 
   }
 
-  @include  lg{
-     padding: 100px 0;
-    padding-bottom: 100px;
-  }
-  @include  md{
-     padding: 80px 0;
-    padding-bottom: 80px;
-  }
-  @include  sm{
-     padding: 80px 0;
-    padding-bottom: 80px;
-  }
+  // @include  lg{
+  //    padding: 100px 0;
+  //   padding-bottom: 100px;
+  // }
+  // @include  md{
+  //    padding: 80px 0;
+  //   padding-bottom: 80px;
+  // }
+  // @include  sm{
+  //    padding: 80px 0;
+  //   padding-bottom: 80px;
+  // }
 
   ol{
     padding-left: 20px;
@@ -117,7 +117,15 @@
                     margin-right: 4px;
                 }
               a {
-                color:  $text;
+                color: var(--Gray-800, #716F73);
+                font-family: $inter-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 22.4px */
+                @include xs {
+                  font-size: 12px;
+                }
 
                 &:hover{
                   color: $primary;
@@ -146,20 +154,23 @@
             margin-top: 20px;
 
             .post-title{        
-              font-size: 50px;
-              color: $black;
-              font-weight: 600;
-              letter-spacing: -0.03em;
+              color: $text_color;
+              font-family: $inter-font;
+              font-size: 40px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 130%; /* 54.6px */
               text-transform: capitalize;
       
               @include  lg{
-                font-size: 34px;
+                font-size: 38px;
               }
               @include  sm{
-                font-size: 32px;
+                font-size: 34px;
               }
-              @include  xxs{
-                font-size: 25px;
+              @include  xs{
+                font-size: 22px;
+                line-height: 28px; 
               }
             }
           }
@@ -887,6 +898,10 @@
         padding: 20px 30px;
         @include border-radius(20px);
         background-color: $white;
+        @include sm {
+          padding: 10px 10px;
+          margin-top: 30px;
+        }
 
       
         .post-navigation{
@@ -986,7 +1001,7 @@
                 font-size: 18px;
               }
               @include  xs{
-                font-size: 18px;
+                font-size: 14px;
               }
 
             }
@@ -1004,66 +1019,13 @@
           background: #ff9916;
 
           @include xs{
-            height: 120px;
+            height: 60px;
           }
           @include xxs{
-            height: 75px;
+            height: 50px;
           }
         }
     }
-
-    //style 1 author info
-    // .author-info{
-    //   background-color:  $primary;
-    //   border-radius: 20px;
-    //   padding: 40px;
-    //   position: relative;
-    //   margin-top: 100px;
-    //   .author-thumb{      
-    //     flex-shrink: 0;
-    //     width: 120px;
-    //     height: 120px;
-    //     position: absolute;
-    //     top: 0px;
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
-    //     border-radius: 50%;
-    //     overflow: hidden;    
-    //     @include  xxs{
-    //       height: 80px;
-    //       width: 80px;
-    //     }
-
-    //     img{
-    //       object-fit: cover;
-    //       width: 120px;     
-    //       @include  xxs{          
-    //         width: 80px;
-    //       }   
-    //     }
-    //   }
-    //   .author-text{
-    //   margin-top: 30px;
-
-    //   .section-title{
-    //     color: white;
-    //   }
-    //   .section-meta{
-    //     color: white;
-    //   }
-    //   .section-desc{
-    //     color: white;
-    //   }
-
-    //   .section-meta{
-    //     margin-top: -8px;
-    //   }
-    //   }
-
-    //   p {
-    //     color:  $black;
-    //   }
-    // }
 
     //style 2 author info
     .author-info{
@@ -1086,26 +1048,6 @@
           padding: 30px;
       }
       
-      // .author-thumb{
-      //   width: 88px;
-      //   height: 88px;
-      //   position: relative;
-      //   @include border-radius(50%);
-
-      //   @include sm{
-      //       margin: auto;
-      //   }
-      //   img{
-      //       width: 100%;
-      //       @include border-radius(50%);
-      //       height: 100%;
-      //       object-fit: contain;
-      //   }
-      //   span{
-            
-            
-      //   }
-      // }
       .author-meta{
       
         width: 100%;
@@ -1115,12 +1057,18 @@
             line-height: 145%;
             letter-spacing: -0.01em;
             color: #07000e;
+            @include xxs {
+              font-size: 18px;
+            }
         }
         p{
             font-weight: 500;
             font-size: 18px;
             color: #716f73;
             margin-top: 6px;
+            @include xxs {
+              font-size: 14px;
+            }
         }
         span{
           font-size: 44px;
@@ -1133,6 +1081,9 @@
             font-weight: 500;
             font-size: 18px;
             color: #716f73;
+            @include xxs {
+              font-size: 14px;
+            }
         }
 
       }
@@ -1149,6 +1100,9 @@
             letter-spacing: -0.01em;
             @include transition(0.4s);
             color: #07000e;
+            @include xxs {
+              font-size: 16px;
+            }            
             &:hover{
                 background-color: $primary;
                 color: $white;
@@ -1226,8 +1180,11 @@
       font-weight: 500;
       color: $text_color;
       &::placeholder{
-        color: #716f73;
-    }
+          color: #716f73;
+      }
+      @include xxs {
+        font-size: 16px;
+      }
 }
 .nice-select{
         height: 54px;

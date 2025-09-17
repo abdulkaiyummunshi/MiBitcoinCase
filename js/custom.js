@@ -8,7 +8,7 @@
         //>> Mobile Menu Js Start <<//
         $('#mobile-menu').meanmenu({
             meanMenuContainer: '.mobile-menu',
-            meanScreenWidth: "992",
+            meanScreenWidth: "767",
             meanExpand: ['<i class="far fa-plus"></i>'],
         });
 
@@ -310,16 +310,45 @@
             nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
             responsive: [
                 {
-                    breakpoint: 768, 
+                    breakpoint: 1600, // <1600px
                     settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
+                    slidesToShow: 4,
                     }
                 },
+                {
+                    breakpoint: 1400, // <1400px
+                    settings: {
+                    slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1200, // <1200px
+                    settings: {
+                    slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 992, // <992px
+                    settings: {
+                    slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 768, // <768px
+                    settings: {
+                    slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 576, // <576px
+                    settings: {
+                    slidesToShow: 1,
+                    }
+                }
             ]
         });
         $('.mb_saved_listing_slider').slick({
-            slidesToShow: 4,
+            slidesToShow: 2,
             slidesToScroll: 1,
             arrows: false,
             autoplay: true,

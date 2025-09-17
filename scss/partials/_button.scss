@@ -5,7 +5,7 @@
         @include border-radius(40px);
         font-weight: 600;
         font-size: 16px;
-        color: #031a26;
+        color: $text_color;
         @include transition(0.4s);
 
         span{
@@ -33,7 +33,7 @@
             color: white;
             span{
                 background-color: white;
-                color: #031a26;
+                color: $text_color;
                 i {
                     transform: rotate(0deg);
                     -webkit-transform: rotate(0deg);

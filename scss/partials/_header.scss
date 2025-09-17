@@ -379,7 +379,7 @@ header{
 						font-family: $inter-font;
 						font-weight: 600;
 						font-size: 16px;
-						color: #031a26;
+						color: $text_color;
 						@include border-radius(30px);
 						background-color: $white;
 						span{

@@ -9,7 +9,7 @@
     }
     .mb_single_filter{
         .nice-select{
-            border: 1px solid rgba(3, 26, 38, 0.12);
+            border: 1px solid $border;
             border-radius: 6px;
             font-weight: 600;
             font-size: 16px;
@@ -24,7 +24,7 @@
             }
         }
         button{
-            border: 1px solid rgba(3, 26, 38, 0.12);
+            border: 1px solid $border;
             background-color: transparent;
             padding: 12px 20px;
             font-weight: 600;
@@ -42,7 +42,7 @@
             
         }
         &.style_1{
-            border: 1px solid rgba(3, 26, 38, 0.12);
+            border: 1px solid $border;
             @include flex(row, flex-start, center);
             @include border-radius(6px);
             button{
@@ -66,11 +66,12 @@
 
 .mb_map_content{
     max-height: 950px;
-    // margin-bottom: 300px ;
-    // overflow: hidden;
+    @include lg {
+        max-height: none;
+    }
    .row{
     &.style_1{
-        border: 1px solid rgba(3, 26, 38, 0.12);
+        border: 1px solid $border;
         @include border-radius(20px);
         margin: 0px 3px;
     }
@@ -83,6 +84,12 @@
            max-height: 860px;
            padding: 30px;
            position: relative;
+           @include xxl {
+            padding: 12px;
+           }
+           @include lg {
+            overflow: visible;
+           }
            .left-arrow{
             @include md{
                 display: none !important;
@@ -160,7 +167,7 @@
         p{
             font-weight: 500;
             font-size: 15px;
-            color: rgba(3, 26, 38, 0.7);
+            color: $text_style3;
             span{
                 color:$text_color;
             }
@@ -171,7 +178,7 @@
         p{
             font-weight: 500;
             font-size: 15px;
-            color: rgba(3, 26, 38, 0.7);
+            color: $text_style3;
 
         }
         .nice-select{
@@ -185,6 +192,9 @@
    }
    iframe{
     @include border-radius(0px 10px 10px 0px);
+    @include lg {
+        height: 570px;
+    }
    }
 }
 

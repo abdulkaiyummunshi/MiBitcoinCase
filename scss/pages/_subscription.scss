@@ -77,7 +77,7 @@
             span{
                 font-weight: 400;
                 font-size: 14px;
-                color: #68767d;
+                color: $text_color3;
                 padding: 5px 15px;
                 background-color: $white;
                 border: 1px solid rgba(0, 0, 0, 0.1);
@@ -91,8 +91,11 @@
         a{
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
             @include transition(0.4s);
+            @include xxs {
+                font-size: 20px;
+            }
             &:hover{
                 color: $primary;
             }
@@ -107,7 +110,10 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 150%;
-            color: #68767d;
+            color: $text_color3;
+            @include xxs {
+                font-size: 14px;
+            }
             span{
                 color: $text_color;
                 margin-right: 10px;
@@ -121,7 +127,10 @@
             font-weight: 700;
             font-size: 24px;
             line-height: 142%;
-            color: #031a26;
+            color: $text_color;
+            @include xxs {
+                font-size: 18px;
+            }
             span{
                 font-weight: 500;
                 font-size: 14px;
@@ -147,7 +156,7 @@
             font-weight: 600;
             background-color: $white;
             font-size: 16px;
-            color: #031a26;
+            color: $text_color;
             span{
                 background-color: $text_color;
                 @include border-radius(50%);
@@ -192,6 +201,21 @@
         @include flex(column, center, center);
         gap: 15px;
         cursor: pointer;
+        @include xl {
+            width: 204px;
+        }
+        @include lg {
+            width: 260px;
+        }
+        @include md {
+            width: 225px;
+        }
+        @include xs {
+            width: 212px;
+        }
+        @include xxs {
+            width: 100%;
+        }
         span{
             color: $primary;
             img{
@@ -205,7 +229,10 @@
             font-weight: 600;
             font-size: 20px;
             text-align: center;
-            color: #031a26;
+            color: $text_color;
+            @include xxs {
+                font-size: 16px;
+            }
         }
          &:hover {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -217,9 +244,20 @@
 .mb_adding_btn{
     @include flex(row, flex-end, center);
     gap: 20px;
+    @include md {
+        margin-top: 30px;
+    }
+    @include sm {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 60px;
+    }
 }
 .mb_action_links {
     margin-top: 66px;
+    @include md {
+        margin-top: 30px;
+    }
 
     li {
         margin-bottom: 10px;
@@ -241,7 +279,7 @@
             font-weight: 500;
             font-size: 18px;
             text-decoration-skip-ink: none;
-            color: rgba(3, 26, 38, 0.7);
+            color: $text_style3;
             text-decoration: none;
             @include transition(0.4s);
 
@@ -274,6 +312,9 @@
         padding: 35px 40px;
         @include transition(0.5s);
         margin-bottom: 14px;
+        @include xxs {
+            padding: 30px 20px;
+        }
     }
 
     .notification-item:hover {
@@ -283,7 +324,11 @@
     .notification-text h3 {
         font-weight: 600;
         font-size: 24px;
-        color: #031a26;
+        color: $text_color;
+        @include xxs {
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
     }
 
     .notification-text p {
@@ -291,7 +336,10 @@
         margin-top: 5px;
         font-size: 18px;
         line-height: 167%;
-        color: rgba(3, 26, 38, 0.6);
+        color: $text_style2;
+        @include xxs {
+            font-size: 14px;
+        }
     }
 
     .mb_toggle_switch_container {
@@ -299,6 +347,11 @@
         display: inline-block;
         width: 75px; 
         height: 41px; 
+        @include xxs {
+            width: 70px;
+            height: 38px;
+            flex-shrink: 0;
+        }
     }
     
     .mb_toggle_switch_container input {
@@ -329,6 +382,11 @@
         background-color: white;
         transition: .4s;
         border-radius: 50%;
+        @include xxs {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
     }
     
     input:checked + .mb_toggle_slider {
@@ -355,7 +413,7 @@
         width: 100%;
         font-weight: 500;
         font-size: 15px;
-        color: #031a26;
+        color: $text_color;
         margin-bottom: 13px;
         span{
             opacity: 0.7;
@@ -365,14 +423,17 @@
     
     input {
         width: 100%;
-        border: 1px solid rgba(3, 26, 38, 0.12);
+        border: 1px solid $border;
         border-radius: 6px;
         padding: 11px 25px;
         font-weight: 400;
         font-size: 15px;
         color: $text_color;
+        @include xxs {
+            font-size: 14px;
+        }
         &::placeholder{
-            color: #031a26;
+            color: $text_color;
             opacity: 0.7;
             position: relative;
             list-style: disc;
@@ -401,7 +462,7 @@
         font-weight: 600;
         font-size: 16px;
         @include border-radius(6px);
-        color: #fff;
+        color: $white;
     }
     
     .update-button:hover {
@@ -425,7 +486,7 @@
         height: 44px;
         font-weight: 600;
         font-size: 16px;
-        color: #fff;
+        color: $white;
         @include transition(0.4s);
         &:hover{
             background-color: $text_color;
@@ -451,7 +512,7 @@
             height: 12px;
             color: transparent;
             border: none;
-            background: #031a26;
+            background: $text_color;
             opacity: 0.1;
             @include transition(0.5s);
             @include border-radius(50%);
@@ -487,7 +548,10 @@
         span{
             font-weight: 400;
             font-size: 16px;
-            color: #68767d;
+            color: $text_color3;
+            @include xxs {
+                font-size: 14px
+            }
         }
     }
     
@@ -497,7 +561,10 @@
         h5{
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
+            @include xxs {
+                font-size: 16px
+            }            
         }
         .mb_arrow_btn{
             span{
@@ -518,11 +585,23 @@
     border-radius: 10px;
     padding: 40px;
     @include flex(row, space-between, center);
+    @include sm {
+        padding: 30px;
+    }
+    @include xs {
+        padding: 23px 20px;
+        flex-direction: column;
+        row-gap: 38px;
+        align-items: start;
+    }
     .mb_cabin_tag{
         h4{
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
+            @include xxs {
+                font-size: 20px
+            }            
             span{
                 margin-right: 10px;
             }
@@ -531,10 +610,16 @@
             @include flex(row, flex-start, center);
             gap: 10px;
             margin-top: 29px;
+            @include xs {
+                margin-top: 20px;
+            }
             h5{
                 font-weight: 600;
                 font-size: 24px;
                 color: #000;
+                @include xxs {
+                    font-size: 20px
+                }                
             }
             ul{
                 @include flex(row, flex-start, center);
@@ -545,6 +630,9 @@
                         font-size: 21px;
                         color: $text_color;
                         @include transition(0.4s);
+                        @include xxs {
+                            font-size: 16px
+                        }                        
                         &:hover{
                             color: $primary;
                         }
@@ -590,6 +678,12 @@
     padding: 41px 60px 60px 60px;
     border: 1px solid rgba(3, 26, 38, 0.1);
     border-radius: 20px;
+    @include xxl {
+        padding: 40px 40px 40px 40px;
+    }
+    @include xxs {
+        padding: 20px 25px 25px 25px;
+    }
 }
 
 .mb_profile_heading {
@@ -602,6 +696,12 @@
 .mb_profile_left {
     @include flex(column, center, flex-start);
     border-right: 1px solid #e6e9ea;
+    @include md {
+        align-items: center;
+        padding-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #e6e9ea;        
+    }
     .mb_btn_area{
         @include flex(column, center, center);
         width: fit-content;
@@ -614,6 +714,13 @@
     border-radius: 50%;
     overflow: hidden;
     margin-bottom: 20px;
+    @include lg {
+        width: 315px;
+        height: 315px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
 
     img {
         width: 100%;
@@ -631,6 +738,9 @@
     color: #000;
     @include border-radius(10px);
     border: none;
+    @include xxs {
+        font-size: 18px;
+    }
 }
 
 
@@ -689,7 +799,10 @@
     .mb_professional_text {
         font-weight: 400;
         font-size: 16px;
-        color: #031a26;
+        color: $text_color;
+        @include xxs {
+            font-size: 14px;
+        }        
     }
 }
 
@@ -698,12 +811,25 @@
     flex-grow: 1;
     padding-left: 75px;
     padding-right: 60px;
+    @include md {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include sm {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .mb_profile_form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px;
+    @include sm {
+        display: flex;
+        flex-direction: column;
+        gap: 30;
+    }
 }
 
 .mb_form_group {
@@ -715,7 +841,7 @@
 .mb_label {
     font-weight: 600;
     font-size: 18px;
-    color: #031a26;
+    color: $text_color;
     margin-bottom: 10px;
 }
 
@@ -727,9 +853,9 @@
     background-color: transparent;
     font-weight: 500;
     font-size: 16px;
-    color: #031a26;
+    color: $text_color;
     &::placeholder{
-        color: #031a26;
+        color: $text_color;
         opacity: 0.7;
         
     }
@@ -747,26 +873,29 @@
     line-height: 50px;
     font-weight: 500;
     font-size: 16px;
-    color: #031a26;
+    color: $text_color;
     width: 100%;
     .list{
         width: 100%;
 
     }
     .current{
-        color: #031a26;
+        color: $text_color;
         opacity: 0.7;
     }
 }
 
 .mb_update_button {
+    @include md {
+        margin-top: 20px !important;
+    }
     button{
         background-color: $primary;
         border: none;
         padding: 11px 23px;
         font-weight: 600;
         font-size: 16px;
-        color: #fff;
+        color: $white;
         @include border-radius(999px);
         &:hover {
             background-color: $text_color;
@@ -779,12 +908,18 @@
 .mb_terms_text {
     font-weight: 400;
     font-size: 16px;
-    color: #68767d;
+    color: $text_color3;
     grid-column: span 2;
     margin-top: -15px;
+    @include md {
+        margin-top: 5px;
+    }
+    @include xxs {
+        font-size: 12px;
+    }    
     
     a {
-        color: #68767d;
+        color: $text_color3;
         @include transition(0.4s);
         text-decoration: underline;
         text-decoration-skip-ink: none;
@@ -800,6 +935,9 @@
     color: #000;
     text-align: center;
     margin-top: 43px;
+    @include xxs {
+        margin-top: 30px;
+    }    
     a {
         color: #000;
         text-decoration: none;
@@ -832,10 +970,22 @@
   padding: 60px;
   @include border-radius(20px);
   border: 1px solid rgba(3, 26, 38, 0.1);
+  @include xl {
+    padding: 40px;
+  }
+  @include lg {
+    padding: 30px;
+  }
+  @include xs {
+    padding: 20px;
+  }
 }
 
 .mb_mls_left {
   padding-right: 40px;
+  @include md {
+    padding-right: 0;
+  }
 }
 
 
@@ -843,9 +993,12 @@
 .mb_mls_subtitle {
     font-weight: 400;
     font-size: 16px;
-    color: #68767d;
+    color: $text_color3;
     margin-top: 14px;
   margin-bottom: 30px;
+      @include xxs {
+        font-size: 14px;
+    }  
 }
 
 .mb_user_info {
@@ -856,18 +1009,34 @@
   padding: 25px 40px;
   margin-bottom: 30px;
   background: #e6e9ea;
+  @include lg {
+    border-radius: 20px;
+    padding: 18px 16px;
+  }
     span{
         font-weight: 600;
         font-size: 20px;
-        color: #031a26;
+        color: $text_color;
+        @include lg {
+            font-size: 18px;
+        }
+        @include xxs {
+            font-size: 14px;
+        }
     }
     a{
         font-weight: 400;
         font-size: 20px;
         text-decoration: underline;
         text-decoration-skip-ink: none;
-        color: #031a26;
+        color: $text_color;
         @include transition(0.4s);
+        @include lg {
+            font-size: 18px;
+        } 
+        @include xxs {
+            font-size: 14px;
+        }               
         &:hover{
             color: $primary;
         }
@@ -878,8 +1047,11 @@
 .mb_section_title {
     font-weight: 500;
     font-size: 20px;
-    color: #031a26;
+    color: $text_color;
     margin-bottom: 29px;
+    @include xxs {
+        font-size: 16px;
+    }
 }
 
 .mb_radio_group {
@@ -894,9 +1066,12 @@
   align-items: center;
     font-weight: 400;
     font-size: 16px;
-    color: #68767d;
+    color: $text_color3;
   cursor: pointer;
   margin-bottom: 2px;
+  @include xxs {
+    font-size: 14px;
+  }
 }
 
 .mb_radio_input {
@@ -938,6 +1113,10 @@
     height: 60px;
     line-height: 60px;
     padding-left: 30px;
+    @include xs {
+        height: 50px;
+        line-height: 50px;
+    }
     .list{
         width: 100%;
     }
@@ -953,11 +1132,14 @@
   label{
     font-weight: 600;
     font-size: 18px;
-    color: #031a26;
+    color: $text_color;
     margin-bottom: 15px;
     span{
         margin-left: 1px;
     }
+    @include xxs {
+        font-size: 16px;
+    }    
   }
 }
 
@@ -989,8 +1171,11 @@
 .mb_helper_text {
     font-weight: 400;
     font-size: 16px;
-    color: #68767d;
+    color: $text_color3;
     margin-top: 18px;
+    @include xxs {
+        font-size: 14px;
+    }      
 }
 
 .mb_verify_btn {
@@ -1006,6 +1191,9 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+    @include xxs {
+        font-size: 14px;
+    }    
   &:hover{
     background-color: $text_color;
   }
@@ -1014,8 +1202,11 @@
 .mb_mls_right{
     max-width: 820px;
     width: 100%;
-height: 969px;
-position: relative;
+    height: 969px;
+    position: relative;
+    @include md {
+        height: auto;
+    }
 .mb_cross{
     position: absolute;
     top: 30px;

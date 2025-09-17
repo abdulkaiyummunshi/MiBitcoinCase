@@ -29,11 +29,14 @@
         h5{
             font-weight: 500;
             font-size: 16px;
-            color: rgba(3, 26, 38, 0.6);
+            color: $text_style2;
+            @include xxs {
+                font-size: 14px;
+            }
         }
         &.style_01{
             h4{
-                border: 1px solid rgba(3, 26, 38, 0.12);
+                border: 1px solid $border;
                 background: $white;
                 color: $text_color;
                 &::before{
@@ -78,7 +81,13 @@
             font-weight: 500;
             font-size: 40px;
             line-height: 160%;
-            color: #031a26;
+            color: $text_color;
+            @include sm {
+                font-size: 30px;
+            }
+            @include xxs {
+                font-size: 20px;
+            }
 
             span{
                 margin-right: 10px;
@@ -93,6 +102,14 @@
             }
             
         }
+        &.style_02{
+            h2{
+                color: $text_color;
+                @include xxs {
+                    font-size: 20px;
+                }
+            }
+        }
 
     }
 }
@@ -100,7 +117,7 @@
     p{
         font-weight: 500;
         font-size: 18px;
-        color: rgba(3, 26, 38, 0.6);
+        color: $text_style2;
         @include md {
             font-size: 16px;
             line-height: 26px; /* 162.5% */

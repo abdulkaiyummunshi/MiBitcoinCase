@@ -1,6 +1,6 @@
 .mb_contact_us{
     $background-color: #f8f8f8;
-$card-bg-color: #fff;
+$card-bg-color: $white;
 $form-bg-color: #fef8f0;
 $text-color: #333;
 $light-text-color: #666;
@@ -19,9 +19,41 @@ $primary-color: #ff9100;
     background: #fff;
     @include border-radius(20px);
     padding: 80px;
+    @include xl {
+        padding: 50px;
+    }
+    @include md {
+        padding: 0;
+        box-shadow: none;
+    }
 }
 
 .mb_contact_info {
+    @include md {    
+        padding: 40px;
+        box-shadow: 0 0 34px 0 rgba(0, 0, 0, 0.1);
+        background: #fff;
+        @include border-radius(20px);    
+        @include sm {
+            padding: 30px;
+        }
+        @include xxs {
+            padding: 20px;
+        }
+    }
+    .description {
+        p {
+            color: var(--800, #68767D);
+            font-family: $inter-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; /* 150% */
+            @include xxs {
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 .mb_get_in_touch_label {
@@ -63,6 +95,9 @@ $primary-color: #ff9100;
         font-size: 16px;
         color: $text_color;
         opacity: 0.7;
+        @include xxs {
+            font-size: 14px;
+        }
     }
 }
 
@@ -92,6 +127,19 @@ $primary-color: #ff9100;
     position: absolute;
     top: 0px;
     left: 0px;
+    @include lg {
+        padding: 50px;
+    }
+    @include md {
+        position: relative;
+        padding: 40px;
+    }
+    @include sm {
+    padding: 30px;
+    }
+    @include xxs {
+        padding: 20px;
+    }
 }
 
 .mb_contact_form {
@@ -109,7 +157,10 @@ $primary-color: #ff9100;
     label{
         font-weight: 500;
         font-size: 18px;
-        color: #031a26;
+        color: $text_color;
+        @include xxs {
+            font-size: 16px;
+        }
     }
    input{
      width: 100%;
@@ -120,8 +171,11 @@ $primary-color: #ff9100;
     font-weight: 400;
     font-size: 16px;
     color: $text_color;
+    @include xxs {
+        font-size: 12px;
+    }
     &::placeholder{
-        color: #68767d;
+        color: $text_color3;
 
     }
 
@@ -139,7 +193,7 @@ $primary-color: #ff9100;
     color: $text_color;
 
     &::placeholder{
-        color: #68767d;
+        color: $text_color3;
 
     }
 
@@ -155,7 +209,7 @@ $primary-color: #ff9100;
         background-color: $text_color;
         font-weight: 600;
         font-size: 16px;
-        color: #fff;
+        color: $white;
         border: none;
         @include transition(0.4s);
         span{

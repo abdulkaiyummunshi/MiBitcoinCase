@@ -50,8 +50,8 @@
         }
         .content {
             .rb_title {
-                color: #031A26;
-                font-family: Inter;
+                color: $text_color;
+                font-family: $inter-font;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 600;
@@ -64,8 +64,8 @@
                 }
             }
             .rb_desc {
-                color: rgba(3, 26, 38, 0.60);
-                font-family: Inter;
+                color: $text_style2;
+                font-family: $inter-font;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 500;
@@ -92,16 +92,16 @@
         .counter_item {
             width: 175px;
             .rb_numb {
-                color: #031A26;
-                font-family: Inter;
+                color: $text_color;
+                font-family: $inter-font;
                 font-size: 50px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 64px; /* 128% */
             }
             .rb_text {
-                color: rgba(3, 26, 38, 0.60);
-                font-family: Inter;
+                color: $text_style2;
+                font-family: $inter-font;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 500;
@@ -116,7 +116,7 @@
 // Step Slider Start
 .rb_step_slider {
     position: relative;
-    background: #031A26;
+    background: $text_color;
     padding: 120px 0 130px;
 
     .left-arrow{

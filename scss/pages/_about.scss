@@ -5,8 +5,11 @@
     @include border-radius(24px);
     @include flex(row, flex-start, center);
     position: relative;
+    margin: 10px 10px 0 10px;
+    overflow: hidden;
     @include xxs {
         height: 400px;
+        margin: 5px 5px 0 5px;
     }
     .mb_inner_content {
         display: flex;
@@ -15,6 +18,16 @@
         margin-top: 90px;
         @include md {
             align-items: center;            
+        }
+        @include xs {
+            margin-top: 140px;
+        }
+        .heading {
+            h1 {
+                @include md {
+                    text-align: center;
+                }
+            }
         }
     }
     .mb_blur_circle{
@@ -35,9 +48,6 @@
     .row{
         height: 100%;
         height: 470px
-        // .col-lg-6{
-        //     height: 100%
-        // }
     }
     ul{
         @include flex(row, flex-start, center);
@@ -47,12 +57,15 @@
         padding: 5px 20px;
         background: #f4d9b6;
         width: fit-content;
+        @include xxs {
+            padding: 5px 5px;
+        }
         li{
             a{
                 font-weight: 600;
                 font-size: 15px;
                 text-transform: uppercase;
-                color: #031a26;
+                color: $text_color;
                 @include transition(0.4s);
                 span{
                     margin-right: 10px;
@@ -71,7 +84,7 @@
         h1{
             font-weight: 600;
             font-size: 80px;
-            color: #031a26;
+            color: $text_color;
             margin-top: 20px;
             @include md {
                 font-size: 60px;
@@ -138,7 +151,7 @@
         }
         ul>li {
             color: rgba(37, 37, 37, 0.90);
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
@@ -158,7 +171,7 @@
         text-align: center;
         padding: 99px 77px 198px;
         border-radius: 10px;
-        background: #031A26;
+        background: $text_color;
         @include xxl {
             padding: 99px 30px 186px;
         }
@@ -170,8 +183,8 @@
             justify-content: center;
         }
         h4 {
-            color: #FFF;
-            font-family: Inter;
+            color: $white;
+            font-family: $inter-font;
             font-size: 24px;
             font-style: normal;
             font-weight: 600;
@@ -180,7 +193,7 @@
         p {
             color: rgba(255, 255, 255, 0.60);
             text-align: center;
-            font-family: Inter;
+            font-family: $inter-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
@@ -193,7 +206,7 @@
         .icon {
             i {
                 font-size: 20px;
-                color: #FFF;
+                color: $white;
                 cursor: pointer;
             }
         }
@@ -205,7 +218,7 @@
         z-index: 10;
         i {
             font-size: 24px;
-            color: #FFF;
+            color: $white;
             cursor: pointer;
         }
     }
@@ -216,7 +229,7 @@
         z-index: 10;
         i {
             font-size: 24px;
-            color: #FFF;
+            color: $white;
             cursor: pointer;
         }
     }
@@ -248,7 +261,7 @@
                 img {
                     border-radius: 100px;
                     border: 1px solid #E6E8E9;
-                    background: #FFF;
+                    background: $white;
                     padding: 23px 18px;
                     @include xs {
                         padding: 16px 12px;
@@ -256,8 +269,8 @@
                 }
             }
             .rb_title {
-                color: #031A26;
-                font-family: Inter;
+                color: $text_color;
+                font-family: $inter-font;
                 font-size: 22px;
                 font-style: normal;
                 font-weight: 700;
@@ -267,8 +280,8 @@
                 }
             }
             .rb_desc {
-                color: rgba(3, 26, 38, 0.60);
-                font-family: Inter;
+                color: $text_style2;
+                font-family: $inter-font;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;
@@ -320,8 +333,8 @@
                     align-items: center;
                 }
                 .rb_title {
-                    color: #031A26;
-                    font-family: Inter;
+                    color: $text_color;
+                    font-family: $inter-font;
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 600;
@@ -332,8 +345,8 @@
                     }
                 }
                 .rb_desc {
-                    color: rgba(3, 26, 38, 0.60);
-                    font-family: Inter;
+                    color: $text_style2;
+                    font-family: $inter-font;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 600;

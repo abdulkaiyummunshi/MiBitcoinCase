@@ -3,23 +3,27 @@
         ul{
             width: 100%;
             @include flex(column, flex-start, flex-start);
-            // gap: 10px;
+            padding-bottom: 15px;
+            @include md {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
             li{
                 padding: 13px 24px;
                 width: 100%;
                 font-weight: 500;
                 display: block;
                 font-size: 16px;
-                color: rgba(3, 26, 38, 0.7);
+                color: $text_style3;
                 border-radius: 6px;
                 max-width: 265px;
                 span{
                     margin-right: 10px;
-                    color: rgba(3, 26, 38, 0.7);
+                    color: $text_style3;
                     font-size: 20px;
                 }
                 &.active{
-                    border: 1px solid rgba(3, 26, 38, 0.12);
+                    border: 1px solid $border;
                     color: $text_color;
                     span{
                         color: $primary;
@@ -35,6 +39,27 @@
     border-radius: 10px;
     background: $white;
     padding: 56px 50px 70px 50px;
+    @include lg {
+        padding: 30px 30px 40px 30px;
+    }
+    @include xxs {
+        padding: 25px 15px 40px 15px;
+    }
+    .heading_area {
+        .heading {
+            h3 {
+                @include md {
+                    font-size: 35px;
+                }
+                @include xs {
+                    font-size: 26px;
+                }
+                @include xxs {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
     .mb_radio_custom {
         appearance: none;
         -webkit-appearance: none;
@@ -121,9 +146,9 @@
     label{
         font-weight: 500;
         font-size: 15px;
-        color: #031a26;
+        color: $text_color;
         span{
-            color: #ff9916;
+            color: $primary;
         }
     }
     input{
@@ -133,11 +158,11 @@
         width: 100%;
         font-weight: 400;
         font-size: 15px;
-        color: #031a26;
+        color: $text_color;
         outline: none;
         padding-left: 20px;
         &::placeholder{
-            color: rgba(3, 26, 38, 0.6);
+            color: $text_style2;
             
         }
     }
@@ -147,11 +172,32 @@
     background-color: $white;
     @include border-radius(10px);
     border: 1px solid rgba(3, 26, 38, 0.1);
+    @include lg {
+        padding: 30px 30px 40px 30px;
+    }
+    @include xxs {
+        padding: 25px 15px 40px 15px;
+    }
+    .heading_area {
+        .heading {
+            h3 {
+                @include md {
+                    font-size: 35px;
+                }
+                @include xs {
+                    font-size: 26px;
+                }
+                @include xxs {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
     .mb_title{
         h4{
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
         }
     }
      .mb_single_input{
@@ -159,8 +205,14 @@
         @include flex(column, flex-start, flex-start);
         gap: 12px;
         width: calc(33.33% - 30px);
+        @include sm {
+            width: 100%;
+        }
         &.style_1{
             width: 63.67%;
+            @include sm {
+                width: 100%;
+            }
         }
         .nice-select{
             width: 100%;
@@ -172,7 +224,7 @@
                 font-weight: 500;
                 font-size: 16px;
                 
-                color: rgba(3, 26, 38, 0.6);
+                color: $text_style2;
             }
             .list{
                 width: 100% ;
@@ -182,9 +234,9 @@
     label{
         font-weight: 500;
         font-size: 15px;
-        color: #031a26;
+        color: $text_color;
         span{
-            color: #ff9916;
+            color: $primary;
         }
     }
     input{
@@ -194,9 +246,12 @@
         width: 100%;
         font-weight: 400;
         font-size: 15px;
-        color: #031a26;
+        color: $text_color;
         outline: none;
         padding: 0px 20px;
+        @include xxs {
+            font-size: 14px;
+        }
         &::placeholder{
             opacity: 0.7;
             
@@ -208,6 +263,9 @@
         @include border-radius(10px);
         background-color: $white;
         border: 1px solid rgba(3, 26, 38, 0.1);
+        @include sm {
+            width: 100%;
+        }
         input{
             border: none;
 
@@ -221,7 +279,7 @@
             .current{
                 font-weight: 500;
                 font-size: 18px;
-                color: rgba(3, 26, 38, 0.6);
+                color: $text_style2;
                 sub{
                     font-size: 12px;
                 }
@@ -233,34 +291,46 @@
         h4{
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
         }
     }
 }
 .mb_single_listing{
     p{
-        border: 1px solid rgba(3, 26, 38, 0.12);
+        border: 1px solid $border;
         border-radius: 10px;
         width: 100%;
         padding: 25px;
+        color: $text_style2;
+        font-family: $inter-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 187.5% */
+        @include xxs {
+            font-size: 14px;
+        }
         a{
             text-decoration: underline;
             text-decoration-skip-ink: none;
-            color: #031a26;
+            color: $text_color;
             &:hover{
                 color: $primary;
             }
         }
 
     }
-    .mb_maps{
-        iframe{
-            border-radius: 10px !important;
-            -webkit-border-radius: 10px !important;
-            -moz-border-radius: 10px !important;
-            -ms-border-radius: 10px !important;
-            -o-border-radius: 10px !important;
 }
+.mb_maps {
+    iframe{
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+        @include sm {
+            height: 480px;
+        }
     }
 }
 .mb_property_info{
@@ -272,6 +342,9 @@
         border: 1px solid rgba(3, 26, 38, 0.1);
         width: 100%;
         margin-top: 20px;
+        @include xxs {
+            height: 120px;
+        }
     }
     .mb_check_box{
         padding-bottom: 35px;
@@ -287,7 +360,7 @@
        label{
         font-weight: 500;
         font-size: 16px;
-        color: rgba(3, 26, 38, 0.6);
+        color: $text_style2;
        }
     }
 }
@@ -329,7 +402,7 @@
         font-weight: 600;
         font-size: 20px;
         text-align: center;
-        color: #031a26;
+        color: $text_color;
         margin-top: 25px;
     }
     
@@ -337,7 +410,7 @@
         font-weight: 500;
         font-size: 16px;
         text-align: center;
-        color: rgba(3, 26, 38, 0.6);
+        color: $text_style2;
     }
 
 }
@@ -346,7 +419,7 @@
         h3{
             font-weight: 600;
             font-size: 24px;
-            color: #031a26;
+            color: $text_color;
         }
     }
 }
@@ -372,6 +445,11 @@
         background-color: #ffffff;
         border-radius: 1.5rem;
         box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        &.fix_padding {
+            @include sm {
+                padding: 0 !important;
+            }
+        }
     }
 
     .mb_section_header {
@@ -382,6 +460,9 @@
         border: 1px solid $border-color;
         border-radius: 1rem;
         padding: 1.5rem;
+        @include xxs {
+            padding: 14px;
+        }
     }
 
     .mb_calendar_header {
@@ -389,17 +470,26 @@
         border-radius: 0.75rem;
         padding: 0.5rem 1rem;
         display: inline-block;
+        @include md {
+            margin-bottom: 15px;
+        }
     }
     
     .mb_calendar_header span {
         font-size: 1.1rem;
         font-weight: 500;
+        @include sm {
+            font-size: 12px;
+        }
     }
 
     .mb_day_label {
         color: $text-color;
         font-weight: 500;
         text-align: center;
+        @include xs {
+            font-size: 14px;
+        }
     }
 
     .mb_day_grid {
@@ -418,6 +508,9 @@
         transition: all 0.2s ease-in-out;
         font-weight: 500;
         color: $black;
+        @include xs {
+            font-size: 12px;
+        }
 
         &:hover {
             background-color: $day-bg-hover;
