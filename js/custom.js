@@ -234,21 +234,7 @@
              })    
          }
          cardOption()
-        // How It Work
-        function howWork(){
-            $('.mb_how_work_slider').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    vertical: true, 
-                    verticalSwiping: true,
-                    arrows: true,
-                    dots: true,
-                    dotsClass: "mb_how_work_dots",
-                    prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-up"></i></span>`,
-                    nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-down"></i></span>`,
-                });
-        }
-        howWork()
+        
 
         // Step Slider Section
         function stepSlider() {
@@ -311,8 +297,22 @@
                     prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left-long"></i></span>`,
                     nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>`,
                 });
-        }
-        missionSlider()
+            }
+            missionSlider()
+        $('.how_work_section_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: true,
+            autoplay: true,
+            speed: 3000,
+            autoplaySpeed: 3000,
+            dotsClass: "mb_how_work_dots",
+            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-down-long"></i></span>`,
+            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-up-long"></i></span>`,
+            vertical: true,
+            verticalSwiping: true 
+        });
        
         
         $('.open_more_content').on('click', () => {
