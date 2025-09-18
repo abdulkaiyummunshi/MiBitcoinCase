@@ -26588,9 +26588,6 @@ p {
       @media (max-width: 1399px) {
         .header-wrap .main-menu ul li {
           margin: 0 0; } }
-      .header-wrap .main-menu ul li:hover > a {
-        color: #031a26;
-        background-color: #fff; }
       .header-wrap .main-menu ul li.active, .header-wrap .main-menu ul li.current-menu-ancestor {
         position: relative; }
       .header-wrap .main-menu ul li.dropdown > a {
@@ -26631,9 +26628,6 @@ p {
         .header-wrap .main-menu ul li a.active {
           background-color: #fff;
           color: #031a26; }
-          .header-wrap .main-menu ul li a.active:hover {
-            background-color: #fff;
-            color: #031a26; }
         .header-wrap .main-menu ul li a:before {
           position: absolute;
           content: "\f107";
@@ -27749,7 +27743,6 @@ header {
     width: 100%;
     padding: 14px 0px;
     height: 54px;
-    border-radius: 5px;
     border: none;
     border-bottom: 1px solid rgba(3, 26, 38, 0.14);
     color: #031a26;
@@ -27763,6 +27756,7 @@ header {
     -webkit-appearance: none;
     -moz-appearance: none;
     /* Add custom arrow */
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23626262' d='M6 8L0 0h12z'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 12px 8px;
@@ -28848,7 +28842,9 @@ header {
     height: 44px;
     line-height: 44px;
     text-align: center;
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -28872,6 +28868,29 @@ header {
       .mb_how_work .left-arrow {
         bottom: -11%;
         left: 37.5%; } }
+    @media only screen and (min-width: 0px) and (max-width: 575px) {
+      .mb_how_work .left-arrow {
+        height: 35px;
+        width: 35px;
+        left: 35%;
+        bottom: -10%; } }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .mb_how_work .left-arrow {
+        height: 35px;
+        width: 35px;
+        left: 30%; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_how_work .left-arrow {
+        bottom: -11%;
+        left: 37.5%; } }
+    @media only screen and (min-width: 0px) and (max-width: 575px) {
+      .mb_how_work .left-arrow {
+        bottom: -11%;
+        left: 35.5%; } }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .mb_how_work .left-arrow {
+        bottom: -12%;
+        left: 31.5%; } }
     .mb_how_work .left-arrow:hover {
       background-color: #ff9916;
       color: #fff; }
@@ -28882,7 +28901,9 @@ header {
     height: 44px;
     line-height: 44px;
     text-align: center;
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -28906,6 +28927,17 @@ header {
       .mb_how_work .right-arrow {
         bottom: -11%;
         left: 62.5%; } }
+    @media only screen and (min-width: 0px) and (max-width: 575px) {
+      .mb_how_work .right-arrow {
+        height: 35px;
+        width: 35px;
+        left: 65%;
+        bottom: -10%; } }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .mb_how_work .right-arrow {
+        height: 35px;
+        width: 35px;
+        left: 70%; } }
     .mb_how_work .right-arrow:hover {
       background-color: #ff9916;
       color: #fff; }
