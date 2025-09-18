@@ -102,10 +102,10 @@
        .mb_map_sidebar_content{
            overflow: hidden;
            overflow-y: scroll;
-           @media (min-width: 1280px){
-           max-height: 860px;
+            @media (min-width: 1280px){
+            max-height: 860px;
 
-    }
+            }
            padding: 30px;
            position: relative;
            @include xxl {
@@ -121,32 +121,32 @@
             @include sm{
                 display: none !important;
             }
-        border-radius: 50%;
-        border: 1px solid $border;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        display: block;
-        cursor: pointer;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        color: #020626;
-        position: absolute;
-        top: 50%;
-        @include transformY(-50);
-        left: 0px;
-        background-color: $white;
-        z-index: 10;
-        @include transition(0.4s);
-        &:hover{
-            background-color: $primary;
-            color: $white;
-        }
+            border-radius: 50%;
+            border: 1px solid $border;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: block;
+            cursor: pointer;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            color: #020626;
+            position: absolute;
+            top: 50%;
+            @include transformY(-50);
+            left: 0px;
+            background-color: $white;
+            z-index: 10;
+            @include transition(0.4s);
+            &:hover{
+                background-color: $primary;
+                color: $white;
+            }
 }
-   .right-arrow{
+            .right-arrow{
             @include md{
                 display: none !important;
             }
@@ -179,6 +179,21 @@
         }
     }
 
+    .rb_blog_card{
+        .rb_content{
+            padding: 0;
+
+            .rb_meta{
+                gap: 12px;
+            }
+
+            .rb_item{
+                img{
+                   padding-right: 5px;
+                }
+            }
+        }
+    }
 
 
     }
