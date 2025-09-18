@@ -28889,7 +28889,7 @@ header {
         left: 35.5%; } }
     @media only screen and (min-width: 0px) and (max-width: 479px) {
       .mb_how_work .left-arrow {
-        bottom: -12%;
+        bottom: -11%;
         left: 31.5%; } }
     .mb_how_work .left-arrow:hover {
       background-color: #ff9916;
@@ -28932,7 +28932,7 @@ header {
         height: 35px;
         width: 35px;
         left: 65%;
-        bottom: -10%; } }
+        bottom: -11%; } }
     @media only screen and (min-width: 0px) and (max-width: 479px) {
       .mb_how_work .right-arrow {
         height: 35px;
