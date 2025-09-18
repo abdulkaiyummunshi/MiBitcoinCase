@@ -30328,6 +30328,13 @@ header {
         color: #ff9916; }
 
 /*---Sidebar End---*/
+.mb_post_property .select_card {
+  width: 100%; }
+  .mb_post_property .select_card select {
+    color: rgba(3, 26, 38, 0.6); }
+  .mb_post_property .select_card::after {
+    color: rgba(3, 26, 38, 0.6); }
+
 .mb_post_property_wrapper {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 10px;
@@ -30952,19 +30959,29 @@ header {
   top: 46%; }
 
 .select_card {
-  width: 130px;
   position: relative; }
   .select_card select {
-    padding: 10px 10px;
     border: 1px solid rgba(3, 26, 38, 0.12);
+    padding: 0px 10px;
     border-radius: 6px;
     -webkit-appearance: none;
     -moz-appearance: none;
+    height: 50px;
     white-space: nowrap;
-    display: block !important;
+    outline: none;
     appearance: none;
-    width: 100%;
+    min-width: fit-content !important;
+    width: 100% !important;
     padding-right: 30px; }
+  .select_card.border_none {
+    border: none !important; }
+  .select_card.language select {
+    border: 1px solid rgba(3, 26, 38, 0.14);
+    border-radius: 100px;
+    height: 38px;
+    padding: 0 10px;
+    padding-right: 30px;
+    background-color: transparent; }
   .select_card::after {
     content: '\f107';
     font-family: "FontAwesome";
@@ -35898,10 +35915,10 @@ ul.children {
       .mb_agents_area .mb_agent_search input {
         font-size: 14px;
         width: 100%; } }
-  .mb_agents_area .mb_agent_search .nice-select {
+  .mb_agents_area .mb_agent_search select {
     height: 50px;
     line-height: 50px;
-    width: 450px;
+    width: 450px !important;
     color: rgba(3, 26, 38, 0.6);
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -35912,13 +35929,13 @@ ul.children {
     -ms-border-radius: 6px;
     -o-border-radius: 6px; }
     @media only screen and (min-width: 0px) and (max-width: 575px) {
-      .mb_agents_area .mb_agent_search .nice-select {
+      .mb_agents_area .mb_agent_search select {
         width: 388px; } }
     @media only screen and (min-width: 0px) and (max-width: 479px) {
-      .mb_agents_area .mb_agent_search .nice-select {
+      .mb_agents_area .mb_agent_search select {
         font-size: 14px;
         width: 100%; } }
-    .mb_agents_area .mb_agent_search .nice-select .list {
+    .mb_agents_area .mb_agent_search select .list {
       width: 100%; }
   @media only screen and (max-width: 991px) {
     .mb_agents_area .mb_agent_search .fix_agent {
@@ -37623,6 +37640,8 @@ ul.children {
 
 /*---My Profile End---*/
 /*---Sign Up Start---*/
+.mb_sign_up_area .select_card {
+  width: 100% !important; }
 .mb_sign_up_area .mb_mls_card {
   padding: 60px;
   border-radius: 20px;

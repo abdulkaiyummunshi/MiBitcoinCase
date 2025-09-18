@@ -223,21 +223,34 @@
 
 
 .select_card{
-width: 130px;
     select{
-        padding: 10px 10px;
-       border: 1px solid rgba(3, 26, 38, 0.12);
+        border: 1px solid rgba(3, 26, 38, 0.12);
+        padding: 0px 10px;
        border-radius: 6px;
        -webkit-appearance: none;
        -moz-appearance: none;
+       height: 50px;
        white-space: nowrap;
-       display: block !important;
-
+       outline: none;
        appearance: none;
-       width: 100%;
+       min-width: fit-content !important;
+       width: 100% !important;
        padding-right: 30px;
-       
     }
+    &.border_none{
+        border: none !important;
+    }
+    &.language{
+        select{
+            border: 1px solid rgba(3, 26, 38, 0.14);
+            border-radius: 100px;
+            height: 38px;
+            padding: 0 10px;
+            padding-right: 30px;
+            background-color: transparent;
+        }
+    }
+    
     position: relative;
 &::after{
     content: '\f107';

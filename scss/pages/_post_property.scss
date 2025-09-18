@@ -33,7 +33,18 @@
         }
     }
     /*---Sidebar End---*/
+.mb_post_property{
+    .select_card{
+        width: 100%;
+        select{
+            color: $text_style2;
+        }
+        &::after{
+            color: $text_style2;
 
+        }
+    }
+}
 .mb_post_property_wrapper{
     border: 1px solid rgba(3, 26, 38, 0.1);
     border-radius: 10px;
