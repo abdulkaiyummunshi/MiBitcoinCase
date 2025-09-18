@@ -27230,6 +27230,10 @@ header {
           margin-bottom: 15px; }
         .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li .offcanvas__contact-icon {
           margin-right: 20px; }
+        .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li a {
+          color: #031a26; }
+          .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li a:hover {
+            color: #ff9916; }
     .offcanvas__wrapper .offcanvas__content .offcanvas__contact span {
       text-transform: initial; }
     .offcanvas__wrapper .offcanvas__content .offcanvas__contact .header-button .btn-read {
@@ -27244,9 +27248,15 @@ header {
         height: 42px;
         border-radius: 100%;
         line-height: 42px;
+        color: #031a26;
         border: 1px solid #414141;
         text-align: center;
         transition: all 0.3s ease; }
+        .offcanvas__wrapper .offcanvas__content .offcanvas__contact .social-icon a:hover {
+          color: #fff;
+          background-color: #ff9916;
+          border: none;
+          transition: all 0.3 ease; }
 
 .offcanvas__overlay {
   position: fixed;
@@ -30001,6 +30011,10 @@ header {
   @media only screen and (min-width: 0px) and (max-width: 479px) {
     .process-header .mb_mibitcoin_logo img {
       max-width: 60px; } }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .add-pb-10 {
+    padding-bottom: 12px; } }
 
 /*---Inner Page Hero Section Start---*/
 .mb_inner_page_hero {

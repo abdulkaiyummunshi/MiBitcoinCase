@@ -106,14 +106,20 @@
 					font-size: 16px;
 					font-weight: 600;
 					text-transform: capitalize;
-
+					
 					&:not(:last-child){
 						margin-bottom: 15px;
 					}
-
+					
 					.offcanvas__contact-icon {
 						margin-right: 20px;
-
+						
+					}
+					a {
+						color: $text_color;
+						&:hover {
+							color: $primary;
+						}
 					}
 				}
 			}
@@ -139,9 +145,16 @@
 					height: 42px;
 					border-radius: 100%;
 					line-height: 42px;
+					color: $text_color;
 					border: 1px solid #414141;
 					text-align: center;
 					@include transition(0.3s);
+					&:hover {
+						color: $white;
+						background-color: $primary;
+						border: none;
+						@include transition(.3);
+					}
 				}
             }
 		}

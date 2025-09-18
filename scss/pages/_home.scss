@@ -752,7 +752,7 @@
             left: 65%;
             bottom: -11%;
         }
-        @include xxs{
+        @include xxs{ 
             height: 35px;
             width: 35px;
             left: 69%;
@@ -1914,5 +1914,11 @@
         @include xxs{
             max-width: 60px;
         }
+    }
+}
+
+.add-pb-10{
+    @include sm{
+        padding-bottom: 12px;
     }
 }
