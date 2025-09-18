@@ -33894,7 +33894,9 @@ header {
   height: 44px;
   line-height: 44px;
   text-align: center;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -33923,6 +33925,21 @@ header {
     left: 37.5%;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_how_work .left-arrow {
+    height: 35px;
+    width: 35px;
+    left: 35%;
+    bottom: -10%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_how_work .left-arrow {
+    height: 35px;
+    width: 35px;
+    left: 30%;
+  }
+}
 .mb_how_work .left-arrow:hover {
   background-color: #ff9916;
   color: #fff;
@@ -33934,7 +33951,9 @@ header {
   height: 44px;
   line-height: 44px;
   text-align: center;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -33961,6 +33980,21 @@ header {
   .mb_how_work .right-arrow {
     bottom: -11%;
     left: 62.5%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_how_work .right-arrow {
+    height: 35px;
+    width: 35px;
+    left: 65%;
+    bottom: -10%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .mb_how_work .right-arrow {
+    height: 35px;
+    width: 35px;
+    left: 70%;
   }
 }
 .mb_how_work .right-arrow:hover {
