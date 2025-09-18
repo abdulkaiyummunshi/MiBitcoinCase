@@ -1917,3 +1917,9 @@
         }
     }
 }
+
+.add-pb-10{
+    @include sm{
+        padding-bottom: 12px;
+    }
+}

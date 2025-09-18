@@ -35375,6 +35375,12 @@ header {
   }
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .add-pb-10 {
+    padding-bottom: 12px;
+  }
+}
+
 /*---Inner Page Hero Section Start---*/
 .mb_inner_page_hero {
   height: 470px;
