@@ -33851,17 +33851,6 @@ header {
 /*--How It Work Start---*/
 .mb_how_work {
   position: relative;
-  /*--How It Work End---*/
-  /*--Browse Properties Start---*/
-  /*--Browse Properties End---*/
-  /*--Popular Housing Start---*/
-  /*--Popular Housing End---*/
-  /*--Selling Start---*/
-  /*--Selling End---*/
-  /*--Our Agents Start---*/
-  /*--Our Agents End---*/
-  /*--MiBitcoin vs Brokerage Start---*/
-  /*--MiBitcoin vs Brokerage End---*/
 }
 @media only screen and (max-width: 1199px) {
   .mb_how_work {
@@ -33951,31 +33940,29 @@ header {
     left: 30%;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 479px) and (min-width: 0px) and (max-width: 767px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .mb_how_work .left-arrow {
     bottom: -11%;
     left: 37.5%;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 479px) and (min-width: 0px) and (max-width: 575px) {
+@media only screen and (min-width: 0px) and (max-width: 575px) {
   .mb_how_work .left-arrow {
     bottom: -11%;
     left: 35.5%;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 479px) and (min-width: 0px) and (max-width: 479px) {
+@media only screen and (min-width: 0px) and (max-width: 479px) {
   .mb_how_work .left-arrow {
     bottom: -12%;
     left: 31.5%;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .left-arrow:hover {
-    background-color: #ff9916;
-    color: #fff;
-  }
+.mb_how_work .left-arrow:hover {
+  background-color: #ff9916;
+  color: #fff;
 }
-.mb_how_work .left-arrow .right-arrow {
+.mb_how_work .right-arrow {
   border: 1px solid rgba(3, 26, 38, 0.12);
   border-radius: 50%;
   width: 44px;
@@ -33999,7 +33986,7 @@ header {
   transition: all 0.4s ease;
 }
 @media only screen and (max-width: 1199px) {
-  .mb_how_work .left-arrow .right-arrow {
+  .mb_how_work .right-arrow {
     top: auto;
     right: auto;
     bottom: -11.6%;
@@ -34008,13 +33995,13 @@ header {
   }
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .left-arrow .right-arrow {
+  .mb_how_work .right-arrow {
     bottom: -11%;
     left: 62.5%;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
-  .mb_how_work .left-arrow .right-arrow {
+  .mb_how_work .right-arrow {
     height: 35px;
     width: 35px;
     left: 65%;
@@ -34022,17 +34009,17 @@ header {
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .left-arrow .right-arrow {
+  .mb_how_work .right-arrow {
     height: 35px;
     width: 35px;
     left: 70%;
   }
 }
-.mb_how_work .left-arrow .right-arrow:hover {
+.mb_how_work .right-arrow:hover {
   background-color: #ff9916;
   color: #fff;
 }
-.mb_how_work .left-arrow .mb_dots_arrow_card {
+.mb_how_work .mb_dots_arrow_card {
   background-color: #031a26;
   width: 232px;
   height: 54px;
@@ -34046,7 +34033,7 @@ header {
   right: 11px;
 }
 @media only screen and (max-width: 1199px) {
-  .mb_how_work .left-arrow .mb_dots_arrow_card {
+  .mb_how_work .mb_dots_arrow_card {
     top: auto;
     bottom: -10%;
     left: 50%;
@@ -34054,11 +34041,11 @@ header {
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .left-arrow .mb_dots_arrow_card {
+  .mb_how_work .mb_dots_arrow_card {
     width: 186px;
   }
 }
-.mb_how_work .left-arrow .mb_how_work_dots {
+.mb_how_work .mb_how_work_dots {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -34069,7 +34056,7 @@ header {
   right: 79px;
 }
 @media only screen and (max-width: 1199px) {
-  .mb_how_work .left-arrow .mb_how_work_dots {
+  .mb_how_work .mb_how_work_dots {
     top: auto;
     right: auto;
     bottom: -11%;
@@ -34077,10 +34064,10 @@ header {
     transform: translate(-50%, 0px);
   }
 }
-.mb_how_work .left-arrow .mb_how_work_dots li {
+.mb_how_work .mb_how_work_dots li {
   position: relative;
 }
-.mb_how_work .left-arrow .mb_how_work_dots button {
+.mb_how_work .mb_how_work_dots button {
   width: 10px;
   height: 10px;
   color: transparent;
@@ -34093,24 +34080,24 @@ header {
   background-color: #fff;
   transition: all 0.5s ease;
 }
-.mb_how_work .left-arrow .mb_how_work_dots .slick-active button {
+.mb_how_work .mb_how_work_dots .slick-active button {
   background-color: #ff9916;
 }
-.mb_how_work .left-arrow .slick-slide {
+.mb_how_work .slick-slide {
   margin: 10px 0px;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .left-arrow .mb_number {
+  .mb_how_work .mb_number {
     display: flex;
     justify-content: center;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .left-arrow .mb_number {
+  .mb_how_work .mb_number {
     justify-content: start;
   }
 }
-.mb_how_work .left-arrow .mb_number span {
+.mb_how_work .mb_number span {
   font-weight: 600;
   font-size: 20px;
   color: #031a26;
@@ -34127,27 +34114,27 @@ header {
   display: block;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .left-arrow .mb_number span {
+  .mb_how_work .mb_number span {
     font-size: 14px;
     width: 54px;
     height: 54px;
     line-height: 54px;
   }
 }
-.mb_how_work .left-arrow .mb_title h3 {
+.mb_how_work .mb_title h3 {
   font-weight: 600;
   font-size: 34px;
   color: #031a26;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .left-arrow .mb_title h3 {
+  .mb_how_work .mb_title h3 {
     font-size: 24px;
     line-height: 40px;
     text-align: center;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .left-arrow .mb_title h3 {
+  .mb_how_work .mb_title h3 {
     font-size: 20px;
     font-weight: 700;
     line-height: 40px; /* 200% */
@@ -34155,37 +34142,37 @@ header {
   }
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .left-arrow .btn_wrapper {
+  .mb_how_work .btn_wrapper {
     text-align: center;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .left-arrow .btn_wrapper {
+  .mb_how_work .btn_wrapper {
     text-align: start;
   }
 }
-.mb_how_work .left-arrow .mb_work_details {
+.mb_how_work .mb_work_details {
   padding-left: 30px;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .left-arrow .mb_work_details {
+  .mb_how_work .mb_work_details {
     padding-left: 0;
   }
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .left-arrow .mb_icon {
+  .mb_how_work .mb_icon {
     display: flex;
     justify-content: center;
     margin-top: 60px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .left-arrow .mb_icon {
+  .mb_how_work .mb_icon {
     justify-content: start;
     margin-top: 50px;
   }
 }
-.mb_how_work .left-arrow .mb_icon span {
+.mb_how_work .mb_icon span {
   width: 120px;
   background-color: #ff9916;
   border-radius: 50%;
@@ -34202,82 +34189,85 @@ header {
   line-height: 120px;
 }
 @media only screen and (max-width: 1199px) {
-  .mb_how_work .left-arrow .mb_icon span {
+  .mb_how_work .mb_icon span {
     width: 100px;
     height: 100px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .left-arrow .mb_icon span {
+  .mb_how_work .mb_icon span {
     width: 80px;
     height: 80px;
     flex-shrink: 0;
     aspect-ratio: 1/1;
   }
 }
-.mb_how_work .left-arrow .mb_icon span img {
+.mb_how_work .mb_icon span img {
   width: fit-content;
   height: fit-content;
   object-fit: contain;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .left-arrow .mb_icon span img {
+  .mb_how_work .mb_icon span img {
     width: 40.275px;
     height: 40.48px;
     flex-shrink: 0;
   }
 }
 @media only screen and (max-width: 1199px) {
-  .mb_how_work .left-arrow .describtion p br {
+  .mb_how_work .describtion p br {
     display: none;
   }
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .left-arrow .describtion {
+  .mb_how_work .describtion {
     text-align: center;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .left-arrow .describtion {
+  .mb_how_work .describtion {
     text-align: start;
   }
 }
-.mb_how_work .mb_browse_properties {
+
+/*--How It Work End---*/
+/*--Browse Properties Start---*/
+.mb_browse_properties {
   position: relative;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties .mb_choose_option {
+  .mb_browse_properties .mb_choose_option {
     margin-top: 7px;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card_container {
+  .mb_browse_properties .mb_properties_card_container {
     width: 33.33%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card_container {
+  .mb_browse_properties .mb_properties_card_container {
     width: 50%;
   }
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_browse_properties #property-list {
+  .mb_browse_properties #property-list {
     margin-top: 0px !important;
     --bs-gutter-y: 20px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties #property-list {
+  .mb_browse_properties #property-list {
     margin-top: 0px !important;
     --bs-gutter-y: 10px;
   }
 }
-.mb_how_work .mb_browse_properties .vector {
+.mb_browse_properties .vector {
   position: absolute;
   top: -34px;
   right: 20%;
 }
-.mb_how_work .mb_browse_properties .vector .child_vector {
+.mb_browse_properties .vector .child_vector {
   position: absolute;
   top: -16px;
   left: 50%;
@@ -34288,54 +34278,54 @@ header {
   -o-transform: translateX(-50%);
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_browse_properties .vector .child_vector {
+  .mb_browse_properties .vector .child_vector {
     top: 5px;
     width: 50px;
     height: 47px;
   }
-  .mb_how_work .mb_browse_properties .vector .child_vector img {
+  .mb_browse_properties .vector .child_vector img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties .vector .child_vector {
+  .mb_browse_properties .vector .child_vector {
     top: 5px;
     width: 50px;
     height: 47px;
   }
-  .mb_how_work .mb_browse_properties .vector .child_vector img {
+  .mb_browse_properties .vector .child_vector img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 }
-.mb_how_work .mb_browse_properties .row.style_2 {
+.mb_browse_properties .row.style_2 {
   padding-bottom: 50px;
   border-bottom: 1px solid rgba(3, 26, 38, 0.1);
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties .row.style_2 {
+  .mb_browse_properties .row.style_2 {
     padding-bottom: 20px;
   }
 }
-.mb_how_work .mb_browse_properties .mb_switch {
+.mb_browse_properties .mb_switch {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
 }
-.mb_how_work .mb_browse_properties .mb_switch button {
+.mb_browse_properties .mb_switch button {
   border: none;
   background-color: transparent;
 }
-.mb_how_work .mb_browse_properties .mb_switch button input {
+.mb_browse_properties .mb_switch button input {
   color: #ff9916;
   margin-right: 8px;
 }
-.mb_how_work .mb_browse_properties .mb_browse_wrapper {
+.mb_browse_properties .mb_browse_wrapper {
   background-color: #ffeed8;
   padding: 120px 77px 140px 77px;
   border-radius: 24px;
@@ -34345,19 +34335,19 @@ header {
   -o-border-radius: 24px;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_browse_properties .mb_browse_wrapper {
+  .mb_browse_properties .mb_browse_wrapper {
     padding: 40px 24px;
   }
-  .mb_how_work .mb_browse_properties .mb_browse_wrapper .explore_btn {
+  .mb_browse_properties .mb_browse_wrapper .explore_btn {
     display: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties .mb_browse_wrapper {
+  .mb_browse_properties .mb_browse_wrapper {
     padding: 30px 20px;
   }
 }
-.mb_how_work .mb_browse_properties .mb_properties_btn {
+.mb_browse_properties .mb_properties_btn {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -34366,10 +34356,10 @@ header {
   gap: 6px;
   overflow: scroll;
 }
-.mb_how_work .mb_browse_properties .mb_properties_btn::-webkit-scrollbar {
+.mb_browse_properties .mb_properties_btn::-webkit-scrollbar {
   display: none;
 }
-.mb_how_work .mb_browse_properties .mb_properties_btn button {
+.mb_browse_properties .mb_properties_btn button {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 30px;
   padding: 8px 16px;
@@ -34380,31 +34370,31 @@ header {
   transition: all 0.8s ease;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties .mb_properties_btn button {
+  .mb_browse_properties .mb_properties_btn button {
     padding: 4px 16px;
   }
 }
-.mb_how_work .mb_browse_properties .mb_properties_btn button:hover {
+.mb_browse_properties .mb_properties_btn button:hover {
   background-color: #031a26;
   color: #fff;
 }
-.mb_how_work .mb_browse_properties .mb_properties_btn button.active {
+.mb_browse_properties .mb_properties_btn button.active {
   background-color: #031a26;
   color: #fff;
 }
-.mb_how_work .mb_browse_properties .explore_btn a {
+.mb_browse_properties .explore_btn a {
   font-weight: 600;
   font-size: 16px;
   transition: all 0.4s ease;
   color: #031a26;
 }
-.mb_how_work .mb_browse_properties .explore_btn a span {
+.mb_browse_properties .explore_btn a span {
   margin-left: 8px;
 }
-.mb_how_work .mb_browse_properties .explore_btn a:hover {
+.mb_browse_properties .explore_btn a:hover {
   color: #ff9916;
 }
-.mb_how_work .mb_browse_properties .mb_properties_card {
+.mb_browse_properties .mb_properties_card {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 14px;
   padding: 26px 34px 32px 34px;
@@ -34413,35 +34403,35 @@ header {
   position: relative;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card {
+  .mb_browse_properties .mb_properties_card {
     padding: 20px 16px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card {
+  .mb_browse_properties .mb_properties_card {
     padding: 20px 16px;
   }
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .title a {
+.mb_browse_properties .mb_properties_card .title a {
   font-weight: 600;
   font-size: 20px;
   color: #031a26;
   transition: all 0.4s ease;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card .title a {
+  .mb_browse_properties .mb_properties_card .title a {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card .title a {
+  .mb_browse_properties .mb_properties_card .title a {
     font-size: 16px;
   }
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .title a:hover {
+.mb_browse_properties .mb_properties_card .title a:hover {
   color: #ff9916;
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .mb_properties_details {
+.mb_browse_properties .mb_properties_card .mb_properties_details {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -34449,7 +34439,7 @@ header {
   gap: 14px;
   flex-wrap: wrap;
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .mb_count_properties {
+.mb_browse_properties .mb_properties_card .mb_count_properties {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 100px;
   padding: 4px 12px;
@@ -34457,38 +34447,38 @@ header {
   min-width: 136px;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card .mb_count_properties {
+  .mb_browse_properties .mb_properties_card .mb_count_properties {
     padding: 0px 10px;
     min-width: 113px !important;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card .mb_count_properties {
+  .mb_browse_properties .mb_properties_card .mb_count_properties {
     padding: 0px 10px;
     min-width: 113px !important;
   }
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .mb_count_properties span {
+.mb_browse_properties .mb_properties_card .mb_count_properties span {
   font-weight: 500;
   font-size: 14px;
   color: #031a26;
   display: inline-block;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card .mb_count_properties span {
+  .mb_browse_properties .mb_properties_card .mb_count_properties span {
     font-size: 12px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card .mb_count_properties span {
+  .mb_browse_properties .mb_properties_card .mb_count_properties span {
     font-size: 12px;
   }
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .mb_count_properties span:first-child {
+.mb_browse_properties .mb_properties_card .mb_count_properties span:first-child {
   padding-left: 8px;
   position: relative;
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .mb_count_properties span:first-child::before {
+.mb_browse_properties .mb_properties_card .mb_count_properties span:first-child::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -34507,31 +34497,31 @@ header {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .mb_properties_price {
+.mb_browse_properties .mb_properties_card .mb_properties_price {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .mb_properties_price span {
+.mb_browse_properties .mb_properties_card .mb_properties_price span {
   font-weight: 500;
   font-size: 15px;
   color: #031a26;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card .mb_properties_price span {
+  .mb_browse_properties .mb_properties_card .mb_properties_price span {
     font-size: 14px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card .mb_properties_price span {
+  .mb_browse_properties .mb_properties_card .mb_properties_price span {
     font-size: 14px;
   }
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .mb_properties_price span:first-child {
+.mb_browse_properties .mb_properties_card .mb_properties_price span:first-child {
   margin-right: 5px;
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .arrow_btn {
+.mb_browse_properties .mb_properties_card .arrow_btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -34542,16 +34532,16 @@ header {
   right: 34px;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card .arrow_btn {
+  .mb_browse_properties .mb_properties_card .arrow_btn {
     right: 16px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_browse_properties .mb_properties_card .arrow_btn {
+  .mb_browse_properties .mb_properties_card .arrow_btn {
     right: 16px;
   }
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .arrow_btn a {
+.mb_browse_properties .mb_properties_card .arrow_btn a {
   width: 36px;
   height: 36px;
   line-height: 36px;
@@ -34565,7 +34555,7 @@ header {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .arrow_btn a i {
+.mb_browse_properties .mb_properties_card .arrow_btn a i {
   transition: all 0.4s ease;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -34573,24 +34563,27 @@ header {
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
 }
-.mb_how_work .mb_browse_properties .mb_properties_card .arrow_btn a:hover i {
+.mb_browse_properties .mb_properties_card .arrow_btn a:hover i {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
 }
-.mb_how_work .mb_browse_properties .mb_properties_card:hover {
+.mb_browse_properties .mb_properties_card:hover {
   border: 1px solid #ff9916;
 }
-.mb_how_work .mb_browse_properties .mb_properties_card:hover .arrow_btn a {
+.mb_browse_properties .mb_properties_card:hover .arrow_btn a {
   background-color: #ff9916;
   color: #fff;
 }
-.mb_how_work .mb_popular_housing .slick-slide {
+
+/*--Browse Properties End---*/
+/*--Popular Housing Start---*/
+.mb_popular_housing .slick-slide {
   margin: 0px 15px;
 }
-.mb_how_work .mb_popular_housing .left-arrow {
+.mb_popular_housing .left-arrow {
   border-radius: 50%;
   border: 1px solid rgba(3, 26, 38, 0.12);
   width: 44px;
@@ -34617,20 +34610,20 @@ header {
   transition: all 0.4s ease;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_popular_housing .left-arrow {
+  .mb_popular_housing .left-arrow {
     display: none !important;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_popular_housing .left-arrow {
+  .mb_popular_housing .left-arrow {
     display: none !important;
   }
 }
-.mb_how_work .mb_popular_housing .left-arrow:hover {
+.mb_popular_housing .left-arrow:hover {
   background-color: #ff9916;
   color: #fff;
 }
-.mb_how_work .mb_popular_housing .right-arrow {
+.mb_popular_housing .right-arrow {
   border: 1px solid rgba(3, 26, 38, 0.12);
   border-radius: 50%;
   width: 44px;
@@ -34657,20 +34650,20 @@ header {
   transition: all 0.4s ease;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_popular_housing .right-arrow {
+  .mb_popular_housing .right-arrow {
     display: none !important;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_popular_housing .right-arrow {
+  .mb_popular_housing .right-arrow {
     display: none !important;
   }
 }
-.mb_how_work .mb_popular_housing .right-arrow:hover {
+.mb_popular_housing .right-arrow:hover {
   background-color: #ff9916;
   color: #fff;
 }
-.mb_how_work .mb_popular_housing .mb_house_card {
+.mb_popular_housing .mb_house_card {
   width: 100%;
   border-radius: 20px;
   -moz-border-radius: 20px;
@@ -34679,7 +34672,7 @@ header {
   -o-border-radius: 20px;
   position: relative;
 }
-.mb_how_work .mb_popular_housing .mb_house_card img {
+.mb_popular_housing .mb_house_card img {
   width: 100%;
   border-radius: 20px;
   -moz-border-radius: 20px;
@@ -34689,10 +34682,10 @@ header {
   height: 100%;
   object-fit: cover;
 }
-.mb_how_work .mb_popular_housing .mb_house_card:hover .mb_overly_content {
+.mb_popular_housing .mb_house_card:hover .mb_overly_content {
   background-color: rgba(3, 26, 38, 0.8);
 }
-.mb_how_work .mb_popular_housing .mb_house_card:hover .mb_arrow_right {
+.mb_popular_housing .mb_house_card:hover .mb_arrow_right {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -34704,7 +34697,7 @@ header {
   visibility: visible;
   opacity: 1;
 }
-.mb_how_work .mb_popular_housing .mb_overly_content {
+.mb_popular_housing .mb_overly_content {
   position: absolute;
   border-radius: 20px;
   -moz-border-radius: 20px;
@@ -34725,7 +34718,7 @@ header {
   gap: 10px;
   overflow: hidden;
 }
-.mb_how_work .mb_popular_housing .mb_arrow_right {
+.mb_popular_housing .mb_arrow_right {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -34736,7 +34729,7 @@ header {
   -o-transform: translateX(-50%);
   transition: all 0.4 ease;
 }
-.mb_how_work .mb_popular_housing .mb_arrow_right span {
+.mb_popular_housing .mb_arrow_right span {
   width: 46px;
   height: 46px;
   line-height: 46px;
@@ -34752,7 +34745,7 @@ header {
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.mb_how_work .mb_popular_housing .mb_arrow_right span i {
+.mb_popular_housing .mb_arrow_right span i {
   transition: all 0.4s ease;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -34760,18 +34753,18 @@ header {
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
 }
-.mb_how_work .mb_popular_housing .mb_arrow_right span:hover {
+.mb_popular_housing .mb_arrow_right span:hover {
   background-color: #ff9916;
   color: #fff;
 }
-.mb_how_work .mb_popular_housing .mb_arrow_right span:hover i {
+.mb_popular_housing .mb_arrow_right span:hover i {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
 }
-.mb_how_work .mb_popular_housing .mb_house_reviews {
+.mb_popular_housing .mb_house_reviews {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -34788,11 +34781,11 @@ header {
   gap: 5px;
   background-color: #fff;
 }
-.mb_how_work .mb_popular_housing .mb_house_reviews span {
+.mb_popular_housing .mb_house_reviews span {
   color: #ff9916;
   font-size: 12px;
 }
-.mb_how_work .mb_popular_housing .mb_house_reviews p {
+.mb_popular_housing .mb_house_reviews p {
   color: #747D87;
   font-family: "Inter", sans-serif;
   font-size: 13px;
@@ -34800,21 +34793,24 @@ header {
   font-weight: 500;
   line-height: 10px;
 }
-.mb_how_work .mb_popular_housing .title h4 a {
+.mb_popular_housing .title h4 a {
   font-weight: 600;
   font-size: 20px;
   color: #fff;
   transition: all 0.4s ease;
 }
-.mb_how_work .mb_popular_housing .title h4 a:hover {
+.mb_popular_housing .title h4 a:hover {
   color: #ff9916;
 }
-.mb_how_work .mb_popular_housing .describtion p {
+.mb_popular_housing .describtion p {
   font-weight: 500;
   font-size: 15px;
   color: rgba(255, 255, 255, 0.8);
 }
-.mb_how_work .mb_selling .mb_selling_contains {
+
+/*--Popular Housing End---*/
+/*--Selling Start---*/
+.mb_selling .mb_selling_contains {
   background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
   border-radius: 14px;
   -moz-border-radius: 14px;
@@ -34828,7 +34824,7 @@ header {
   padding: 0px 30px 0px 15px;
 }
 @media only screen and (max-width: 1199px) {
-  .mb_how_work .mb_selling .mb_selling_contains {
+  .mb_selling .mb_selling_contains {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -34838,11 +34834,11 @@ header {
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .mb_selling .mb_selling_contains {
+  .mb_selling .mb_selling_contains {
     padding: 24px 20px;
   }
 }
-.mb_how_work .mb_selling .mb_selling_contains .mb_left_contains {
+.mb_selling .mb_selling_contains .mb_left_contains {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -34850,30 +34846,30 @@ header {
   gap: 35px;
 }
 @media only screen and (max-width: 1399px) {
-  .mb_how_work .mb_selling .mb_selling_contains .mb_left_contains {
+  .mb_selling .mb_selling_contains .mb_left_contains {
     gap: 5px;
   }
 }
-.mb_how_work .mb_selling .mb_selling_contains .mb_sell_img {
+.mb_selling .mb_selling_contains .mb_sell_img {
   width: 238px;
   height: 100px;
   position: relative;
 }
 @media only screen and (max-width: 1199px) {
-  .mb_how_work .mb_selling .mb_selling_contains .mb_sell_img {
+  .mb_selling .mb_selling_contains .mb_sell_img {
     position: absolute;
     right: 0;
     bottom: 0;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .mb_selling .mb_selling_contains .mb_sell_img {
+  .mb_selling .mb_selling_contains .mb_sell_img {
     width: 174.304px;
     height: 73.001px;
     flex-shrink: 0;
   }
 }
-.mb_how_work .mb_selling .mb_selling_contains .mb_sell_img img {
+.mb_selling .mb_selling_contains .mb_sell_img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -34881,24 +34877,24 @@ header {
   bottom: -3px;
 }
 @media only screen and (max-width: 1199px) {
-  .mb_how_work .mb_selling .mb_selling_contains .mb_selling_content {
+  .mb_selling .mb_selling_contains .mb_selling_content {
     padding-bottom: 30px;
   }
 }
-.mb_how_work .mb_selling .mb_selling_contains h4 {
+.mb_selling .mb_selling_contains h4 {
   font-weight: 700;
   font-size: 24px;
   color: #031a26;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_selling .mb_selling_contains h4 {
+  .mb_selling .mb_selling_contains h4 {
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
   }
 }
-.mb_how_work .mb_selling .mb_selling_contains p {
+.mb_selling .mb_selling_contains p {
   font-weight: 500;
   font-size: 15px;
   color: #031a26;
@@ -34906,59 +34902,62 @@ header {
   margin-top: 10px;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_selling .mb_selling_contains p {
+  .mb_selling .mb_selling_contains p {
     font-size: 14px;
     max-width: 417px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .mb_selling .mb_selling_contains p {
+  .mb_selling .mb_selling_contains p {
     display: none;
   }
 }
-.mb_how_work .mb_our_agents {
+
+/*--Selling End---*/
+/*--Our Agents Start---*/
+.mb_our_agents {
   position: relative;
 }
-.mb_how_work .mb_our_agents .mb_our_agent_shape {
+.mb_our_agents .mb_our_agent_shape {
   position: absolute;
   top: -17%;
   left: 2%;
 }
 @media only screen and (max-width: 1599px) {
-  .mb_how_work .mb_our_agents .mb_our_agent_shape {
+  .mb_our_agents .mb_our_agent_shape {
     display: none;
   }
 }
-.mb_how_work .mb_our_agents .mb_our_agents_card {
+.mb_our_agents .mb_our_agents_card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_our_agents .mb_our_agents_card {
+  .mb_our_agents .mb_our_agents_card {
     flex-direction: column;
     align-items: start;
     row-gap: 24px;
   }
 }
-.mb_how_work .mb_our_agents .mb_our_agents_card h4 {
+.mb_our_agents .mb_our_agents_card h4 {
   font-weight: 600;
   font-size: 24px;
   color: #031a26;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_our_agents .mb_our_agents_card h4 {
+  .mb_our_agents .mb_our_agents_card h4 {
     font-size: 20px;
     line-height: 26px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .mb_our_agents .mb_our_agents_card h4 {
+  .mb_our_agents .mb_our_agents_card h4 {
     font-size: 18px;
   }
 }
-.mb_how_work .mb_our_agents .mb_our_agents_card p {
+.mb_our_agents .mb_our_agents_card p {
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
@@ -34967,25 +34966,25 @@ header {
   margin-top: 14px;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_our_agents .mb_our_agents_card p {
+  .mb_our_agents .mb_our_agents_card p {
     font-size: 12px;
     line-height: 26px;
   }
 }
-.mb_how_work .mb_our_agents .mb_our_agents_card .mb_agent_contact {
+.mb_our_agents .mb_our_agents_card .mb_agent_contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.mb_how_work .mb_our_agents .mb_our_agents_card .mb_agent_number {
+.mb_our_agents .mb_our_agents_card .mb_agent_number {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   gap: 14px;
 }
-.mb_how_work .mb_our_agents .mb_our_agents_card .mb_agent_number span {
+.mb_our_agents .mb_our_agents_card .mb_agent_number span {
   border-radius: 30px;
   border: 1px solid rgba(3, 26, 38, 0.16);
   width: 40px;
@@ -34998,7 +34997,7 @@ header {
   transition: all 0.4s ease;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_our_agents .mb_our_agents_card .mb_agent_number span {
+  .mb_our_agents .mb_our_agents_card .mb_agent_number span {
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -35006,7 +35005,7 @@ header {
     flex-shrink: 0;
   }
 }
-.mb_how_work .mb_our_agents .mb_our_agents_card .mb_agent_number a {
+.mb_our_agents .mb_our_agents_card .mb_agent_number a {
   transition: all 0.4s ease;
   font-weight: 500;
   font-size: 16px;
@@ -35014,14 +35013,14 @@ header {
   opacity: 0.7;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_our_agents .mb_our_agents_card .mb_agent_number a {
+  .mb_our_agents .mb_our_agents_card .mb_agent_number a {
     font-size: 12px;
   }
 }
-.mb_how_work .mb_our_agents .mb_our_agents_card .mb_agent_number a:hover {
+.mb_our_agents .mb_our_agents_card .mb_agent_number a:hover {
   color: #ff9916;
 }
-.mb_how_work .mb_our_agents .mb_hover_img {
+.mb_our_agents .mb_hover_img {
   width: 310px;
   transition: all 0.4s ease;
   height: 350px;
@@ -35032,7 +35031,7 @@ header {
   opacity: 0;
 }
 @media only screen and (max-width: 1199px) {
-  .mb_how_work .mb_our_agents .mb_hover_img {
+  .mb_our_agents .mb_hover_img {
     width: 252px;
     height: 290px;
     top: -112px;
@@ -35040,11 +35039,11 @@ header {
   }
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_our_agents .mb_hover_img {
+  .mb_our_agents .mb_hover_img {
     display: none;
   }
 }
-.mb_how_work .mb_our_agents .mb_hover_img img {
+.mb_our_agents .mb_hover_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -35055,11 +35054,11 @@ header {
   -o-border-radius: 13px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_our_agents .mb_arrow_btn {
+  .mb_our_agents .mb_arrow_btn {
     margin-top: 80px;
   }
 }
-.mb_how_work .mb_our_agents .mb_arrow_btn a {
+.mb_our_agents .mb_arrow_btn a {
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -35076,7 +35075,7 @@ header {
   font-size: 36px;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_our_agents .mb_arrow_btn a {
+  .mb_our_agents .mb_arrow_btn a {
     width: 54px;
     height: 54px;
     line-height: 54px;
@@ -35085,14 +35084,14 @@ header {
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
-  .mb_how_work .mb_our_agents .mb_arrow_btn a {
+  .mb_our_agents .mb_arrow_btn a {
     width: 50px;
     height: 50px;
     line-height: 50px;
     font-size: 20px;
   }
 }
-.mb_how_work .mb_our_agents .mb_arrow_btn a i {
+.mb_our_agents .mb_arrow_btn a i {
   transition: all 0.4s ease;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
@@ -35100,52 +35099,55 @@ header {
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
 }
-.mb_how_work .mb_our_agents .row.style_1 {
+.mb_our_agents .row.style_1 {
   padding: 33px 0px;
   border-top: 1px solid rgba(3, 26, 38, 0.1);
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_our_agents .row.style_1 {
+  .mb_our_agents .row.style_1 {
     padding: 25px 0px;
   }
 }
-.mb_how_work .mb_our_agents .row.style_1:last-child {
+.mb_our_agents .row.style_1:last-child {
   border-bottom: 1px solid rgba(3, 26, 38, 0.1);
 }
-.mb_how_work .mb_our_agents .row.style_1:hover .mb_hover_img {
+.mb_our_agents .row.style_1:hover .mb_hover_img {
   visibility: visible;
   opacity: 1;
 }
-.mb_how_work .mb_our_agents .row.style_1:hover .mb_agent_number span {
+.mb_our_agents .row.style_1:hover .mb_agent_number span {
   background-color: #ff9916;
   color: #fff;
   border: transparent;
 }
-.mb_how_work .mb_our_agents .row.style_1:hover .mb_arrow_btn a {
+.mb_our_agents .row.style_1:hover .mb_arrow_btn a {
   background-color: #ff9916;
   color: #fff;
 }
-.mb_how_work .mb_our_agents .row.style_1:hover .mb_arrow_btn a i {
+.mb_our_agents .row.style_1:hover .mb_arrow_btn a i {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
 }
-.mb_how_work .mb_mibitcoin_casa .bg_primary {
+
+/*--Our Agents End---*/
+/*--MiBitcoin vs Brokerage Start---*/
+.mb_mibitcoin_casa .bg_primary {
   background-color: #ffeed8;
   padding: 7px 0px;
 }
-.mb_how_work .mb_mibitcoin_casa .bg_primary.style_001 {
+.mb_mibitcoin_casa .bg_primary.style_001 {
   padding: 27px !important;
 }
-.mb_how_work .mb_mibitcoin_casa .row.style_2 {
+.mb_mibitcoin_casa .row.style_2 {
   border-bottom: 1px solid rgba(3, 26, 38, 0.1);
 }
-.mb_how_work .mb_mibitcoin_casa .row.style_2:last-child {
+.mb_mibitcoin_casa .row.style_2:last-child {
   border-bottom: 1px solid transparent;
 }
-.mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage {
+.mb_mibitcoin_casa .mb_casa_brokerage {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 24px;
   background-color: #ffeed8;
@@ -35155,100 +35157,100 @@ header {
   transition: all 0.5s ease-in-out;
 }
 @media only screen and (max-width: 1399px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage {
+  .mb_mibitcoin_casa .mb_casa_brokerage {
     padding: 43px 32px 45px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage {
+  .mb_mibitcoin_casa .mb_casa_brokerage {
     padding: 25px;
     padding-bottom: 40px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage {
+  .mb_mibitcoin_casa .mb_casa_brokerage {
     padding: 16px;
     padding-bottom: 38px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage {
+  .mb_mibitcoin_casa .mb_casa_brokerage {
     padding: 10px;
     padding-bottom: 32px;
   }
 }
-.mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage.active {
+.mb_mibitcoin_casa .mb_casa_brokerage.active {
   max-height: 100%;
   overflow: visible;
 }
-.mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
+.mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
   font-weight: 700;
   font-size: 24px;
   color: #031a26;
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
     font-size: 18px;
     line-height: 30px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
     font-size: 16px;
     line-height: 24px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_title h4 {
     font-size: 14px;
     line-height: 20px;
   }
 }
-.mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
+.mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
   font-weight: 700;
   font-size: 18px;
   color: #031a26;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
     font-size: 15px;
     font-weight: 600;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
     font-size: 14px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_brokerage_title h4 {
     font-size: 12px;
   }
 }
-.mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
+.mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
   font-weight: 500;
   font-size: 16px;
   color: #031a26;
   opacity: 0.7;
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
     font-size: 14px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_item_title p {
     font-size: 12px;
   }
 }
-.mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_check {
+.mb_mibitcoin_casa .mb_casa_brokerage .mb_check {
   color: #12cc3b;
   font-size: 26px;
 }
-.mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage .mb_check.style_1 {
+.mb_mibitcoin_casa .mb_casa_brokerage .mb_check.style_1 {
   color: #d12e46;
 }
-.mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage_contains {
+.mb_mibitcoin_casa .mb_casa_brokerage_contains {
   padding: 0px 40px;
   max-height: 486px;
   transition: all 0.5s ease-in-out;
@@ -35260,25 +35262,25 @@ header {
   -ms-border-radius: 14px;
   -o-border-radius: 14px;
 }
-.mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage_contains.active {
+.mb_mibitcoin_casa .mb_casa_brokerage_contains.active {
   max-height: 100%;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage_contains {
+  .mb_mibitcoin_casa .mb_casa_brokerage_contains {
     padding: 0 25px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage_contains {
+  .mb_mibitcoin_casa .mb_casa_brokerage_contains {
     padding: 0 16px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .mb_mibitcoin_casa .mb_casa_brokerage_contains {
+  .mb_mibitcoin_casa .mb_casa_brokerage_contains {
     padding: 0 10px;
   }
 }
-.mb_how_work .mb_mibitcoin_casa .btn_wrapper {
+.mb_mibitcoin_casa .btn_wrapper {
   position: absolute;
   bottom: -17px;
   left: 50%;
@@ -35288,84 +35290,87 @@ header {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
-.mb_how_work .mb_mibitcoin_casa .btn_wrapper a {
+.mb_mibitcoin_casa .btn_wrapper a {
   cursor: pointer;
 }
-.mb_how_work .mb_mibitcoin_casa .btn_wrapper a:hover {
+.mb_mibitcoin_casa .btn_wrapper a:hover {
   background-color: #fff;
   color: #031a26;
 }
-.mb_how_work .mb_mibitcoin_casa .btn_wrapper a:hover span {
+.mb_mibitcoin_casa .btn_wrapper a:hover span {
   background-color: #031a26;
   color: #fff;
 }
-.mb_how_work .mb_mibitcoin_casa .btn_wrapper a i {
+.mb_mibitcoin_casa .btn_wrapper a i {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
 }
-.mb_how_work .process-item,
-.mb_how_work .process-header {
+
+/*--MiBitcoin vs Brokerage End---*/
+.process-item,
+.process-header {
   display: grid;
   grid-template-columns: 55% 22% 23%;
   border-bottom: 1px solid rgba(3, 26, 38, 0.1);
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .process-item,
-  .mb_how_work .process-header {
+  .process-item,
+  .process-header {
     grid-template-columns: 54% 23% 23%;
   }
 }
-.mb_how_work .process-item:last-child,
-.mb_how_work .process-header:last-child {
+.process-item:last-child,
+.process-header:last-child {
   border-bottom: none;
 }
-.mb_how_work .process-item .mb_check,
-.mb_how_work .process-header .mb_check {
+.process-item .mb_check,
+.process-header .mb_check {
   text-align: center;
 }
-.mb_how_work .process-item div,
-.mb_how_work .process-header div {
+.process-item div,
+.process-header div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.mb_how_work .process-item .mb_item_title,
-.mb_how_work .process-header .mb_item_title {
+.process-item .mb_item_title,
+.process-header .mb_item_title {
   justify-content: flex-start;
   padding: 10px 0;
   padding-right: 7px;
 }
-.mb_how_work .process-item .style-10,
-.mb_how_work .process-header .style-10 {
+.process-item .style-10,
+.process-header .style-10 {
   padding: 12px 0;
   justify-content: flex-start;
 }
-.mb_how_work .process-header {
+
+.process-header {
   border-bottom: none;
 }
-.mb_how_work .process-header .mb_title {
+.process-header .mb_title {
   justify-content: flex-start;
 }
 @media only screen and (max-width: 1199px) {
-  .mb_how_work .process-header .mb_mibitcoin_logo img {
+  .process-header .mb_mibitcoin_logo img {
     max-width: 120px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .mb_how_work .process-header .mb_mibitcoin_logo img {
+  .process-header .mb_mibitcoin_logo img {
     max-width: 100px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .process-header .mb_mibitcoin_logo img {
+  .process-header .mb_mibitcoin_logo img {
     max-width: 80px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .process-header .mb_mibitcoin_logo img {
+  .process-header .mb_mibitcoin_logo img {
     max-width: 60px;
   }
 }
