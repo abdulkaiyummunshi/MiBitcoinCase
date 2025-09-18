@@ -682,7 +682,7 @@
             bottom: -11%;
             left: 37.5%;
         }
-<<<<<<< HEAD
+
 
         @include xs{
             height: 35px;
@@ -694,7 +694,7 @@
             height: 35px;
             width: 35px;
             left: 30%;
-=======
+
         @include sm {
             bottom: -11%;
             left: 37.5%;
@@ -706,7 +706,7 @@
         @include xxs {
             bottom: -12%;
             left: 31.5%;
->>>>>>> 7f89d00661ffd87ec6156adf6dde0641efe5f724
+
         }
         &:hover{
             background-color: $primary;

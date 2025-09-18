@@ -131,6 +131,7 @@
 
         // Brand Slider
         function Brand() {
+            
                 $('.mb_branding_wrapper_ltr').slick({
                     dots: false,
                     arrows: false,
