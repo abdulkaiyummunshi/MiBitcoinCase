@@ -328,12 +328,35 @@
             nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
             responsive: [
                 {
-                    breakpoint: 768, 
+                    breakpoint: 1400, // <1400px
                     settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
+                    slidesToShow: 4,
                     }
                 },
+                {
+                    breakpoint: 1200, // <1200px
+                    settings: {
+                    slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 992, // <992px
+                    settings: {
+                    slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 768, // <768px
+                    settings: {
+                    slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 576, // <576px
+                    settings: {
+                    slidesToShow: 1,
+                    }
+                }
             ]
         });
         $('.mb_saved_listing_slider').slick({
@@ -496,20 +519,9 @@
                 // Add active class to the clicked tab and its content
                 $(this).addClass('active');
                 $(tabTarget).addClass('active');
-            });
+            });       
         
-        
-        // Gsap RegisterPlugin
-        gsap.registerPlugin(ScrollSmoother, ScrollTrigger, SplitText);
 
-        // Smooth Scroller
-        ScrollSmoother.create({
-            wrapper: "#smooth-wrapper",
-            content: "#smooth-content",
-            smooth: 1.3,
-            effects: true,
-            smoothTouch: 0.1,
-        });
 
         // Header h1 Animate
         // function textAnimation() {
@@ -777,3 +789,16 @@
 
 
 })(jQuery);
+
+
+// Gsap RegisterPlugin
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger, SplitText);
+
+// Smooth Scroller
+ScrollSmoother.create({
+    wrapper: "#smooth-wrapper",
+    content: "#smooth-content",
+    smooth: 1.3,
+    effects: true,
+    smoothTouch: 0.1,
+});
