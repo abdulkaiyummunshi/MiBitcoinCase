@@ -1,7 +1,10 @@
+
 .mb_map_search{
     .mb_map_search_filter{
         overflow-x: auto;
         overflow-y: visible !important;
+        gap: 15px;
+        padding-bottom: 30px;
         .mb_search_filter{
             @include flex(row, flex-start, center);
             gap: 10px;
@@ -78,6 +81,17 @@
         border: 1px solid $border;
         @include border-radius(20px);
         margin: 0px 3px;
+
+        @include md{
+           border: none;
+           margin: 0;
+        }
+    }
+   }
+
+   .md-order{
+    @include md{
+        order: -1;
     }
    }
    .mb_search_conent{
@@ -234,7 +248,7 @@
        outline: none;
        appearance: none;
        min-width: fit-content !important;
-       width: 100% !important;
+       width: max-content !important;
        padding-right: 30px;
     }
     &.border_none{
