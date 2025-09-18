@@ -228,7 +228,7 @@
 		  }
 		}
 	  }
-	  &.style_1{
+	&.style_1{
 		.main-menu{
 			ul{
 				background: rgba(3, 26, 38, 0.1);
@@ -246,7 +246,26 @@
 				}
 			}
 		}
-	  }
+	}
+	&.style_2{
+		.main-menu{
+			ul{
+				
+				li{
+					&.menu-item-has-children{
+						&.active{
+							&::after{
+							color: $text_color;
+						}
+						}
+					}
+					&::after{
+						color: white;
+					}
+				}
+			}
+		}
+	}
 }
 header{
 	min-height: 90px !important;

@@ -89,6 +89,11 @@
             setActivePage();
         });
 
+        $('.main-menu-wrap li.menu-item-has-children').on('click', function(){
+            $(this).siblings().removeClass('active')
+            $(this).addClass('active')
+        })
+
 
 
         // FAQ
