@@ -36713,6 +36713,10 @@ header {
   transform: rotate(180deg);
   top: 28%;
 }
+.select_card.language.selectActive::after {
+  transform: rotate(180deg);
+  top: 21%;
+}
 
 .mb_map_search .mb_single_filter select {
   width: max-content !important;
